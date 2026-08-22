@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:45db2853fdd2",
+  "@type": "DataSet",
+  "createdAt": "2026-08-22T16:27:12Z",
+  "label": "Annotated point cloud",
+  "description": "Empty shell \u2014 no binary payload",
+  "geometryType": "pointcloud",
+  "sourceDatalakeIDs": [
+    "urn:petras:a10705fda356"
+  ],
+  "version": 1
+}

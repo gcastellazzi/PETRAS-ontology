@@ -1,0 +1,8 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:65292578c9dc",
+  "@type": "CommandHistorySnapshot",
+  "createdAt": "2026-08-22T16:27:12Z",
+  "label": "Command history snapshot",
+  "description": "Empty shell \u2014 no binary payload"
+}

@@ -1,0 +1,632 @@
+@prefix petras: <https://w3id.org/petras/ontology#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix sosa:   <http://www.w3.org/ns/sosa/> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+
+#################################################################
+# PETRAS — Provenance-Enabled digital Twin ontology for
+#          Restoration and Structural Analysis
+#
+# First standalone OWL serialization, transcribed from the
+# specification in the manuscript (Appendix A) and reconciled with
+# the entity model actually written by the reference implementation.
+#
+# NOTE: this is a faithful transcription, deliberately not polished,
+# so that ontology linting reports the pitfalls of the specification
+# as it currently stands.
+#################################################################
+
+<https://w3id.org/petras/ontology> a owl:Ontology ;
+    dct:title "PETRAS: a discrete, temporal, multi-layer ontology for structural digital twins of historical buildings"@en ;
+    dct:creator "Giovanni Castellazzi" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "petras" ;
+    vann:preferredNamespaceUri "https://w3id.org/petras/ontology#" ;
+    owl:versionInfo "0.2.0" ;
+    rdfs:comment "Semantic backbone of an engineering digital twin of a historical structure: every artifact produced during assessment is represented together with the operations that produced it."@en .
+
+# NOTE ON ALIGNMENT: PROV-O and SOSA are referenced as external anchors
+# (petras:DataLink rdfs:subClassOf prov:Activity, petras:IoTStream
+# rdfs:subClassOf sosa:ObservationCollection) but deliberately NOT imported
+# with owl:imports. Importing them makes an ontology linter report the pitfalls
+# of the imported vocabularies rather than of this one, which drowns the signal
+# about PETRAS itself. Consumers that need the full axiomatization should import
+# both vocabularies alongside this file.
+
+#################################################################
+# Layer disjointness
+#
+# Section 4.5 of the specification calls the boundaries between
+# layers "deliberately sharp"; ontology linting (OOPS! P10) showed
+# that the claim had never been formalized. The seven layers are
+# mutually disjoint: an artifact is raw or interpreted, a fact or an
+# inference, never both.
+#################################################################
+
+[] a owl:AllDisjointClasses ;
+   owl:members ( petras:DataLake
+                 petras:DataSet
+                 petras:DataLink
+                 petras:DataStore
+                 petras:DataSources
+                 petras:DataAnalytics
+                 petras:DataReporting ) .
+
+[] a owl:AllDisjointClasses ;
+   owl:members ( petras:PointCloudDataSet
+                 petras:MeshDataSet
+                 petras:FEMDataSet
+                 petras:VoxelDataSet ) .
+
+petras:Decision owl:disjointWith petras:Recommendation .
+
+#################################################################
+# Metadata contract carrier
+#
+# Table 3 of the specification lists the minimum metadata contract
+# but states only the range of each property, never its domain
+# (OOPS! P11, IMPORTANT). Section 4.5 says the contract binds "both
+# layers", i.e. DataLake and DataSet; that union is made explicit
+# here so the properties are no longer domain-less.
+#################################################################
+
+petras:DescribedArtifact a owl:Class ;
+    rdfs:label "Described Artifact"@en ;
+    rdfs:comment "Artifact subject to the minimum metadata contract of the specification: raw artifacts in the DataLake and interpreted artifacts in the DataSet layer."@en ;
+    owl:equivalentClass [ a owl:Class ;
+                          owl:unionOf ( petras:DataLake petras:DataSet ) ] .
+
+#################################################################
+# Core hierarchy
+#################################################################
+
+petras:OntologyEntity a owl:Class ;
+    rdfs:label "Ontology Entity"@en ;
+    rdfs:comment "Root class of every entity managed by the PETRAS ontology."@en .
+
+### L1 — DataLake
+
+petras:DataLake a owl:Class ;
+    rdfs:subClassOf petras:OntologyEntity ;
+    rdfs:label "Data Lake"@en ;
+    rdfs:comment "Raw artifact preserved exactly as acquired, without semantic interpretation."@en .
+
+petras:SurveyData a owl:Class ;
+    rdfs:subClassOf petras:DataLake ;
+    rdfs:label "Survey Data"@en ;
+    rdfs:comment "Raw reality-capture artifact, e.g. a point cloud file."@en .
+
+petras:IoTStream a owl:Class ;
+    rdfs:subClassOf petras:DataLake , sosa:ObservationCollection ;
+    rdfs:label "IoT Stream"@en ;
+    rdfs:comment "Raw monitoring time series as exported by the acquisition system."@en .
+
+petras:DataEvent a owl:Class ;
+    rdfs:subClassOf petras:DataLake ;
+    rdfs:label "Data Event"@en ;
+    rdfs:comment "Discrete occurrence that may affect the interpretation of data acquired around it, such as an earthquake, a flood or a sensor-drift episode."@en .
+
+### L2 — DataSet
+
+petras:DataSet a owl:Class ;
+    rdfs:subClassOf petras:OntologyEntity ;
+    rdfs:label "Data Set"@en ;
+    rdfs:comment "Artifact carrying explicit geometric structure and semantic binding to the digital twin model."@en .
+
+petras:PointCloudDataSet a owl:Class ;
+    rdfs:subClassOf petras:DataSet ;
+    rdfs:label "Point Cloud DataSet"@en ;
+    rdfs:comment "Interpreted point cloud, typically carrying zone labels."@en .
+
+petras:MeshDataSet a owl:Class ;
+    rdfs:subClassOf petras:DataSet ;
+    rdfs:label "Mesh DataSet"@en ;
+    rdfs:comment "Surface or volumetric mesh discretization of the asset."@en .
+
+petras:FEMDataSet a owl:Class ;
+    rdfs:subClassOf petras:DataSet ;
+    rdfs:label "FEM DataSet"@en ;
+    rdfs:comment "Finite element model with materials and boundary conditions assigned."@en .
+
+petras:VoxelDataSet a owl:Class ;
+    rdfs:subClassOf petras:DataSet ;
+    rdfs:label "Voxel DataSet"@en ;
+    rdfs:comment "Voxel discretization of the asset."@en .
+
+### L3 — DataLink
+
+petras:DataLink a owl:Class ;
+    rdfs:subClassOf petras:OntologyEntity , prov:Activity ;
+    rdfs:label "Data Link"@en ;
+    rdfs:comment "Executable transformation connecting entities. Simultaneously operational provenance, geometric mapping and edge of the pipeline DAG."@en .
+
+petras:GeometricMapping a owl:Class ;
+    rdfs:subClassOf petras:DataLink ;
+    rdfs:label "Geometric Mapping"@en ;
+    rdfs:comment "Explicit correspondence between entities of different discretizations."@en .
+
+petras:OperatorChain a owl:Class ;
+    rdfs:subClassOf petras:DataLink ;
+    rdfs:label "Operator Chain"@en ;
+    rdfs:comment "Ordered sequence of operators reconstructing a pipeline."@en .
+
+### L4 — DataStore
+
+petras:DataStore a owl:Class ;
+    rdfs:subClassOf petras:OntologyEntity ;
+    rdfs:label "Data Store"@en ;
+    rdfs:comment "Immutable, append-only record of a deterministic computational fact."@en .
+
+### L5 — DataSources
+
+petras:DataSources a owl:Class ;
+    rdfs:subClassOf petras:OntologyEntity ;
+    rdfs:label "Data Sources"@en ;
+    rdfs:comment "Documentary provenance: standards, datasheets, photographs, archival documents, prior reports."@en .
+
+### L6 — DataAnalytics
+
+petras:DataAnalytics a owl:Class ;
+    rdfs:subClassOf petras:OntologyEntity ;
+    rdfs:label "Data Analytics"@en ;
+    rdfs:comment "Statistical interpretation or inference over the other layers."@en .
+
+petras:StatisticalModel a owl:Class ;
+    rdfs:subClassOf petras:DataAnalytics ;
+    rdfs:label "Statistical Model"@en ;
+    rdfs:comment "Statistical or machine-learning model fitted over data of the other layers."@en .
+
+petras:AnomalyDetection a owl:Class ;
+    rdfs:subClassOf petras:DataAnalytics ;
+    rdfs:label "Anomaly Detection"@en ;
+    rdfs:comment "Detection of deviations from expected behaviour in monitoring streams or simulation results."@en .
+
+petras:DecisionTrigger a owl:Class ;
+    rdfs:subClassOf petras:DataAnalytics ;
+    rdfs:label "Decision Trigger"@en ;
+    rdfs:comment "Condition whose satisfaction initiates a decision-support process."@en .
+
+petras:ProjectIndex a owl:Class ;
+    rdfs:subClassOf petras:DataAnalytics ;
+    rdfs:label "Project Structural Index"@en ;
+    rdfs:comment "Bounded structural snapshot of the knowledge base across all seven layers."@en .
+
+### Decision support
+
+petras:DecisionSupportEntity a owl:Class ;
+    rdfs:subClassOf petras:OntologyEntity ;
+    rdfs:label "Decision Support Entity"@en ;
+    rdfs:comment "Root of the objects that turn analytical evidence into actionable advice without introducing new geometry."@en .
+
+petras:Decision a owl:Class ;
+    rdfs:subClassOf petras:DecisionSupportEntity ;
+    rdfs:label "Decision"@en ;
+    rdfs:comment "A high-level choice derived from analytical evidence."@en .
+
+petras:Recommendation a owl:Class ;
+    rdfs:subClassOf petras:DecisionSupportEntity ;
+    rdfs:label "Recommendation"@en ;
+    rdfs:comment "A concrete suggested action derived from a Decision."@en .
+
+### L7 — DataReporting
+
+petras:DataReporting a owl:Class ;
+    rdfs:subClassOf petras:OntologyEntity ;
+    rdfs:label "Data Reporting"@en ;
+    rdfs:comment "Time-stamped synthesis citing DataStore events, DataSets and DataSources."@en .
+
+petras:AssistantChatSession a owl:Class ;
+    rdfs:subClassOf petras:DataReporting ;
+    rdfs:label "Assistant Chat Session"@en ;
+    rdfs:comment "Multi-turn conversation with a language model, persisted with provenance links to the guide material that informed it."@en .
+
+petras:CommandExecutionRecord a owl:Class ;
+    rdfs:subClassOf petras:DataReporting ;
+    rdfs:label "Command Execution Record"@en ;
+    rdfs:comment "Single command execution with timing, arguments and outcome."@en .
+
+petras:CoordinateSystem a owl:Class ;
+    rdfs:label "Coordinate System"@en ;
+    rdfs:comment "Spatial reference system identified by an EPSG code."@en .
+
+#################################################################
+# Object properties
+#################################################################
+
+petras:mapsFrom a owl:ObjectProperty ;
+    rdfs:label "maps from"@en ;
+    rdfs:comment "Source entity of a transformation."@en ;
+    rdfs:domain petras:DataLink ;
+    rdfs:range petras:OntologyEntity .
+
+petras:mapsTo a owl:ObjectProperty ;
+    rdfs:label "maps to"@en ;
+    rdfs:comment "Target entity of a transformation."@en ;
+    rdfs:domain petras:DataLink ;
+    rdfs:range petras:OntologyEntity .
+
+petras:sourceDatalakeIDs a owl:ObjectProperty ;
+    rdfs:label "source datalake identifiers"@en ;
+    rdfs:comment "Raw artifacts a DataSet was interpreted from."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range petras:DataLake .
+
+petras:referencesDataSet a owl:ObjectProperty ;
+    rdfs:label "references dataset"@en ;
+    rdfs:comment "DataSet a stored computational fact was produced from."@en ;
+    rdfs:domain petras:DataStore ;
+    rdfs:range petras:DataSet .
+
+petras:hasCoordinateSystem a owl:ObjectProperty ;
+    rdfs:label "has coordinate system"@en ;
+    rdfs:comment "Spatial reference system of a georeferenced entity."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range petras:CoordinateSystem .
+
+petras:relevantTo a owl:ObjectProperty ;
+    rdfs:label "relevant to"@en ;
+    rdfs:comment "Entity whose modelling assumptions a documentary source justifies."@en ;
+    rdfs:domain petras:DataSources ;
+    rdfs:range petras:OntologyEntity .
+
+petras:basedOnDataSet a owl:ObjectProperty ;
+    rdfs:label "based on dataset"@en ;
+    rdfs:comment "DataSet providing the evidence on which a decision rests."@en ;
+    rdfs:domain petras:Decision ;
+    rdfs:range petras:DataSet .
+
+petras:basedOnEvent a owl:ObjectProperty ;
+    rdfs:label "based on event"@en ;
+    rdfs:comment "Stored computational event providing evidence for a decision."@en ;
+    rdfs:domain petras:Decision ;
+    rdfs:range petras:DataStore .
+
+petras:hasRecommendation a owl:ObjectProperty ;
+    rdfs:label "has recommendation"@en ;
+    rdfs:comment "Recommendation produced by a decision."@en ;
+    rdfs:domain petras:Decision ;
+    rdfs:range petras:Recommendation .
+
+petras:targetsLocation a owl:ObjectProperty ;
+    rdfs:label "targets location"@en ;
+    rdfs:comment "Region of the asset a recommendation is directed at."@en ;
+    rdfs:domain petras:Recommendation ;
+    rdfs:range petras:DataSet .
+
+#################################################################
+# Datatype properties — metadata contract (manuscript Table 3)
+#################################################################
+
+petras:validFrom a owl:DatatypeProperty ;
+    rdfs:label "valid from"@en ;
+    rdfs:comment "Start of temporal validity."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range xsd:dateTime .
+
+petras:validUntil a owl:DatatypeProperty ;
+    rdfs:label "valid until"@en ;
+    rdfs:comment "End of temporal validity."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range xsd:dateTime .
+
+petras:accuracy a owl:DatatypeProperty ;
+    rdfs:label "accuracy"@en ;
+    rdfs:comment "Geometric accuracy in metres."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range xsd:float .
+
+petras:completeness a owl:DatatypeProperty ;
+    rdfs:label "completeness"@en ;
+    rdfs:comment "Coverage fraction in the range 0 to 1."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range xsd:float .
+
+petras:pointDensity a owl:DatatypeProperty ;
+    rdfs:label "point density"@en ;
+    rdfs:comment "Average point spacing in metres."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range xsd:float .
+
+petras:boundingBox a owl:DatatypeProperty ;
+    rdfs:label "bounding box"@en ;
+    rdfs:comment "Axis-aligned bounding box, serialized as JSON."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range xsd:string .
+
+petras:accessLevel a owl:DatatypeProperty ;
+    rdfs:label "access level"@en ;
+    rdfs:comment "Access level or visibility of the artifact."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range xsd:string .
+
+petras:changeLog a owl:DatatypeProperty ;
+    rdfs:label "change log"@en ;
+    rdfs:comment "Description of what changed with respect to the previous version."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range xsd:string .
+
+### DataLink execution record
+
+petras:operator a owl:DatatypeProperty ;
+    rdfs:label "operator"@en ;
+    rdfs:comment "Named operator that performed the transformation."@en ;
+    rdfs:domain petras:DataLink ;
+    rdfs:range xsd:string .
+
+petras:plugin a owl:DatatypeProperty ;
+    rdfs:label "plugin"@en ;
+    rdfs:comment "Software component providing the operator."@en ;
+    rdfs:domain petras:DataLink ;
+    rdfs:range xsd:string .
+
+petras:parameters a owl:DatatypeProperty ;
+    rdfs:label "parameters"@en ;
+    rdfs:comment "Parameter set recorded at invocation time, serialized as JSON."@en ;
+    rdfs:domain petras:DataLink ;
+    rdfs:range xsd:string .
+
+petras:executionAgent a owl:DatatypeProperty ;
+    rdfs:label "execution agent"@en ;
+    rdfs:comment "Human or AI agent that invoked the operator."@en ;
+    rdfs:domain petras:DataLink ;
+    rdfs:range xsd:string .
+
+petras:executionEnvironment a owl:DatatypeProperty ;
+    rdfs:label "execution environment"@en ;
+    rdfs:comment "Software and library versions, seeds and solver tolerances under which the operator ran. Required for the determinism claim to be falsifiable."@en ;
+    rdfs:domain petras:DataLink ;
+    rdfs:range xsd:string .
+
+### DataSet geometry
+
+petras:geometryURI a owl:DatatypeProperty ;
+    rdfs:label "geometry URI"@en ;
+    rdfs:comment "Reference to the array archive holding the discrete geometry."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range xsd:anyURI .
+
+petras:geometryType a owl:DatatypeProperty ;
+    rdfs:label "geometry type"@en ;
+    rdfs:comment "One of pointcloud, mesh, voxel or fem."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range xsd:string .
+
+petras:version a owl:DatatypeProperty ;
+    rdfs:label "version"@en ;
+    rdfs:comment "Monotonic version number of the DataSet."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range xsd:integer .
+
+petras:semanticZones a owl:DatatypeProperty ;
+    rdfs:label "semantic zones"@en ;
+    rdfs:comment "Structural zone labels assigned to the discretization."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range xsd:string .
+
+petras:nodeCount a owl:DatatypeProperty ;
+    rdfs:label "node count"@en ;
+    rdfs:comment "Number of nodes in the discretization."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range xsd:integer .
+
+petras:elementCount a owl:DatatypeProperty ;
+    rdfs:label "element count"@en ;
+    rdfs:comment "Number of elements in the discretization."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range xsd:integer .
+
+petras:materialGroups a owl:DatatypeProperty ;
+    rdfs:label "material groups"@en ;
+    rdfs:comment "Number of material groups defined on the discretization."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range xsd:integer .
+
+### DataStore results
+
+petras:eventType a owl:DatatypeProperty ;
+    rdfs:label "event type"@en ;
+    rdfs:comment "Kind of computational fact recorded, e.g. a finite element simulation."@en ;
+    rdfs:domain petras:DataStore ;
+    rdfs:range xsd:string .
+
+petras:solver a owl:DatatypeProperty ;
+    rdfs:label "solver"@en ;
+    rdfs:comment "Solver that produced the stored result."@en ;
+    rdfs:domain petras:DataStore ;
+    rdfs:range xsd:string .
+
+petras:loadCase a owl:DatatypeProperty ;
+    rdfs:label "load case"@en ;
+    rdfs:comment "Load case under which the analysis was run."@en ;
+    rdfs:domain petras:DataStore ;
+    rdfs:range xsd:string .
+
+petras:maxDisplacement a owl:DatatypeProperty ;
+    rdfs:label "maximum displacement"@en ;
+    rdfs:comment "Maximum nodal displacement in metres."@en ;
+    rdfs:domain petras:DataStore ;
+    rdfs:range xsd:float .
+
+petras:maxVonMises a owl:DatatypeProperty ;
+    rdfs:label "maximum von Mises stress"@en ;
+    rdfs:comment "Peak von Mises stress in pascals."@en ;
+    rdfs:domain petras:DataStore ;
+    rdfs:range xsd:float .
+
+petras:resultsURI a owl:DatatypeProperty ;
+    rdfs:label "results URI"@en ;
+    rdfs:comment "Reference to the archive holding the full result arrays."@en ;
+    rdfs:domain petras:DataStore ;
+    rdfs:range xsd:anyURI .
+
+### DataSources
+
+petras:title a owl:DatatypeProperty ;
+    rdfs:label "title"@en ;
+    rdfs:comment "Title of the documentary source."@en ;
+    rdfs:domain petras:DataSources ;
+    rdfs:range xsd:string .
+
+petras:documentType a owl:DatatypeProperty ;
+    rdfs:label "document type"@en ;
+    rdfs:comment "Kind of documentary source, e.g. standard, datasheet, report or photograph."@en ;
+    rdfs:domain petras:DataSources ;
+    rdfs:range xsd:string .
+
+petras:assistantGuide a owl:DatatypeProperty ;
+    rdfs:label "assistant guide"@en ;
+    rdfs:comment "Whether the document is indexed for retrieval by the AI assistant."@en ;
+    rdfs:domain petras:DataSources ;
+    rdfs:range xsd:boolean .
+
+### ProjectIndex and assistant
+
+petras:indexSchemaVersion a owl:DatatypeProperty ;
+    rdfs:label "index schema version"@en ;
+    rdfs:comment "Schema version of the index snapshot, for forward compatibility."@en ;
+    rdfs:domain petras:ProjectIndex ;
+    rdfs:range xsd:string .
+
+petras:generatedAt a owl:DatatypeProperty ;
+    rdfs:label "generated at"@en ;
+    rdfs:comment "Instant at which the snapshot was produced."@en ;
+    rdfs:domain petras:ProjectIndex ;
+    rdfs:range xsd:dateTime .
+
+petras:hasStatistics a owl:DatatypeProperty ;
+    rdfs:label "has statistics"@en ;
+    rdfs:comment "Per-layer entity counts, serialized as JSON."@en ;
+    rdfs:domain petras:ProjectIndex ;
+    rdfs:range xsd:string .
+
+petras:usesModel a owl:DatatypeProperty ;
+    rdfs:label "uses model"@en ;
+    rdfs:comment "Language model that produced the session."@en ;
+    rdfs:domain petras:AssistantChatSession ;
+    rdfs:range xsd:string .
+
+petras:turnCount a owl:DatatypeProperty ;
+    rdfs:label "turn count"@en ;
+    rdfs:comment "Number of exchanges in the session."@en ;
+    rdfs:domain petras:AssistantChatSession ;
+    rdfs:range xsd:integer .
+
+petras:sessionTranscript a owl:DatatypeProperty ;
+    rdfs:label "session transcript"@en ;
+    rdfs:comment "Reference to the human-readable transcript of the session."@en ;
+    rdfs:domain petras:AssistantChatSession ;
+    rdfs:range xsd:anyURI .
+
+petras:hasSessionID a owl:DatatypeProperty ;
+    rdfs:label "has session identifier"@en ;
+    rdfs:comment "Identifier of the working session the command belongs to."@en ;
+    rdfs:domain petras:CommandExecutionRecord ;
+    rdfs:range xsd:string .
+
+petras:actionDescription a owl:DatatypeProperty ;
+    rdfs:label "action description"@en ;
+    rdfs:comment "Human-readable statement of the action being recommended."@en ;
+    rdfs:domain petras:Recommendation ;
+    rdfs:range xsd:string .
+
+petras:priorityLevel a owl:DatatypeProperty ;
+    rdfs:label "priority level"@en ;
+    rdfs:comment "One of high, medium or low."@en ;
+    rdfs:domain petras:Recommendation ;
+    rdfs:range xsd:string .
+
+petras:decisionTime a owl:DatatypeProperty ;
+    rdfs:label "decision time"@en ;
+    rdfs:comment "Instant at which the decision was taken."@en ;
+    rdfs:domain petras:Decision ;
+    rdfs:range xsd:dateTime .
+
+petras:sha256 a owl:DatatypeProperty ;
+    rdfs:label "SHA-256 checksum"@en ;
+    rdfs:comment "Integrity checksum of the referenced artifact."@en ;
+    rdfs:domain petras:DescribedArtifact ;
+    rdfs:range xsd:string .
+
+#################################################################
+# Inverse relationships
+#
+# CQ1 traverses provenance backwards while CQ2-CQ3 traverse it
+# forwards; linting (OOPS! P13) showed the ontology declared only
+# one direction. Naming the inverses makes bidirectional traversal
+# a property of the model rather than of the query.
+#################################################################
+
+petras:isSourceOf a owl:ObjectProperty ;
+    rdfs:label "is source of"@en ;
+    rdfs:comment "Transformation that consumed this entity as input."@en ;
+    rdfs:domain petras:OntologyEntity ;
+    rdfs:range petras:DataLink ;
+    owl:inverseOf petras:mapsFrom .
+
+petras:isTargetOf a owl:ObjectProperty ;
+    rdfs:label "is target of"@en ;
+    rdfs:comment "Transformation that produced this entity."@en ;
+    rdfs:domain petras:OntologyEntity ;
+    rdfs:range petras:DataLink ;
+    owl:inverseOf petras:mapsTo .
+
+petras:interpretedAs a owl:ObjectProperty ;
+    rdfs:label "interpreted as"@en ;
+    rdfs:comment "Interpreted DataSet derived from this raw artifact."@en ;
+    rdfs:domain petras:DataLake ;
+    rdfs:range petras:DataSet ;
+    owl:inverseOf petras:sourceDatalakeIDs .
+
+petras:hasStoredResult a owl:ObjectProperty ;
+    rdfs:label "has stored result"@en ;
+    rdfs:comment "Computational fact produced from this DataSet."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range petras:DataStore ;
+    owl:inverseOf petras:referencesDataSet .
+
+petras:isJustifiedBy a owl:ObjectProperty ;
+    rdfs:label "is justified by"@en ;
+    rdfs:comment "Documentary source justifying this entity's modelling assumptions."@en ;
+    rdfs:domain petras:OntologyEntity ;
+    rdfs:range petras:DataSources ;
+    owl:inverseOf petras:relevantTo .
+
+petras:supportsDecision a owl:ObjectProperty ;
+    rdfs:label "supports decision"@en ;
+    rdfs:comment "Decision resting on this DataSet as evidence."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range petras:Decision ;
+    owl:inverseOf petras:basedOnDataSet .
+
+petras:eventSupportsDecision a owl:ObjectProperty ;
+    rdfs:label "event supports decision"@en ;
+    rdfs:comment "Decision resting on this stored event as evidence."@en ;
+    rdfs:domain petras:DataStore ;
+    rdfs:range petras:Decision ;
+    owl:inverseOf petras:basedOnEvent .
+
+petras:recommendationOf a owl:ObjectProperty ;
+    rdfs:label "recommendation of"@en ;
+    rdfs:comment "Decision from which this recommendation was derived."@en ;
+    rdfs:domain petras:Recommendation ;
+    rdfs:range petras:Decision ;
+    owl:inverseOf petras:hasRecommendation .
+
+petras:isTargetedBy a owl:ObjectProperty ;
+    rdfs:label "is targeted by"@en ;
+    rdfs:comment "Recommendation directed at this location."@en ;
+    rdfs:domain petras:DataSet ;
+    rdfs:range petras:Recommendation ;
+    owl:inverseOf petras:targetsLocation .
+
+petras:isCoordinateSystemOf a owl:ObjectProperty ;
+    rdfs:label "is coordinate system of"@en ;
+    rdfs:comment "Artifact georeferenced in this coordinate system."@en ;
+    rdfs:domain petras:CoordinateSystem ;
+    rdfs:range petras:DescribedArtifact ;
+    owl:inverseOf petras:hasCoordinateSystem .

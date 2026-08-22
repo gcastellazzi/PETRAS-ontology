@@ -1,0 +1,1201 @@
+{
+  "nodes": [
+    {
+      "id": "urn:petras:a10705fda356",
+      "label": "TLS point cloud (raw)",
+      "layer": "datalake",
+      "type": "DataLake",
+      "x": -0.45,
+      "y": 0.6666666666666667,
+      "size": 14.0,
+      "color": "#E5C07B",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:a10705fda356",
+        "@type": "DataLake",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "TLS point cloud (raw)",
+        "description": "Raw survey acquisition metadata only"
+      }
+    },
+    {
+      "id": "urn:petras:c8283c1beb88",
+      "label": "Cloud slices Z",
+      "layer": "datalake",
+      "type": "SliceSet",
+      "x": -0.08750000000000002,
+      "y": -1.0,
+      "size": 16.0,
+      "color": "#E5C07B",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:c8283c1beb88",
+        "@type": "SliceSet",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Cloud slices Z",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:f431cc423487",
+      "label": "IoT sensor export",
+      "layer": "datalake",
+      "type": "DataLake",
+      "x": -0.45,
+      "y": -0.33333333333333326,
+      "size": 14.0,
+      "color": "#E5C07B",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:f431cc423487",
+        "@type": "DataLake",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "IoT sensor export",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:3926e6a0ab8d",
+      "label": "HEX8 solid mesh",
+      "layer": "datasets",
+      "type": "DataSet",
+      "x": 0.09374999999999994,
+      "y": -1.0,
+      "size": 18.0,
+      "color": "#98C379",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:3926e6a0ab8d",
+        "@type": "DataSet",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "HEX8 solid mesh",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:45db2853fdd2",
+      "label": "Annotated point cloud",
+      "layer": "datasets",
+      "type": "DataSet",
+      "x": -0.26875000000000004,
+      "y": 0.5,
+      "size": 26.0,
+      "color": "#98C379",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:45db2853fdd2",
+        "@type": "DataSet",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Annotated point cloud",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:femmodel:b6c5f813ecec",
+      "label": "FinEtoolsModel_01",
+      "layer": "datasets",
+      "type": "FEMModel",
+      "x": 0.27499999999999997,
+      "y": 0.0,
+      "size": 30.0,
+      "color": "#98C379",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:femmodel:b6c5f813ecec",
+        "@type": "FEMModel",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "FinEtoolsModel_01",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:01cdc0cbdb7f",
+      "label": "cloud.import",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -1.0,
+      "y": 1.0,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:01cdc0cbdb7f",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "cloud.import",
+        "plugin": "acquire_cloud",
+        "label": "cloud.import"
+      }
+    },
+    {
+      "id": "urn:petras:06d8d436d628",
+      "label": "report.cite",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.8733333333333333,
+      "y": 1.0,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:06d8d436d628",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "report.cite",
+        "plugin": "event_tracker",
+        "label": "report.cite"
+      }
+    },
+    {
+      "id": "urn:petras:0dec58e46b66",
+      "label": "documents.attach",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.7466666666666667,
+      "y": 1.0,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:0dec58e46b66",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "documents.attach",
+        "plugin": "documents",
+        "label": "documents.attach"
+      }
+    },
+    {
+      "id": "urn:petras:0e9c155c76d2",
+      "label": "decision.support",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.62,
+      "y": 1.0,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:0e9c155c76d2",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "decision.support",
+        "plugin": "diagnostics",
+        "label": "decision.support"
+      }
+    },
+    {
+      "id": "urn:petras:0ebeb3b506b4",
+      "label": "decision.recommend",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -1.0,
+      "y": 0.6,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:0ebeb3b506b4",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "decision.recommend",
+        "plugin": "diagnostics",
+        "label": "decision.recommend"
+      }
+    },
+    {
+      "id": "urn:petras:21c6e80e804a",
+      "label": "report.cite",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.8733333333333333,
+      "y": 0.6,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:21c6e80e804a",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "report.cite",
+        "plugin": "indexer",
+        "label": "report.cite"
+      }
+    },
+    {
+      "id": "urn:petras:2bf3a254e2da",
+      "label": "fem.job",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.7466666666666667,
+      "y": 0.6,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:2bf3a254e2da",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "fem.job",
+        "plugin": "finetools_engine",
+        "label": "fem.job"
+      }
+    },
+    {
+      "id": "urn:petras:363b9c027290",
+      "label": "masonry.check",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.62,
+      "y": 0.6,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:363b9c027290",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "masonry.check",
+        "plugin": "masonry_checks",
+        "label": "masonry.check"
+      }
+    },
+    {
+      "id": "urn:petras:4f7fc1ffe082",
+      "label": "fem.solve",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -1.0,
+      "y": 0.19999999999999996,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:4f7fc1ffe082",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "fem.solve",
+        "plugin": "finetools_engine",
+        "label": "fem.solve"
+      }
+    },
+    {
+      "id": "urn:petras:5ff0bbb0e74a",
+      "label": "cloud2fem.mesh",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.8733333333333333,
+      "y": 0.19999999999999996,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:5ff0bbb0e74a",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "cloud2fem.mesh",
+        "plugin": "cloud2fem",
+        "label": "cloud2fem.mesh"
+      }
+    },
+    {
+      "id": "urn:petras:61b317123c19",
+      "label": "iot.import",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.7466666666666667,
+      "y": 0.19999999999999996,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:61b317123c19",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "iot.import",
+        "plugin": "read_iot",
+        "label": "iot.import"
+      }
+    },
+    {
+      "id": "urn:petras:687ed6d9f0b4",
+      "label": "fem.solve",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -1.0,
+      "y": -0.19999999999999996,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:687ed6d9f0b4",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "fem.solve",
+        "plugin": "finetools_engine",
+        "label": "fem.solve"
+      }
+    },
+    {
+      "id": "urn:petras:6b51615cc4f3",
+      "label": "fem.model",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.8733333333333333,
+      "y": -0.19999999999999996,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:6b51615cc4f3",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "fem.model",
+        "plugin": "fem_generator",
+        "label": "fem.model"
+      }
+    },
+    {
+      "id": "urn:petras:6b803639fe51",
+      "label": "fem.solve",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.7466666666666667,
+      "y": -0.19999999999999996,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:6b803639fe51",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "fem.solve",
+        "plugin": "finetools_engine",
+        "label": "fem.solve"
+      }
+    },
+    {
+      "id": "urn:petras:8bff4e87e8cb",
+      "label": "documents.attach",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.62,
+      "y": -0.19999999999999996,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:8bff4e87e8cb",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "documents.attach",
+        "plugin": "documents",
+        "label": "documents.attach"
+      }
+    },
+    {
+      "id": "urn:petras:a5dadaaaba8c",
+      "label": "fem.material",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -1.0,
+      "y": -0.6000000000000001,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:a5dadaaaba8c",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "fem.material",
+        "plugin": "material_library",
+        "label": "fem.material"
+      }
+    },
+    {
+      "id": "urn:petras:a615f49c0296",
+      "label": "documents.attach",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.8733333333333333,
+      "y": -0.6000000000000001,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:a615f49c0296",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "documents.attach",
+        "plugin": "documents",
+        "label": "documents.attach"
+      }
+    },
+    {
+      "id": "urn:petras:a7dd339a6d4f",
+      "label": "fem.solve",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.7466666666666667,
+      "y": -0.6000000000000001,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:a7dd339a6d4f",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "fem.solve",
+        "plugin": "finetools_engine",
+        "label": "fem.solve"
+      }
+    },
+    {
+      "id": "urn:petras:af30d500899c",
+      "label": "cloud.inspect",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.62,
+      "y": -0.6000000000000001,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:af30d500899c",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "cloud.inspect",
+        "plugin": "acquire_cloud",
+        "label": "cloud.inspect"
+      }
+    },
+    {
+      "id": "urn:petras:b46304e0b48c",
+      "label": "report.cite",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.8733333333333333,
+      "y": -1.0,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:b46304e0b48c",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "report.cite",
+        "plugin": "assistant",
+        "label": "report.cite"
+      }
+    },
+    {
+      "id": "urn:petras:d1990a997400",
+      "label": "cloud.slice",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.7466666666666667,
+      "y": -1.0,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:d1990a997400",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "cloud.slice",
+        "plugin": "slice2d",
+        "label": "cloud.slice"
+      }
+    },
+    {
+      "id": "urn:petras:d35b65c4eb7f",
+      "label": "fem.solve",
+      "layer": "datalinks",
+      "type": "DataLink",
+      "x": -0.62,
+      "y": -1.0,
+      "size": 12.0,
+      "color": "#61AFEF",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:d35b65c4eb7f",
+        "@type": "DataLink",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "operator": "fem.solve",
+        "plugin": "finetools_engine",
+        "label": "fem.solve"
+      }
+    },
+    {
+      "id": "urn:petras:femresult:90904cf9688c",
+      "label": "FEM result 3 (modal)",
+      "layer": "datastore",
+      "type": "FEMResultSet",
+      "x": 0.45625,
+      "y": 0.6,
+      "size": 14.0,
+      "color": "#D19A66",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:femresult:90904cf9688c",
+        "@type": "FEMResultSet",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "FEM result 3 (modal)",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:femresult:96b4393d87d9",
+      "label": "FEM result 5 (modal)",
+      "layer": "datastore",
+      "type": "FEMResultSet",
+      "x": 0.45625,
+      "y": 0.19999999999999996,
+      "size": 14.0,
+      "color": "#D19A66",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:femresult:96b4393d87d9",
+        "@type": "FEMResultSet",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "FEM result 5 (modal)",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:femresult:97b65298404d",
+      "label": "FEM result 1 (linear_statics)",
+      "layer": "datastore",
+      "type": "FEMResultSet",
+      "x": 0.45625,
+      "y": -1.0,
+      "size": 18.0,
+      "color": "#D19A66",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:femresult:97b65298404d",
+        "@type": "FEMResultSet",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "FEM result 1 (linear_statics)",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:femresult:c0387ddac1f1",
+      "label": "FEM result 4 (modal)",
+      "layer": "datastore",
+      "type": "FEMResultSet",
+      "x": 0.45625,
+      "y": -0.19999999999999996,
+      "size": 14.0,
+      "color": "#D19A66",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:femresult:c0387ddac1f1",
+        "@type": "FEMResultSet",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "FEM result 4 (modal)",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:femresult:d9929fa17551",
+      "label": "FEM result 2 (linear_statics)",
+      "layer": "datastore",
+      "type": "FEMResultSet",
+      "x": 0.45625,
+      "y": -0.6000000000000001,
+      "size": 14.0,
+      "color": "#D19A66",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:femresult:d9929fa17551",
+        "@type": "FEMResultSet",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "FEM result 2 (linear_statics)",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:99bc03025fe9",
+      "label": "Sensor technical sheet",
+      "layer": "datasources",
+      "type": "DataSources",
+      "x": -0.45,
+      "y": 1.0,
+      "size": 14.0,
+      "color": "#56B6C2",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:99bc03025fe9",
+        "@type": "DataSources",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Sensor technical sheet",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:b68bb66ce775",
+      "label": "Previous external report",
+      "layer": "datasources",
+      "type": "DataSources",
+      "x": -0.45,
+      "y": 0.33333333333333337,
+      "size": 16.0,
+      "color": "#56B6C2",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:b68bb66ce775",
+        "@type": "DataSources",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Previous external report",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:datasources_diag:e1c46ce65591",
+      "label": "In-situ stiffness test",
+      "layer": "datasources",
+      "type": "DiagnosticRecord",
+      "x": -0.45,
+      "y": 0.0,
+      "size": 16.0,
+      "color": "#56B6C2",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:datasources_diag:e1c46ce65591",
+        "@type": "DiagnosticRecord",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "In-situ stiffness test",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:datasources_mat:5c93b9e9278f",
+      "label": "Clay brick M10",
+      "layer": "datasources",
+      "type": "MaterialDefinition",
+      "x": -0.26875000000000004,
+      "y": 0.0,
+      "size": 16.0,
+      "color": "#56B6C2",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:datasources_mat:5c93b9e9278f",
+        "@type": "MaterialDefinition",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Clay brick M10",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:0278b373f0fe",
+      "label": "2012 Emilia seismic sequence",
+      "layer": "analytics",
+      "type": "TemporalEvent",
+      "x": -0.45,
+      "y": -0.6666666666666667,
+      "size": 14.0,
+      "color": "#C678DD",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:0278b373f0fe",
+        "@type": "TemporalEvent",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "2012 Emilia seismic sequence",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:5113986f8219",
+      "label": "Monitoring (T, DX, DY)",
+      "layer": "analytics",
+      "type": "SensorRecord",
+      "x": -0.26875000000000004,
+      "y": -0.5,
+      "size": 14.0,
+      "color": "#C678DD",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:5113986f8219",
+        "@type": "SensorRecord",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Monitoring (T, DX, DY)",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:65292578c9dc",
+      "label": "Command history snapshot",
+      "layer": "analytics",
+      "type": "CommandHistorySnapshot",
+      "x": -0.62,
+      "y": 0.19999999999999996,
+      "size": 12.0,
+      "color": "#C678DD",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:65292578c9dc",
+        "@type": "CommandHistorySnapshot",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Command history snapshot",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:a4ece0b57deb",
+      "label": "Strengthen west fa\u00e7ade",
+      "layer": "analytics",
+      "type": "Decision",
+      "x": 0.8187500000000001,
+      "y": 0.0,
+      "size": 16.0,
+      "color": "#C678DD",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:a4ece0b57deb",
+        "@type": "Decision",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Strengthen west fa\u00e7ade",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:analytics:bfbcbb8fc524",
+      "label": "Damage region selection",
+      "layer": "analytics",
+      "type": "PointSelection3D",
+      "x": -0.08750000000000002,
+      "y": 0.5,
+      "size": 14.0,
+      "color": "#C678DD",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:analytics:bfbcbb8fc524",
+        "@type": "PointSelection3D",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Damage region selection",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:analytics_finetools_job:5ea2c68504d4",
+      "label": "Solver job linear_statics",
+      "layer": "analytics",
+      "type": "FinEtoolsJob",
+      "x": 0.45625,
+      "y": 1.0,
+      "size": 14.0,
+      "color": "#C678DD",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:analytics_finetools_job:5ea2c68504d4",
+        "@type": "FinEtoolsJob",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Solver job linear_statics",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:analytics_masonry_check:2a4d790996a0",
+      "label": "Masonry check NTC",
+      "layer": "analytics",
+      "type": "MasonryCheckResult",
+      "x": 0.6375,
+      "y": 1.0,
+      "size": 16.0,
+      "color": "#C678DD",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:analytics_masonry_check:2a4d790996a0",
+        "@type": "MasonryCheckResult",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Masonry check NTC",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:b9b68ebb97dd",
+      "label": "Install tie rods",
+      "layer": "analytics",
+      "type": "Recommendation",
+      "x": 1.0,
+      "y": 0.0,
+      "size": 14.0,
+      "color": "#C678DD",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:b9b68ebb97dd",
+        "@type": "Recommendation",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Install tie rods",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:f89af65da06a",
+      "label": "Project structural index",
+      "layer": "analytics",
+      "type": "ProjectIndex",
+      "x": -0.45,
+      "y": -1.0,
+      "size": 14.0,
+      "color": "#C678DD",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:f89af65da06a",
+        "@type": "ProjectIndex",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Project structural index",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:assistant_session:89595c2ab6c8",
+      "label": "Assistant session",
+      "layer": "reports",
+      "type": "AssistantChatSession",
+      "x": -1.0,
+      "y": -1.0,
+      "size": 12.0,
+      "color": "#E06C75",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:assistant_session:89595c2ab6c8",
+        "@type": "AssistantChatSession",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Assistant session",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:project_report:27fa2233e009",
+      "label": "Full comprehensive report",
+      "layer": "reports",
+      "type": "ProjectReport",
+      "x": -0.26875000000000004,
+      "y": -1.0,
+      "size": 16.0,
+      "color": "#E06C75",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:project_report:27fa2233e009",
+        "@type": "ProjectReport",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Full comprehensive report",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    },
+    {
+      "id": "urn:petras:project_report:a46c035d6e07",
+      "label": "Technical internal report",
+      "layer": "reports",
+      "type": "ProjectReport",
+      "x": 0.6375,
+      "y": -1.0,
+      "size": 14.0,
+      "color": "#E06C75",
+      "missing": false,
+      "data": {
+        "@id": "urn:petras:project_report:a46c035d6e07",
+        "@type": "ProjectReport",
+        "createdAt": "2026-08-22T16:27:12Z",
+        "label": "Technical internal report",
+        "description": "Empty shell \u2014 no binary payload"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "urn:petras:a10705fda356",
+      "target": "urn:petras:45db2853fdd2",
+      "operator": "cloud.inspect",
+      "plugin": "acquire_cloud",
+      "datalinkId": "urn:petras:01cdc0cbdb7f",
+      "edgeKind": "datalink",
+      "sequence": 19
+    },
+    {
+      "source": "urn:petras:c8283c1beb88",
+      "target": "urn:petras:3926e6a0ab8d",
+      "operator": "cloud2fem.mesh",
+      "plugin": "cloud2fem",
+      "datalinkId": "urn:petras:5ff0bbb0e74a",
+      "edgeKind": "datalink",
+      "sequence": 10
+    },
+    {
+      "source": "urn:petras:f431cc423487",
+      "target": "urn:petras:5113986f8219",
+      "operator": "iot.import",
+      "plugin": "read_iot",
+      "datalinkId": "urn:petras:61b317123c19",
+      "edgeKind": "datalink",
+      "sequence": 11
+    },
+    {
+      "source": "urn:petras:3926e6a0ab8d",
+      "target": "urn:petras:femmodel:b6c5f813ecec",
+      "operator": "fem.model",
+      "plugin": "fem_generator",
+      "datalinkId": "urn:petras:6b51615cc4f3",
+      "edgeKind": "datalink",
+      "sequence": 13
+    },
+    {
+      "source": "urn:petras:45db2853fdd2",
+      "target": "urn:petras:c8283c1beb88",
+      "operator": "cloud.slice",
+      "plugin": "slice2d",
+      "datalinkId": "urn:petras:d1990a997400",
+      "edgeKind": "datalink",
+      "sequence": 21
+    },
+    {
+      "source": "urn:petras:45db2853fdd2",
+      "target": "urn:petras:3926e6a0ab8d",
+      "operator": "source dataset",
+      "plugin": "inferred",
+      "datalinkId": "",
+      "edgeKind": "inferred",
+      "sequence": null
+    },
+    {
+      "source": "urn:petras:45db2853fdd2",
+      "target": "urn:petras:analytics:bfbcbb8fc524",
+      "operator": "source dataset",
+      "plugin": "inferred",
+      "datalinkId": "",
+      "edgeKind": "inferred",
+      "sequence": null
+    },
+    {
+      "source": "urn:petras:femmodel:b6c5f813ecec",
+      "target": "urn:petras:analytics_finetools_job:5ea2c68504d4",
+      "operator": "fem.job",
+      "plugin": "finetools_engine",
+      "datalinkId": "urn:petras:2bf3a254e2da",
+      "edgeKind": "datalink",
+      "sequence": 7
+    },
+    {
+      "source": "urn:petras:femmodel:b6c5f813ecec",
+      "target": "urn:petras:femresult:90904cf9688c",
+      "operator": "fem.solve",
+      "plugin": "finetools_engine",
+      "datalinkId": "urn:petras:4f7fc1ffe082",
+      "edgeKind": "datalink",
+      "sequence": 9
+    },
+    {
+      "source": "urn:petras:femmodel:b6c5f813ecec",
+      "target": "urn:petras:femresult:96b4393d87d9",
+      "operator": "fem.solve",
+      "plugin": "finetools_engine",
+      "datalinkId": "urn:petras:687ed6d9f0b4",
+      "edgeKind": "datalink",
+      "sequence": 12
+    },
+    {
+      "source": "urn:petras:femmodel:b6c5f813ecec",
+      "target": "urn:petras:femresult:c0387ddac1f1",
+      "operator": "fem.solve",
+      "plugin": "finetools_engine",
+      "datalinkId": "urn:petras:6b803639fe51",
+      "edgeKind": "datalink",
+      "sequence": 14
+    },
+    {
+      "source": "urn:petras:femmodel:b6c5f813ecec",
+      "target": "urn:petras:femresult:97b65298404d",
+      "operator": "fem.solve",
+      "plugin": "finetools_engine",
+      "datalinkId": "urn:petras:a7dd339a6d4f",
+      "edgeKind": "datalink",
+      "sequence": 18
+    },
+    {
+      "source": "urn:petras:femmodel:b6c5f813ecec",
+      "target": "urn:petras:femresult:d9929fa17551",
+      "operator": "fem.solve",
+      "plugin": "finetools_engine",
+      "datalinkId": "urn:petras:d35b65c4eb7f",
+      "edgeKind": "datalink",
+      "sequence": 22
+    },
+    {
+      "source": "urn:petras:femresult:97b65298404d",
+      "target": "urn:petras:analytics_masonry_check:2a4d790996a0",
+      "operator": "masonry.check",
+      "plugin": "masonry_checks",
+      "datalinkId": "urn:petras:363b9c027290",
+      "edgeKind": "datalink",
+      "sequence": 8
+    },
+    {
+      "source": "urn:petras:femresult:97b65298404d",
+      "target": "urn:petras:project_report:a46c035d6e07",
+      "operator": "report.cite",
+      "plugin": "assistant",
+      "datalinkId": "urn:petras:b46304e0b48c",
+      "edgeKind": "datalink",
+      "sequence": 20
+    },
+    {
+      "source": "urn:petras:99bc03025fe9",
+      "target": "urn:petras:45db2853fdd2",
+      "operator": "documents.attach",
+      "plugin": "documents",
+      "datalinkId": "urn:petras:0dec58e46b66",
+      "edgeKind": "datalink",
+      "sequence": 3
+    },
+    {
+      "source": "urn:petras:b68bb66ce775",
+      "target": "urn:petras:femmodel:b6c5f813ecec",
+      "operator": "documents.attach",
+      "plugin": "documents",
+      "datalinkId": "urn:petras:a615f49c0296",
+      "edgeKind": "datalink",
+      "sequence": 17
+    },
+    {
+      "source": "urn:petras:b68bb66ce775",
+      "target": "urn:petras:45db2853fdd2",
+      "operator": "documents",
+      "plugin": "inferred",
+      "datalinkId": "",
+      "edgeKind": "inferred",
+      "sequence": null
+    },
+    {
+      "source": "urn:petras:datasources_diag:e1c46ce65591",
+      "target": "urn:petras:datasources_mat:5c93b9e9278f",
+      "operator": "documents.attach",
+      "plugin": "documents",
+      "datalinkId": "urn:petras:8bff4e87e8cb",
+      "edgeKind": "datalink",
+      "sequence": 15
+    },
+    {
+      "source": "urn:petras:datasources_diag:e1c46ce65591",
+      "target": "urn:petras:45db2853fdd2",
+      "operator": "documents",
+      "plugin": "inferred",
+      "datalinkId": "",
+      "edgeKind": "inferred",
+      "sequence": null
+    },
+    {
+      "source": "urn:petras:datasources_mat:5c93b9e9278f",
+      "target": "urn:petras:femmodel:b6c5f813ecec",
+      "operator": "fem.material",
+      "plugin": "material_library",
+      "datalinkId": "urn:petras:a5dadaaaba8c",
+      "edgeKind": "datalink",
+      "sequence": 16
+    },
+    {
+      "source": "urn:petras:0278b373f0fe",
+      "target": "urn:petras:project_report:27fa2233e009",
+      "operator": "report.cite",
+      "plugin": "event_tracker",
+      "datalinkId": "urn:petras:06d8d436d628",
+      "edgeKind": "datalink",
+      "sequence": 2
+    },
+    {
+      "source": "urn:petras:a4ece0b57deb",
+      "target": "urn:petras:b9b68ebb97dd",
+      "operator": "decision.recommend",
+      "plugin": "diagnostics",
+      "datalinkId": "urn:petras:0ebeb3b506b4",
+      "edgeKind": "datalink",
+      "sequence": 5
+    },
+    {
+      "source": "urn:petras:analytics_masonry_check:2a4d790996a0",
+      "target": "urn:petras:a4ece0b57deb",
+      "operator": "decision.support",
+      "plugin": "diagnostics",
+      "datalinkId": "urn:petras:0e9c155c76d2",
+      "edgeKind": "datalink",
+      "sequence": 4
+    },
+    {
+      "source": "urn:petras:f89af65da06a",
+      "target": "urn:petras:project_report:27fa2233e009",
+      "operator": "report.cite",
+      "plugin": "indexer",
+      "datalinkId": "urn:petras:21c6e80e804a",
+      "edgeKind": "datalink",
+      "sequence": 6
+    }
+  ],
+  "layout": "flow",
+  "layers": [
+    {
+      "id": "datalake",
+      "label": "DataLake",
+      "color": "#E5C07B",
+      "group": "core"
+    },
+    {
+      "id": "datasets",
+      "label": "DataSet",
+      "color": "#98C379",
+      "group": "core"
+    },
+    {
+      "id": "datalinks",
+      "label": "DataLink",
+      "color": "#61AFEF",
+      "group": "core"
+    },
+    {
+      "id": "datastore",
+      "label": "DataStore",
+      "color": "#D19A66",
+      "group": "core"
+    },
+    {
+      "id": "datasources",
+      "label": "DataSources",
+      "color": "#56B6C2",
+      "group": "service"
+    },
+    {
+      "id": "analytics",
+      "label": "DataAnalytics",
+      "color": "#C678DD",
+      "group": "service"
+    },
+    {
+      "id": "reports",
+      "label": "DataReporting",
+      "color": "#E06C75",
+      "group": "service"
+    }
+  ],
+  "stats": {
+    "nodeCount": 49,
+    "edgeCount": 25
+  },
+  "project": {
+    "name": "Cathedral Shell",
+    "description": "Empty-shell demonstrator aligned with the PETRAS benchmark backbone (acquisition \u2192 mesh \u2192 FEM \u2192 analytics \u2192 report).",
+    "ontology": "PETRAS",
+    "root": "/Users/gcastellazzi/Dropbox/GitHub/PETRAS-ontology/demos/cathedral-shell",
+    "legacy": false,
+    "layerCounts": {
+      "datalake": 3,
+      "datasets": 3,
+      "datalinks": 22,
+      "datastore": 5,
+      "datasources": 4,
+      "analytics": 9,
+      "reports": 3
+    },
+    "totalEntities": 49
+  }
+}

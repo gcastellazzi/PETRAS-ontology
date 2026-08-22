@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "petras"
+version = "0.1.0"
+description = "PETRAS ontology project I/O and connectivity graph tooling"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "CC-BY-4.0" }
+authors = [{ name = "Giovanni Castellazzi" }]
+dependencies = [
+  "networkx>=3.2",
+  "orjson>=3.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+petras = "petras.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["petras*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

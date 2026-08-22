@@ -1,0 +1,11 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:femmodel:b6c5f813ecec",
+  "@type": "FEMModel",
+  "createdAt": "2026-08-22T16:27:12Z",
+  "label": "FinEtoolsModel_01",
+  "description": "Empty shell \u2014 no binary payload",
+  "sourceMeshDatasetId": "urn:petras:3926e6a0ab8d",
+  "solverElementType": "Hex8",
+  "solverTheory": "solid"
+}

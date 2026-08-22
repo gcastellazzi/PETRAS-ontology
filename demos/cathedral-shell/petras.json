@@ -1,0 +1,8 @@
+{
+  "name": "Cathedral Shell",
+  "description": "Empty-shell demonstrator aligned with the PETRAS benchmark backbone (acquisition \u2192 mesh \u2192 FEM \u2192 analytics \u2192 report).",
+  "version": "0.1.0",
+  "ontology": "PETRAS",
+  "ontologyVersion": "0.2.0",
+  "context": "https://w3id.org/petras/context.jsonld"
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:femresult:d9929fa17551",
+  "@type": "FEMResultSet",
+  "createdAt": "2026-08-22T16:27:12Z",
+  "label": "FEM result 2 (linear_statics)",
+  "description": "Empty shell \u2014 no binary payload",
+  "analysisType": "linear_statics",
+  "sourceModelId": "urn:petras:femmodel:b6c5f813ecec"
+}

@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "petras": "https://w3id.org/petras/ontology#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+
+    "DataLake": "petras:DataLake",
+    "DataSet": "petras:DataSet",
+    "DataLink": "petras:DataLink",
+    "DataStore": "petras:DataStore",
+    "DataSources": "petras:DataSources",
+    "DataAnalytics": "petras:DataAnalytics",
+    "DataReporting": "petras:DataReporting",
+    "DataEvent": "petras:DataEvent",
+    "SurveyData": "petras:SurveyData",
+    "IoTStream": "petras:IoTStream",
+    "PointCloudDataSet": "petras:PointCloudDataSet",
+    "MeshDataSet": "petras:MeshDataSet",
+    "FEMDataSet": "petras:FEMDataSet",
+    "VoxelDataSet": "petras:VoxelDataSet",
+    "GeometricMapping": "petras:GeometricMapping",
+    "OperatorChain": "petras:OperatorChain",
+    "StatisticalModel": "petras:StatisticalModel",
+    "AnomalyDetection": "petras:AnomalyDetection",
+    "DecisionTrigger": "petras:DecisionTrigger",
+    "ProjectIndex": "petras:ProjectIndex",
+    "DecisionSupportEntity": "petras:DecisionSupportEntity",
+    "Decision": "petras:Decision",
+    "Recommendation": "petras:Recommendation",
+    "AssistantChatSession": "petras:AssistantChatSession",
+    "CommandExecutionRecord": "petras:CommandExecutionRecord",
+
+    "createdAt": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "fileURI": {
+      "@id": "petras:hasFileURI",
+      "@type": "@id"
+    },
+    "format": "petras:format",
+    "checksum": "petras:checksum",
+    "description": "rdfs:comment",
+    "label": "rdfs:label",
+
+    "geometryURI": {
+      "@id": "petras:hasGeometryURI",
+      "@type": "@id"
+    },
+    "geometryType": "petras:geometryType",
+    "materials": "petras:materials",
+    "boundaryConditions": "petras:boundaryConditions",
+    "discretization": "petras:discretization",
+    "version": "petras:version",
+    "parentID": {
+      "@id": "petras:parentVersion",
+      "@type": "@id"
+    },
+    "sourceDatalakeIDs": {
+      "@id": "petras:sourceDatalake",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "sourceDatasetIDs": {
+      "@id": "petras:sourceDataset",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "mapsFrom": {
+      "@id": "petras:mapsFrom",
+      "@type": "@id"
+    },
+    "mapsTo": {
+      "@id": "petras:mapsTo",
+      "@type": "@id"
+    },
+    "operator": "petras:operator",
+    "parameters": "petras:parameters",
+    "plugin": "petras:plugin",
+
+    "eventType": "petras:eventType",
+    "deltaGeometry": "petras:deltaGeometry",
+    "deltaAttributes": "petras:deltaAttributes",
+    "agent": "prov:wasAssociatedWith",
+    "confidence": "petras:confidence",
+    "parentEventID": {
+      "@id": "petras:parentEvent",
+      "@type": "@id"
+    },
+    "outputURIs": {
+      "@id": "petras:outputURI",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "linkedEntities": {
+      "@id": "petras:linkedEntities",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  }
+}

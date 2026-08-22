@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:687ed6d9f0b4",
+  "@type": "DataLink",
+  "createdAt": "2026-08-22T16:27:12Z",
+  "mapsFrom": "urn:petras:femmodel:b6c5f813ecec",
+  "mapsTo": "urn:petras:femresult:96b4393d87d9",
+  "operator": "fem.solve",
+  "plugin": "finetools_engine",
+  "parameters": {},
+  "label": "fem.solve"
+}

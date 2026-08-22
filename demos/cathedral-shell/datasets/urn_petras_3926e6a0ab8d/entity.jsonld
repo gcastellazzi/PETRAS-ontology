@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:3926e6a0ab8d",
+  "@type": "DataSet",
+  "createdAt": "2026-08-22T16:27:12Z",
+  "label": "HEX8 solid mesh",
+  "description": "Empty shell \u2014 no binary payload",
+  "geometryType": "mesh3d",
+  "sourceDatasetIDs": [
+    "urn:petras:45db2853fdd2"
+  ],
+  "version": 1
+}

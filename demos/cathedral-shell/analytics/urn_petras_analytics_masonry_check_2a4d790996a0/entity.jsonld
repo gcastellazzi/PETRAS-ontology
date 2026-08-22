@@ -1,0 +1,9 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:analytics_masonry_check:2a4d790996a0",
+  "@type": "MasonryCheckResult",
+  "createdAt": "2026-08-22T16:27:12Z",
+  "label": "Masonry check NTC",
+  "description": "Empty shell \u2014 no binary payload",
+  "basedOn": "urn:petras:femresult:97b65298404d"
+}

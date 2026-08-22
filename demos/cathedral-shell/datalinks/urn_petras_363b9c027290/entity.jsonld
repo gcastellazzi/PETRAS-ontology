@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:363b9c027290",
+  "@type": "DataLink",
+  "createdAt": "2026-08-22T16:27:12Z",
+  "mapsFrom": "urn:petras:femresult:97b65298404d",
+  "mapsTo": "urn:petras:analytics_masonry_check:2a4d790996a0",
+  "operator": "masonry.check",
+  "plugin": "masonry_checks",
+  "parameters": {},
+  "label": "masonry.check"
+}
