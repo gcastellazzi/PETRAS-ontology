@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:geom:72adef7532c4",
+  "@type": "Mesh3D",
+  "version": 1,
+  "parentID": null,
+  "createdAt": "2026-07-27T16:07:11.269541+00:00",
+  "dataURI": "mesh3d.npz",
+  "nNodes": 157011,
+  "nElements": 122851,
+  "elementType": "hex"
+}

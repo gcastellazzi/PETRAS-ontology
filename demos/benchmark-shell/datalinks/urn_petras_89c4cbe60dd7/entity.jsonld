@@ -1,0 +1,15 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:89c4cbe60dd7",
+  "@type": "DataLink",
+  "createdAt": "2026-08-20T12:15:19.838362+00:00",
+  "mapsFrom": "urn:petras:femresult:4f0413c2c0f3",
+  "mapsTo": "urn:petras:analytics:ce0860fbb1a34d4cb1652ad9bcfc999b",
+  "operator": "labels.link_result_auto",
+  "parameters": {
+    "model": "urn:petras:femmodel:6aa1378dd920",
+    "dataset": "urn:petras:5cb3c5c8d631",
+    "field": ""
+  },
+  "plugin": "labels"
+}

@@ -1,0 +1,83 @@
+{
+  "@id": "urn:petras:analytics:7484c4e316ce48eabf9d34fdd87ff0ac",
+  "artifact_type": "inspect_cloud_compare_fem",
+  "method": "inspect_cloud.compare_fem",
+  "plugin": "inspect_cloud",
+  "sourceDatasetId": "urn:petras:4deaa0b067cc",
+  "targetDatasetId": "urn:petras:5da5159f4127",
+  "distanceTargetDatasetId": "urn:petras:4deaa0b067cc",
+  "distanceReferenceDatasetId": "urn:petras:5da5159f4127",
+  "inputs": [
+    "urn:petras:4deaa0b067cc",
+    "urn:petras:5da5159f4127"
+  ],
+  "outputs": {
+    "performance_score_pct": 56.141692791281606,
+    "gap_target": 0.06051690345668351,
+    "histogram_counts": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 64,
+      "sample": [
+        968813,
+        399747
+      ]
+    },
+    "histogram_edges": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 65,
+      "sample": [
+        0.0,
+        0.05203611817719671
+      ]
+    },
+    "mean": 0.1616549977849553,
+    "median": 0.05103618457015102,
+    "rmse": 0.38301300128861865,
+    "p95": 0.6650734154157437,
+    "max": 3.3303115633405893,
+    "direction": "cloud_to_fem",
+    "sampled_count": 1910076,
+    "source_count": 1910076,
+    "fields_written": true,
+    "field_keys": [
+      "fem_gap_distance",
+      "fem_gap_bin",
+      "fem_gap_within_gap"
+    ]
+  },
+  "parameters": {
+    "cloudDatasetId": "urn:petras:4deaa0b067cc",
+    "femDatasetId": "urn:petras:femmodel:08ee90084402",
+    "meshDatasetId": "urn:petras:5da5159f4127",
+    "direction": "cloud_to_fem",
+    "clusters": 64,
+    "gap_target": 0.06051690345668351,
+    "gap_target_mode": "auto",
+    "output_key": "fem_gap",
+    "max_sample": 100000000,
+    "sampled_count": 1910076,
+    "source_count": 1910076,
+    "surface_geometry": "mesh2d",
+    "surface_persistent": true,
+    "distanceTargetDatasetId": "urn:petras:4deaa0b067cc",
+    "distanceReferenceDatasetId": "urn:petras:5da5159f4127"
+  },
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "DataAnalytics",
+  "createdAt": "2026-08-08T20:06:11.546490+00:00",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-08T20:06:11.551261+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-08T20:06:11.551261+00:00"
+}

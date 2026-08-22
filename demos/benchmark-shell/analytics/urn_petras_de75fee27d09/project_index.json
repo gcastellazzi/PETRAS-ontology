@@ -1,0 +1,568 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-08T22:56:18.058438+00:00",
+  "generator": "petras.indexer.v1",
+  "project": {
+    "name": "Project_0",
+    "root": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+    "ontology": "DDIM-DDT"
+  },
+  "stats": {
+    "entities": 24,
+    "refs_edges": 21,
+    "jsonld_files": 26,
+    "artifact_files": 25,
+    "warnings": 7
+  },
+  "entities": {
+    "urn:petras:0273e9655a35": {
+      "layer": "datalake",
+      "type": "SliceSet",
+      "folder": "datalake/urn_petras_0273e9655a35",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 14,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "classification.json"
+            },
+            "size_bytes": 1783,
+            "mtime_utc": "2026-07-08T15:13:06.422129+00:00",
+            "sha256": "08461a6ab83a7c9ed3019c2d750f1a1ef00661cf31cc949b008538c963e95a9c"
+          },
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "classification.npz"
+            },
+            "size_bytes": 1414216,
+            "mtime_utc": "2026-07-08T15:13:06.769419+00:00",
+            "sha256": "62a2077d2a1a374a5b3aa150f73e2218d6f7730979694a1ed8cbf8c4d6cd8069"
+          }
+        ]
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:32f7202be022": {
+      "layer": "datalake",
+      "type": "DataLake",
+      "folder": "datalake/urn_petras_32f7202be022",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "rocca.ply"
+            },
+            "size_bytes": 30561462,
+            "mtime_utc": "2024-02-25T09:54:38.404473+00:00",
+            "sha256": "9d78e4dda65b4b5ee1f62a4166de8d2d0369ae56a613f0d71059cf0affe54792"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:2184e7a90d8c": {
+      "layer": "datasets",
+      "type": "DataSet",
+      "folder": "datasets/urn_petras_2184e7a90d8c",
+      "jsonld_files": [
+        "dataset.jsonld",
+        "mesh3d.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "mesh3d.npz"
+            },
+            "size_bytes": 3794856,
+            "mtime_utc": "2026-07-08T22:54:59.081913+00:00",
+            "sha256": "95f1cdf1a598e275105a5b60e6badb9c60b56f4bbaa4b0ae3b95b2ad1759c6a8"
+          }
+        ]
+      },
+      "refs_out": [
+        "urn:petras:0273e9655a35",
+        "urn:petras:geom:f4f647110b11"
+      ]
+    },
+    "urn:petras:4deaa0b067cc": {
+      "layer": "datasets",
+      "type": "DataSet",
+      "folder": "datasets/urn_petras_4deaa0b067cc",
+      "jsonld_files": [
+        "dataset.jsonld",
+        "pointcloud.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "pointcloud.npz"
+            },
+            "size_bytes": 247235118,
+            "mtime_utc": "2026-07-08T08:15:54.458302+00:00",
+            "sha256": "c90f058cd9b0c2b1992c8a3c19f7f8e6d3587cdce1dbddfefba452bde47f3f1a"
+          }
+        ]
+      },
+      "refs_out": [
+        "urn:petras:32f7202be022",
+        "urn:petras:geom:bef31e7c3c68"
+      ]
+    },
+    "urn:petras:16f3d7c3909d": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_16f3d7c3909d",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:69885997159f": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_69885997159f",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:8206f7f15fed": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_8206f7f15fed",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:c5766806512c": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_c5766806512c",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc",
+        "urn:petras:79bde0e29615"
+      ]
+    },
+    "urn:petras:d3ddf532e6ce": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_d3ddf532e6ce",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:32f7202be022",
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:d96427b40530": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_d96427b40530",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:0273e9655a35",
+        "urn:petras:2184e7a90d8c"
+      ]
+    },
+    "urn:petras:e9a5957e9d20": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_e9a5957e9d20",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:0273e9655a35",
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:fc44ef4192ac": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_fc44ef4192ac",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:130f9916edbd": {
+      "layer": "analytics",
+      "type": "CommandHistorySnapshot",
+      "folder": "analytics/urn_petras_130f9916edbd",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "command_history.json"
+            },
+            "size_bytes": 137901,
+            "mtime_utc": "2026-07-08T22:46:27.726492+00:00",
+            "sha256": "ea5bf1d0abc7c6f1d874c7c3aa65f8a2629d4a9cf92bde3d139065eabdb8a0ae"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:55c96c3447d4": {
+      "layer": "analytics",
+      "type": "ProjectIndex",
+      "folder": "analytics/urn_petras_55c96c3447d4",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "project_index.json"
+            },
+            "size_bytes": 9309,
+            "mtime_utc": "2026-07-08T12:45:34.749441+00:00",
+            "sha256": "d33e754364b2743fde0ae4534384bf657841141e801656d5e3c4108b9089d05d"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:61e4806009e3": {
+      "layer": "analytics",
+      "type": "ProjectIndex",
+      "folder": "analytics/urn_petras_61e4806009e3",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "project_index.json"
+            },
+            "size_bytes": 12993,
+            "mtime_utc": "2026-07-08T22:54:05.085596+00:00",
+            "sha256": "d69ecbe21a700fc5de25237c6c03470e7fb69881a5b42713ecb52b09b67155da"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:6a9e5a591bb2": {
+      "layer": "analytics",
+      "type": "ProjectIndex",
+      "folder": "analytics/urn_petras_6a9e5a591bb2",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "project_index.json"
+            },
+            "size_bytes": 6243,
+            "mtime_utc": "2026-07-08T12:25:51.888604+00:00",
+            "sha256": "4e0bb2cf433ffc97b12ead97ce05b71f9b2d89813608bf3d89ea04dad6644f55"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:7450ca0b70f5": {
+      "layer": "analytics",
+      "type": "ProjectIndex",
+      "folder": "analytics/urn_petras_7450ca0b70f5",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "project_index.json"
+            },
+            "size_bytes": 4768,
+            "mtime_utc": "2026-07-08T08:17:34.860029+00:00",
+            "sha256": "c7463e380a3c668fb7fd450c09fd8b64aa7d15e368ade52851b3b0dc962e995e"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:9685dd054e54": {
+      "layer": "analytics",
+      "type": "ProjectIndex",
+      "folder": "analytics/urn_petras_9685dd054e54",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "project_index.json"
+            },
+            "size_bytes": 14552,
+            "mtime_utc": "2026-07-08T22:55:54.506645+00:00",
+            "sha256": "784f3102178d836a245b0189c21f4792c5d9e9b8eb5e417084bc029d843f09fa"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:a7144d86e382": {
+      "layer": "analytics",
+      "type": "CommandHistorySnapshot",
+      "folder": "analytics/urn_petras_a7144d86e382",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "command_history.json"
+            },
+            "size_bytes": 69648,
+            "mtime_utc": "2026-07-08T21:31:18.811330+00:00",
+            "sha256": "98835932bbaba1f8707922b6770ef3cefa7838036099e2db7d81830816e7b091"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:analytics:20242bc1e2ea474881295ef066f72a41": {
+      "layer": "analytics",
+      "type": "DataAnalytics",
+      "folder": "analytics/urn_petras_analytics_20242bc1e2ea474881295ef066f72a41",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:analytics:2c3b85ed933843e0b4ea6793545bc755": {
+      "layer": "analytics",
+      "type": "DataAnalytics",
+      "folder": "analytics/urn_petras_analytics_2c3b85ed933843e0b4ea6793545bc755",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:analytics:a26818c3ed0b46f7a8c22d7a1a1b925f": {
+      "layer": "analytics",
+      "type": "DataAnalytics",
+      "folder": "analytics/urn_petras_analytics_a26818c3ed0b46f7a8c22d7a1a1b925f",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:analytics:e899a16e4c3447708a6c392731165c40": {
+      "layer": "analytics",
+      "type": "DataAnalytics",
+      "folder": "analytics/urn_petras_analytics_e899a16e4c3447708a6c392731165c40",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:f32711ee0722": {
+      "layer": "analytics",
+      "type": "CommandHistorySnapshot",
+      "folder": "analytics/urn_petras_f32711ee0722",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "command_history.json"
+            },
+            "size_bytes": 68986,
+            "mtime_utc": "2026-07-08T22:27:53.829524+00:00",
+            "sha256": "aaf224c86e71124cce5f24a43b1448f208766ac6b84946c13826ec6aadf78129"
+          }
+        ]
+      },
+      "refs_out": []
+    }
+  },
+  "warnings": [
+    "no dataset.jsonld in datalake/(No OSM DataLake entries)",
+    "no dataset.jsonld in datalake/(No SensorRecord entries)",
+    "no dataset.jsonld in datalake/(No TemporalEvent entries)",
+    "no dataset.jsonld in datasets/(No DataSet available)",
+    "no dataset.jsonld in datasets/urn_petras_regmeta_urn_petras_2184e7a90d8c",
+    "no dataset.jsonld in datasets/urn_petras_regmeta_urn_petras_4deaa0b067cc",
+    "no dataset.jsonld in analytics/cloud2fem_profile_models"
+  ]
+}

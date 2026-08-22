@@ -1,0 +1,30 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:66b29205adf1",
+  "@type": "DataSources",
+  "createdAt": "2026-07-31T08:07:50.363758+00:00",
+  "sourceType": "pdf",
+  "title": "General technical report",
+  "authors": [],
+  "doi": "",
+  "uri": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "1.RG - Relazione Generale.pdf"
+  },
+  "checksum": "6574be2b68daa0d5ced5c82726679185d15c9bfa35b842ab7ea5312acd45ee80",
+  "linkedEntities": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-31T08:07:50.363937+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-31T08:07:50.363937+00:00"
+}

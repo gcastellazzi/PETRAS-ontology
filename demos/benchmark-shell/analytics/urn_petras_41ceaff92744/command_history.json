@@ -1,0 +1,45 @@
+{
+  "commands": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 500,
+    "sample": [
+      {
+        "v": 2,
+        "ts_start": "2026-07-24T12:52:47.445589+00:00",
+        "ts_end": "2026-07-24T12:52:47.463036+00:00",
+        "duration_ms": 9,
+        "queued_ms": 0,
+        "mem_peak_mb": null,
+        "mem_delta_mb": null,
+        "session_id": "93e2cdee-ec13-4cd7-a254-48c5b46de0b3",
+        "project": "Project_0",
+        "project_path": "C:\\Users\\giovanni.castellazzi\\Dropbox\\PETRAS_exchange\\Project_PETRAS_Benchmark",
+        "seq": 1,
+        "cmd": "slice2d.move_vertex",
+        "cli": "slice2d.move_vertex dl:2 7 1 8 62.709767 103.729529",
+        "success": true,
+        "output_snippet": "Moved vertex [8] of poly[1] in slice[7] to (62.709767, 103.729529)\n",
+        "error": null
+      },
+      {
+        "v": 2,
+        "ts_start": "2026-07-24T12:53:15.421158+00:00",
+        "ts_end": "2026-07-24T12:53:15.442590+00:00",
+        "duration_ms": 24,
+        "queued_ms": 0,
+        "mem_peak_mb": null,
+        "mem_delta_mb": null,
+        "session_id": "93e2cdee-ec13-4cd7-a254-48c5b46de0b3",
+        "project": "Project_0",
+        "project_path": "C:\\Users\\giovanni.castellazzi\\Dropbox\\PETRAS_exchange\\Project_PETRAS_Benchmark",
+        "seq": 2,
+        "cmd": "slice2d.move_vertex",
+        "cli": "slice2d.move_vertex dl:2 7 1 9 61.931033 103.766821",
+        "success": true,
+        "output_snippet": "Moved vertex [9] of poly[1] in slice[7] to (61.931033, 103.766821)\n",
+        "error": null
+      }
+    ]
+  }
+}

@@ -74,3 +74,10 @@ Legacy projects can be opened read-only via `petras import-legacy` / the
 | L5 DataSources | Documentary evidence | Service |
 | L6 DataAnalytics | Cross-layer analytics & decision support | Service |
 | L7 DataReporting | Cited reports & session logs | Service |
+
+## Structure shells
+
+Use \`petras extract-structure SOURCE DEST\` to copy a project tree without
+binaries (NPZ, PDF, …) and with large JSON-LD arrays stubbed as \`_stripped\`
+objects. Destination defaults to PETRAS naming (\`petras.json\`, \`entity.jsonld\`,
+\`urn:petras:\`).

@@ -1,0 +1,15 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:geom:bef31e7c3c68",
+  "@type": "PointCloudGeom",
+  "version": 1,
+  "parentID": null,
+  "createdAt": "2026-07-08T08:02:51.047555+00:00",
+  "dataURI": "pointcloud.npz",
+  "nPoints": 1910076,
+  "hasColors": false,
+  "hasNormals": false,
+  "scalarFields": [
+    "scalar_Intensity"
+  ]
+}

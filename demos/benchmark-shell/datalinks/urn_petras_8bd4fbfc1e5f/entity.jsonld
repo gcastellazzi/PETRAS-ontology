@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:8bd4fbfc1e5f",
+  "@type": "DataLink",
+  "createdAt": "2026-08-20T12:15:19.820549+00:00",
+  "mapsFrom": "urn:petras:5cb3c5c8d631",
+  "mapsTo": "urn:petras:analytics:ce0860fbb1a34d4cb1652ad9bcfc999b",
+  "operator": "labels.anchor_dataset",
+  "parameters": {
+    "label_type": "PointSelection3D",
+    "node_index": 14600
+  },
+  "plugin": "labels"
+}

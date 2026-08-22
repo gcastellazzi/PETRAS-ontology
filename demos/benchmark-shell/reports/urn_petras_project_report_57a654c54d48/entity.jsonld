@@ -1,0 +1,36 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "ProjectReport",
+  "@id": "urn:petras:project_report:57a654c54d48",
+  "generatedAt": "2026-08-15T16:02:59.842450+00:00",
+  "template": "full",
+  "method": "ai",
+  "nEntities": 213,
+  "nCommands": 100,
+  "successRate": 95.0,
+  "referencedEntities": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 213,
+    "sample": [
+      "urn:petras:0273e9655a35",
+      "urn:petras:02c1e0af6777"
+    ]
+  },
+  "referencedEntityCount": 213,
+  "llmModel": "qwen3:8b",
+  "llmDurationMs": 186491,
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-15T16:02:59.842685+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-15T16:02:59.842685+00:00"
+}

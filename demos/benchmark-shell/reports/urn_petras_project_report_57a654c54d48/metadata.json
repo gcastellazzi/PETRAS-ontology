@@ -1,0 +1,144 @@
+{
+  "n_entities": 213,
+  "n_commands": 100,
+  "n_success": 95,
+  "n_failed": 5,
+  "success_rate": 95.0,
+  "template": "full",
+  "method": "ai",
+  "llm_model": "qwen3:8b",
+  "llm_timeout_s": 300.0,
+  "llm_duration_ms": 186491,
+  "log_sources": [
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-15_dec78078.jsonl"
+      },
+      "file": "2026-08-15_dec78078.jsonl",
+      "count": 2,
+      "first_ts": "2026-08-15T15:58:31.005279+00:00",
+      "last_ts": "2026-08-15T15:59:17.822774+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-11_5dbd184a.jsonl"
+      },
+      "file": "2026-08-11_5dbd184a.jsonl",
+      "count": 2,
+      "first_ts": "2026-08-11T19:35:23.157404+00:00",
+      "last_ts": "2026-08-11T20:00:28.610939+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-10_5dbd184a.jsonl"
+      },
+      "file": "2026-08-10_5dbd184a.jsonl",
+      "count": 2,
+      "first_ts": "2026-08-10T17:04:40.253930+00:00",
+      "last_ts": "2026-08-10T17:09:07.551199+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-09_4636294e.jsonl"
+      },
+      "file": "2026-08-09_4636294e.jsonl",
+      "count": 11,
+      "first_ts": "2026-08-09T15:09:46.436855+00:00",
+      "last_ts": "2026-08-09T15:54:10.975558+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-09_2677eceb.jsonl"
+      },
+      "file": "2026-08-09_2677eceb.jsonl",
+      "count": 1,
+      "first_ts": "2026-08-09T14:44:47.779427+00:00",
+      "last_ts": "2026-08-09T14:44:47.779427+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-09_0cee45d2.jsonl"
+      },
+      "file": "2026-08-09_0cee45d2.jsonl",
+      "count": 17,
+      "first_ts": "2026-08-09T13:48:27.446431+00:00",
+      "last_ts": "2026-08-09T14:11:28.927820+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-08_d02a79ef.jsonl"
+      },
+      "file": "2026-08-08_d02a79ef.jsonl",
+      "count": 4,
+      "first_ts": "2026-08-08T16:33:28.613977+00:00",
+      "last_ts": "2026-08-08T20:05:41.504728+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-08_9af87a09.jsonl"
+      },
+      "file": "2026-08-08_9af87a09.jsonl",
+      "count": 6,
+      "first_ts": "2026-08-08T15:23:44.269164+00:00",
+      "last_ts": "2026-08-08T15:27:07.482316+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-07-31_5d2bac85.jsonl"
+      },
+      "file": "2026-07-31_5d2bac85.jsonl",
+      "count": 17,
+      "first_ts": "2026-07-31T14:50:17.701902+00:00",
+      "last_ts": "2026-07-31T14:56:04.037866+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-07-31_0610e74f.jsonl"
+      },
+      "file": "2026-07-31_0610e74f.jsonl",
+      "count": 38,
+      "first_ts": "2026-07-31T14:18:40.808509+00:00",
+      "last_ts": "2026-07-31T14:25:00.920816+00:00"
+    }
+  ],
+  "referenced_entities": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 213,
+    "sample": [
+      "urn:petras:0273e9655a35",
+      "urn:petras:02c1e0af6777"
+    ]
+  },
+  "referenced_entity_count": 213,
+  "referencedEntities": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 213,
+    "sample": [
+      "urn:petras:0273e9655a35",
+      "urn:petras:02c1e0af6777"
+    ]
+  },
+  "referencedEntityCount": 213
+}

@@ -1,0 +1,45 @@
+{
+  "commands": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 100,
+    "sample": [
+      {
+        "v": 2,
+        "ts_start": "2026-07-08T16:34:54.466080+00:00",
+        "ts_end": "2026-07-08T16:34:54.721665+00:00",
+        "duration_ms": 289,
+        "queued_ms": 0,
+        "mem_peak_mb": 2182.75,
+        "mem_delta_mb": 0.0,
+        "session_id": "c8346a1c-9ef9-4e2d-aa64-04b56815fa7b",
+        "project": "Project_0",
+        "project_path": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+        "seq": 1,
+        "cmd": "slice2d.add_polyline",
+        "cli": "slice2d.add_polyline dl:2 0 56.387362 91.838841 64.002083 91.754752 63.933633 107.179365 55.922248 107.225855 56.085284 103.484802 55.640844 102.561429 54.776708 102.092994 53.292777 102.063858",
+        "success": true,
+        "output_snippet": "Added polyline poly[12] to slice[0]  → 8 vertices\n",
+        "error": null
+      },
+      {
+        "v": 2,
+        "ts_start": "2026-07-08T16:34:57.859238+00:00",
+        "ts_end": "2026-07-08T16:34:58.127315+00:00",
+        "duration_ms": 268,
+        "queued_ms": 0,
+        "mem_peak_mb": 2196.11,
+        "mem_delta_mb": 0.0,
+        "session_id": "c8346a1c-9ef9-4e2d-aa64-04b56815fa7b",
+        "project": "Project_0",
+        "project_path": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+        "seq": 2,
+        "cmd": "slice2d.add_polyline",
+        "cli": "slice2d.add_polyline dl:2 0 50.769569 102.164015 50.271890 102.196686 50.329628 101.240106",
+        "success": true,
+        "output_snippet": "Added polyline poly[13] to slice[0]  → 3 vertices\n",
+        "error": null
+      }
+    ]
+  }
+}

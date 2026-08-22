@@ -1,0 +1,207 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:110f5500bb64",
+  "@type": "SensorRecord",
+  "createdAt": "2026-07-30T09:28:07.871177+00:00",
+  "sourceDatalakeIDs": [],
+  "sourceRecordIDs": [],
+  "nSamples": 288,
+  "timeStart": "2012-05-19 00:00:00",
+  "timeEnd": "2012-05-30 23:00:00",
+  "samplingHz": 0.000278,
+  "channels": [
+    {
+      "name": "temperature_2m",
+      "label": "temperature_2m",
+      "units": "°C",
+      "sensorType": "temperature",
+      "axis": null
+    },
+    {
+      "name": "relative_humidity_2m",
+      "label": "relative_humidity_2m",
+      "units": "%",
+      "sensorType": "humidity",
+      "axis": null
+    },
+    {
+      "name": "dew_point_2m",
+      "label": "dew_point_2m",
+      "units": "°C",
+      "sensorType": "temperature",
+      "axis": null
+    },
+    {
+      "name": "apparent_temperature",
+      "label": "apparent_temperature",
+      "units": "°C",
+      "sensorType": "temperature",
+      "axis": null
+    },
+    {
+      "name": "precipitation",
+      "label": "precipitation",
+      "units": "mm",
+      "sensorType": "precipitation",
+      "axis": null
+    },
+    {
+      "name": "rain",
+      "label": "rain",
+      "units": "mm",
+      "sensorType": "precipitation",
+      "axis": null
+    },
+    {
+      "name": "surface_pressure",
+      "label": "surface_pressure",
+      "units": "hPa",
+      "sensorType": "pressure",
+      "axis": null
+    },
+    {
+      "name": "cloud_cover",
+      "label": "cloud_cover",
+      "units": "%",
+      "sensorType": "weather",
+      "axis": null
+    },
+    {
+      "name": "wind_speed_10m",
+      "label": "wind_speed_10m",
+      "units": "km/h",
+      "sensorType": "wind",
+      "axis": null
+    },
+    {
+      "name": "wind_direction_10m",
+      "label": "wind_direction_10m",
+      "units": "°",
+      "sensorType": "wind",
+      "axis": null
+    },
+    {
+      "name": "wind_gusts_10m",
+      "label": "wind_gusts_10m",
+      "units": "km/h",
+      "sensorType": "wind",
+      "axis": null
+    },
+    {
+      "name": "shortwave_radiation",
+      "label": "shortwave_radiation",
+      "units": "W/m²",
+      "sensorType": "weather",
+      "axis": null
+    }
+  ],
+  "geometryBindings": {},
+  "sourceFile": "open_meteo:7068dc3029da64ac9f19f29a",
+  "operator": "web_fetch_environmental",
+  "localCopy": true,
+  "sourceFolder": "",
+  "quality": {
+    "ok": true,
+    "severity": "ok",
+    "n_rows": 288,
+    "n_valid_time": 288,
+    "valid_time_ratio": 1.0,
+    "time_start": "2012-05-19 00:00:00",
+    "time_end": "2012-05-30 23:00:00",
+    "suspicious_epoch_ratio": 0.0,
+    "out_of_range_ratio": 0.0,
+    "duplicate_time_ratio": 0.0,
+    "non_monotonic": false,
+    "inferred_time_column": "",
+    "parser_profile": "",
+    "warnings": [],
+    "errors": [],
+    "sample_rows": [
+      {
+        "time": "2012-05-19 00:00:00",
+        "temperature_2m": 11.5,
+        "relative_humidity_2m": 72.0,
+        "dew_point_2m": 6.7,
+        "apparent_temperature": 9.9,
+        "precipitation": 0.0,
+        "rain": 0.0
+      },
+      {
+        "time": "2012-05-19 01:00:00",
+        "temperature_2m": 9.9,
+        "relative_humidity_2m": 82.0,
+        "dew_point_2m": 6.9,
+        "apparent_temperature": 8.6,
+        "precipitation": 0.0,
+        "rain": 0.0
+      },
+      {
+        "time": "2012-05-19 02:00:00",
+        "temperature_2m": 9.2,
+        "relative_humidity_2m": 86.0,
+        "dew_point_2m": 7.0,
+        "apparent_temperature": 8.0,
+        "precipitation": 0.0,
+        "rain": 0.0
+      },
+      {
+        "time": "2012-05-19 03:00:00",
+        "temperature_2m": 9.0,
+        "relative_humidity_2m": 88.0,
+        "dew_point_2m": 7.1,
+        "apparent_temperature": 7.6,
+        "precipitation": 0.0,
+        "rain": 0.0
+      },
+      {
+        "time": "2012-05-19 04:00:00",
+        "temperature_2m": 9.0,
+        "relative_humidity_2m": 88.0,
+        "dew_point_2m": 7.1,
+        "apparent_temperature": 7.7,
+        "precipitation": 0.0,
+        "rain": 0.0
+      }
+    ]
+  },
+  "sourceIdentity": {
+    "kind": "environmental_web_provider",
+    "provider": "open_meteo",
+    "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+    "queryParameters": {
+      "latitude": "44.838925",
+      "longitude": "11.141214",
+      "start_date": "2012-05-19",
+      "end_date": "2012-05-30",
+      "hourly": "temperature_2m,relative_humidity_2m,dew_point_2m,apparent_temperature,precipitation,rain,surface_pressure,cloud_cover,wind_speed_10m,wind_direction_10m,wind_gusts_10m,shortwave_radiation",
+      "timezone": "UTC"
+    },
+    "cacheKey": "7068dc3029da64ac9f19f29a",
+    "cachePath": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark/iot_web_cache/open_meteo/7068dc3029da64ac9f19f29a",
+    "fromCache": false,
+    "downloadTimestamp": "2026-07-30T09:28:07.867703+00:00",
+    "softwareVersion": "0.1.0",
+    "pluginVersion": "0.7.0",
+    "providerOptions": {},
+    "outputFiles": {
+      "hourly": "weather_hourly.csv",
+      "daily": "weather_daily.csv",
+      "events": "weather_events.csv",
+      "metadata": "weather_metadata.json"
+    }
+  },
+  "importStatus": "ok",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-30T09:28:07.889540+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-30T09:28:07.889540+00:00"
+}

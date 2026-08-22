@@ -1,0 +1,30 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:a9938237aa43",
+  "@type": "DataSources",
+  "createdAt": "2026-08-16T14:58:28.733929+00:00",
+  "sourceType": "photo",
+  "title": "post_card_02_Rocca_estense_san_felice_sul_panaro",
+  "authors": [],
+  "doi": "",
+  "uri": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "post_card_02_Rocca_estense_san_felice_sul_panaro.png"
+  },
+  "checksum": "74e02c20d5c42c2bb77277797069ce8481918d55b75bf6ca1e4ae4df8f4a96fc",
+  "linkedEntities": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-16T14:58:28.734002+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-16T14:58:28.734002+00:00"
+}

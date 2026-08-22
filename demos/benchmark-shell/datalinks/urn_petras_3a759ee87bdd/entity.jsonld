@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:3a759ee87bdd",
+  "@type": "DataLink",
+  "createdAt": "2026-08-21T15:06:09.073130+00:00",
+  "mapsFrom": "urn:petras:datasources:mat_5beaa9b89528",
+  "mapsTo": "urn:petras:femmodel:b9450d4907ae",
+  "operator": "finetools_engine.material",
+  "parameters": {
+    "target": "group:MAT_M10_CLAY_BRICK"
+  },
+  "plugin": "finetools_engine"
+}

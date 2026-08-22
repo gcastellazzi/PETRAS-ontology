@@ -1,0 +1,21 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:geom:54474c7eee5a",
+  "@type": "RegistrationGeom",
+  "version": 1,
+  "parentID": null,
+  "createdAt": "2026-08-09T13:40:28.774793+00:00",
+  "dataURI": "registration.npz",
+  "nNodes": 157011,
+  "nFaces": 67466,
+  "sourceDatasetId": "urn:petras:4deaa0b067cc",
+  "arrayKeys": [
+    "cloud_support_count",
+    "curvature_transferred",
+    "frozen_mask",
+    "node_displacement",
+    "node_roles_from_cloud",
+    "smoothing_weight",
+    "surface_node_index"
+  ]
+}

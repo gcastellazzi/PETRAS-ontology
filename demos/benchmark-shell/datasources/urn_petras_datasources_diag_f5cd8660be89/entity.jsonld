@@ -1,0 +1,122 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:datasources:diag_f5cd8660be89",
+  "@type": "DiagnosticRecord",
+  "schema_version": "1.0",
+  "method": "mqi",
+  "methodVersion": "mhmsmech-sha256:b3f79fb3982792d3dcd59bb16c062df131e61504dc07f2bf30dbdd220e0103b8",
+  "appliesTo": {
+    "kind": "slice2d_region",
+    "sliceSetRef": "urn:petras:0273e9655a35",
+    "sliceId": "sl_8bda4231466e406d",
+    "regionId": "mr_9155cd06c107"
+  },
+  "targetSnapshot": {
+    "sliceIndex": 0,
+    "z": 37.5,
+    "sliceGeometrySignature": "b57c2d7424cadf37cfe68712f594ac115d1f9f2606e1e4f6fc2e37556e9511fd",
+    "regionGeometrySignature": "af7476768ebb6b7cefc163264604b27a82eb03ac21716240cce5e4ecdea2aa68"
+  },
+  "documentRefs": [],
+  "observedAt": "2012-04-20",
+  "assessor": "Giovanni Castellazzi",
+  "inputs": {
+    "SM": "F",
+    "SD": "PF",
+    "SS": "F",
+    "WC": "PF",
+    "HJ": "F",
+    "VJ": "PF",
+    "MM": "PF"
+  },
+  "derived": {
+    "indices": {
+      "V": {
+        "value": 7.5,
+        "category": "A"
+      },
+      "I": {
+        "value": 6.5,
+        "category": "A"
+      },
+      "O": {
+        "value": 7.0,
+        "category": "B"
+      }
+    },
+    "properties": {
+      "fm": {
+        "bounds": [
+          4981980.664215308,
+          7450594.243324975
+        ],
+        "unit": "Pa",
+        "basis": "V"
+      },
+      "E": {
+        "bounds": [
+          2025069540.4904413,
+          2792026930.561782
+        ],
+        "unit": "Pa",
+        "basis": "V"
+      },
+      "tau0": {
+        "bounds": [
+          77653.8988001297,
+          110489.77639868495
+        ],
+        "unit": "Pa",
+        "basis": "I"
+      }
+    },
+    "MQI_V": 7.5,
+    "MQI_I": 6.5,
+    "MQI_O": 7.0,
+    "categories": {
+      "V": "A",
+      "I": "A",
+      "O": "B"
+    },
+    "fm": [
+      4981980.664215308,
+      7450594.243324975
+    ],
+    "E": [
+      2025069540.4904413,
+      2792026930.561782
+    ],
+    "tau0": [
+      77653.8988001297,
+      110489.77639868495
+    ],
+    "units": {
+      "fm": "Pa",
+      "E": "Pa",
+      "tau0": "Pa"
+    },
+    "basis": {
+      "fm": "V",
+      "E": "V",
+      "tau0": "I"
+    }
+  },
+  "notes": "",
+  "revision": 1,
+  "supersedesRef": null,
+  "rootRecordRef": "urn:petras:datasources:diag_f5cd8660be89",
+  "createdAt": "2026-08-20T19:48:26.686581+00:00",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-20T19:48:26.686707+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-20T19:48:26.686707+00:00"
+}

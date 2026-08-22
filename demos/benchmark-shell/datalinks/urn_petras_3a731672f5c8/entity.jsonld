@@ -1,0 +1,37 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:3a731672f5c8",
+  "@type": "DataLink",
+  "createdAt": "2026-08-09T13:40:28.736786+00:00",
+  "mapsFrom": "urn:petras:5da5159f4127",
+  "mapsTo": "urn:petras:5cb3c5c8d631",
+  "operator": "cloud_registration.smooth_taubin",
+  "parameters": {
+    "cloud_dataset_id": "urn:petras:4deaa0b067cc",
+    "lam": 0.6,
+    "mu": -0.63,
+    "iterations": 6,
+    "role_radius": 0.14999999999999858,
+    "max_step": 0.07499999999999929,
+    "feature_source": "curvature",
+    "role_provenance": "curvature_only",
+    "feature_constraint": true,
+    "w_edge": 0.35,
+    "plane_normal_source": "auto",
+    "coverage_pct": 61.56301971964837,
+    "role_histogram": {
+      "plane": 36484,
+      "edge": 3731,
+      "corner": 1244,
+      "unsupported": 25885
+    },
+    "cloud_rms_before": 0.05889971633748954,
+    "cloud_rms_after": 0.058289122520775824,
+    "edge_rms_before": 0.061134119354733604,
+    "edge_rms_after": 0.06113365461389874,
+    "volume_change_pct": -0.0039254614823409275,
+    "frozen_node_count": 28,
+    "iterations_run": 6
+  },
+  "plugin": "cloud_registration"
+}

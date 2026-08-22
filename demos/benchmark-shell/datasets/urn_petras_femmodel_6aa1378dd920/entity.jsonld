@@ -1,0 +1,731 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "FEMModel",
+  "@id": "urn:petras:femmodel:6aa1378dd920",
+  "schema_version": "1.0",
+  "engine": "finetools_engine",
+  "name": "FinEtoolsModel_02",
+  "sourceMeshDatasetId": "urn:petras:5cb3c5c8d631",
+  "meshProfile": {
+    "geometryType": "mesh3d",
+    "dimension": "3D",
+    "composition": "3D solid mesh",
+    "detectedElementKind": "hex",
+    "nodesPerElement": [
+      8
+    ],
+    "suggestedElementChoices": [
+      "Hex8"
+    ],
+    "suggestedTheoryChoices": [
+      "solid"
+    ],
+    "summary": "3D solid mesh: detected hex, 8 nodes/element"
+  },
+  "solverElementType": "Hex8",
+  "solverTheory": "solid",
+  "solverBackend": "fem",
+  "vemMeshDatasetId": "",
+  "vemOptions": {
+    "method": "auto",
+    "sourceMeshDatasetId": "urn:petras:5cb3c5c8d631"
+  },
+  "sectionProperties": {},
+  "beamSections": {},
+  "beamSectionAssignments": {},
+  "beamElementGroups": {},
+  "mixedParts": {},
+  "materials": {
+    "all": {
+      "material_ref": "urn:petras:datasources:mat_abc79313bde6",
+      "material_name": "Clay Brick",
+      "assignedAt": "2026-08-09T14:44:47.816042+00:00"
+    }
+  },
+  "boundaryConditions": {
+    "BC_ground": {
+      "@type": "EssentialBC",
+      "bc_type": "fixed",
+      "nodes": "group:ZMIN",
+      "dofs": [
+        "ux",
+        "uy",
+        "uz"
+      ],
+      "value": 0.0
+    },
+    "BC_ymax": {
+      "@type": "EssentialBC",
+      "bc_type": "fixed",
+      "nodes": "group:YMAX",
+      "dofs": [
+        "uy"
+      ],
+      "value": 0.0
+    },
+    "BC_Ymin": {
+      "@type": "EssentialBC",
+      "bc_type": "fixed",
+      "nodes": "group:YMIN",
+      "dofs": [
+        "uy"
+      ],
+      "value": 0.0
+    },
+    "BC_Xmax": {
+      "@type": "EssentialBC",
+      "bc_type": "fixed",
+      "nodes": "group:XMAX",
+      "dofs": [
+        "ux"
+      ],
+      "value": 0.0
+    }
+  },
+  "thermalBoundaryConditions": {},
+  "loadCases": {
+    "LOAD_gravity": {
+      "type": "gravity",
+      "name": "LOAD_gravity",
+      "g": "9.81",
+      "dir": "0,0,-1"
+    }
+  },
+  "thermalLoads": {},
+  "thermalCoupling": {},
+  "precheckOptions": {
+    "auto_pin_disconnected_components": false
+  },
+  "nodeGroups": {
+    "ALL": {
+      "kind": "node",
+      "selector": "all",
+      "count": 157011,
+      "node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 157011,
+        "sample": [
+          0,
+          1
+        ]
+      }
+    },
+    "XMIN": {
+      "kind": "node",
+      "selector": "bbox",
+      "axis": "x",
+      "side": "min",
+      "bound": 47.940675656412985,
+      "tolerance": 0.2,
+      "count": 416,
+      "node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 416,
+        "sample": [
+          352,
+          353
+        ]
+      }
+    },
+    "XMAX": {
+      "kind": "node",
+      "selector": "bbox",
+      "axis": "x",
+      "side": "max",
+      "bound": 64.14860278368755,
+      "tolerance": 0.2,
+      "count": 1453,
+      "node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1453,
+        "sample": [
+          1604,
+          1605
+        ]
+      }
+    },
+    "YMIN": {
+      "kind": "node",
+      "selector": "bbox",
+      "axis": "y",
+      "side": "min",
+      "bound": 91.60251720147807,
+      "tolerance": 0.2,
+      "count": 1395,
+      "node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1395,
+        "sample": [
+          1728,
+          1729
+        ]
+      }
+    },
+    "YMAX": {
+      "kind": "node",
+      "selector": "bbox",
+      "axis": "y",
+      "side": "max",
+      "bound": 107.2483175355247,
+      "tolerance": 0.2,
+      "count": 2175,
+      "node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 2175,
+        "sample": [
+          156,
+          157
+        ]
+      }
+    },
+    "ZMIN": {
+      "kind": "node",
+      "selector": "bbox",
+      "axis": "z",
+      "side": "min",
+      "bound": 37.39172004204779,
+      "tolerance": 0.2,
+      "count": 11023,
+      "node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 11023,
+        "sample": [
+          0,
+          2
+        ]
+      }
+    },
+    "ZMAX": {
+      "kind": "node",
+      "selector": "bbox",
+      "axis": "z",
+      "side": "max",
+      "bound": 53.81774093966174,
+      "tolerance": 0.2,
+      "count": 3438,
+      "node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 3438,
+        "sample": [
+          153054,
+          153055
+        ]
+      }
+    }
+  },
+  "edgeGroups": {
+    "ALL": {
+      "kind": "edge",
+      "selector": "boundary_edges",
+      "count": 134890,
+      "edge_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 134890,
+        "sample": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      }
+    },
+    "XMIN": {
+      "kind": "edge",
+      "selector": "bbox",
+      "axis": "x",
+      "side": "min",
+      "bound": 47.940675656412985,
+      "tolerance": 0.2,
+      "count": 726,
+      "edge_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 726,
+        "sample": [
+          [
+            358,
+            352
+          ],
+          [
+            359,
+            353
+          ]
+        ]
+      }
+    },
+    "XMAX": {
+      "kind": "edge",
+      "selector": "bbox",
+      "axis": "x",
+      "side": "max",
+      "bound": 64.14860278368755,
+      "tolerance": 0.2,
+      "count": 2625,
+      "edge_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 2625,
+        "sample": [
+          [
+            1604,
+            1606
+          ],
+          [
+            1606,
+            1607
+          ]
+        ]
+      }
+    },
+    "YMIN": {
+      "kind": "edge",
+      "selector": "bbox",
+      "axis": "y",
+      "side": "min",
+      "bound": 91.60251720147807,
+      "tolerance": 0.2,
+      "count": 2187,
+      "edge_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 2187,
+        "sample": [
+          [
+            1728,
+            1730
+          ],
+          [
+            1729,
+            1731
+          ]
+        ]
+      }
+    },
+    "YMAX": {
+      "kind": "edge",
+      "selector": "bbox",
+      "axis": "y",
+      "side": "max",
+      "bound": 107.2483175355247,
+      "tolerance": 0.2,
+      "count": 3083,
+      "edge_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 3083,
+        "sample": [
+          [
+            156,
+            158
+          ],
+          [
+            332,
+            334
+          ]
+        ]
+      }
+    },
+    "ZMIN": {
+      "kind": "edge",
+      "selector": "bbox",
+      "axis": "z",
+      "side": "min",
+      "bound": 37.39172004204779,
+      "tolerance": 0.2,
+      "count": 22044,
+      "edge_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 22044,
+        "sample": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      }
+    },
+    "ZMAX": {
+      "kind": "edge",
+      "selector": "bbox",
+      "axis": "z",
+      "side": "max",
+      "bound": 53.81774093966174,
+      "tolerance": 0.2,
+      "count": 4469,
+      "edge_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 4469,
+        "sample": [
+          [
+            153100,
+            153101
+          ],
+          [
+            153101,
+            153102
+          ]
+        ]
+      }
+    }
+  },
+  "faceGroups": {
+    "ALL": {
+      "kind": "face",
+      "selector": "boundary",
+      "count": 67466,
+      "face_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 67466,
+        "sample": [
+          [
+            0,
+            2,
+            4,
+            6
+          ],
+          [
+            1,
+            3,
+            5,
+            7
+          ]
+        ]
+      }
+    },
+    "XMIN": {
+      "kind": "face",
+      "selector": "bbox",
+      "axis": "x",
+      "side": "min",
+      "bound": 47.940675656412985,
+      "tolerance": 0.2,
+      "count": 311,
+      "face_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 311,
+        "sample": [
+          [
+            856,
+            858,
+            860,
+            862
+          ],
+          [
+            857,
+            859,
+            861,
+            863
+          ]
+        ]
+      }
+    },
+    "XMAX": {
+      "kind": "face",
+      "selector": "bbox",
+      "axis": "x",
+      "side": "max",
+      "bound": 64.14860278368755,
+      "tolerance": 0.2,
+      "count": 1193,
+      "face_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1193,
+        "sample": [
+          [
+            1604,
+            1606,
+            1607,
+            1605
+          ],
+          [
+            1840,
+            1842,
+            1843,
+            1841
+          ]
+        ]
+      }
+    },
+    "YMIN": {
+      "kind": "face",
+      "selector": "bbox",
+      "axis": "y",
+      "side": "min",
+      "bound": 91.60251720147807,
+      "tolerance": 0.2,
+      "count": 944,
+      "face_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 944,
+        "sample": [
+          [
+            1728,
+            1730,
+            1731,
+            1729
+          ],
+          [
+            1886,
+            1888,
+            1889,
+            1887
+          ]
+        ]
+      }
+    },
+    "YMAX": {
+      "kind": "face",
+      "selector": "bbox",
+      "axis": "y",
+      "side": "max",
+      "bound": 107.2483175355247,
+      "tolerance": 0.2,
+      "count": 1439,
+      "face_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1439,
+        "sample": [
+          [
+            1736,
+            1738,
+            1740,
+            1742
+          ],
+          [
+            1737,
+            1739,
+            1741,
+            1743
+          ]
+        ]
+      }
+    },
+    "ZMIN": {
+      "kind": "face",
+      "selector": "bbox",
+      "axis": "z",
+      "side": "min",
+      "bound": 37.39172004204779,
+      "tolerance": 0.2,
+      "count": 11021,
+      "face_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 11021,
+        "sample": [
+          [
+            0,
+            2,
+            4,
+            6
+          ],
+          [
+            8,
+            10,
+            12,
+            14
+          ]
+        ]
+      }
+    },
+    "ZMAX": {
+      "kind": "face",
+      "selector": "bbox",
+      "axis": "z",
+      "side": "max",
+      "bound": 53.81774093966174,
+      "tolerance": 0.2,
+      "count": 2153,
+      "face_node_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 2153,
+        "sample": [
+          [
+            153100,
+            153101,
+            153102,
+            153103
+          ],
+          [
+            153104,
+            153106,
+            153108,
+            153109
+          ]
+        ]
+      }
+    }
+  },
+  "cellGroups": {
+    "ALL": {
+      "kind": "cell",
+      "selector": "all",
+      "count": 122851,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 122851,
+        "sample": [
+          0,
+          1
+        ]
+      }
+    },
+    "XMIN": {
+      "kind": "cell",
+      "selector": "bbox",
+      "axis": "x",
+      "side": "min",
+      "bound": 47.940675656412985,
+      "tolerance": 0.2,
+      "count": 103,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 103,
+        "sample": [
+          107,
+          144
+        ]
+      }
+    },
+    "XMAX": {
+      "kind": "cell",
+      "selector": "bbox",
+      "axis": "x",
+      "side": "max",
+      "bound": 64.14860278368755,
+      "tolerance": 0.2,
+      "count": 112,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 112,
+        "sample": [
+          56383,
+          56443
+        ]
+      }
+    },
+    "YMIN": {
+      "kind": "cell",
+      "selector": "bbox",
+      "axis": "y",
+      "side": "min",
+      "bound": 91.60251720147807,
+      "tolerance": 0.2,
+      "count": 276,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 276,
+        "sample": [
+          37770,
+          38698
+        ]
+      }
+    },
+    "YMAX": {
+      "kind": "cell",
+      "selector": "bbox",
+      "axis": "y",
+      "side": "max",
+      "bound": 107.2483175355247,
+      "tolerance": 0.2,
+      "count": 759,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 759,
+        "sample": [
+          218,
+          327
+        ]
+      }
+    },
+    "ZMAX": {
+      "kind": "cell",
+      "selector": "bbox",
+      "axis": "z",
+      "side": "max",
+      "bound": 53.81774093966174,
+      "tolerance": 0.2,
+      "count": 1534,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1534,
+        "sample": [
+          121317,
+          121318
+        ]
+      }
+    }
+  },
+  "createdAt": "2026-08-09T13:48:27.450355+00:00",
+  "groupStrategy": {
+    "kind": "bbox",
+    "tolerance": 0.2,
+    "updatedAt": "2026-08-09T15:11:28.265148+00:00"
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-09T13:48:32.405480+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-09T13:48:32.405480+00:00",
+  "masonryFrames": {
+    "ALL": {
+      "x1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x2": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "source": "explicit",
+      "updatedAt": "2026-08-20T15:50:52.979373+00:00",
+      "nCells": 122851
+    }
+  },
+  "updatedAt": "2026-08-20T15:50:52.979390+00:00"
+}

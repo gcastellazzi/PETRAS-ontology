@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:d8dee5b4f950",
+  "@type": "DataLink",
+  "createdAt": "2026-08-15T18:01:41.692772+00:00",
+  "mapsFrom": "urn:petras:08dd2098834b",
+  "mapsTo": "urn:petras:0273e9655a35",
+  "operator": "documents.attach",
+  "parameters": {
+    "docID": "urn:petras:08dd2098834b",
+    "targetID": "urn:petras:0273e9655a35"
+  },
+  "plugin": "documents"
+}

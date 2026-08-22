@@ -1,0 +1,15 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "ProjectIndex",
+  "@id": "urn:petras:3e0be27d808f",
+  "generatedAt": "2026-07-08T22:56:20.631730+00:00",
+  "generator": "petras.indexer.v1",
+  "schemaVersion": "1.0",
+  "stats": {
+    "entities": 25,
+    "refs_edges": 21,
+    "jsonld_files": 27,
+    "artifact_files": 26,
+    "warnings": 7
+  }
+}

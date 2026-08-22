@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:365fd01b5d6d",
+  "@type": "DataLink",
+  "createdAt": "2026-07-10T10:39:17.391485+00:00",
+  "mapsFrom": "urn:petras:datasources:mat_abc79313bde6",
+  "mapsTo": "urn:petras:femmodel:93ac0ec58290",
+  "operator": "finetools_engine.material",
+  "parameters": {
+    "target": "all"
+  },
+  "plugin": "finetools_engine"
+}

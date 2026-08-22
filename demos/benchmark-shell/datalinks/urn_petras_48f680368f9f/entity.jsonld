@@ -1,0 +1,27 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:48f680368f9f",
+  "@type": "DataLink",
+  "createdAt": "2026-08-10T17:09:34.227937+00:00",
+  "mapsFrom": "urn:petras:4deaa0b067cc",
+  "mapsTo": "urn:petras:5cb3c5c8d631",
+  "operator": "inspect_cloud.compare_fem",
+  "parameters": {
+    "cloudDatasetId": "urn:petras:4deaa0b067cc",
+    "femDatasetId": "urn:petras:femmodel:6aa1378dd920",
+    "meshDatasetId": "urn:petras:5cb3c5c8d631",
+    "direction": "cloud_to_fem",
+    "clusters": 64,
+    "gap_target": 0.06051690345668351,
+    "gap_target_mode": "auto",
+    "output_key": "fem_gap_Taubin",
+    "max_sample": 10000000,
+    "sampled_count": 1910076,
+    "source_count": 1910076,
+    "surface_geometry": "mesh2d",
+    "surface_persistent": true,
+    "distanceTargetDatasetId": "urn:petras:4deaa0b067cc",
+    "distanceReferenceDatasetId": "urn:petras:5cb3c5c8d631"
+  },
+  "plugin": "inspect_cloud"
+}

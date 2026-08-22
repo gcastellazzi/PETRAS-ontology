@@ -1,0 +1,20 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:4deaa0b067cc",
+  "@type": "DataSet",
+  "createdAt": "2026-07-08T08:02:51.047571+00:00",
+  "geometryURI": null,
+  "geometryType": "pointcloud",
+  "materials": {},
+  "boundaryConditions": {},
+  "discretization": {},
+  "version": 1,
+  "parentID": null,
+  "sourceDatalakeIDs": [
+    "urn:petras:32f7202be022"
+  ],
+  "geometryObjects": {
+    "pointcloud": "urn:petras:geom:bef31e7c3c68"
+  },
+  "sourceDatasetIDs": []
+}

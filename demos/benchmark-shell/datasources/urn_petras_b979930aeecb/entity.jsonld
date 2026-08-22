@@ -1,0 +1,57 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:b979930aeecb",
+  "@type": "DataSources",
+  "createdAt": "2026-07-31T08:08:32.205249+00:00",
+  "sourceType": "photo",
+  "title": "Old Postcard",
+  "authors": [],
+  "doi": "",
+  "uri": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "cartolina_01_Rocca_estense_san_felice_sul_panaro.png"
+  },
+  "checksum": "e15551d85bc1fdee70afb332ea03951b31ae52fdefebd6458e3b86e5a53c56f5",
+  "linkedEntities": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-31T08:08:32.205336+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-31T08:08:32.205336+00:00",
+  "spatialView": {
+    "schemaVersion": 1,
+    "coordinateSpace": "project",
+    "position": [
+      -8.0259514,
+      161.679581,
+      30.798748
+    ],
+    "target": [
+      56.0129757,
+      99.4647903,
+      46.6186924
+    ],
+    "up": [
+      -0.12171831075035267,
+      0.1250894127542345,
+      0.9846508475824725
+    ],
+    "horizontalFovDeg": 60.0,
+    "verticalFovDeg": 40.6250051,
+    "imageOrientation": "landscape",
+    "photoAspectRatio": 1.5,
+    "fovSource": "angles",
+    "imageWidthPx": 705,
+    "imageHeightPx": 452
+  },
+  "capturedAt": "1900-07-28"
+}

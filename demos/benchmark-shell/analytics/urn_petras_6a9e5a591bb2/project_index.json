@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-08T12:25:51.886822+00:00",
+  "generator": "petras.indexer.v1",
+  "project": {
+    "name": "Project_0",
+    "root": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+    "ontology": "DDIM-DDT"
+  },
+  "stats": {
+    "entities": 14,
+    "refs_edges": 15,
+    "jsonld_files": 15,
+    "artifact_files": 4,
+    "warnings": 5
+  },
+  "entities": {
+    "urn:petras:32f7202be022": {
+      "layer": "datalake",
+      "type": "DataLake",
+      "folder": "datalake/urn_petras_32f7202be022",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "rocca.ply"
+            },
+            "size_bytes": 30561462,
+            "mtime_utc": "2024-02-25T09:54:38.404473+00:00",
+            "sha256": "9d78e4dda65b4b5ee1f62a4166de8d2d0369ae56a613f0d71059cf0affe54792"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:79bde0e29615": {
+      "layer": "datalake",
+      "type": "SliceSet",
+      "folder": "datalake/urn_petras_79bde0e29615",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "sliceset.npz"
+            },
+            "size_bytes": 403851,
+            "mtime_utc": "2026-07-08T12:25:13.642758+00:00",
+            "sha256": "ec7e502ecd133b24874ec56ad8fa7f04189bb4af39496d04bdbdf11589891a22"
+          }
+        ]
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:4deaa0b067cc": {
+      "layer": "datasets",
+      "type": "DataSet",
+      "folder": "datasets/urn_petras_4deaa0b067cc",
+      "jsonld_files": [
+        "dataset.jsonld",
+        "pointcloud.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "pointcloud.npz"
+            },
+            "size_bytes": 247235118,
+            "mtime_utc": "2026-07-08T08:15:54.458302+00:00",
+            "sha256": "c90f058cd9b0c2b1992c8a3c19f7f8e6d3587cdce1dbddfefba452bde47f3f1a"
+          }
+        ]
+      },
+      "refs_out": [
+        "urn:petras:32f7202be022",
+        "urn:petras:geom:bef31e7c3c68"
+      ]
+    },
+    "urn:petras:16f3d7c3909d": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_16f3d7c3909d",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:69885997159f": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_69885997159f",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:8206f7f15fed": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_8206f7f15fed",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:c5766806512c": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_c5766806512c",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc",
+        "urn:petras:79bde0e29615"
+      ]
+    },
+    "urn:petras:d3ddf532e6ce": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_d3ddf532e6ce",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:32f7202be022",
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:fc44ef4192ac": {
+      "layer": "datalinks",
+      "type": "DataLink",
+      "folder": "datalinks/urn_petras_fc44ef4192ac",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:7450ca0b70f5": {
+      "layer": "analytics",
+      "type": "ProjectIndex",
+      "folder": "analytics/urn_petras_7450ca0b70f5",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 1,
+        "sample": [
+          {
+            "path": {
+              "_stripped": true,
+              "kind": "path",
+              "name": "project_index.json"
+            },
+            "size_bytes": 4768,
+            "mtime_utc": "2026-07-08T08:17:34.860029+00:00",
+            "sha256": "c7463e380a3c668fb7fd450c09fd8b64aa7d15e368ade52851b3b0dc962e995e"
+          }
+        ]
+      },
+      "refs_out": []
+    },
+    "urn:petras:analytics:20242bc1e2ea474881295ef066f72a41": {
+      "layer": "analytics",
+      "type": "DataAnalytics",
+      "folder": "analytics/urn_petras_analytics_20242bc1e2ea474881295ef066f72a41",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:analytics:2c3b85ed933843e0b4ea6793545bc755": {
+      "layer": "analytics",
+      "type": "DataAnalytics",
+      "folder": "analytics/urn_petras_analytics_2c3b85ed933843e0b4ea6793545bc755",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:analytics:a26818c3ed0b46f7a8c22d7a1a1b925f": {
+      "layer": "analytics",
+      "type": "DataAnalytics",
+      "folder": "analytics/urn_petras_analytics_a26818c3ed0b46f7a8c22d7a1a1b925f",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    },
+    "urn:petras:analytics:e899a16e4c3447708a6c392731165c40": {
+      "layer": "analytics",
+      "type": "DataAnalytics",
+      "folder": "analytics/urn_petras_analytics_e899a16e4c3447708a6c392731165c40",
+      "jsonld_files": [
+        "dataset.jsonld"
+      ],
+      "artifacts": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 0,
+        "sample": []
+      },
+      "refs_out": [
+        "urn:petras:4deaa0b067cc"
+      ]
+    }
+  },
+  "warnings": [
+    "no dataset.jsonld in datalake/(No OSM DataLake entries)",
+    "no dataset.jsonld in datalake/(No SensorRecord entries)",
+    "no dataset.jsonld in datalake/(No TemporalEvent entries)",
+    "no dataset.jsonld in datasets/(No DataSet available)",
+    "no dataset.jsonld in datasets/urn_petras_regmeta_urn_petras_4deaa0b067cc"
+  ]
+}

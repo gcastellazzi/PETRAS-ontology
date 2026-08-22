@@ -1,0 +1,194 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:analytics:masonry_check:e4520b5e40bd",
+  "@type": "MasonryCheckResult",
+  "schemaVersion": "1.0",
+  "createdAt": "2026-08-20T16:08:33.216463+00:00",
+  "artifactType": "structural_verification",
+  "method": "capurso_sacchi_biaxial",
+  "sourceResultId": "urn:petras:femresult:d2585ab00e02",
+  "sourceModelId": "urn:petras:femmodel:08ee90084402",
+  "sourceMeshDatasetId": "urn:petras:5da5159f4127",
+  "cellGroup": "ALL",
+  "cellGroups": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 1,
+    "sample": [
+      "ALL"
+    ]
+  },
+  "groups": [
+    {
+      "name": "ALL",
+      "nCells": 122851,
+      "materialRef": "urn:petras:datasources:mat_abc79313bde6",
+      "materialName": "Clay Brick",
+      "strengthsPa": {
+        "c1": 5000000.0,
+        "c2": 8000000.0,
+        "t1": 300000.0,
+        "t2": 150000.0
+      },
+      "strengthSources": {
+        "c1": "explicit_override",
+        "c2": "explicit_override",
+        "t1": "explicit_override",
+        "t2": "explicit_override"
+      },
+      "orientation": {
+        "x1": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "x2": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "source": "explicit",
+        "updatedAt": "2026-08-20T16:08:16.501224+00:00",
+        "nCells": 122851
+      }
+    }
+  ],
+  "materials": [
+    {
+      "materialRef": "urn:petras:datasources:mat_abc79313bde6",
+      "materialName": "Clay Brick",
+      "strengthsPa": {
+        "c1": 5000000.0,
+        "c2": 8000000.0,
+        "t1": 300000.0,
+        "t2": 150000.0
+      },
+      "groups": [
+        "ALL"
+      ]
+    }
+  ],
+  "strengthPolicy": "lower",
+  "strengthsPa": {
+    "c1": 5000000.0,
+    "c2": 8000000.0,
+    "t1": 300000.0,
+    "t2": 150000.0
+  },
+  "strengthsByGroup": {
+    "ALL": {
+      "c1": 5000000.0,
+      "c2": 8000000.0,
+      "t1": 300000.0,
+      "t2": 150000.0
+    }
+  },
+  "orientation": {
+    "x1": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "x2": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "source": "explicit",
+    "updatedAt": "2026-08-20T16:08:16.501224+00:00",
+    "nCells": 122851
+  },
+  "orientations": {
+    "ALL": {
+      "x1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x2": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "source": "explicit",
+      "updatedAt": "2026-08-20T16:08:16.501224+00:00",
+      "nCells": 122851
+    }
+  },
+  "planeStressTolerance": 0.05,
+  "planeStressMaxRatio": 0.9999999998366962,
+  "planeStressRatioDefinition": "norm([s33,s13,s23])/norm([s11,s22,s33,s12,s13,s23])",
+  "stressSource": "stresses_nodal",
+  "stressReduction": "max_element_node",
+  "stressAssociation": "gauss_or_node_reduced_to_cell",
+  "stressVoigtOrder": [
+    "xx",
+    "yy",
+    "zz",
+    "xy",
+    "yz",
+    "xz"
+  ],
+  "selectedStepIndex": 0,
+  "meshSignature": "c8a0ef2f7f5ae94abbf5c80c1702ef4acb84175efc6edc80324cba84de175261",
+  "meshGeometryType": "mesh3d",
+  "nCells": 122851,
+  "nCheckedCells": 122851,
+  "outputs": {
+    "dataFile": "masonry_check.npz",
+    "scalarKey": "masonry_utilization",
+    "statusKey": "masonry_status",
+    "association": "cell",
+    "maxUtilization": 0.7467263903487174,
+    "nFailedCells": 0,
+    "nNotApplicableCells": 118565,
+    "passed": false,
+    "complete": false,
+    "statusCatalog": {
+      "-1": "unchecked",
+      "0": "pass",
+      "1": "fail",
+      "2": "not_applicable_plane_stress"
+    },
+    "governingModeCatalog": {
+      "-2": "not_applicable_plane_stress",
+      "-1": "unchecked",
+      "0": "tension",
+      "1": "compression",
+      "2": "zero_stress"
+    },
+    "sidecarFields": {
+      "principal_stresses_cell": "[sigma_max, sigma_min] in the local masonry plane",
+      "governing_direction_cell": "unit governing generalized-eigenvector in global XYZ",
+      "governing_direction_material_cell": "same direction in local x1/x2 components"
+    }
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-20T16:08:33.216600+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-20T16:08:33.216600+00:00"
+}

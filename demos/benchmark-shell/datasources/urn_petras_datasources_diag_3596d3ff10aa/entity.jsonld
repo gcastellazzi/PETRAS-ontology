@@ -1,0 +1,119 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:datasources:diag_3596d3ff10aa",
+  "@type": "DiagnosticRecord",
+  "schema_version": "1.0",
+  "method": "mqi",
+  "methodVersion": "mhmsmech-sha256:b3f79fb3982792d3dcd59bb16c062df131e61504dc07f2bf30dbdd220e0103b8",
+  "appliesTo": {
+    "kind": "material",
+    "materialRef": "urn:petras:datasources:mat_5beaa9b89528"
+  },
+  "targetSnapshot": {
+    "materialKey": "m10_clay_brick",
+    "materialName": "M10 Clay Brick",
+    "materialPropertySignature": "d1e0bb4390407713169aab40587c49cbfa000ea0992fbdf8e93172a6d7850a9c"
+  },
+  "documentRefs": [],
+  "observedAt": "2012-04-04",
+  "assessor": "Giovanni Castellazzi",
+  "inputs": {
+    "SM": "F",
+    "SD": "PF",
+    "SS": "F",
+    "WC": "NF",
+    "HJ": "F",
+    "VJ": "PF",
+    "MM": "F"
+  },
+  "derived": {
+    "indices": {
+      "V": {
+        "value": 8.0,
+        "category": "A"
+      },
+      "I": {
+        "value": 6.5,
+        "category": "A"
+      },
+      "O": {
+        "value": 6.0,
+        "category": "B"
+      }
+    },
+    "properties": {
+      "fm": {
+        "bounds": [
+          5571016.516171948,
+          8228418.170952004
+        ],
+        "unit": "Pa",
+        "basis": "V"
+      },
+      "E": {
+        "bounds": [
+          2210799115.624525,
+          3029409846.655082
+        ],
+        "unit": "Pa",
+        "basis": "V"
+      },
+      "tau0": {
+        "bounds": [
+          77653.8988001297,
+          110489.77639868495
+        ],
+        "unit": "Pa",
+        "basis": "I"
+      }
+    },
+    "MQI_V": 8.0,
+    "MQI_I": 6.5,
+    "MQI_O": 6.0,
+    "categories": {
+      "V": "A",
+      "I": "A",
+      "O": "B"
+    },
+    "fm": [
+      5571016.516171948,
+      8228418.170952004
+    ],
+    "E": [
+      2210799115.624525,
+      3029409846.655082
+    ],
+    "tau0": [
+      77653.8988001297,
+      110489.77639868495
+    ],
+    "units": {
+      "fm": "Pa",
+      "E": "Pa",
+      "tau0": "Pa"
+    },
+    "basis": {
+      "fm": "V",
+      "E": "V",
+      "tau0": "I"
+    }
+  },
+  "notes": "",
+  "revision": 1,
+  "supersedesRef": null,
+  "rootRecordRef": "urn:petras:datasources:diag_3596d3ff10aa",
+  "createdAt": "2026-08-21T09:44:32.835865+00:00",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-21T09:44:32.835929+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-21T09:44:32.835929+00:00"
+}

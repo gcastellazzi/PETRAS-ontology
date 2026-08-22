@@ -1,0 +1,29 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:69885997159f",
+  "@type": "DataLink",
+  "createdAt": "2026-07-08T08:04:51.011010+00:00",
+  "mapsFrom": "urn:petras:4deaa0b067cc",
+  "mapsTo": "urn:petras:4deaa0b067cc",
+  "operator": "inspect_cloud",
+  "parameters": {
+    "metrics": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 29,
+      "sample": [
+        "point_count",
+        "extent"
+      ]
+    },
+    "k": 64,
+    "max_sample": 10000000,
+    "normal_up_axis": "z",
+    "normal_orient_neighbors": 12,
+    "plane_extract": true,
+    "plane_angle_deg": 10.0,
+    "plane_dist_tol": "auto",
+    "plane_min_points": 100
+  },
+  "plugin": "inspect_cloud"
+}

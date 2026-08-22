@@ -1,0 +1,31 @@
+{
+  "name": "Project_0",
+  "description": "Temporary startup project",
+  "version": "0.1.0",
+  "ontology": "PETRAS",
+  "runtime": {
+    "previousOpenedAt": "2026-08-21T18:17:10.625456+00:00",
+    "currentOpenedAt": "2026-08-22T14:34:33.961849+00:00",
+    "lastOpenedAt": "2026-08-22T14:34:33.961849+00:00"
+  },
+  "projectInfo": {
+    "constructionEpoch": "1450",
+    "buildingCategory": "Historic Castle",
+    "siteAddress": "",
+    "notes": ""
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-30T08:16:33.910426+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "ontologyVersion": "0.2.0",
+  "context": "https://w3id.org/petras/context.jsonld"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "channels": [
+    "temperature_2m",
+    "relative_humidity_2m",
+    "dew_point_2m",
+    "apparent_temperature",
+    "precipitation",
+    "rain",
+    "surface_pressure",
+    "cloud_cover",
+    "wind_speed_10m",
+    "wind_direction_10m",
+    "wind_gusts_10m",
+    "shortwave_radiation"
+  ],
+  "n_samples": 288,
+  "time_start": "2012-05-19T00:00:00",
+  "time_end": "2012-05-30T23:00:00",
+  "n_partitions": 12
+}

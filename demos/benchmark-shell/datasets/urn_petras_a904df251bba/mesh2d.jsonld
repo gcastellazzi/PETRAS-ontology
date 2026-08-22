@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:geom:19d6087d4e68",
+  "@type": "Mesh2D",
+  "version": 1,
+  "parentID": "urn:petras:geom:9c4c147f5453",
+  "createdAt": "2026-08-09T13:14:47.609835+00:00",
+  "dataURI": "mesh2d.npz",
+  "nNodes": 157011,
+  "nElements": 134932,
+  "elementType": "tri"
+}

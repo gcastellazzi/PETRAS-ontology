@@ -1,0 +1,94 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:f23512524a9d",
+  "@type": "DataLink",
+  "createdAt": "2026-07-31T11:11:07.506276+00:00",
+  "mapsFrom": "urn:petras:ae09195acee9",
+  "mapsTo": "urn:petras:ae09195acee9",
+  "operator": "read_iot.refresh",
+  "parameters": {
+    "operator": "read_iot.source_repair",
+    "source_file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNE.D.20120529.070003.C.ACC.ASC.txt, /Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNE.D.20120529.070003.C.DIS.ASC.txt, /Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNE.D.20120529.070003.C.VEL.ASC (+7)",
+    "reason": "coalesce complementary ITACA channels at identical timestamps",
+    "source_folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+    "files": [
+      "IT.MRN..HNE.D.20120529.070003.C.ACC.ASC.txt",
+      "IT.MRN..HNE.D.20120529.070003.C.DIS.ASC.txt",
+      "IT.MRN..HNE.D.20120529.070003.C.VEL.ASC",
+      "IT.MRN..HNN.D.20120529.070003.C.ACC.ASC",
+      "IT.MRN..HNN.D.20120529.070003.C.DIS.ASC.txt",
+      "IT.MRN..HNN.D.20120529.070003.C.VEL.ASC",
+      "IT.MRN..HNZ.D.20120529.070003.C.ACC.ASC",
+      "IT.MRN..HNZ.D.20120529.070003.C.DIS.ASC.txt",
+      "IT.MRN..HNZ.D.20120529.070003.C.VEL.ASC",
+      "IT.MRN..HNZ.D.20120529.070003.C.txt"
+    ],
+    "tz": "Europe/Rome",
+    "quality": {
+      "ok": true,
+      "severity": "ok",
+      "n_rows": 20001,
+      "n_valid_time": 20001,
+      "valid_time_ratio": 1.0,
+      "time_start": "2012-05-29 06:59:33",
+      "time_end": "2012-05-29 07:01:13",
+      "suspicious_epoch_ratio": 0.0,
+      "out_of_range_ratio": 0.0,
+      "duplicate_time_ratio": 0.0,
+      "non_monotonic": false,
+      "inferred_time_column": "",
+      "parser_profile": "",
+      "warnings": [],
+      "errors": [],
+      "sample_rows": [
+        {
+          "time": "2012-05-29 06:59:33",
+          "MRN_HNE_acceleration": 0.0,
+          "MRN_HNE_displacement": 0.0,
+          "MRN_HNE_velocity": 0.0,
+          "MRN_HNN_acceleration": 0.0,
+          "MRN_HNN_displacement": 0.0,
+          "MRN_HNN_velocity": 0.0
+        },
+        {
+          "time": "2012-05-29 06:59:33.005000",
+          "MRN_HNE_acceleration": -0.0062,
+          "MRN_HNE_displacement": -1.550116e-07,
+          "MRN_HNE_velocity": -3.1e-05,
+          "MRN_HNN_acceleration": -0.006762,
+          "MRN_HNN_displacement": -1.690386e-07,
+          "MRN_HNN_velocity": -3.4e-05
+        },
+        {
+          "time": "2012-05-29 06:59:33.010000",
+          "MRN_HNE_acceleration": -0.012399,
+          "MRN_HNE_displacement": -6.2e-07,
+          "MRN_HNE_velocity": -9.3e-05,
+          "MRN_HNN_acceleration": -0.013521,
+          "MRN_HNN_displacement": -6.760949e-07,
+          "MRN_HNN_velocity": -0.000101
+        },
+        {
+          "time": "2012-05-29 06:59:33.015000",
+          "MRN_HNE_acceleration": -0.012396,
+          "MRN_HNE_displacement": -1.394894e-06,
+          "MRN_HNE_velocity": -0.000155,
+          "MRN_HNN_acceleration": -0.013517,
+          "MRN_HNN_displacement": -1.521078e-06,
+          "MRN_HNN_velocity": -0.000169
+        },
+        {
+          "time": "2012-05-29 06:59:33.020000",
+          "MRN_HNE_acceleration": -0.012393,
+          "MRN_HNE_displacement": -2.479618e-06,
+          "MRN_HNE_velocity": -0.000217,
+          "MRN_HNN_acceleration": -0.013513,
+          "MRN_HNN_displacement": -2.703892e-06,
+          "MRN_HNN_velocity": -0.000237
+        }
+      ]
+    },
+    "allow_suspicious": false
+  },
+  "plugin": "read_iot"
+}

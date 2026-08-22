@@ -1,0 +1,124 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:0273e9655a35",
+  "@type": "SliceSet",
+  "createdAt": "2026-07-08T15:06:59.739215+00:00",
+  "sourceDatasetId": "urn:petras:4deaa0b067cc",
+  "axis": "Z",
+  "nSlices": 46,
+  "sliceZCoords": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 46,
+    "sample": [
+      37.5,
+      38.0
+    ]
+  },
+  "slicingParams": {
+    "step": null,
+    "n": 46,
+    "coords": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 32,
+      "sample": [
+        38.0,
+        39.457573210029125
+      ]
+    },
+    "thickness": 0.011387825012207031,
+    "axis_min": 38.0,
+    "axis_max": 53.8,
+    "placement": "planes",
+    "placement_requested": "auto",
+    "placement_fallback": false,
+    "base_coords": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 77,
+      "sample": [
+        37.86797904968262,
+        37.871089935302734
+      ]
+    },
+    "boundary_coords": [
+      38.0,
+      53.8
+    ],
+    "offset_used": 0.030258451728341754,
+    "min_spacing": 0.034163475036621094,
+    "dropped_close_coords": 43,
+    "raw_coords": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 73,
+      "sample": [
+        38.00674465778303,
+        39.457573210029125
+      ]
+    },
+    "used_plane_ids": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 77,
+      "sample": [
+        8,
+        9
+      ]
+    },
+    "auto_compute_planes": false,
+    "fallback_reason": "",
+    "warnings": [
+      "Plane-aware placement dropped 4 coordinate(s) outside requested axis range."
+    ],
+    "exclude_axis_planes": true,
+    "plane_axis_tol_deg": 10.0,
+    "min_plane_points": 100,
+    "excluded_points": 142379,
+    "excluded_planes": 77,
+    "mask_mode": "plane_instances",
+    "normal_mask": true,
+    "normal_mask_tol_deg": 10.0,
+    "normal_mask_removed_points": 273159,
+    "plane_slice_normal_mask": true,
+    "plane_slice_normal_mask_removed_points": 0,
+    "plane_slice_normal_mask_slices": 0,
+    "manual_additions": 13
+  },
+  "hasPolylines": true,
+  "operator": "slice_cloud",
+  "hasSliceMaterials": true,
+  "sliceMaterialsFile": "slice_materials.json",
+  "materialRefs": [
+    "urn:petras:datasources:mat_5beaa9b89528",
+    "urn:petras:datasources:mat_abc79313bde6"
+  ],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-31T13:02:38.263839+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-31T13:02:38.263839+00:00",
+  "sliceIds": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 46,
+    "sample": [
+      "sl_8bda4231466e406d",
+      "sl_26bf648389c2488d"
+    ]
+  },
+  "hasSliceBackgrounds": true,
+  "sliceBackgroundsFile": "slice_backgrounds.json",
+  "backgroundDocumentRefs": [
+    "urn:petras:521fccb4f539"
+  ]
+}

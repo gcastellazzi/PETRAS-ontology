@@ -28,8 +28,10 @@
 
 .controls {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.85rem 1rem;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .controls select {
@@ -45,6 +47,98 @@
   gap: 0.35rem;
   align-items: center;
   font-size: 0.9rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 0.55rem 1.2rem;
+  border-bottom: 1px solid #2a2f3a;
+  background: #10131a;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.88rem;
+  color: #c8ccd4;
+}
+
+.slider input[type="range"] {
+  width: 140px;
+  accent-color: #61afef;
+}
+
+.slider-val {
+  min-width: 2.8rem;
+  font-variant-numeric: tabular-nums;
+  color: #9aa0a6;
+}
+
+.bg-control {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  color: #c8ccd4;
+}
+
+.bg-control select {
+  background: #1e2430;
+  color: #e6e8ee;
+  border: 1px solid #3a4150;
+  border-radius: 6px;
+  padding: 0.2rem 0.4rem;
+}
+
+.bg-swatch {
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  border: 1px solid #3a4150;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bg-swatch::-webkit-color-swatch-wrapper {
+  padding: 2px;
+}
+
+.bg-swatch::-webkit-color-swatch {
+  border: none;
+  border-radius: 2px;
+}
+
+.layout-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.layout-actions button {
+  background: #1e2430;
+  color: #e6e8ee;
+  border: 1px solid #3a4150;
+  border-radius: 6px;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.layout-actions button:hover {
+  border-color: #61afef;
+  color: #fff;
+}
+
+.toolbar-hint {
+  margin: 0;
+  margin-left: auto;
+  color: #7f848e;
+  font-size: 0.8rem;
 }
 
 .main {
@@ -111,6 +205,7 @@
 }
 
 .canvas-wrap {
+  position: relative;
   min-height: 0;
   background: radial-gradient(ellipse at center, #1a1f2b 0%, #0f1115 70%);
 }
@@ -120,6 +215,27 @@
   height: 100%;
   display: block;
   touch-action: none;
+}
+
+.graph-canvas-3d {
+  position: absolute;
+  inset: 0;
+}
+
+.graph-canvas-3d canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.canvas-3d-hint {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.65rem;
+  color: #7f848e;
+  font-size: 0.75rem;
+  pointer-events: none;
+  text-shadow: 0 1px 2px #000a;
 }
 
 .empty {

@@ -2,8 +2,28 @@
 
 | Demo | Description |
 |------|-------------|
-| `cathedral-shell/` | Empty-shell PETRAS project (canonical format). All 7 layers populated with metadata + DataLinks only — no NPZ/PDF. Used by the static viewer. |
-| `benchmark-graph/` | Graph JSON exported from the live `Project_PETRAS_Benchmark` (legacy C2F4DT on-disk format) via `petras export-graph --legacy`. Regenerated with `scripts/validate_benchmark.py --out …`. |
+| `cathedral-shell/` | Synthetic empty-shell PETRAS project (canonical format). All 7 layers with metadata + DataLinks only. Used by the static viewer. |
+| `benchmark-shell/` | Structure extracted from `Project_PETRAS_Benchmark` (JSON-LD only, bulk arrays stripped, no NPZ/PDF). Regenerated with `petras extract-structure`. |
+| `benchmark-graph/` | Pre-exported `graph.json` from the live benchmark (optional). |
+
+## Extract structure from any project
+
+```bash
+source .venv/bin/activate
+petras extract-structure /path/to/Project_PETRAS_Benchmark demos/benchmark-shell --clean
+
+# Keep legacy c2f4dt identifiers instead of translating to PETRAS:
+petras extract-structure /path/to/project /tmp/shell --keep-legacy
+
+# Also write empty placeholders for skipped binaries:
+petras extract-structure /path/to/project /tmp/shell --placeholders
+```
+
+Or:
+
+```bash
+python scripts/extract_structure.py SOURCE DEST --clean
+```
 
 Regenerate the cathedral demo:
 

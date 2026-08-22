@@ -1,0 +1,89 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "MaterialDefinition",
+  "@id": "urn:petras:datasources:mat_36b4169eecfb",
+  "schema_version": "1.1",
+  "name": "Clay Bricks M10",
+  "key": "clay_bricks_m10",
+  "category": "masonry_diagnostic",
+  "model": "linear_elastic_isotropic",
+  "mechanical_properties": {
+    "E": 2408548235.5261116,
+    "nu": 0.2,
+    "rho": 1800.0,
+    "fm": 6216287.453770141,
+    "tau0": 94071.83759940733
+  },
+  "thermal_properties": null,
+  "applicability": {
+    "elements": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 1,
+      "sample": [
+        "solid"
+      ]
+    },
+    "analyses": [
+      "mechanical"
+    ]
+  },
+  "source": "DiagnosticRecord urn:petras:datasources:diag_f5cd8660be89; nu/rho from urn:petras:datasources:mat_5beaa9b89528",
+  "notes": "MQI correlations are intervals; nominal E is their arithmetic midpoint.",
+  "color": "#E08E74",
+  "createdAt": "2026-08-20T19:51:46.632145+00:00",
+  "bounds": {
+    "E": [
+      2025069540.4904413,
+      2792026930.561782
+    ],
+    "fm": [
+      4981980.664215308,
+      7450594.243324975
+    ],
+    "tau0": [
+      77653.8988001297,
+      110489.77639868495
+    ]
+  },
+  "boundsPolicy": "nominal",
+  "propertySources": {
+    "E": {
+      "diagnosticRef": "urn:petras:datasources:diag_f5cd8660be89",
+      "method": "mqi"
+    },
+    "fm": {
+      "diagnosticRef": "urn:petras:datasources:diag_f5cd8660be89",
+      "method": "mqi"
+    },
+    "tau0": {
+      "diagnosticRef": "urn:petras:datasources:diag_f5cd8660be89",
+      "method": "mqi"
+    },
+    "nu": {
+      "materialRef": "urn:petras:datasources:mat_5beaa9b89528"
+    },
+    "rho": {
+      "materialRef": "urn:petras:datasources:mat_5beaa9b89528"
+    }
+  },
+  "assumptions": [
+    "MQI correlations provide intervals rather than measured scalar values.",
+    "Nominal bounded properties are the arithmetic midpoint of lower and upper bounds.",
+    "Poisson ratio and density are adopted from base material urn:petras:datasources:mat_5beaa9b89528."
+  ],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-20T19:51:46.632292+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-20T19:51:46.632292+00:00",
+  "updatedAt": "2026-08-20T20:52:42.546512+00:00"
+}

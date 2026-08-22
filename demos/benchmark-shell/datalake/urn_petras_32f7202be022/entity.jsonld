@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:32f7202be022",
+  "@type": "DataLake",
+  "createdAt": "2026-07-08T08:02:51.037147+00:00",
+  "fileURI": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "rocca.ply"
+  },
+  "format": "ply",
+  "checksum": "9d78e4dda65b4b5ee1f62a4166de8d2d0369ae56a613f0d71059cf0affe54792",
+  "description": "Point cloud: 1910076 points"
+}

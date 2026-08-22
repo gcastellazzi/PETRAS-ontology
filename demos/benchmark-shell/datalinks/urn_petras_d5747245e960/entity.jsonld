@@ -1,0 +1,28 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:d5747245e960",
+  "@type": "DataLink",
+  "createdAt": "2026-07-10T17:25:11.178728+00:00",
+  "mapsFrom": "urn:petras:0273e9655a35",
+  "mapsTo": "urn:petras:16171c53ec17",
+  "operator": "cloud2fem_mesh",
+  "parameters": {
+    "step_x": 0.1,
+    "step_y": 0.1,
+    "n_slices": 46,
+    "element_type": "hex",
+    "grid_type": "rotated",
+    "grid_rotation_deg": 1.0,
+    "grid_rotation_auto": false,
+    "axis_refine_enabled": false,
+    "axis_step_requested": null,
+    "axis_step_used": null,
+    "axis_refine_auto_step": false,
+    "axis_inserted_levels": 0,
+    "axis_original_levels": 46,
+    "axis_refined_levels": 46,
+    "axis_original_intervals": 45,
+    "axis_refined_intervals": 45
+  },
+  "plugin": "cloud2fem"
+}

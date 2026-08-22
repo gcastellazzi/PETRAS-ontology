@@ -11,3 +11,7 @@ viewer/dist/
 *.log
 .idea/
 .vscode/
+
+# Nested extract copy; viewer serves public/demos/
+viewer/demos/
+.tools/

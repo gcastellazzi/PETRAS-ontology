@@ -1,0 +1,16 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:32a21eea31ec",
+  "@type": "CommandHistorySnapshot",
+  "createdAt": "2026-07-27T15:44:43.030998+00:00",
+  "tags": [
+    "command_history",
+    "session_snapshot"
+  ],
+  "snapshotTimestamp": "2026-07-27T15:44:43.030895+00:00",
+  "sessionId": "5594951c",
+  "commandCount": 700,
+  "timeRangeStart": "2026-07-27T14:37:20.584640+00:00",
+  "timeRangeEnd": "2026-07-27T15:44:42.311913+00:00",
+  "sourceLogPath": "logs/2026-07-27_5594951c.jsonl"
+}

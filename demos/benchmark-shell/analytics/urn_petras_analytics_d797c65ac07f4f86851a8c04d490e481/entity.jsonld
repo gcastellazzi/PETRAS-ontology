@@ -1,0 +1,61 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:analytics:d797c65ac07f4f86851a8c04d490e481",
+  "@type": "PointSelection3D",
+  "source_dataset": "urn:petras:5da5159f4127",
+  "point_indices": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 1,
+    "sample": [
+      21372
+    ]
+  },
+  "name": "Ground North tower acceleration",
+  "count": 1,
+  "created_at": "2026-08-08T15:30:33.334575+00:00",
+  "point": [
+    47.93096,
+    107.22662800000059,
+    37.5
+  ],
+  "symbol": "square",
+  "linkedSignals": [
+    {
+      "record": "urn:petras:ae09195acee9",
+      "channel": "MRN_HNE_acceleration",
+      "linkedAt": "2026-08-08T15:30:33.334597+00:00",
+      "source": "attach_point"
+    }
+  ],
+  "linkedSignal": {
+    "record": "urn:petras:ae09195acee9",
+    "channel": "MRN_HNE_acceleration"
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-08T15:30:33.334619+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-08T15:30:33.334619+00:00",
+  "linkedResults": [
+    {
+      "result": "urn:petras:femresult:d2585ab00e02",
+      "model": "urn:petras:femmodel:08ee90084402",
+      "dataset": "urn:petras:5da5159f4127",
+      "field": "",
+      "node_indices": [
+        21372
+      ],
+      "linkedAt": "2026-08-08T15:30:33.358937+00:00",
+      "source": "label_attach"
+    }
+  ]
+}

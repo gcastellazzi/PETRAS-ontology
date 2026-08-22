@@ -43,8 +43,6 @@ def short_entity_id(urn: str, length: int = 12) -> str:
 
 
 def translate_urn_to_petras(value: str) -> str:
-    """Rewrite a legacy ``urn:c2f4dt:`` token to ``urn:petras:`` in memory."""
+    """Rewrite legacy ``urn:c2f4dt:`` tokens to ``urn:petras:`` (anywhere in the string)."""
     text = str(value or "")
-    if text.startswith("urn:c2f4dt:"):
-        return "urn:petras:" + text[len("urn:c2f4dt:") :]
-    return text
+    return text.replace("urn:c2f4dt:", "urn:petras:")

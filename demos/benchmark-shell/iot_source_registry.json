@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "source_id": "local_folder:/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+      "kind": "local_folder",
+      "label": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+      "target_record": "urn:petras:ae09195acee9",
+      "last_checked_at": "2026-07-31T10:55:05.499436+00:00",
+      "last_opened_at": "",
+      "last_plotted_at": "",
+      "last_imported_time": "2012-05-29 07:01:13",
+      "files": {
+        "IT.MRN..HNE.D.20120529.070003.C.ACC.ASC.txt": {
+          "name": "IT.MRN..HNE.D.20120529.070003.C.ACC.ASC.txt",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNE.D.20120529.070003.C.ACC.ASC.txt"
+          },
+          "size_bytes": 195286,
+          "last_modified": "2015-11-24T11:52:58+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.542533+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        },
+        "IT.MRN..HNE.D.20120529.070003.C.DIS.ASC.txt": {
+          "name": "IT.MRN..HNE.D.20120529.070003.C.DIS.ASC.txt",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNE.D.20120529.070003.C.DIS.ASC.txt"
+          },
+          "size_bytes": 271940,
+          "last_modified": "2015-11-24T11:52:58+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.573272+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        },
+        "IT.MRN..HNN.D.20120529.070003.C.DIS.ASC.txt": {
+          "name": "IT.MRN..HNN.D.20120529.070003.C.DIS.ASC.txt",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNN.D.20120529.070003.C.DIS.ASC.txt"
+          },
+          "size_bytes": 271977,
+          "last_modified": "2015-11-24T11:52:58+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.660294+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        },
+        "IT.MRN..HNZ.D.20120529.070003.C.DIS.ASC.txt": {
+          "name": "IT.MRN..HNZ.D.20120529.070003.C.DIS.ASC.txt",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNZ.D.20120529.070003.C.DIS.ASC.txt"
+          },
+          "size_bytes": 272027,
+          "last_modified": "2015-11-24T11:52:58+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.778560+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        },
+        "IT.MRN..HNZ.D.20120529.070003.C.txt": {
+          "name": "IT.MRN..HNZ.D.20120529.070003.C.txt",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNZ.D.20120529.070003.C.txt"
+          },
+          "size_bytes": 193937,
+          "last_modified": "2015-12-10T06:30:10+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.853683+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        },
+        "IT.MRN..HNE.D.20120529.070003.C.VEL.ASC": {
+          "name": "IT.MRN..HNE.D.20120529.070003.C.VEL.ASC",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNE.D.20120529.070003.C.VEL.ASC"
+          },
+          "size_bytes": 191408,
+          "last_modified": "2015-11-24T11:52:58+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.602084+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        },
+        "IT.MRN..HNN.D.20120529.070003.C.ACC.ASC": {
+          "name": "IT.MRN..HNN.D.20120529.070003.C.ACC.ASC",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNN.D.20120529.070003.C.ACC.ASC"
+          },
+          "size_bytes": 195341,
+          "last_modified": "2015-11-24T11:52:58+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.630713+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        },
+        "IT.MRN..HNN.D.20120529.070003.C.VEL.ASC": {
+          "name": "IT.MRN..HNN.D.20120529.070003.C.VEL.ASC",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNN.D.20120529.070003.C.VEL.ASC"
+          },
+          "size_bytes": 191822,
+          "last_modified": "2015-11-24T11:52:58+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.688816+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        },
+        "IT.MRN..HNZ.D.20120529.070003.C.ACC.ASC": {
+          "name": "IT.MRN..HNZ.D.20120529.070003.C.ACC.ASC",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNZ.D.20120529.070003.C.ACC.ASC"
+          },
+          "size_bytes": 193937,
+          "last_modified": "2015-11-24T11:52:58+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.735073+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        },
+        "IT.MRN..HNZ.D.20120529.070003.C.VEL.ASC": {
+          "name": "IT.MRN..HNZ.D.20120529.070003.C.VEL.ASC",
+          "path": {
+            "_stripped": true,
+            "kind": "path",
+            "name": "IT.MRN..HNZ.D.20120529.070003.C.VEL.ASC"
+          },
+          "size_bytes": 191532,
+          "last_modified": "2015-11-24T11:52:58+00:00",
+          "sha256": "",
+          "record_id": "urn:petras:ae09195acee9",
+          "imported_at": "2026-07-31T10:55:05.818137+00:00",
+          "time_start": "2012-05-29 06:59:33",
+          "time_end": "2012-05-29 07:01:13",
+          "quality": "ok"
+        }
+      },
+      "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968"
+    }
+  ]
+}

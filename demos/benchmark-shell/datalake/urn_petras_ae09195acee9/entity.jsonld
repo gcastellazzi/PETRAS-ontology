@@ -1,0 +1,241 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:ae09195acee9",
+  "@type": "SensorRecord",
+  "createdAt": "2026-07-31T10:55:05.520577+00:00",
+  "sourceDatalakeIDs": [],
+  "sourceRecordIDs": [],
+  "nSamples": 20001,
+  "timeStart": "2012-05-29 06:59:33",
+  "timeEnd": "2012-05-29 07:01:13",
+  "samplingHz": 200.0,
+  "channels": [
+    {
+      "name": "MRN_HNE_acceleration",
+      "label": "MRN HNE Acceleration IT-2012-0011 [cm/s^2]",
+      "units": "cm/s^2",
+      "sensorType": "accelerometer",
+      "axis": "x"
+    },
+    {
+      "name": "MRN_HNE_displacement",
+      "label": "MRN HNE Displacement IT-2012-0011 [cm]",
+      "units": "cm",
+      "sensorType": "displacement",
+      "axis": "x"
+    },
+    {
+      "name": "MRN_HNE_velocity",
+      "label": "MRN HNE Velocity IT-2012-0011 [cm/s]",
+      "units": "cm/s",
+      "sensorType": "velocity",
+      "axis": "x"
+    },
+    {
+      "name": "MRN_HNN_acceleration",
+      "label": "MRN HNN Acceleration IT-2012-0011 [cm/s^2]",
+      "units": "cm/s^2",
+      "sensorType": "accelerometer",
+      "axis": "y"
+    },
+    {
+      "name": "MRN_HNN_displacement",
+      "label": "MRN HNN Displacement IT-2012-0011 [cm]",
+      "units": "cm",
+      "sensorType": "displacement",
+      "axis": "y"
+    },
+    {
+      "name": "MRN_HNN_velocity",
+      "label": "MRN HNN Velocity IT-2012-0011 [cm/s]",
+      "units": "cm/s",
+      "sensorType": "velocity",
+      "axis": "y"
+    },
+    {
+      "name": "MRN_HNZ_acceleration",
+      "label": "MRN HNZ Acceleration IT-2012-0011 [cm/s^2]",
+      "units": "cm/s^2",
+      "sensorType": "accelerometer",
+      "axis": "z"
+    },
+    {
+      "name": "MRN_HNZ_displacement",
+      "label": "MRN HNZ Displacement IT-2012-0011 [cm]",
+      "units": "cm",
+      "sensorType": "displacement",
+      "axis": "z"
+    },
+    {
+      "name": "MRN_HNZ_velocity",
+      "label": "MRN HNZ Velocity IT-2012-0011 [cm/s]",
+      "units": "cm/s",
+      "sensorType": "velocity",
+      "axis": "z"
+    }
+  ],
+  "geometryBindings": {},
+  "sourceFile": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNE.D.20120529.070003.C.ACC.ASC.txt, /Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNE.D.20120529.070003.C.DIS.ASC.txt, /Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNE.D.20120529.070003.C.VEL.ASC (+7)",
+  "operator": "read_iot.source_repair",
+  "localCopy": true,
+  "sourceFolder": "",
+  "quality": {
+    "ok": true,
+    "severity": "ok",
+    "n_rows": 20001,
+    "n_valid_time": 20001,
+    "valid_time_ratio": 1.0,
+    "time_start": "2012-05-29 06:59:33",
+    "time_end": "2012-05-29 07:01:13",
+    "suspicious_epoch_ratio": 0.0,
+    "out_of_range_ratio": 0.0,
+    "duplicate_time_ratio": 0.0,
+    "non_monotonic": false,
+    "inferred_time_column": "",
+    "parser_profile": "",
+    "warnings": [],
+    "errors": [],
+    "sample_rows": [
+      {
+        "time": "2012-05-29 06:59:33",
+        "MRN_HNE_acceleration": 0.0,
+        "MRN_HNE_displacement": 0.0,
+        "MRN_HNE_velocity": 0.0,
+        "MRN_HNN_acceleration": 0.0,
+        "MRN_HNN_displacement": 0.0,
+        "MRN_HNN_velocity": 0.0
+      },
+      {
+        "time": "2012-05-29 06:59:33.005000",
+        "MRN_HNE_acceleration": -0.0062,
+        "MRN_HNE_displacement": -1.550116e-07,
+        "MRN_HNE_velocity": -3.1e-05,
+        "MRN_HNN_acceleration": -0.006762,
+        "MRN_HNN_displacement": -1.690386e-07,
+        "MRN_HNN_velocity": -3.4e-05
+      },
+      {
+        "time": "2012-05-29 06:59:33.010000",
+        "MRN_HNE_acceleration": -0.012399,
+        "MRN_HNE_displacement": -6.2e-07,
+        "MRN_HNE_velocity": -9.3e-05,
+        "MRN_HNN_acceleration": -0.013521,
+        "MRN_HNN_displacement": -6.760949e-07,
+        "MRN_HNN_velocity": -0.000101
+      },
+      {
+        "time": "2012-05-29 06:59:33.015000",
+        "MRN_HNE_acceleration": -0.012396,
+        "MRN_HNE_displacement": -1.394894e-06,
+        "MRN_HNE_velocity": -0.000155,
+        "MRN_HNN_acceleration": -0.013517,
+        "MRN_HNN_displacement": -1.521078e-06,
+        "MRN_HNN_velocity": -0.000169
+      },
+      {
+        "time": "2012-05-29 06:59:33.020000",
+        "MRN_HNE_acceleration": -0.012393,
+        "MRN_HNE_displacement": -2.479618e-06,
+        "MRN_HNE_velocity": -0.000217,
+        "MRN_HNN_acceleration": -0.013513,
+        "MRN_HNN_displacement": -2.703892e-06,
+        "MRN_HNN_velocity": -0.000237
+      }
+    ]
+  },
+  "sourceIdentity": {
+    "kind": "local_folder",
+    "sourceId": "local_folder:/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+    "profile": null,
+    "host": null,
+    "path": null,
+    "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+    "files": [
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNE.D.20120529.070003.C.ACC.ASC.txt",
+        "sizeBytes": 195286,
+        "lastModified": 1448365978.0
+      },
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNE.D.20120529.070003.C.DIS.ASC.txt",
+        "sizeBytes": 271940,
+        "lastModified": 1448365978.0
+      },
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNE.D.20120529.070003.C.VEL.ASC",
+        "sizeBytes": 191408,
+        "lastModified": 1448365978.0
+      },
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNN.D.20120529.070003.C.ACC.ASC",
+        "sizeBytes": 195341,
+        "lastModified": 1448365978.0
+      },
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNN.D.20120529.070003.C.DIS.ASC.txt",
+        "sizeBytes": 271977,
+        "lastModified": 1448365978.0
+      },
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNN.D.20120529.070003.C.VEL.ASC",
+        "sizeBytes": 191822,
+        "lastModified": 1448365978.0
+      },
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNZ.D.20120529.070003.C.ACC.ASC",
+        "sizeBytes": 193937,
+        "lastModified": 1448365978.0
+      },
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNZ.D.20120529.070003.C.DIS.ASC.txt",
+        "sizeBytes": 272027,
+        "lastModified": 1448365978.0
+      },
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNZ.D.20120529.070003.C.VEL.ASC",
+        "sizeBytes": 191532,
+        "lastModified": 1448365978.0
+      },
+      {
+        "kind": "local_folder",
+        "folder": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968",
+        "file": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Data_Lake_Rocca_Estense/itaca_MRN_1414484914968/IT.MRN..HNZ.D.20120529.070003.C.txt",
+        "sizeBytes": 193937,
+        "lastModified": 1449729010.0
+      }
+    ]
+  },
+  "sourceMetadata": {},
+  "importStatus": "ok",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-31T11:11:07.503682+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-31T11:11:07.503682+00:00"
+}

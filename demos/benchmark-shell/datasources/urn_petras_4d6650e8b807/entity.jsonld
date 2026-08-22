@@ -1,0 +1,30 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:4d6650e8b807",
+  "@type": "DataSources",
+  "createdAt": "2026-08-20T20:11:07.263612+00:00",
+  "sourceType": "pdf",
+  "title": "MQI_photo_M10",
+  "authors": [],
+  "doi": "",
+  "uri": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "MQI_photo_M10.pdf"
+  },
+  "checksum": "2d712e20367775878532ccd32c0092e908f46380711c8bea945e72bcfd7beadd",
+  "linkedEntities": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-20T20:11:07.263783+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-20T20:11:07.263783+00:00"
+}

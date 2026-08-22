@@ -1,0 +1,30 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:b299eea79bd7",
+  "@type": "DataSources",
+  "createdAt": "2026-08-16T14:59:43.361966+00:00",
+  "sourceType": "pdf",
+  "title": "Project_1.AS.05",
+  "authors": [],
+  "doi": "",
+  "uri": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "Project_1.AS.05.pdf"
+  },
+  "checksum": "e96d3c62ac5dd2afe3da8a0395f2a7716e0492e1b02702f6857a20d79ed70c4b",
+  "linkedEntities": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-16T14:59:43.362215+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-16T14:59:43.362215+00:00"
+}

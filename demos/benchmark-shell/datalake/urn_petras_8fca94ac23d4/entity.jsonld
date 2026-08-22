@@ -1,0 +1,114 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:8fca94ac23d4",
+  "@type": "SensorRecord",
+  "createdAt": "2026-08-16T16:02:00.365978+00:00",
+  "sourceDatalakeIDs": [],
+  "sourceRecordIDs": [],
+  "nSamples": 1,
+  "timeStart": "2026-08-11T20:44:53.969201+00:00",
+  "timeEnd": "2026-08-11T20:44:53.969201+00:00",
+  "samplingHz": null,
+  "channels": [
+    {
+      "name": "ux_n68812",
+      "label": "ux_n68812",
+      "units": "m",
+      "sensorType": "fem_response",
+      "axis": "x",
+      "node_index": 68812
+    },
+    {
+      "name": "uy_n68812",
+      "label": "uy_n68812",
+      "units": "m",
+      "sensorType": "fem_response",
+      "axis": "y",
+      "node_index": 68812
+    },
+    {
+      "name": "uz_n68812",
+      "label": "uz_n68812",
+      "units": "m",
+      "sensorType": "fem_response",
+      "axis": "z",
+      "node_index": 68812
+    },
+    {
+      "name": "mag_n68812",
+      "label": "mag_n68812",
+      "units": "m",
+      "sensorType": "fem_response",
+      "axis": null,
+      "node_index": 68812
+    },
+    {
+      "name": "ux_n69778",
+      "label": "ux_n69778",
+      "units": "m",
+      "sensorType": "fem_response",
+      "axis": "x",
+      "node_index": 69778
+    },
+    {
+      "name": "uy_n69778",
+      "label": "uy_n69778",
+      "units": "m",
+      "sensorType": "fem_response",
+      "axis": "y",
+      "node_index": 69778
+    },
+    {
+      "name": "uz_n69778",
+      "label": "uz_n69778",
+      "units": "m",
+      "sensorType": "fem_response",
+      "axis": "z",
+      "node_index": 69778
+    },
+    {
+      "name": "mag_n69778",
+      "label": "mag_n69778",
+      "units": "m",
+      "sensorType": "fem_response",
+      "axis": null,
+      "node_index": 69778
+    }
+  ],
+  "geometryBindings": {
+    "source_dataset": "urn:petras:5cb3c5c8d631",
+    "node_indices": [
+      68812,
+      69778
+    ],
+    "label_nodes": {
+      "datasetId": "urn:petras:5cb3c5c8d631",
+      "nodeIds": [
+        68812,
+        69778
+      ],
+      "geometryType": "mesh"
+    }
+  },
+  "sourceFile": "fem_result:urn:petras:femresult:4f0413c2c0f3",
+  "operator": "finetools_engine.record_series",
+  "localCopy": true,
+  "format": "fem_node_series",
+  "timeReference": {
+    "kind": "relative_seconds",
+    "originUnix": 1786481093.969201
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-16T16:02:00.366056+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-16T16:02:00.366056+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "AssistantChatSession",
+  "@id": "urn:petras:assistant_session:366d7efc85d7",
+  "created": "2026-08-15T17:59:19.689291+00:00",
+  "project": "Project_0",
+  "n_turns": 1,
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-15T17:59:19.689348+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-15T17:59:19.689348+00:00"
+}

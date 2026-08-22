@@ -1,0 +1,45 @@
+{
+  "commands": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 38,
+    "sample": [
+      {
+        "v": 2,
+        "ts_start": "2026-07-09T12:40:30.312115+00:00",
+        "ts_end": "2026-07-09T12:40:30.323801+00:00",
+        "duration_ms": 11,
+        "queued_ms": 0,
+        "mem_peak_mb": 2269.09,
+        "mem_delta_mb": 0.0,
+        "session_id": "4f4c7845-ce41-4a22-9155-afaadd0d2d0b",
+        "project": "Project_0",
+        "project_path": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+        "seq": 263,
+        "cmd": "slice2d.delete_vertices_rect",
+        "cli": "slice2d.delete_vertices_rect dl:2 11 56.901274 92.602347 57.603540 93.473526",
+        "success": true,
+        "output_snippet": "Deleted 3 vertices from slice[11]  → 42 → 42 polylines\n",
+        "error": null
+      },
+      {
+        "v": 2,
+        "ts_start": "2026-07-09T12:41:04.646585+00:00",
+        "ts_end": "2026-07-09T12:41:04.709791+00:00",
+        "duration_ms": 63,
+        "queued_ms": 0,
+        "mem_peak_mb": 2269.09,
+        "mem_delta_mb": 0.0,
+        "session_id": "4f4c7845-ce41-4a22-9155-afaadd0d2d0b",
+        "project": "Project_0",
+        "project_path": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+        "seq": 264,
+        "cmd": "slice2d.add_polyline",
+        "cli": "slice2d.add_polyline dl:2 11 56.760931 91.758418 56.781499 91.657065 57.833631 91.655919 57.822918 91.935377",
+        "success": true,
+        "output_snippet": "Added polyline poly[42] to slice[11]  → 4 vertices\n",
+        "error": null
+      }
+    ]
+  }
+}

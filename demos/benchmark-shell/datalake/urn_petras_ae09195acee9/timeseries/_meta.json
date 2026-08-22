@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "channels": [
+    "MRN_HNE_acceleration",
+    "MRN_HNE_displacement",
+    "MRN_HNE_velocity",
+    "MRN_HNN_acceleration",
+    "MRN_HNN_displacement",
+    "MRN_HNN_velocity",
+    "MRN_HNZ_acceleration",
+    "MRN_HNZ_displacement",
+    "MRN_HNZ_velocity"
+  ],
+  "n_samples": 20001,
+  "time_start": "2012-05-29T06:59:33",
+  "time_end": "2012-05-29T07:01:13",
+  "n_partitions": 1
+}

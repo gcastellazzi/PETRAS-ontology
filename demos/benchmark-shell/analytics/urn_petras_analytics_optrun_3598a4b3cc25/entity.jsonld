@@ -1,0 +1,58 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "OptimizerRun",
+  "plannerVersion": "v1",
+  "planHash": "2d336f87609a0d7eeaf60c9cc43658810defd603815d851dc8c7b7aad1847be3",
+  "scope": "all",
+  "tsStart": "2026-07-31T09:21:04.522735+00:00",
+  "tsEnd": "2026-07-31T09:21:04.585508+00:00",
+  "nActions": 61,
+  "actionCounts": {
+    "remove_ghost_dir": 51,
+    "purge_dead_link": 3,
+    "soft_delete": 7
+  },
+  "freedBytes": 63081,
+  "aliasesPruned": {
+    "aliases": [],
+    "dl_aliases": [],
+    "labels": []
+  },
+  "stepResults": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 61,
+    "sample": [
+      {
+        "kind": "remove_ghost_dir",
+        "target": "(No DataSet available)",
+        "layer": "datasets",
+        "detail": "datasets/(No DataSet available) holds no dataset.jsonld",
+        "reversible": false,
+        "outcome": "removed"
+      },
+      {
+        "kind": "remove_ghost_dir",
+        "target": "(No OSM DataLake entries)",
+        "layer": "datalake",
+        "detail": "datalake/(No OSM DataLake entries) holds no dataset.jsonld",
+        "reversible": false,
+        "outcome": "removed"
+      }
+    ]
+  },
+  "@id": "urn:petras:analytics:optrun_3598a4b3cc25",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-31T09:21:04.585563+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-31T09:21:04.585563+00:00"
+}

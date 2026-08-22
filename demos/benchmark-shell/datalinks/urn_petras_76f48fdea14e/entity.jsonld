@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:76f48fdea14e",
+  "@type": "DataLink",
+  "createdAt": "2026-08-08T15:25:13.482211+00:00",
+  "mapsFrom": "urn:petras:femmodel:08ee90084402",
+  "mapsTo": "urn:petras:analytics:711eb6a2f325410185fd5558efb538a3",
+  "operator": "labels.group_from_fem",
+  "parameters": {
+    "kind": "node",
+    "group": "ZMIN"
+  },
+  "plugin": "labels"
+}

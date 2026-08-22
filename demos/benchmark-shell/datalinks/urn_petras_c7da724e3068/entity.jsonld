@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:c7da724e3068",
+  "@type": "DataLink",
+  "createdAt": "2026-08-11T20:44:53.984839+00:00",
+  "mapsFrom": "urn:petras:femresult:4f0413c2c0f3",
+  "mapsTo": "urn:petras:analytics:finetools_job:79eb3b6d1a33",
+  "operator": "finetools_engine.job",
+  "parameters": {
+    "mode": "linear_statics"
+  },
+  "plugin": "finetools_engine"
+}

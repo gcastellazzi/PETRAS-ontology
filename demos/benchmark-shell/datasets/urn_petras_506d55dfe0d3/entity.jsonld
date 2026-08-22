@@ -1,0 +1,55 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:506d55dfe0d3",
+  "@type": "DataSet",
+  "createdAt": "2026-08-21T14:42:56.401236+00:00",
+  "geometryURI": null,
+  "geometryType": "mesh3d",
+  "materials": {},
+  "boundaryConditions": {},
+  "discretization": {},
+  "version": 1,
+  "parentID": null,
+  "sourceDatalakeIDs": [
+    "urn:petras:0273e9655a35"
+  ],
+  "geometryObjects": {
+    "mesh3d": "urn:petras:geom:c41b0576c1ef",
+    "mesh2d": "urn:petras:geom:211860b7ef35"
+  },
+  "sourceDatasetIDs": [],
+  "materialAssignments": [
+    {
+      "id": 1,
+      "materialRef": "urn:petras:datasources:mat_5beaa9b89528",
+      "name": "M10 Clay Brick",
+      "key": "m10_clay_brick",
+      "color": "#CB7169"
+    },
+    {
+      "id": 2,
+      "materialRef": "urn:petras:datasources:mat_abc79313bde6",
+      "name": "M24 Clay Brick",
+      "key": "m24_clay_brick",
+      "color": "#E0AD84"
+    }
+  ],
+  "materialCellData": "material_id",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-21T14:42:56.406491+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-21T14:42:56.406491+00:00",
+  "sunShadowSupport": {
+    "surfaceGeometry": "mesh2d",
+    "sourceGeometry": "mesh3d"
+  }
+}

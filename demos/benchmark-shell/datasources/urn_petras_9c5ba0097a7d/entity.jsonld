@@ -1,0 +1,57 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:9c5ba0097a7d",
+  "@type": "DataSources",
+  "createdAt": "2026-07-31T09:08:07.234366+00:00",
+  "sourceType": "photo",
+  "title": "North prospect May 20 #2",
+  "authors": [],
+  "doi": "",
+  "uri": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "north_prospect_upper_20_may.JPG"
+  },
+  "checksum": "a71c4372ccd20cacd4b7abc0ac42c990366e77212babff11170f57293cede0da",
+  "linkedEntities": [],
+  "capturedAt": "2012-05-20",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-31T09:08:07.234698+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-31T09:08:07.234698+00:00",
+  "spatialView": {
+    "schemaVersion": 1,
+    "coordinateSpace": "project",
+    "position": [
+      8.0259514,
+      90.679581,
+      46.798748
+    ],
+    "target": [
+      56.0129757,
+      99.4647903,
+      46.6186924
+    ],
+    "up": [
+      -0.002122649268500665,
+      0.03207916141472809,
+      0.9994830772769546
+    ],
+    "horizontalFovDeg": 60.0,
+    "verticalFovDeg": 46.8264489,
+    "imageOrientation": "landscape",
+    "photoAspectRatio": 1.5,
+    "fovSource": "angles",
+    "imageWidthPx": 3264,
+    "imageHeightPx": 2448
+  }
+}

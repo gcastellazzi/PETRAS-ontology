@@ -1,0 +1,30 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:521fccb4f539",
+  "@type": "DataSources",
+  "createdAt": "2026-08-17T08:07:06.740424+00:00",
+  "sourceType": "pdf",
+  "title": "plan_900_section_with_damage",
+  "authors": [],
+  "doi": "",
+  "uri": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "plan_900_section_with_damage.pdf"
+  },
+  "checksum": "0517890607e8a1b04095f58c8fb4d4bca56279bbc2ef1495e6c339b576f36b1a",
+  "linkedEntities": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-17T08:07:06.740661+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-17T08:07:06.740661+00:00"
+}

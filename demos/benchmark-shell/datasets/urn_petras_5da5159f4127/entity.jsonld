@@ -1,0 +1,38 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:5da5159f4127",
+  "@type": "DataSet",
+  "createdAt": "2026-07-27T16:07:11.269563+00:00",
+  "geometryURI": null,
+  "geometryType": "mesh3d",
+  "materials": {},
+  "boundaryConditions": {},
+  "discretization": {},
+  "version": 1,
+  "parentID": null,
+  "sourceDatalakeIDs": [
+    "urn:petras:0273e9655a35"
+  ],
+  "geometryObjects": {
+    "mesh3d": "urn:petras:geom:72adef7532c4",
+    "mesh2d": "urn:petras:geom:9c4c147f5453"
+  },
+  "sourceDatasetIDs": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-27T16:07:11.275005+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-27T16:07:11.275005+00:00",
+  "sunShadowSupport": {
+    "surfaceGeometry": "mesh2d",
+    "sourceGeometry": "mesh3d"
+  }
+}

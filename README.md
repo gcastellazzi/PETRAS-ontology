@@ -11,6 +11,7 @@ with the same seven-layer colour semantics used in the reference desktop maps.
 
 - Canonical PETRAS project layout (`petras.json`, `urn:petras:…`, `entity.jsonld`)
 - Empty-shell demo project covering all **7 layers** (core + service)
+- `petras extract-structure` — copy project tree without binaries / bulk arrays
 - Project concept map and per-entity provenance neighbourhood
 - Static React viewer suitable for GitHub Pages
 - Optional read-only import of legacy C2F4DT projects (`--legacy`)
@@ -28,6 +29,10 @@ petras generate-demo --out demos/cathedral-shell
 petras export-graph demos/cathedral-shell \
   -o viewer/public/demos/cathedral-shell/graph.json
 
+# Structure-only shell from a real project (no NPZ/PDF; large JSON arrays stubbed)
+petras extract-structure /path/to/Project_PETRAS_Benchmark \
+  demos/benchmark-shell --clean
+
 # Viewer
 cd viewer && npm install && npm run dev
 ```
@@ -44,9 +49,9 @@ bash scripts/build_demo_graphs.sh
 ontology/          # petras.ttl + context.jsonld (w3id.org/petras)
 petras-core/       # Python I/O + graph + layout (no C2F4DT dependency)
 viewer/            # React + Vite graph viewer
-demos/             # cathedral-shell empty project
+demos/             # cathedral-shell + benchmark-shell
 docs/              # project format + layer guide
-scripts/           # demo generation helpers
+scripts/           # demo generation / structure extract helpers
 ```
 
 ## Naming rule

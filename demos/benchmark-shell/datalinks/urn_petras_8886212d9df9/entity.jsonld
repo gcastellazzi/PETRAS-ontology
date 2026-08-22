@@ -1,0 +1,15 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:8886212d9df9",
+  "@type": "DataLink",
+  "createdAt": "2026-08-16T16:02:00.376001+00:00",
+  "mapsFrom": "urn:petras:femresult:4f0413c2c0f3",
+  "mapsTo": "urn:petras:8fca94ac23d4",
+  "operator": "finetools_engine.record_series.result_to_record",
+  "parameters": {
+    "field": "displacement",
+    "components": "ux,uy,uz,mag",
+    "nodes": "68812,69778"
+  },
+  "plugin": "finetools_engine"
+}

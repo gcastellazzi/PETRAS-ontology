@@ -1,0 +1,43 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:5e92e3bf86d1",
+  "@type": "DataLake",
+  "createdAt": "2026-07-11T11:51:09.021217+00:00",
+  "osm_query": true,
+  "lat": 44.838925,
+  "lon": 11.141214,
+  "radius_m": 100.0,
+  "lod": "main",
+  "n_buildings": 28,
+  "bbox": [
+    44.8376713,
+    11.1400276,
+    44.8398625,
+    11.1432488
+  ],
+  "date_downloaded": "2026-07-11T11:51:09.022337+00:00",
+  "center_building_osm_id": "14982010",
+  "center_building_name": "Rocca Estense",
+  "center_building_relation": "covers_point",
+  "fileURI": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "buildings.geojson"
+  },
+  "format": "geojson",
+  "checksum": "",
+  "description": "OSM buildings: 28 features at (44.83893, 11.14121) r=100.0m",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-11T11:51:09.022436+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-11T11:51:09.022436+00:00"
+}

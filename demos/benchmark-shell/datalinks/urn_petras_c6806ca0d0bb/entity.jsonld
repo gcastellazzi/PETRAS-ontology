@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:c6806ca0d0bb",
+  "@type": "DataLink",
+  "createdAt": "2026-08-20T12:15:19.825125+00:00",
+  "mapsFrom": "urn:petras:ae09195acee9",
+  "mapsTo": "urn:petras:analytics:ce0860fbb1a34d4cb1652ad9bcfc999b",
+  "operator": "labels.link_signal",
+  "parameters": {
+    "channel": "MRN_HNE_acceleration"
+  },
+  "plugin": "labels"
+}

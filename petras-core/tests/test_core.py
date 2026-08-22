@@ -84,3 +84,32 @@ def test_open_petras_project(tmp_path: Path) -> None:
     opened = Project.open(tmp_path / "empty")
     assert opened.config["ontology"] == "PETRAS"
     assert opened.list_entities(OntologyLayer.DATALAKE) == []
+
+
+def test_strip_payload_bulk_list() -> None:
+    from petras.extract_structure import strip_payload
+
+    data = {"label": "ok", "nodeGroups": {"g1": list(range(5000))}}
+    out = strip_payload(data)
+    assert out["label"] == "ok"
+    assert out["nodeGroups"]["g1"]["_stripped"] is True
+    assert out["nodeGroups"]["g1"]["count"] == 5000
+
+
+def test_extract_structure_from_demo(tmp_path: Path) -> None:
+    from petras.extract_structure import extract_structure
+
+    src = tmp_path / "src"
+    dest = tmp_path / "dest"
+    generate_demo_project(src)
+    bin_path = next(src.joinpath("datasets").iterdir()) / "points.npz"
+    bin_path.write_bytes(b"not-real-npz" * 100)
+    stats = extract_structure(src, dest, to_petras=True, strip=True)
+    assert stats["entities"] >= 20
+    assert stats["jsonldWritten"] >= 20
+    assert not list(dest.rglob("*.npz"))
+    assert (dest / "petras.json").is_file()
+    opened = Project.open(dest)
+    assert opened.config["ontology"] == "PETRAS"
+    graph, _ = build_project_graph(opened)
+    assert graph.number_of_nodes() >= 20

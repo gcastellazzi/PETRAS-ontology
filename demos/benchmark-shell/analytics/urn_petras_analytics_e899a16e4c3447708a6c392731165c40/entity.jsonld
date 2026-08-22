@@ -1,0 +1,83 @@
+{
+  "@id": "urn:petras:analytics:e899a16e4c3447708a6c392731165c40",
+  "artifact_type": "inspect_cloud_plane_extract",
+  "method": "inspect_cloud.compute",
+  "plugin": "inspect_cloud",
+  "sourceDatasetId": "urn:petras:4deaa0b067cc",
+  "inputs": [
+    "urn:petras:4deaa0b067cc"
+  ],
+  "outputs": {
+    "plane_count": 442,
+    "planes": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 442,
+      "sample": [
+        {
+          "plane_id": 0,
+          "centroid": [
+            59.7863316293116,
+            103.27675517400105,
+            42.64294055435393
+          ],
+          "normal": [
+            -0.9998497046483451,
+            -0.009247231492283558,
+            0.014664815864686528
+          ],
+          "n_points": 1728,
+          "rms_residual": 0.0051295379244024,
+          "bbox_min": [
+            59.74871063232422,
+            102.3062515258789,
+            41.39996337890625
+          ],
+          "bbox_max": [
+            59.836830139160156,
+            103.97679901123047,
+            44.32157516479492
+          ]
+        },
+        {
+          "plane_id": 1,
+          "centroid": [
+            60.162734918352875,
+            96.16321731737807,
+            49.3358020507646
+          ],
+          "normal": [
+            0.012626049957091979,
+            -0.9999042568891853,
+            0.005662147769809819
+          ],
+          "n_points": 11729,
+          "rms_residual": 0.005000967224332798,
+          "bbox_min": [
+            57.744285583496094,
+            96.10436248779297,
+            46.6290397644043
+          ],
+          "bbox_max": [
+            62.523712158203125,
+            96.20027160644531,
+            51.64957809448242
+          ]
+        }
+      ]
+    }
+  },
+  "parameters": {
+    "k": 64,
+    "max_sample": 10000000,
+    "normal_up_axis": "z",
+    "normal_orient_neighbors": 12,
+    "plane_extract": true,
+    "plane_angle_deg": 10.0,
+    "plane_dist_tol": "auto",
+    "plane_min_points": 100
+  },
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "DataAnalytics",
+  "createdAt": "2026-07-08T08:04:51.018243+00:00"
+}

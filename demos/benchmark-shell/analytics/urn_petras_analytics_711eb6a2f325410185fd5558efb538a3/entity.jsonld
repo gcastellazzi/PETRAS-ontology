@@ -1,0 +1,45 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:analytics:711eb6a2f325410185fd5558efb538a3",
+  "@type": "NodeGroupLabel",
+  "name": "Ground Input",
+  "group_kind": "node",
+  "source_model": "urn:petras:femmodel:08ee90084402",
+  "source_dataset": "urn:petras:5da5159f4127",
+  "source_group_name": "ZMIN",
+  "count": 11232,
+  "node_ids": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 11232,
+    "sample": [
+      0,
+      2
+    ]
+  },
+  "created_at": "2026-08-08T15:25:13.447670+00:00",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-08T15:25:13.447817+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-08T15:25:13.447817+00:00",
+  "linkedResults": [
+    {
+      "result": "urn:petras:femresult:d2585ab00e02",
+      "model": "urn:petras:femmodel:08ee90084402",
+      "dataset": "urn:petras:5da5159f4127",
+      "field": "",
+      "node_indices": [],
+      "linkedAt": "2026-08-08T15:25:13.488057+00:00",
+      "source": "group_label"
+    }
+  ]
+}

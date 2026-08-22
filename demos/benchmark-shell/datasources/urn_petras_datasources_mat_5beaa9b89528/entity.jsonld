@@ -1,0 +1,55 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "MaterialDefinition",
+  "@id": "urn:petras:datasources:mat_5beaa9b89528",
+  "schema_version": "1.1",
+  "name": "M10 Clay Brick",
+  "key": "m10_clay_brick",
+  "category": "solid",
+  "model": "linear_elastic_isotropic",
+  "mechanical_properties": {
+    "E": 3000000000.0,
+    "nu": 0.2,
+    "rho": 1800.0
+  },
+  "thermal_properties": {
+    "k": 0.8,
+    "cp": 840.0,
+    "rho": 1800.0
+  },
+  "applicability": {
+    "elements": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 1,
+      "sample": [
+        "solid"
+      ]
+    },
+    "analyses": [
+      "mechanical"
+    ]
+  },
+  "source": "Historic masonry handbook",
+  "notes": "",
+  "color": "#CB7169",
+  "createdAt": "2026-08-20T16:19:59.540527+00:00",
+  "bounds": {},
+  "boundsPolicy": "nominal",
+  "propertySources": {},
+  "assumptions": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-20T16:19:59.541144+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-20T16:19:59.541144+00:00",
+  "updatedAt": "2026-08-20T20:53:43.648479+00:00"
+}

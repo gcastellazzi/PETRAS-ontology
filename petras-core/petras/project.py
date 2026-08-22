@@ -31,9 +31,9 @@ class Project:
         self._legacy = False
 
     @classmethod
-    def create(cls, root: Path, name: str = "", description: str = "") -> Project:
+    def create(cls, root: Path | str, name: str = "", description: str = "") -> Project:
         """Initialize a new PETRAS project directory structure."""
-        root = root.resolve()
+        root = Path(root).resolve()
         root.mkdir(parents=True, exist_ok=True)
         for layer_dir in LAYER_DIRS.values():
             (root / layer_dir).mkdir(exist_ok=True)
@@ -51,9 +51,9 @@ class Project:
         return proj
 
     @classmethod
-    def open(cls, root: Path, *, translate_legacy: bool = False) -> Project:
+    def open(cls, root: Path | str, *, translate_legacy: bool = False) -> Project:
         """Open an existing PETRAS or legacy C2F4DT project."""
-        root = root.resolve()
+        root = Path(root).resolve()
         petras_cfg = root / MANIFEST_NAME
         legacy_cfg = root / LEGACY_MANIFEST_NAME
         if not petras_cfg.exists() and not legacy_cfg.exists():

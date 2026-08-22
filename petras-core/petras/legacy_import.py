@@ -23,11 +23,18 @@ def translate_value(value: Any) -> Any:
         text = text.replace("https://c2f4dt.org/context.jsonld", PETRAS_CONTEXT)
         text = text.replace("https://c2f4dt.org/context/v1", PETRAS_CONTEXT)
         text = text.replace("https://c2f4dt.org/ontology#", "https://w3id.org/petras/ontology#")
+        text = text.replace("urn_c2f4dt_", "urn_petras_")
+        text = text.replace("c2f4dt.indexer", "petras.indexer")
+        text = text.replace(".c2f4dt_finetools_jobs", ".petras_finetools_jobs")
+        text = text.replace("c2f4dt.json", "petras.json")
         return text
     if isinstance(value, list):
         return [translate_value(item) for item in value]
     if isinstance(value, dict):
-        return {k: translate_value(v) for k, v in value.items()}
+        return {
+            translate_value(k) if isinstance(k, str) else k: translate_value(v)
+            for k, v in value.items()
+        }
     return value
 
 

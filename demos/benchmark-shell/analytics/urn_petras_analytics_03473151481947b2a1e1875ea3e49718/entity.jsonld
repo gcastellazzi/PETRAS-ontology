@@ -1,0 +1,70 @@
+{
+  "@id": "urn:petras:analytics:03473151481947b2a1e1875ea3e49718",
+  "artifact_type": "inspect_cloud_compare_fem",
+  "method": "inspect_cloud.compare_fem",
+  "plugin": "inspect_cloud",
+  "sourceDatasetId": "urn:petras:4deaa0b067cc",
+  "targetDatasetId": "urn:petras:eb05e0b56e0a",
+  "distanceTargetDatasetId": "urn:petras:4deaa0b067cc",
+  "distanceReferenceDatasetId": "urn:petras:eb05e0b56e0a",
+  "inputs": [
+    "urn:petras:4deaa0b067cc",
+    "urn:petras:eb05e0b56e0a"
+  ],
+  "outputs": {
+    "performance_score_pct": 38.115499069146985,
+    "gap_target": 0.06051690345668351,
+    "histogram_counts": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 64,
+      "sample": [
+        642567,
+        525606
+      ]
+    },
+    "histogram_edges": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 65,
+      "sample": [
+        0.0,
+        0.05204442453421214
+      ]
+    },
+    "mean": 0.1756439978179317,
+    "median": 0.08126422283220336,
+    "rmse": 0.3693170875420048,
+    "p95": 0.6424347815680789,
+    "max": 3.330843170189577,
+    "direction": "cloud_to_fem",
+    "sampled_count": 1910076,
+    "source_count": 1910076,
+    "fields_written": true,
+    "field_keys": [
+      "fem_gap_distance",
+      "fem_gap_bin",
+      "fem_gap_within_gap"
+    ]
+  },
+  "parameters": {
+    "cloudDatasetId": "urn:petras:4deaa0b067cc",
+    "femDatasetId": "urn:petras:eb05e0b56e0a",
+    "meshDatasetId": "urn:petras:eb05e0b56e0a",
+    "direction": "cloud_to_fem",
+    "clusters": 64,
+    "gap_target": 0.06051690345668351,
+    "gap_target_mode": "auto",
+    "output_key": "fem_gap",
+    "max_sample": 10000000,
+    "sampled_count": 1910076,
+    "source_count": 1910076,
+    "surface_geometry": "mesh2d",
+    "surface_persistent": false,
+    "distanceTargetDatasetId": "urn:petras:4deaa0b067cc",
+    "distanceReferenceDatasetId": "urn:petras:eb05e0b56e0a"
+  },
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "DataAnalytics",
+  "createdAt": "2026-07-10T10:46:50.857401+00:00"
+}

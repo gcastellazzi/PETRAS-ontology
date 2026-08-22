@@ -1,0 +1,56 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:a15898db1110",
+  "@type": "DataLink",
+  "createdAt": "2026-07-31T10:55:05.600406+00:00",
+  "mapsFrom": "urn:petras:ae09195acee9",
+  "mapsTo": "urn:petras:ae09195acee9",
+  "operator": "read_iot.append",
+  "parameters": {
+    "file": "IT.MRN..HNE.D.20120529.070003.C.VEL.ASC",
+    "format": "itaca_asc",
+    "rows_appended": 20001,
+    "tz": "Europe/Rome",
+    "quality": {
+      "ok": true,
+      "severity": "ok",
+      "n_rows": 20001,
+      "n_valid_time": 20001,
+      "valid_time_ratio": 1.0,
+      "time_start": "2012-05-29 06:59:33",
+      "time_end": "2012-05-29 07:01:13",
+      "suspicious_epoch_ratio": 0.0,
+      "out_of_range_ratio": 0.0,
+      "duplicate_time_ratio": 0.0,
+      "non_monotonic": false,
+      "inferred_time_column": "",
+      "parser_profile": "itaca_asc",
+      "warnings": [],
+      "errors": [],
+      "sample_rows": [
+        {
+          "time": "2012-05-29 06:59:33",
+          "MRN_HNE_velocity": 0.0
+        },
+        {
+          "time": "2012-05-29 06:59:33.005000",
+          "MRN_HNE_velocity": -3.1e-05
+        },
+        {
+          "time": "2012-05-29 06:59:33.010000",
+          "MRN_HNE_velocity": -9.3e-05
+        },
+        {
+          "time": "2012-05-29 06:59:33.015000",
+          "MRN_HNE_velocity": -0.000155
+        },
+        {
+          "time": "2012-05-29 06:59:33.020000",
+          "MRN_HNE_velocity": -0.000217
+        }
+      ]
+    },
+    "allow_suspicious": false
+  },
+  "plugin": "read_iot"
+}

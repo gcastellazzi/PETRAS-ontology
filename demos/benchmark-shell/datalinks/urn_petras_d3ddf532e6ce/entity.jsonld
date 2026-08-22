@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:d3ddf532e6ce",
+  "@type": "DataLink",
+  "createdAt": "2026-07-08T08:02:51.073015+00:00",
+  "mapsFrom": "urn:petras:32f7202be022",
+  "mapsTo": "urn:petras:4deaa0b067cc",
+  "operator": "import_cloud",
+  "parameters": {
+    "format": "ply"
+  },
+  "plugin": "acquire_cloud"
+}

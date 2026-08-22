@@ -1,0 +1,20 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:16f3d7c3909d",
+  "@type": "DataLink",
+  "createdAt": "2026-07-08T08:15:54.506488+00:00",
+  "mapsFrom": "urn:petras:4deaa0b067cc",
+  "mapsTo": "urn:petras:4deaa0b067cc",
+  "operator": "inspect_cloud.group_rules",
+  "parameters": {
+    "preset": "corner",
+    "output_key": "group_labels_corners",
+    "connect_radius": 0.07564612932085438,
+    "min_group_size": 100,
+    "rules": {
+      "curvature_gt": 0.1417755465673987,
+      "normal_variation_gt": 0.9982554903443503
+    }
+  },
+  "plugin": "inspect_cloud"
+}

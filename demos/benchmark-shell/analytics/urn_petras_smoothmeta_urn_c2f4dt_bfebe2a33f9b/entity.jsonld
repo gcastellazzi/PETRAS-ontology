@@ -1,0 +1,108 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:smoothmeta_urn_petras_bfebe2a33f9b",
+  "@type": "cr:TaubinSmoothingMeta",
+  "createdAt": "2026-08-09T13:13:15.898348+00:00",
+  "sourceMeshDatasetId": "urn:petras:5da5159f4127",
+  "outputMeshDatasetId": "urn:petras:bfebe2a33f9b",
+  "sourceCloudDatasetId": "urn:petras:4deaa0b067cc",
+  "method": "cloud_registration.smooth_taubin",
+  "parameters": {
+    "cloud_dataset_id": "urn:petras:4deaa0b067cc",
+    "lam": 0.6,
+    "mu": -0.63,
+    "iterations": 3,
+    "role_radius": 0.14999999999999858,
+    "max_step": 0.07499999999999929,
+    "feature_source": "curvature",
+    "role_provenance": "curvature_only",
+    "feature_constraint": true,
+    "w_edge": 0.35,
+    "plane_normal_source": "auto",
+    "coverage_pct": 61.56301971964837,
+    "role_histogram": {
+      "plane": 36484,
+      "edge": 3731,
+      "corner": 1244,
+      "unsupported": 25885
+    },
+    "cloud_rms_before": 0.05889971633748954,
+    "cloud_rms_after": 0.057958889872068146,
+    "edge_rms_before": 0.061134119354733604,
+    "edge_rms_after": 0.06113776465059129,
+    "volume_change_pct": -0.013474007735311589,
+    "frozen_node_count": 0,
+    "iterations_run": 3
+  },
+  "stats": {
+    "lam": 0.6,
+    "mu": -0.63,
+    "pass_band_frequency": 0.07936507936507953,
+    "iterations_requested": 3,
+    "iterations_run": 3,
+    "converged": false,
+    "n_surface_nodes": 67344,
+    "n_interior_nodes": 89667,
+    "mean_displacement": 0.008416046206574332,
+    "max_displacement": 0.225000000000003,
+    "mean_displacement_history": [
+      0.004127844319192848,
+      0.003225155049476695,
+      0.002588568060221073
+    ],
+    "min_jacobian_history": [
+      5.7492087786180903e-05,
+      3.1692767248992876e-05,
+      1.3017757174850338e-05
+    ],
+    "repair_rounds_history": [
+      0,
+      0,
+      1
+    ],
+    "frozen_node_count": 0,
+    "damped_node_count": 54,
+    "quality_repair_exhausted": false,
+    "rollback_count": 0,
+    "quality_failure": false,
+    "quality_failure_reason": "",
+    "volume_before": 1100.059107873122,
+    "volume_after": 1099.9108858238342,
+    "volume_change_pct": -0.013474007735311589,
+    "quality_before": {
+      "supported": true,
+      "method": "hex8_gauss",
+      "n_elements": 122851,
+      "n_jacobians": 982808,
+      "invalid_count": 0,
+      "min_det": 9.957432746884755e-05,
+      "max_det": 0.004099424653207479,
+      "mean_det": 0.0011193021504435476,
+      "min_positive_det": 9.957432746884755e-05
+    },
+    "quality_after": {
+      "supported": true,
+      "method": "hex8_gauss",
+      "n_elements": 122851,
+      "n_jacobians": 982808,
+      "invalid_count": 0,
+      "min_det": 1.3017757174850338e-05,
+      "max_det": 0.005433516672357333,
+      "mean_det": 0.0011191513355852153,
+      "min_positive_det": 1.3017757174850338e-05
+    }
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-09T13:13:15.898817+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-09T13:13:15.898817+00:00"
+}

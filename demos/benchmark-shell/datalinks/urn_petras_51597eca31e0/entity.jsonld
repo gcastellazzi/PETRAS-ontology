@@ -1,0 +1,17 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:51597eca31e0",
+  "@type": "DataLink",
+  "createdAt": "2026-08-20T19:51:46.641321+00:00",
+  "mapsFrom": "urn:petras:datasources:mat_5beaa9b89528",
+  "mapsTo": "urn:petras:datasources:mat_36b4169eecfb",
+  "operator": "diagnostics.material_base",
+  "parameters": {
+    "relation": "property_source",
+    "properties": [
+      "nu",
+      "rho"
+    ]
+  },
+  "plugin": "diagnostics"
+}

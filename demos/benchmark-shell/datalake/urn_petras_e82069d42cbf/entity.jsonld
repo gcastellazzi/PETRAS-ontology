@@ -1,0 +1,69 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:e82069d42cbf",
+  "@type": "TemporalEvent",
+  "createdAt": "2026-07-30T09:12:24.329386+00:00",
+  "updatedAt": "2026-07-30T09:12:24.329386+00:00",
+  "label": "M6 — 4 km NNE of Massa Finalese, Italy",
+  "startDate": "2012-05-20T02:03:52+00:00",
+  "endDate": "2012-05-20T02:03:52+00:00",
+  "eventType": "seismic_activity",
+  "severity": "high",
+  "description": "4 km NNE of Massa Finalese, Italy",
+  "location": {
+    "latitude": 44.89,
+    "longitude": 11.23,
+    "distance_km": 9.012139162515735
+  },
+  "affectedZones": [],
+  "measurements": {
+    "magnitude": 6.0,
+    "depth_km": 6.3,
+    "focal_mechanism": "",
+    "event_id": "usp000jkn8"
+  },
+  "attachments": [],
+  "relatedEvents": [],
+  "tags": [
+    "earthquake",
+    "usgs"
+  ],
+  "visibility": "public",
+  "deleted": false,
+  "deletedAt": "",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-07-30T09:12:24.329534+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-07-30T09:12:24.329534+00:00",
+  "place": "4 km NNE of Massa Finalese, Italy",
+  "externalUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000jkn8",
+  "sourceIdentity": {
+    "kind": "earthquake_catalog",
+    "provider": "usgs_earthquake",
+    "eventId": "usp000jkn8",
+    "endpoint": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+    "queryParameters": {
+      "format": "geojson",
+      "eventtype": "earthquake",
+      "starttime": "2012-05-19",
+      "endtime": "2012-05-30",
+      "latitude": "44.838925",
+      "longitude": "11.141214",
+      "maxradiuskm": "10",
+      "minmagnitude": "0",
+      "orderby": "time-asc",
+      "limit": "20000"
+    },
+    "cacheKey": "7d5e21c52d61f6937764980c",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000jkn8"
+  }
+}

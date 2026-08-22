@@ -52,6 +52,23 @@ def cmd_generate_demo(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_extract_structure(args: argparse.Namespace) -> int:
+    from .extract_structure import clear_destination_layers, extract_structure
+
+    dest = Path(args.destination)
+    if args.clean and dest.exists():
+        clear_destination_layers(dest)
+    stats = extract_structure(
+        Path(args.source),
+        dest,
+        to_petras=not args.keep_legacy,
+        strip=not args.no_strip,
+        include_empty_placeholders=args.placeholders,
+    )
+    print(json.dumps(stats, indent=2))
+    return 0
+
+
 def cmd_summary(args: argparse.Namespace) -> int:
     from .project import Project
 
@@ -86,6 +103,34 @@ def build_parser() -> argparse.ArgumentParser:
     p_demo.add_argument("--out", required=True, help="Output project directory")
     p_demo.add_argument("--name", default="Cathedral Shell")
     p_demo.set_defaults(func=cmd_generate_demo)
+
+    p_extract = sub.add_parser(
+        "extract-structure",
+        help="Copy project structure without binary/bulk data payloads",
+    )
+    p_extract.add_argument("source", help="Source project directory")
+    p_extract.add_argument("destination", help="Destination directory for the shell")
+    p_extract.add_argument(
+        "--keep-legacy",
+        action="store_true",
+        help="Keep c2f4dt.json / urn:c2f4dt: / dataset.jsonld (default: convert to PETRAS)",
+    )
+    p_extract.add_argument(
+        "--no-strip",
+        action="store_true",
+        help="Do not strip large arrays from JSON-LD (still skips binaries)",
+    )
+    p_extract.add_argument(
+        "--placeholders",
+        action="store_true",
+        help="Write empty placeholder files for skipped binaries",
+    )
+    p_extract.add_argument(
+        "--clean",
+        action="store_true",
+        help="Remove existing layer folders in destination before extract",
+    )
+    p_extract.set_defaults(func=cmd_extract_structure)
 
     p_sum = sub.add_parser("summary", help="Print project layer counts")
     p_sum.add_argument("project")

@@ -1,0 +1,97 @@
+{
+  "n_entities": 158,
+  "n_commands": 100,
+  "n_success": 100,
+  "n_failed": 0,
+  "success_rate": 100.0,
+  "template": "technical",
+  "method": "standard",
+  "log_sources": [
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-08_d02a79ef.jsonl"
+      },
+      "file": "2026-08-08_d02a79ef.jsonl",
+      "count": 1,
+      "first_ts": "2026-08-08T16:33:28.613977+00:00",
+      "last_ts": "2026-08-08T16:33:28.613977+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-08_9af87a09.jsonl"
+      },
+      "file": "2026-08-08_9af87a09.jsonl",
+      "count": 6,
+      "first_ts": "2026-08-08T15:23:44.269164+00:00",
+      "last_ts": "2026-08-08T15:27:07.482316+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-07-31_5d2bac85.jsonl"
+      },
+      "file": "2026-07-31_5d2bac85.jsonl",
+      "count": 17,
+      "first_ts": "2026-07-31T14:50:17.701902+00:00",
+      "last_ts": "2026-07-31T14:56:04.037866+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-07-31_0610e74f.jsonl"
+      },
+      "file": "2026-07-31_0610e74f.jsonl",
+      "count": 72,
+      "first_ts": "2026-07-31T14:15:28.626223+00:00",
+      "last_ts": "2026-07-31T14:25:00.920816+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-07-31_63d9ae2c.jsonl"
+      },
+      "file": "2026-07-31_63d9ae2c.jsonl",
+      "count": 4,
+      "first_ts": "2026-07-31T13:18:36.896575+00:00",
+      "last_ts": "2026-07-31T13:19:01.712418+00:00"
+    }
+  ],
+  "referenced_entities": [
+    "urn:petras:0273e9655a35",
+    "urn:petras:32f7202be022",
+    "urn:petras:4deaa0b067cc",
+    "urn:petras:5da5159f4127",
+    "urn:petras:5e92e3bf86d1",
+    "urn:petras:ae09195acee9",
+    "urn:petras:analytics:711eb6a2f325410185fd5558efb538a3",
+    "urn:petras:analytics:d797c65ac07f4f86851a8c04d490e481",
+    "urn:petras:analytics:finetools_job:13e3806c878d",
+    "urn:petras:analytics:finetools_job:493faaef9c42",
+    "urn:petras:analytics:finetools_job:631b8e2661cc",
+    "urn:petras:analytics:finetools_job:9d728e1901d0",
+    "urn:petras:datasources:mat_abc79313bde6",
+    "urn:petras:femmodel:08ee90084402",
+    "urn:petras:femresult:7f44d2faae38",
+    "urn:petras:femresult:b10145b068c5",
+    "urn:petras:femresult:bfa83c512bab",
+    "urn:petras:femresult:d2585ab00e02"
+  ],
+  "referenced_entity_count": 18,
+  "referencedEntities": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 18,
+    "sample": [
+      "urn:petras:0273e9655a35",
+      "urn:petras:32f7202be022"
+    ]
+  },
+  "referencedEntityCount": 18
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "sliceSetId": "urn:petras:0273e9655a35",
+  "sourceFrame": "centered-width-normalized-y-up",
+  "sliceIds": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 46,
+    "sample": [
+      "sl_8bda4231466e406d",
+      "sl_26bf648389c2488d"
+    ]
+  },
+  "zCoordsSnapshot": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 46,
+    "sample": [
+      37.5,
+      38.0
+    ]
+  },
+  "backgroundsBySliceId": {
+    "sl_4ce11cf6b1814f05": {
+      "documentId": "urn:petras:521fccb4f539",
+      "documentChecksum": "0517890607e8a1b04095f58c8fb4d4bca56279bbc2ef1495e6c339b576f36b1a",
+      "pageIndex": 0,
+      "visible": true,
+      "alignment": {
+        "kind": "similarity",
+        "sourceFrame": "centered-width-normalized-y-up",
+        "matrix": {
+          "_stripped": true,
+          "kind": "list",
+          "count": 3,
+          "sample": [
+            [
+              58.45570749911811,
+              -0.39306724312684044,
+              68.44597734947219
+            ],
+            [
+              0.39306724312684044,
+              58.45570749911811,
+              95.81191452137281
+            ]
+          ]
+        },
+        "sourceAspect": 0.9227826086956522,
+        "controlPoints": {
+          "source": [
+            [
+              -0.21920529726121885,
+              0.08917655720946893
+            ],
+            [
+              -0.2954008326093218,
+              0.08886482377070681
+            ]
+          ],
+          "target": [
+            [
+              55.59712422701927,
+              100.93863084351463
+            ],
+            [
+              51.14318283217521,
+              100.8904582757828
+            ]
+          ]
+        }
+      },
+      "updatedAt": "2026-08-17T09:31:10.977575+00:00"
+    }
+  }
+}

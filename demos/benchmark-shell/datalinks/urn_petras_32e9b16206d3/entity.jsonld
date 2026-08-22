@@ -1,0 +1,26 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:32e9b16206d3",
+  "@type": "DataLink",
+  "createdAt": "2026-07-09T16:45:18.772216+00:00",
+  "mapsFrom": "urn:petras:femmodel:d0b3d34516dc",
+  "mapsTo": "urn:petras:femresult:b10145b068c5",
+  "operator": "finetools_engine.solve",
+  "parameters": {
+    "mode": "linear_statics",
+    "n_modes": "8",
+    "dt": "3600",
+    "t_end": "604800",
+    "initial_T": "20",
+    "T_ref": "20",
+    "integration_element": "auto",
+    "integration_stress": "auto",
+    "mass_matrix": "consistent",
+    "dynamic_solver": "auto",
+    "tolerance": "1e-8",
+    "max_iterations": "200",
+    "rayleigh_alpha": "0.0",
+    "rayleigh_beta": "0.0"
+  },
+  "plugin": "finetools_engine"
+}

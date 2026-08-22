@@ -1,0 +1,83 @@
+{
+  "@id": "urn:petras:analytics:b96a66dd65f4427bb1623422e52f2568",
+  "artifact_type": "inspect_cloud_compare_fem",
+  "method": "inspect_cloud.compare_fem",
+  "plugin": "inspect_cloud",
+  "sourceDatasetId": "urn:petras:4deaa0b067cc",
+  "targetDatasetId": "urn:petras:506d55dfe0d3",
+  "distanceTargetDatasetId": "urn:petras:506d55dfe0d3",
+  "distanceReferenceDatasetId": "urn:petras:4deaa0b067cc",
+  "inputs": [
+    "urn:petras:4deaa0b067cc",
+    "urn:petras:506d55dfe0d3"
+  ],
+  "outputs": {
+    "performance_score_pct": 19.5598866278144,
+    "gap_target": 0.06051690345668351,
+    "histogram_counts": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 64,
+      "sample": [
+        35944,
+        23112
+      ]
+    },
+    "histogram_edges": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 65,
+      "sample": [
+        0.0,
+        0.07469922236081394
+      ]
+    },
+    "mean": 0.5525600191546056,
+    "median": 0.24690835377904397,
+    "rmse": 0.9587158347992089,
+    "p95": 2.3562589350469594,
+    "max": 4.780750231092092,
+    "direction": "fem_to_cloud",
+    "sampled_count": 157005,
+    "source_count": 157005,
+    "fields_written": true,
+    "field_keys": [
+      "fem_gap_113_distance",
+      "fem_gap_113_bin",
+      "fem_gap_113_within_gap"
+    ]
+  },
+  "parameters": {
+    "cloudDatasetId": "urn:petras:4deaa0b067cc",
+    "femDatasetId": "urn:petras:506d55dfe0d3",
+    "meshDatasetId": "urn:petras:506d55dfe0d3",
+    "direction": "fem_to_cloud",
+    "clusters": 64,
+    "gap_target": 0.06051690345668351,
+    "gap_target_mode": "auto",
+    "output_key": "fem_gap_113",
+    "max_sample": 10000000,
+    "sampled_count": 157005,
+    "source_count": 157005,
+    "surface_geometry": "mesh2d",
+    "surface_persistent": true,
+    "distanceTargetDatasetId": "urn:petras:506d55dfe0d3",
+    "distanceReferenceDatasetId": "urn:petras:4deaa0b067cc"
+  },
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "DataAnalytics",
+  "createdAt": "2026-08-21T16:48:05.466849+00:00",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-21T16:48:05.469318+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-21T16:48:05.469318+00:00"
+}

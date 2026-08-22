@@ -1,0 +1,139 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:fc0e22d37560",
+  "@type": "SensorRecord",
+  "createdAt": "2026-07-10T14:41:43.312618+00:00",
+  "sourceDatalakeIDs": [],
+  "sourceRecordIDs": [],
+  "nSamples": 744,
+  "timeStart": "2025-07-01 00:00:00",
+  "timeEnd": "2025-07-31 23:00:00",
+  "samplingHz": 0.000278,
+  "channels": [
+    {
+      "name": "temperature_2m",
+      "label": "temperature_2m",
+      "units": "°C",
+      "sensorType": "temperature",
+      "axis": null
+    },
+    {
+      "name": "relative_humidity_2m",
+      "label": "relative_humidity_2m",
+      "units": "%",
+      "sensorType": "humidity",
+      "axis": null
+    },
+    {
+      "name": "rain",
+      "label": "rain",
+      "units": "mm",
+      "sensorType": "precipitation",
+      "axis": null
+    },
+    {
+      "name": "cloud_cover",
+      "label": "cloud_cover",
+      "units": "%",
+      "sensorType": "weather",
+      "axis": null
+    },
+    {
+      "name": "precipitation",
+      "label": "precipitation",
+      "units": "mm",
+      "sensorType": "precipitation",
+      "axis": null
+    }
+  ],
+  "geometryBindings": {},
+  "sourceFile": "open_meteo:a8c963a3c76c40e6f3f25d0c",
+  "operator": "web_fetch_environmental",
+  "localCopy": true,
+  "sourceFolder": "",
+  "quality": {
+    "ok": true,
+    "severity": "ok",
+    "n_rows": 744,
+    "n_valid_time": 744,
+    "valid_time_ratio": 1.0,
+    "time_start": "2025-07-01 00:00:00",
+    "time_end": "2025-07-31 23:00:00",
+    "suspicious_epoch_ratio": 0.0,
+    "out_of_range_ratio": 0.0,
+    "duplicate_time_ratio": 0.0,
+    "non_monotonic": false,
+    "inferred_time_column": "",
+    "parser_profile": "",
+    "warnings": [],
+    "errors": [],
+    "sample_rows": [
+      {
+        "time": "2025-07-01 00:00:00",
+        "temperature_2m": 25.0,
+        "relative_humidity_2m": 69.0,
+        "rain": 0.0,
+        "cloud_cover": 30.0,
+        "precipitation": 0.0
+      },
+      {
+        "time": "2025-07-01 01:00:00",
+        "temperature_2m": 24.4,
+        "relative_humidity_2m": 70.0,
+        "rain": 0.0,
+        "cloud_cover": 100.0,
+        "precipitation": 0.0
+      },
+      {
+        "time": "2025-07-01 02:00:00",
+        "temperature_2m": 24.9,
+        "relative_humidity_2m": 67.0,
+        "rain": 0.0,
+        "cloud_cover": 90.0,
+        "precipitation": 0.0
+      },
+      {
+        "time": "2025-07-01 03:00:00",
+        "temperature_2m": 24.3,
+        "relative_humidity_2m": 73.0,
+        "rain": 0.0,
+        "cloud_cover": 70.0,
+        "precipitation": 0.0
+      },
+      {
+        "time": "2025-07-01 04:00:00",
+        "temperature_2m": 23.6,
+        "relative_humidity_2m": 76.0,
+        "rain": 0.0,
+        "cloud_cover": 30.0,
+        "precipitation": 0.0
+      }
+    ]
+  },
+  "sourceIdentity": {
+    "kind": "environmental_web_provider",
+    "provider": "open_meteo",
+    "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+    "queryParameters": {
+      "latitude": "44.838927",
+      "longitude": "11.141229",
+      "start_date": "2025-07-01",
+      "end_date": "2025-07-31",
+      "hourly": "temperature_2m,relative_humidity_2m,rain,cloud_cover,precipitation",
+      "timezone": "UTC"
+    },
+    "cacheKey": "a8c963a3c76c40e6f3f25d0c",
+    "cachePath": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark/iot_web_cache/open_meteo/a8c963a3c76c40e6f3f25d0c",
+    "fromCache": false,
+    "downloadTimestamp": "2026-07-10T14:41:43.310572+00:00",
+    "softwareVersion": "0.1.0",
+    "pluginVersion": "0.6.0",
+    "outputFiles": {
+      "hourly": "weather_hourly.csv",
+      "daily": "weather_daily.csv",
+      "events": "weather_events.csv",
+      "metadata": "weather_metadata.json"
+    }
+  },
+  "importStatus": "ok"
+}

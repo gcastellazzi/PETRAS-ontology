@@ -1,0 +1,28 @@
+{
+  "@id": "urn:petras:analytics:20242bc1e2ea474881295ef066f72a41",
+  "artifact_type": "inspect_cloud_group_rules",
+  "method": "inspect_cloud.group_rules",
+  "plugin": "inspect_cloud",
+  "sourceDatasetId": "urn:petras:4deaa0b067cc",
+  "inputs": [
+    "urn:petras:4deaa0b067cc"
+  ],
+  "outputs": {
+    "output_key": "group_labels_corners",
+    "group_count": 0,
+    "candidate_points": 0,
+    "groups": {}
+  },
+  "parameters": {
+    "preset": "corner",
+    "connect_radius": 0.07564612932085438,
+    "min_group_size": 100,
+    "rules": {
+      "curvature_gt": 0.1417755465673987,
+      "normal_variation_gt": 0.9982554903443503
+    }
+  },
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "DataAnalytics",
+  "createdAt": "2026-07-08T08:15:54.508718+00:00"
+}

@@ -1,0 +1,72 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:analytics:ce0860fbb1a34d4cb1652ad9bcfc999b",
+  "@type": "PointSelection3D",
+  "source_dataset": "urn:petras:5cb3c5c8d631",
+  "point_indices": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 1,
+    "sample": [
+      14600
+    ]
+  },
+  "name": "Seismic Input - Acceleration",
+  "count": 1,
+  "created_at": "2026-08-20T12:15:19.802806+00:00",
+  "point": [
+    58.2809599047456,
+    107.20536147430661,
+    37.526976012968596
+  ],
+  "symbol": "triangle",
+  "linkedSignals": [
+    {
+      "record": "urn:petras:ae09195acee9",
+      "channel": "MRN_HNE_acceleration",
+      "linkedAt": "2026-08-20T12:15:19.802833+00:00",
+      "source": "attach_point"
+    }
+  ],
+  "linkedSignal": {
+    "record": "urn:petras:ae09195acee9",
+    "channel": "MRN_HNE_acceleration"
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-20T12:15:19.802896+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-20T12:15:19.802896+00:00",
+  "linkedResults": [
+    {
+      "result": "urn:petras:femresult:3bae2ef3080a",
+      "model": "urn:petras:femmodel:6aa1378dd920",
+      "dataset": "urn:petras:5cb3c5c8d631",
+      "field": "",
+      "node_indices": [
+        14600
+      ],
+      "linkedAt": "2026-08-20T12:15:19.827100+00:00",
+      "source": "label_attach"
+    },
+    {
+      "result": "urn:petras:femresult:4f0413c2c0f3",
+      "model": "urn:petras:femmodel:6aa1378dd920",
+      "dataset": "urn:petras:5cb3c5c8d631",
+      "field": "",
+      "node_indices": [
+        14600
+      ],
+      "linkedAt": "2026-08-20T12:15:19.834004+00:00",
+      "source": "label_attach"
+    }
+  ]
+}
