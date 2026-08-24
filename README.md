@@ -7,15 +7,31 @@ This repository is **independent of the C2F4DTc desktop application**. It implem
 the PETRAS project file format and visualises **connectivity / provenance graphs**
 with the same seven-layer colour semantics used in the reference desktop maps.
 
-## Features (v1)
+## Use it in the browser
+
+**→ [gcastellazzi.github.io/PETRAS-ontology](https://gcastellazzi.github.io/PETRAS-ontology/)**
+
+The viewer is a static page: no account, no server, nothing to install. It ships with
+two demo projects — a synthetic shell covering all seven layers, and the structure of
+a real benchmark project with its payloads removed.
+
+## What the tooling does
 
 - Canonical PETRAS project layout (`petras.json`, `urn:petras:…`, `entity.jsonld`)
 - Empty-shell demo project covering all **7 layers** (core + service)
-- `petras extract-structure` — copy project tree without binaries / bulk arrays
-- Project concept map and per-entity provenance neighbourhood
-- Static React viewer suitable for GitHub Pages
+- `petras extract-structure` — copy a project tree without binaries or bulk arrays
 - SHACL shapes and the ten competency-question queries, executable (`validate`, `ask`)
 - Optional read-only import of legacy C2F4DT projects (`--legacy`)
+
+## What the viewer does
+
+- Project concept map in **2D**, and a **3D** view stacking the seven layers in depth
+- A layout that separates spheres **and their labels**, so no two overlap
+- The ten competency questions, answered: selecting one highlights exactly the
+  entities its SPARQL answer names, rather than reporting that it was answered
+- Per-entity provenance neighbourhood, with the ontology documentation one click away
+- Figure export — vector **SVG** or **PDF** in 2D, PNG in 3D — on white, with the
+  layer legend beside the graph
 
 ## What the paper claims, and how to check it here
 
