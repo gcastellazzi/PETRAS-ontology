@@ -1,0 +1,15 @@
+# What is the complete transformation chain from a point cloud to a finite element result?
+#
+# Competency question CQ3 of the manuscript.
+
+PREFIX petras: <https://w3id.org/petras/ontology#>
+PREFIX prov:   <http://www.w3.org/ns/prov#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?step ?source ?operator ?target WHERE {
+  ?link petras:mapsFrom ?source ;
+        petras:mapsTo   ?target ;
+        petras:operator ?operator ;
+        prov:generatedAtTime ?step .
+}
+ORDER BY ?step

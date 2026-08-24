@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:7f2a0b7ed9be",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:217e22ee5e42",
+  "mapsTo": "urn:petras:femmodel:f126d9f591f0",
+  "operator": "fem.model",
+  "plugin": "fem_generator",
+  "parameters": {},
+  "label": "fem.model"
+}

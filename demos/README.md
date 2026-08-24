@@ -2,7 +2,7 @@
 
 | Demo | Description |
 |------|-------------|
-| `cathedral-shell/` | Synthetic empty-shell PETRAS project (canonical format). All 7 layers with metadata + DataLinks only. Used by the static viewer. |
+| `cathedral-shell/` | **Demo Project** — synthetic empty-shell PETRAS demonstrator (canonical format). All 7 layers with metadata + DataLinks only. Used by the static viewer. |
 | `benchmark-shell/` | Structure extracted from `Project_PETRAS_Benchmark` (JSON-LD only, bulk arrays stripped, no NPZ/PDF). Regenerated with `petras extract-structure`. |
 | `benchmark-graph/` | Pre-exported `graph.json` from the live benchmark (optional). |
 

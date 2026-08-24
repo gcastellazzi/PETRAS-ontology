@@ -1,0 +1,10 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:7de00227c949",
+  "@type": "SliceSet",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Cloud slices Z",
+  "description": "Empty shell \u2014 no binary payload",
+  "sourceDatasetId": "urn:petras:a84ec7bb941e",
+  "nSlices": 12
+}

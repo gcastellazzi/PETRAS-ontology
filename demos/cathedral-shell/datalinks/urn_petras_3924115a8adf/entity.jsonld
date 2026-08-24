@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:3924115a8adf",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:femresult:42a556b35834",
+  "mapsTo": "urn:petras:877d581b272d",
+  "operator": "compare.fem",
+  "plugin": "diagnostics",
+  "parameters": {},
+  "label": "compare.fem"
+}

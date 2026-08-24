@@ -4,7 +4,7 @@ export type LayoutMode = "flow" | "columns";
 
 export type NodePos = { x: number; y: number };
 
-export type LayoutCommandKind = "fill" | "spread-x" | "spread-y" | "reset";
+export type LayoutCommandKind = "fill" | "spread-x" | "spread-y" | "untangle" | "reset";
 
 export type LayoutCommand = { kind: LayoutCommandKind; id: number };
 
@@ -20,15 +20,48 @@ const LAYER_ORDER = [
   "unknown",
 ];
 
-/** Approximate SVG label size in graph units (matches GraphCanvas text). */
+/*
+ * Label widths are measured with the browser's own text engine rather than
+ * estimated at a fixed em-per-glyph. The layout has to reason about the box the
+ * reader actually sees: "Full comprehensive report" and "iot.import" differ by
+ * far more than their character counts suggest, and a wrong width is what lets
+ * two labels sit on top of each other after the spheres have been separated.
+ */
+const LABEL_FONT = '"IBM Plex Sans", "Segoe UI", system-ui, sans-serif';
+/** Measured once at a large size and scaled: text advance is linear in px. */
+const MEASURE_PX = 100;
+let measureCtx: CanvasRenderingContext2D | null | undefined;
+const widthCache = new Map<string, number>();
+
+function referenceWidth(text: string): number {
+  const cached = widthCache.get(text);
+  if (cached !== undefined) return cached;
+
+  if (measureCtx === undefined) {
+    try {
+      measureCtx = document.createElement("canvas").getContext("2d");
+      if (measureCtx) measureCtx.font = `${MEASURE_PX}px ${LABEL_FONT}`;
+    } catch {
+      measureCtx = null;
+    }
+  }
+
+  // Without a canvas (tests, SSR) fall back to the old em-per-glyph estimate.
+  const width = measureCtx
+    ? measureCtx.measureText(text).width
+    : text.length * MEASURE_PX * 0.55;
+  widthCache.set(text, width);
+  return width;
+}
+
+/** SVG label size in graph units, matching what GraphCanvas renders. */
 export function measureLabel(
   node: GraphNode,
   fontSize: number,
 ): { halfW: number; height: number; lineCount: number } {
   const lines = String(node.label || "").split("\n");
-  const maxChars = Math.max(1, ...lines.map((l) => l.length));
-  // ~0.55em average glyph width for the UI sans font
-  const halfW = (maxChars * fontSize * 0.55) / 2;
+  const widest = Math.max(0, ...lines.map((l) => referenceWidth(l)));
+  const halfW = (widest / MEASURE_PX) * fontSize * 0.5;
   const lineCount = Math.max(1, lines.length);
   const height = lineCount * fontSize * 1.12;
   return { halfW, height, lineCount };
@@ -36,22 +69,50 @@ export function measureLabel(
 
 export type NodeBox = { minX: number; maxX: number; minY: number; maxY: number };
 
-/** Axis-aligned bounds of sphere + label under the node. */
+/**
+ * Axis-aligned bounds of sphere + label under the node. `padding` is a gutter
+ * added on every side: separating boxes to exactly touching still reads as
+ * crowded, so callers that want visible breathing room ask for some.
+ */
 export function nodeBox(
   pos: NodePos,
   node: GraphNode,
   radius: number,
   fontSize: number,
+  padding = 0,
 ): NodeBox {
   const label = measureLabel(node, fontSize);
   const gap = fontSize * 1.15; // space between circle bottom and first baseline
-  const halfW = Math.max(radius, label.halfW) + fontSize * 0.15;
+  const halfW = Math.max(radius, label.halfW) + fontSize * 0.15 + padding;
   return {
     minX: pos.x - halfW,
     maxX: pos.x + halfW,
-    minY: pos.y - radius,
-    maxY: pos.y + radius + gap + label.height,
+    minY: pos.y - radius - padding,
+    maxY: pos.y + radius + gap + label.height + padding,
   };
+}
+
+/** Union of every node's box — the room the drawing actually needs. */
+export function contentBounds(
+  positions: Map<string, NodePos>,
+  nodes: GraphNode[],
+  opts: { nodeRadius: (n: GraphNode) => number; fontSize: number; padding?: number },
+): ViewFrame | null {
+  let minX = Infinity;
+  let minY = Infinity;
+  let maxX = -Infinity;
+  let maxY = -Infinity;
+  for (const n of nodes) {
+    const p = positions.get(n.id);
+    if (!p) continue;
+    const b = nodeBox(p, n, opts.nodeRadius(n), opts.fontSize, opts.padding ?? 0);
+    minX = Math.min(minX, b.minX);
+    minY = Math.min(minY, b.minY);
+    maxX = Math.max(maxX, b.maxX);
+    maxY = Math.max(maxY, b.maxY);
+  }
+  if (!Number.isFinite(minX)) return null;
+  return { minX, minY, width: Math.max(1e-6, maxX - minX), height: Math.max(1e-6, maxY - minY) };
 }
 
 /**
@@ -66,63 +127,175 @@ export function resolveOverlaps(
     fontSize: number;
     fixed?: Set<string>;
     iterations?: number;
+    padding?: number;
   },
 ): Map<string, NodePos> {
+  // Positions are mutated in place so that every comparison in a pass sees
+  // where its neighbours have just been pushed. Reading a stale copy makes the
+  // second correction of a node overwrite the first, which is why a node with
+  // several colliding neighbours used to keep one of the collisions.
   const out = new Map<string, NodePos>();
   for (const [id, p] of positions) out.set(id, { x: p.x, y: p.y });
-  const fixed = opts.fixed ?? new Set();
+
+  const fixed = opts.fixed ?? new Set<string>();
   const iterations = opts.iterations ?? 100;
+  const padding = opts.padding ?? 0;
   const ids = nodes.map((n) => n.id);
   const radii = nodes.map((n) => opts.nodeRadius(n));
+  // Push slightly past contact so boxes end strictly disjoint, not touching.
+  const relax = 0.52;
 
   for (let iter = 0; iter < iterations; iter++) {
     let moved = false;
+
     for (let i = 0; i < ids.length; i++) {
       const a = ids[i];
       const pa = out.get(a);
       if (!pa) continue;
-      const boxA = nodeBox(pa, nodes[i], radii[i], opts.fontSize);
+
       for (let j = i + 1; j < ids.length; j++) {
         const b = ids[j];
         const pb = out.get(b);
         if (!pb) continue;
-        const boxB = nodeBox(pb, nodes[j], radii[j], opts.fontSize);
+        if (fixed.has(a) && fixed.has(b)) continue;
+
+        const boxA = nodeBox(pa, nodes[i], radii[i], opts.fontSize, padding);
+        const boxB = nodeBox(pb, nodes[j], radii[j], opts.fontSize, padding);
 
         const overlapX = Math.min(boxA.maxX, boxB.maxX) - Math.max(boxA.minX, boxB.minX);
         const overlapY = Math.min(boxA.maxY, boxB.maxY) - Math.max(boxA.minY, boxB.minY);
         if (overlapX <= 0 || overlapY <= 0) continue;
-        if (fixed.has(a) && fixed.has(b)) continue;
 
-        // Separate along the shallow penetration axis.
+        // Separate along the axis of shallower penetration: the smaller move.
         let dx = 0;
         let dy = 0;
         if (overlapX < overlapY) {
-          const dir = (pa.x + pb.x) * 0.5 <= (boxA.minX + boxA.maxX) * 0.5 ? -1 : 1;
-          // Push so A moves left of B or vice versa based on centres
-          dx = (pa.x <= pb.x ? -overlapX : overlapX) * 0.5;
-          if (Math.abs(dx) < 1e-12) dx = dir * overlapX * 0.5;
+          // Coincident centres need an arbitrary but stable side to break the tie.
+          const aIsLeft = pa.x < pb.x || (pa.x === pb.x && i % 2 === 0);
+          dx = aIsLeft ? -overlapX * relax : overlapX * relax;
         } else {
-          dy = (pa.y <= pb.y ? -overlapY : overlapY) * 0.5;
-          if (Math.abs(dy) < 1e-12) dy = -overlapY * 0.5;
+          const aIsAbove = pa.y < pb.y || (pa.y === pb.y && i % 2 === 0);
+          dy = aIsAbove ? -overlapY * relax : overlapY * relax;
         }
 
         if (fixed.has(a)) {
-          out.set(b, { x: pb.x - dx * 2, y: pb.y - dy * 2 });
+          pb.x -= dx * 2;
+          pb.y -= dy * 2;
         } else if (fixed.has(b)) {
-          out.set(a, { x: pa.x + dx * 2, y: pa.y + dy * 2 });
+          pa.x += dx * 2;
+          pa.y += dy * 2;
         } else {
-          out.set(a, { x: pa.x + dx, y: pa.y + dy });
-          out.set(b, { x: pb.x - dx, y: pb.y - dy });
+          pa.x += dx;
+          pa.y += dy;
+          pb.x -= dx;
+          pb.y -= dy;
         }
-        // Refresh boxA for subsequent pairs in this pass (cheap approx: mutate local)
-        boxA.minX += dx;
-        boxA.maxX += dx;
-        boxA.minY += dy;
-        boxA.maxY += dy;
         moved = true;
       }
     }
+
     if (!moved) break;
+  }
+
+  return out;
+}
+
+/** True when any two node boxes intersect. */
+export function hasOverlap(
+  positions: Map<string, NodePos>,
+  nodes: GraphNode[],
+  opts: { nodeRadius: (n: GraphNode) => number; fontSize: number; padding?: number },
+): boolean {
+  const padding = opts.padding ?? 0;
+  const boxes: NodeBox[] = [];
+  for (const n of nodes) {
+    const p = positions.get(n.id);
+    if (p) boxes.push(nodeBox(p, n, opts.nodeRadius(n), opts.fontSize, padding));
+  }
+  for (let i = 0; i < boxes.length; i++) {
+    for (let j = i + 1; j < boxes.length; j++) {
+      const a = boxes[i];
+      const b = boxes[j];
+      if (a.minX < b.maxX && b.minX < a.maxX && a.minY < b.maxY && b.minY < a.maxY) return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Arrange nodes so that no two sphere+label boxes intersect — labels included,
+ * which is the whole point: separating circles alone leaves the text colliding.
+ *
+ * The resolver can only push boxes apart, so it is given room to work in first:
+ * the arrangement is scaled out from its centroid until the plane has enough
+ * area for the boxes, then relaxed, then expanded again if anything still
+ * touches. Nothing compresses the result afterwards — squeezing the drawing
+ * back into a fixed frame is exactly what re-creates the overlaps. Framing is
+ * the viewer's job, and it does it with zoom.
+ */
+export function layoutWithoutOverlap(
+  positions: Map<string, NodePos>,
+  nodes: GraphNode[],
+  opts: {
+    nodeRadius: (n: GraphNode) => number;
+    fontSize: number;
+    padding?: number;
+    fixed?: Set<string>;
+    /** Width ÷ height the working area should aim for, so the result fills the view. */
+    aspect?: number;
+  },
+): Map<string, NodePos> {
+  const padding = opts.padding ?? 0;
+  const measure = { nodeRadius: opts.nodeRadius, fontSize: opts.fontSize, padding };
+
+  // Area every box needs, with slack for the gaps an AABB packing leaves.
+  let boxArea = 0;
+  for (const n of nodes) {
+    const b = nodeBox({ x: 0, y: 0 }, n, opts.nodeRadius(n), opts.fontSize, padding);
+    boxArea += (b.maxX - b.minX) * (b.maxY - b.minY);
+  }
+  const needed = boxArea * 2.6;
+
+  // Shape the working area like the view before relaxing. A tall, narrow
+  // arrangement resolves into a tall, narrow drawing, which then has to be
+  // zoomed far out to fit a 4:3 frame and comes out unreadably small; giving
+  // the resolver a 4:3 plane to begin with keeps the result large on screen.
+  // Labels are wide and short, so a box that overlaps a neighbour usually has
+  // its shallower penetration on the vertical axis and gets pushed there: the
+  // relaxation drifts taller than the area it started from. Aiming wider than
+  // the view compensates, and the result lands near the view's own proportions.
+  const aspect = (opts.aspect ?? 1) * 1.8;
+  let out = new Map(positions);
+  const start = contentBounds(out, nodes, measure);
+  if (start) {
+    const targetW = Math.sqrt(needed * aspect);
+    const targetH = Math.sqrt(needed / aspect);
+    const sx = Math.max(1, targetW / start.width);
+    const sy = Math.max(1, targetH / start.height);
+    if (sx > 1 || sy > 1) {
+      const cx = start.minX + start.width / 2;
+      const cy = start.minY + start.height / 2;
+      const scaled = new Map<string, NodePos>();
+      for (const [id, p] of out) {
+        scaled.set(id, { x: cx + (p.x - cx) * sx, y: cy + (p.y - cy) * sy });
+      }
+      out = scaled;
+    }
+  }
+
+  // Relax, and if boxes still touch give the resolver more plane and retry.
+  // Expansion is what guarantees termination: an arrangement with enough room
+  // always has a solution the pairwise pushes can reach.
+  for (let round = 0; round < 12; round++) {
+    out = resolveOverlaps(out, nodes, {
+      nodeRadius: opts.nodeRadius,
+      fontSize: opts.fontSize,
+      fixed: opts.fixed,
+      iterations: 500,
+      padding,
+    });
+    if (!hasOverlap(out, nodes, measure)) break;
+    out = spreadByFactor(out, 1.22);
   }
   return out;
 }

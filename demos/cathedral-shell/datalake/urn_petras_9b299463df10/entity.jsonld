@@ -1,0 +1,9 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:9b299463df10",
+  "@type": "DataLake",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "IoT sensor export",
+  "description": "Empty shell \u2014 no binary payload",
+  "format": "csv"
+}

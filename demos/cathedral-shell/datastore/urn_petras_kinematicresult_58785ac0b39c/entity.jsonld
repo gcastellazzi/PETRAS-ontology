@@ -1,0 +1,11 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:kinematicresult:58785ac0b39c",
+  "@type": "KinematicResultSet",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Kinematic collapse multipliers",
+  "description": "Empty shell \u2014 no binary payload",
+  "analysisType": "kinematic_limit",
+  "sourceModelId": "urn:petras:kinematicmodel:30255f464325",
+  "comparedWithModelId": "urn:petras:femmodel:f126d9f591f0"
+}

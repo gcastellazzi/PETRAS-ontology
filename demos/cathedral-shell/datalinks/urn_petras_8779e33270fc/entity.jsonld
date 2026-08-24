@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:8779e33270fc",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:kinematicresult:58785ac0b39c",
+  "mapsTo": "urn:petras:877d581b272d",
+  "operator": "compare.kinematic",
+  "plugin": "diagnostics",
+  "parameters": {},
+  "label": "compare.kinematic"
+}

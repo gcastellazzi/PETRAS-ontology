@@ -1,0 +1,11 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:datasources_diag:09edb31cab67",
+  "@type": "DiagnosticRecord",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "In-situ stiffness test",
+  "description": "Empty shell \u2014 no binary payload",
+  "linkedEntities": [
+    "urn:petras:a84ec7bb941e"
+  ]
+}

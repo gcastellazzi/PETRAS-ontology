@@ -1,0 +1,10 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:kinematicmodel:30255f464325",
+  "@type": "KinematicModel",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Kinematic mechanism model",
+  "description": "Rigid-block kinematic model of the west fa\u00e7ade (non-FEM)",
+  "sourceMeshDatasetId": "urn:petras:217e22ee5e42",
+  "analysisFamily": "kinematic"
+}

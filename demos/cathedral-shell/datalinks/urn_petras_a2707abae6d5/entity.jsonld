@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:a2707abae6d5",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:9b299463df10",
+  "mapsTo": "urn:petras:5afa57d81cfe",
+  "operator": "iot.import",
+  "plugin": "read_iot",
+  "parameters": {},
+  "label": "iot.import"
+}

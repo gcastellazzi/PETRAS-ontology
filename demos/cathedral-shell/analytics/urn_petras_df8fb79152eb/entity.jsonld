@@ -1,0 +1,9 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:df8fb79152eb",
+  "@type": "Decision",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Strengthen west fa\u00e7ade",
+  "description": "Empty shell \u2014 no binary payload",
+  "basedOn": "urn:petras:analytics_masonry_check:5f84c7076f9d"
+}

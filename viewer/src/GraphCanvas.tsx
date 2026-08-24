@@ -5,11 +5,12 @@ import {
   useRef,
   useState,
   type PointerEvent,
-  type WheelEvent,
 } from "react";
 import {
   canonicalViewFrame,
   computePositions,
+  contentBounds,
+  layoutWithoutOverlap,
   nodeBaseRadius,
   resolveOverlaps,
   spreadNodesToFill,
@@ -29,6 +30,8 @@ type Props = {
   layoutMode: LayoutMode;
   sphereScale: number;
   fontScale: number;
+  /** Reports the on-screen size of a label, in CSS pixels. */
+  onLabelPixels?: (px: number) => void;
   avoidOverlap: boolean;
   backgroundColor?: string;
   layoutCommand?: LayoutCommand | null;
@@ -58,6 +61,7 @@ export function GraphCanvas({
   layoutMode,
   sphereScale,
   fontScale,
+  onLabelPixels,
   avoidOverlap,
   backgroundColor = "#0f1115",
   layoutCommand = null,
@@ -121,16 +125,99 @@ export function GraphCanvas({
 
   const vb = VIEW_FRAME;
 
+  const applyFill = useCallback(
+    (axes: { x: boolean; y: boolean }) => {
+      const current = new Map(positionsRef.current);
+      let next = spreadNodesToFill(current, graph.nodes, {
+        nodeRadius,
+        fontSize,
+        frame: VIEW_FRAME,
+        axes,
+      });
+      if (avoidOverlap) {
+        next = resolveOverlaps(next, graph.nodes, {
+          nodeRadius,
+          fontSize,
+          iterations: 100,
+        });
+        next = spreadNodesToFill(next, graph.nodes, {
+          nodeRadius,
+          fontSize,
+          frame: VIEW_FRAME,
+          axes,
+        });
+      }
+      // Reposition nodes only — do not change pan/zoom.
+      setOverrides(next);
+      setDraggedIds(new Set(next.keys()));
+    },
+    [avoidOverlap, fontSize, graph.nodes, nodeRadius],
+  );
+
+  /** Gutter between boxes; also the margin used when framing the result. */
+  const untanglePad = fontSize * 0.3;
+
+  /** Point the view at an arrangement by zoom and pan — never by moving nodes. */
+  const frameContent = useCallback(
+    (next: Map<string, NodePos>) => {
+      const b = contentBounds(next, graph.nodes, {
+        nodeRadius,
+        fontSize,
+        padding: untanglePad,
+      });
+      if (!b) return;
+      const z = Math.min(VIEW_FRAME.width / b.width, VIEW_FRAME.height / b.height) * 0.96;
+      setZoom(Math.min(6, Math.max(0.06, z)));
+      setPan({
+        x: b.minX + b.width / 2 - (VIEW_FRAME.minX + VIEW_FRAME.width / 2),
+        y: b.minY + b.height / 2 - (VIEW_FRAME.minY + VIEW_FRAME.height / 2),
+      });
+    },
+    [graph.nodes, nodeRadius, fontSize, untanglePad],
+  );
+
+  /**
+   * Spread the graph until no sphere and no label touches another, then frame
+   * it. Non-overlap is a property of the arrangement, not of the zoom, so it
+   * survives every later zoom and pan.
+   */
+  const applyUntangle = useCallback(() => {
+    const next = layoutWithoutOverlap(positionsRef.current, graph.nodes, {
+      nodeRadius,
+      fontSize,
+      padding: untanglePad,
+      aspect: VIEW_FRAME.width / VIEW_FRAME.height,
+    });
+    setOverrides(next);
+    setDraggedIds(new Set(next.keys()));
+    frameContent(next);
+  }, [graph.nodes, nodeRadius, fontSize, untanglePad, frameContent]);
+
+  // Untangle as soon as a project (or layout mode) is ready: the map should
+  // open readable rather than needing a button press to become so.
+  const autoFitKey = `${layoutMode}:${graph.nodes.length}:${graph.edges.length}`;
+  const lastAutoFit = useRef("");
+  useEffect(() => {
+    if (lastAutoFit.current === autoFitKey) return;
+    lastAutoFit.current = autoFitKey;
+    applyUntangle();
+  }, [autoFitKey, applyUntangle]);
+
   useEffect(() => {
     if (!layoutCommand || handledCmd.current === layoutCommand.id) return;
     handledCmd.current = layoutCommand.id;
-    const current = new Map(positionsRef.current);
 
     if (layoutCommand.kind === "reset") {
       setOverrides(new Map());
       setDraggedIds(new Set());
       setPan({ x: 0, y: 0 });
       setZoom(1);
+      onLayoutCommandHandled?.(layoutCommand.id);
+      return;
+    }
+
+    if (layoutCommand.kind === "untangle") {
+      applyUntangle();
       onLayoutCommandHandled?.(layoutCommand.id);
       return;
     }
@@ -142,39 +229,9 @@ export function GraphCanvas({
           ? { x: true, y: false }
           : { x: false, y: true };
 
-    let next = spreadNodesToFill(current, graph.nodes, {
-      nodeRadius,
-      fontSize,
-      frame: VIEW_FRAME,
-      axes,
-    });
-
-    if (avoidOverlap) {
-      next = resolveOverlaps(next, graph.nodes, {
-        nodeRadius,
-        fontSize,
-        iterations: 100,
-      });
-      next = spreadNodesToFill(next, graph.nodes, {
-        nodeRadius,
-        fontSize,
-        frame: VIEW_FRAME,
-        axes,
-      });
-    }
-
-    // Reposition nodes only — do not change pan/zoom.
-    setOverrides(next);
-    setDraggedIds(new Set(next.keys()));
+    applyFill(axes);
     onLayoutCommandHandled?.(layoutCommand.id);
-  }, [
-    layoutCommand,
-    avoidOverlap,
-    graph.nodes,
-    nodeRadius,
-    fontSize,
-    onLayoutCommandHandled,
-  ]);
+  }, [layoutCommand, applyFill, applyUntangle, onLayoutCommandHandled]);
 
   const nodeMap = useMemo(() => {
     const m = new Map<string, GraphNode & NodePos>();
@@ -197,9 +254,18 @@ export function GraphCanvas({
     return { x: sp.x, y: sp.y };
   }, []);
 
-  const onWheel = useCallback((e: WheelEvent<SVGSVGElement>) => {
-    e.preventDefault();
-    setZoom((z) => Math.min(4, Math.max(0.35, z * (e.deltaY > 0 ? 0.9 : 1.1))));
+  // Attached by hand rather than through onWheel: React registers wheel
+  // listeners as passive, where preventDefault is ignored and logs an error on
+  // every notch of the wheel.
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      setZoom((z) => Math.min(6, Math.max(0.06, z * (e.deltaY > 0 ? 0.9 : 1.1))));
+    };
+    svg.addEventListener("wheel", onWheel, { passive: false });
+    return () => svg.removeEventListener("wheel", onWheel);
   }, []);
 
   const onPointerDownBg = useCallback(
@@ -285,6 +351,24 @@ export function GraphCanvas({
   const viewBox = `${cx - vb.width / 2 / zoom} ${cy - vb.height / 2 / zoom} ${vb.width / zoom} ${vb.height / zoom}`;
   const edgeFont = 0.04 * Math.min(1.4, fontScale);
 
+  // How big a label actually lands on screen. The parent uses this to decide
+  // that 2D has run out of room: below a few pixels a label is a smudge, and
+  // the layered 3D view carries the same graph with room to breathe.
+  useEffect(() => {
+    if (!onLabelPixels) return;
+    const report = () => {
+      const svg = svgRef.current;
+      if (!svg) return;
+      const r = svg.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      const scale = Math.min(r.width / (vb.width / zoom), r.height / (vb.height / zoom));
+      onLabelPixels(fontSize * scale);
+    };
+    report();
+    window.addEventListener("resize", report);
+    return () => window.removeEventListener("resize", report);
+  }, [onLabelPixels, fontSize, zoom, vb.width, vb.height]);
+
   const headerY = useMemo(() => {
     let top = Infinity;
     for (const p of displayPositions.values()) top = Math.min(top, p.y);
@@ -298,7 +382,6 @@ export function GraphCanvas({
       viewBox={viewBox}
       preserveAspectRatio="xMidYMid meet"
       style={{ background: backgroundColor }}
-      onWheel={onWheel}
       onPointerDown={onPointerDownBg}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}

@@ -1,7 +1,8 @@
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import { Html, Line, OrbitControls } from "@react-three/drei";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import type { ThreeEvent } from "@react-three/fiber";
+import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 import * as THREE from "three";
 import {
   complexityIndex,
@@ -18,6 +19,78 @@ import {
 import type { GraphEdge, GraphNode, GraphPayload } from "./types";
 import { canvasInk, isLightBg, type CanvasInk } from "./theme";
 
+export type View3DPresetId =
+  | "isometric"
+  | "front"
+  | "side"
+  | "top"
+  | "layers"
+  | "back";
+
+export type View3DPreset = {
+  id: View3DPresetId;
+  label: string;
+  position: [number, number, number];
+  target: [number, number, number];
+};
+
+/** Predefined camera setups for the layer stack (Z = ontology layer). */
+export const VIEW_3D_PRESETS: View3DPreset[] = [
+  {
+    id: "isometric",
+    label: "Isometric",
+    position: [0, -14, 8],
+    target: [0, 0, 0],
+  },
+  {
+    id: "front",
+    label: "Front",
+    position: [0, -18, 0.5],
+    target: [0, 0, 0],
+  },
+  {
+    id: "side",
+    label: "Side",
+    position: [18, 0, 1],
+    target: [0, 0, 0],
+  },
+  {
+    id: "top",
+    label: "Top",
+    position: [0, 0.01, 20],
+    target: [0, 0, 0],
+  },
+  {
+    id: "layers",
+    label: "Layer stack",
+    position: [12, -6, 2],
+    target: [0, 0, 0],
+  },
+  {
+    id: "back",
+    label: "Back",
+    position: [0, 16, 7],
+    target: [0, 0, 0],
+  },
+];
+
+export type LayerLabelSide = "back" | "front";
+
+/** Displacement of a layer name from its anchoring corner, in world units. */
+export type LayerLabelOffset = { x: number; y: number; z: number };
+
+/**
+ * Where each side starts from. Both are measured inward from the plane's left
+ * corner, so x always runs into the plane and y always runs away from the
+ * anchored edge. The front needs a larger x than the back because the near
+ * corner projects further left under the isometric camera and would otherwise
+ * sit outside the frustum.
+ */
+export const LAYER_LABEL_DEFAULTS: Record<LayerLabelSide, LayerLabelOffset> = {
+  back: { x: 0.35, y: 0.45, z: 0.35 },
+  front: { x: 4.2, y: 1.6, z: 0.35 },
+};
+
 type Props = {
   graph: GraphPayload;
   selectedId: string | null;
@@ -25,8 +98,15 @@ type Props = {
   focusIds?: Set<string> | null;
   layoutMode: LayoutMode;
   sphereScale: number;
+  fontScale?: number;
   avoidOverlap: boolean;
   backgroundColor?: string;
+  viewPreset?: View3DPresetId;
+  showLayerLabels?: boolean;
+  /** Which edge of each layer plane carries its name. */
+  layerLabelSide?: LayerLabelSide;
+  layerLabelOffset?: LayerLabelOffset;
+  layerOpacity?: number;
 };
 
 const LAYER_Z: Record<string, number> = {
@@ -63,6 +143,7 @@ function NodeSphere({
   dimmed,
   onSelect,
   showLabel,
+  fontScale,
   ink,
   light,
 }: {
@@ -73,11 +154,13 @@ function NodeSphere({
   dimmed: boolean;
   onSelect: (id: string) => void;
   showLabel: boolean;
+  fontScale: number;
   ink: CanvasInk;
   light: boolean;
 }) {
   const [hovered, setHovered] = useState(false);
   const r = selected ? radius * 1.25 : hovered ? radius * 1.1 : radius;
+  const labelPx = Math.round(11 * fontScale);
 
   const onClick = (e: ThreeEvent<MouseEvent>) => {
     e.stopPropagation();
@@ -116,12 +199,12 @@ function NodeSphere({
           style={{
             pointerEvents: "none",
             color: selected ? ink.labelSelected : ink.label,
-            fontSize: "11px",
+            fontSize: `${labelPx}px`,
             fontWeight: selected ? 600 : 400,
             whiteSpace: "nowrap",
             textShadow: light ? "0 1px 2px #fff8" : "0 1px 3px #000c",
             opacity: dimmed ? 0.2 : 1,
-            transform: "translateY(14px)",
+            transform: `translateY(${Math.round(14 * fontScale)}px)`,
           }}
         >
           {node.label.split("\n")[0]}
@@ -173,7 +256,13 @@ function EdgeLines({
   );
 }
 
-function LayerPlanes({ layers }: { layers: GraphPayload["layers"] }) {
+function LayerPlanes({
+  layers,
+  opacity,
+}: {
+  layers: GraphPayload["layers"];
+  opacity: number;
+}) {
   return (
     <>
       {layers.map((layer) => {
@@ -184,7 +273,7 @@ function LayerPlanes({ layers }: { layers: GraphPayload["layers"] }) {
             <meshBasicMaterial
               color={layer.color}
               transparent
-              opacity={0.045}
+              opacity={opacity}
               side={THREE.DoubleSide}
               depthWrite={false}
             />
@@ -195,6 +284,88 @@ function LayerPlanes({ layers }: { layers: GraphPayload["layers"] }) {
   );
 }
 
+function LayerNameLabels({
+  layers,
+  visible,
+  light,
+  fontScale,
+  side,
+  offset,
+}: {
+  layers: GraphPayload["layers"];
+  visible: boolean;
+  light: boolean;
+  fontScale: number;
+  side: LayerLabelSide;
+  offset: LayerLabelOffset;
+}) {
+  if (!visible) return null;
+  // Anchored to the left corner of the chosen edge — the far edge reads as the
+  // back of the stack, the near edge as its front — and displaced from there
+  // by the offsets the reader controls. The z term lifts each name clear of
+  // its own plane, so it reads as a label on the layer rather than a mark
+  // printed into it.
+  const front = side === "front";
+  const anchorY = front ? PLANE.minY : PLANE.minY + PLANE.height;
+  const x = PLANE.minX + offset.x;
+  const y = front ? anchorY + offset.y : anchorY - offset.y;
+  const labelPx = Math.round(13 * fontScale);
+  return (
+    <>
+      {layers.map((layer) => (
+        <Html
+          key={`label-${layer.id}`}
+          position={[x, y, layerZ(layer.id) + offset.z]}
+          style={{
+            pointerEvents: "none",
+            color: layer.color,
+            fontSize: `${labelPx}px`,
+            fontWeight: 700,
+            letterSpacing: "0.04em",
+            textTransform: "uppercase",
+            whiteSpace: "nowrap",
+            textShadow: light ? "0 1px 2px #fff9" : "0 1px 4px #000d",
+            padding: "2px 6px",
+            borderLeft: `3px solid ${layer.color}`,
+            background: light ? "rgba(255,255,255,0.55)" : "rgba(15,17,21,0.55)",
+            borderRadius: "2px",
+          }}
+        >
+          {layer.label}
+        </Html>
+      ))}
+    </>
+  );
+}
+
+function CameraPreset({
+  presetId,
+  controlsRef,
+}: {
+  presetId: View3DPresetId;
+  controlsRef: RefObject<OrbitControlsImpl | null>;
+}) {
+  const { camera } = useThree();
+  const applied = useRef<string | null>(null);
+
+  useEffect(() => {
+    const preset = VIEW_3D_PRESETS.find((p) => p.id === presetId) ?? VIEW_3D_PRESETS[0];
+    // Re-apply when the user picks the same preset again via a bump key from parent.
+    camera.position.set(...preset.position);
+    camera.near = 0.1;
+    camera.far = 120;
+    camera.updateProjectionMatrix();
+    const controls = controlsRef.current;
+    if (controls) {
+      controls.target.set(...preset.target);
+      controls.update();
+    }
+    applied.current = presetId;
+  }, [presetId, camera, controlsRef]);
+
+  return null;
+}
+
 function Scene({
   graph,
   selectedId,
@@ -202,22 +373,29 @@ function Scene({
   focusIds,
   layoutMode,
   sphereScale,
+  fontScale = 1,
   avoidOverlap,
   complexity,
   backgroundColor = "#0f1115",
-}: Props & { complexity: Map<string, ComplexityInfo> }) {
+  viewPreset = "isometric",
+  showLayerLabels = true,
+  layerLabelSide = "back",
+  layerLabelOffset,
+  layerOpacity = 0.045,
+  viewNonce = 0,
+}: Props & { complexity: Map<string, ComplexityInfo>; viewNonce?: number }) {
   const ink = useMemo(() => canvasInk(backgroundColor), [backgroundColor]);
   const light = isLightBg(backgroundColor);
+  const controlsRef = useRef<OrbitControlsImpl | null>(null);
 
   const positions2d = useMemo(() => {
     const layout = computePositions(graph, layoutMode, {
       nodeRadius: (n) => complexityRadius(complexity.get(n.id), sphereScale),
-      fontSize: 0.06,
+      fontSize: 0.06 * fontScale,
       avoidOverlap,
     });
-    // Map layout into the 4:3 plane content so nodes stay on the slabs.
     return spreadToFill(layout, PLANE_CONTENT, { x: true, y: true });
-  }, [graph, layoutMode, sphereScale, avoidOverlap, complexity]);
+  }, [graph, layoutMode, sphereScale, fontScale, avoidOverlap, complexity]);
 
   const positions3d = useMemo(() => {
     const m = new Map<string, Pos3>();
@@ -240,7 +418,15 @@ function Scene({
       <directionalLight position={[-4, -2, -6]} intensity={light ? 0.25 : 0.35} />
       <fog attach="fog" args={[backgroundColor, ink.fogNear, ink.fogFar]} />
 
-      <LayerPlanes layers={graph.layers} />
+      <LayerPlanes layers={graph.layers} opacity={layerOpacity} />
+      <LayerNameLabels
+        layers={graph.layers}
+        visible={showLayerLabels}
+        light={light}
+        fontScale={fontScale}
+        side={layerLabelSide}
+        offset={layerLabelOffset ?? LAYER_LABEL_DEFAULTS[layerLabelSide]}
+      />
       <EdgeLines edges={graph.edges} positions={positions3d} focusIds={focusIds} ink={ink} />
 
       {graph.nodes.map((node) => {
@@ -260,6 +446,7 @@ function Scene({
             dimmed={dimmed}
             onSelect={onSelect}
             showLabel={showLabel}
+            fontScale={fontScale}
             ink={ink}
             light={light}
           />
@@ -267,33 +454,50 @@ function Scene({
       })}
 
       <OrbitControls
+        ref={controlsRef}
         makeDefault
         enableDamping
         dampingFactor={0.08}
         minDistance={3}
         maxDistance={40}
       />
+      <CameraPreset
+        key={`${viewPreset}-${viewNonce}`}
+        presetId={viewPreset}
+        controlsRef={controlsRef}
+      />
     </>
   );
 }
 
-export function GraphCanvas3D(props: Props) {
+export function GraphCanvas3D(
+  props: Props & { viewNonce?: number },
+) {
   const complexity = useMemo(() => complexityIndex(props.graph), [props.graph]);
   const bg = props.backgroundColor ?? "#0f1115";
-  const ink = canvasInk(bg);
+  const preset =
+    VIEW_3D_PRESETS.find((p) => p.id === (props.viewPreset ?? "isometric")) ??
+    VIEW_3D_PRESETS[0];
 
   return (
     <div className="graph-canvas-3d" style={{ background: bg }}>
       <Canvas
-        camera={{ position: [0, -14, 8], fov: 45, near: 0.1, far: 120 }}
+        camera={{ position: preset.position, fov: 45, near: 0.1, far: 120 }}
         dpr={[1, 1.75]}
+        gl={{ preserveDrawingBuffer: true }}
         onPointerMissed={() => props.onSelect(null)}
       >
         <Scene {...props} complexity={complexity} />
       </Canvas>
-      <div className="canvas-3d-hint" style={{ color: ink.hint }}>
-        Drag to orbit · scroll zoom · click node · size ∝ complexity
-      </div>
+      {props.showLayerLabels ? (
+        <div className="canvas-3d-layer-legend" aria-hidden>
+          {props.graph.layers.map((layer) => (
+            <span key={layer.id} style={{ color: layer.color }}>
+              {layer.label}
+            </span>
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 }

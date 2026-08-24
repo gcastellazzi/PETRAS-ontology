@@ -1,0 +1,8 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:cb2163eda708",
+  "@type": "ProjectIndex",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Project structural index",
+  "description": "Empty shell \u2014 no binary payload"
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:assistant_session:d6d163358790",
+  "@type": "AssistantChatSession",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Assistant session",
+  "description": "Empty shell \u2014 no binary payload"
+}

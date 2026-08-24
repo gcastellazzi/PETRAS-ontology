@@ -1,0 +1,16 @@
+# Which alternative hypotheses exist for the same asset, and where do they diverge?
+#
+# Competency question CQ9 of the manuscript.
+
+PREFIX petras: <https://w3id.org/petras/ontology#>
+PREFIX prov:   <http://www.w3.org/ns/prov#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?sharedSource ?operator (COUNT(DISTINCT ?branch) AS ?branches) WHERE {
+  ?link petras:mapsFrom ?sharedSource ;
+        petras:mapsTo   ?branch ;
+        petras:operator ?operator .
+}
+GROUP BY ?sharedSource ?operator
+HAVING (COUNT(DISTINCT ?branch) > 1)
+ORDER BY DESC(?branches)

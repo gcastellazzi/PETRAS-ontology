@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:6f88019e66dc",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:a84ec7bb941e",
+  "mapsTo": "urn:petras:7de00227c949",
+  "operator": "cloud.slice",
+  "plugin": "slice2d",
+  "parameters": {},
+  "label": "cloud.slice"
+}

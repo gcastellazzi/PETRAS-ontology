@@ -16,7 +16,8 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0"]
+rdf = ["rdflib>=7.0", "pyshacl>=0.26"]
+dev = ["pytest>=8.0", "rdflib>=7.0", "pyshacl>=0.26"]
 
 [project.scripts]
 petras = "petras.__main__:main"

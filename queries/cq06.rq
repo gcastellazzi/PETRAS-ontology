@@ -1,0 +1,16 @@
+# Which monitoring streams are anchored to the model, and which external events affect them?
+#
+# Competency question CQ6 of the manuscript.
+
+PREFIX petras: <https://w3id.org/petras/ontology#>
+PREFIX prov:   <http://www.w3.org/ns/prov#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?stream ?operator ?anchoredTo ?event WHERE {
+  ?link petras:mapsFrom ?stream ;
+        petras:mapsTo   ?anchoredTo ;
+        petras:operator ?operator .
+  FILTER(CONTAINS(LCASE(?operator), "iot") || CONTAINS(LCASE(?operator), "sensor"))
+  OPTIONAL { ?event petras:eventType ?kind }
+}
+ORDER BY ?stream

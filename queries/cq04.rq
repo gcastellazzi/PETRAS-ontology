@@ -1,0 +1,18 @@
+# Which entities of one discretization correspond to a given region of another?
+#
+# Competency question CQ4 of the manuscript.
+
+PREFIX petras: <https://w3id.org/petras/ontology#>
+PREFIX prov:   <http://www.w3.org/ns/prov#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?from ?operator ?to WHERE {
+  ?link petras:mapsFrom ?from ;
+        petras:mapsTo   ?to ;
+        petras:operator ?operator .
+  ?from petras:inLayer ?layerA .
+  ?to   petras:inLayer ?layerB .
+  FILTER(?layerA IN (petras:DataLake, petras:DataSet))
+  FILTER(?layerB = petras:DataSet)
+}
+ORDER BY ?operator

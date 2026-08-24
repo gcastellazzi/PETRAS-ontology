@@ -1,0 +1,9 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:f3045b64ddf5",
+  "@type": "Recommendation",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Install tie rods",
+  "description": "Empty shell \u2014 no binary payload",
+  "basedOn": "urn:petras:df8fb79152eb"
+}

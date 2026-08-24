@@ -1,0 +1,9 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:0b833efda9ef",
+  "@type": "DataLake",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "TLS point cloud (raw)",
+  "description": "Raw survey acquisition metadata only",
+  "format": "las"
+}

@@ -1,0 +1,14 @@
+# Which raw acquisitions contributed, directly or indirectly, to a given simulation result?
+#
+# Competency question CQ1 of the manuscript.
+
+PREFIX petras: <https://w3id.org/petras/ontology#>
+PREFIX prov:   <http://www.w3.org/ns/prov#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?result ?acquisition WHERE {
+  ?result      petras:inLayer petras:DataStore .
+  ?acquisition petras:inLayer petras:DataLake .
+  ?acquisition (^petras:mapsFrom/petras:mapsTo)+ ?result .
+}
+ORDER BY ?result ?acquisition

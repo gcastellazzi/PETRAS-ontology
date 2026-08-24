@@ -1,9 +1,0 @@
-{
-  "@context": "https://w3id.org/petras/context.jsonld",
-  "@id": "urn:petras:analytics_finetools_job:5ea2c68504d4",
-  "@type": "FinEtoolsJob",
-  "createdAt": "2026-08-22T16:27:12Z",
-  "label": "Solver job linear_statics",
-  "description": "Empty shell \u2014 no binary payload",
-  "sourceModelId": "urn:petras:femmodel:b6c5f813ecec"
-}

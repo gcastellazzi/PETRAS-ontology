@@ -1,0 +1,17 @@
+# Which analyses and reports are affected by a given external event?
+#
+# Competency question CQ8 of the manuscript.
+
+PREFIX petras: <https://w3id.org/petras/ontology#>
+PREFIX prov:   <http://www.w3.org/ns/prov#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?event ?affected ?operator WHERE {
+  ?event petras:eventType ?kind .
+  ?event (^petras:mapsFrom/petras:mapsTo)* ?affected .
+  OPTIONAL {
+    ?link petras:mapsFrom ?event ; petras:operator ?operator .
+  }
+  FILTER(?affected != ?event)
+}
+ORDER BY ?affected

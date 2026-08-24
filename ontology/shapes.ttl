@@ -1,0 +1,135 @@
+#
+# PETRAS — SHACL validation shapes
+#
+# These shapes are executable: `petras validate <project>` runs them with
+# pySHACL over the RDF graph obtained from a project's JSON-LD entities.
+#
+# They constrain what the ontology actually emits. A shape that targets a
+# predicate the JSON-LD context never produces would fail on every project and
+# would therefore constrain nothing, so each path below is checked against the
+# context in `ontology/context.jsonld`.
+#
+
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix petras: <https://w3id.org/petras/ontology#> .
+
+
+# ── The metadata contract ─────────────────────────────────────────────
+# Every described artifact carries a human-readable name and a creation
+# timestamp. This is the obligation that the OOPS! scan found stated in prose
+# and missing from the formalization.
+
+petras:DescribedArtifactShape a sh:NodeShape ;
+    rdfs:label "Metadata contract common to every entity" ;
+    sh:targetClass
+        petras:DataLake , petras:DataSet , petras:DataLink , petras:DataStore ,
+        petras:DataSources , petras:DataAnalytics , petras:DataReporting ;
+    # A missing name is a documentation defect, not a structural one: it is
+    # reported, but it does not make a project non-conformant.
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Warning ;
+        sh:message "Entity has no label; it can be addressed but not read." ;
+    ] ;
+    sh:property [
+        sh:path prov:generatedAtTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:message "Every entity must record exactly one creation time." ;
+    ] .
+
+
+# ── DataLink: the construct the ontology rests on ─────────────────────
+# A link that does not say where it comes from, where it goes and which
+# operator produced it is not provenance.
+
+petras:DataLinkShape a sh:NodeShape ;
+    rdfs:label "Executable provenance link" ;
+    sh:targetClass petras:DataLink ;
+    sh:property [
+        sh:path petras:mapsFrom ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "DataLink must reference at least one source entity." ;
+    ] ;
+    sh:property [
+        sh:path petras:mapsTo ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "DataLink must reference at least one target entity." ;
+    ] ;
+    sh:property [
+        sh:path petras:operator ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "DataLink must name the operator that produced it." ;
+    ] ;
+    sh:property [
+        sh:path prov:generatedAtTime ;
+        sh:minCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:message "DataLink must be timestamped, or the chain cannot be ordered." ;
+    ] .
+
+
+# ── DataSet: geometry-anchored by construction ────────────────────────
+
+petras:DataSetShape a sh:NodeShape ;
+    rdfs:label "Geometry-anchored dataset" ;
+    sh:targetClass petras:DataSet ;
+    sh:property [
+        sh:path petras:geometryType ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "DataSet must declare a geometry type." ;
+    ] ;
+    sh:property [
+        sh:path petras:version ;
+        sh:maxCount 1 ;
+        sh:message "A DataSet carries at most one version number." ;
+    ] .
+
+
+# ── Lineage references must be resolvable ─────────────────────────────
+# Where an entity declares a source, that source is an IRI and not a loose
+# string, so the reference can be traversed rather than merely read.
+
+petras:LineageShape a sh:NodeShape ;
+    rdfs:label "Declared lineage is traversable" ;
+    sh:targetSubjectsOf petras:sourceDatalake ;
+    sh:property [
+        sh:path petras:sourceDatalake ;
+        sh:nodeKind sh:IRI ;
+        sh:message "sourceDatalake must be an IRI reference." ;
+    ] .
+
+petras:DatasetLineageShape a sh:NodeShape ;
+    rdfs:label "Dataset lineage is traversable" ;
+    sh:targetSubjectsOf petras:sourceDataset ;
+    sh:property [
+        sh:path petras:sourceDataset ;
+        sh:nodeKind sh:IRI ;
+        sh:message "sourceDataset must be an IRI reference." ;
+    ] .
+
+
+# ── Reporting cites rather than embeds ────────────────────────────────
+# A report that links to nothing cannot be traced back to its evidence.
+
+petras:ReportingShape a sh:NodeShape ;
+    rdfs:label "Reports cite their evidence" ;
+    sh:targetSubjectsOf petras:linkedEntities ;
+    sh:property [
+        sh:path petras:linkedEntities ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Cited entities must be IRI references." ;
+    ] .

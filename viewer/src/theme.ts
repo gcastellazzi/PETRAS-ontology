@@ -59,9 +59,23 @@ export function canvasInk(bg: string): CanvasInk {
   };
 }
 
+/** The two page themes, taken from the PETRAS splash artwork. */
+export type ThemeId = "dark" | "light";
+
+/**
+ * Canvas background that belongs to each theme. The light theme puts the graph
+ * on white on purpose: it is the theme used to snapshot figures for the paper,
+ * where the page chrome is sand and the plot area has to be plain white.
+ */
+export const THEME_CANVAS: Record<ThemeId, string> = {
+  dark: "#1b1409",
+  light: "#ffffff",
+};
+
 export const BG_PRESETS: { id: string; label: string; color: string }[] = [
-  { id: "dark", label: "Dark", color: "#0f1115" },
+  { id: "petras-dark", label: "PETRAS dark", color: "#1b1409" },
+  { id: "sand", label: "Sand", color: "#efe4cf" },
+  { id: "ink", label: "Ink", color: "#0f1115" },
   { id: "white", label: "White", color: "#ffffff" },
   { id: "paper", label: "Paper", color: "#f4f1ea" },
-  { id: "slate", label: "Slate", color: "#e8ecf1" },
 ];

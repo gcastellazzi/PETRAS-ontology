@@ -5,19 +5,32 @@ export function isDatalinkNode(node: GraphNode): boolean {
   return node.layer === "datalinks" || node.type === "DataLink";
 }
 
+/** Nodes that could not be assigned to a PETRAS ontology layer. */
+export function isUnknownNode(node: GraphNode): boolean {
+  return node.layer === "unknown" || !node.layer;
+}
+
 /**
  * Graph ready for 2D/3D rendering: drop DataLink entity nodes and the
  * datalinks legend entry. Connectivity edges (mapsFrom→mapsTo) stay.
  */
 export function forDisplay(
   graph: GraphPayload,
-  opts: { hideMissing?: boolean; hideIsolated?: boolean } = {},
+  opts: {
+    hideMissing?: boolean;
+    hideIsolated?: boolean;
+    hideUnknown?: boolean;
+  } = {},
 ): GraphPayload {
   const hideMissing = !!opts.hideMissing;
   const hideIsolated = !!opts.hideIsolated;
+  const hideUnknown = !!opts.hideUnknown;
 
   let nodes = graph.nodes.filter(
-    (n) => !isDatalinkNode(n) && (!hideMissing || !n.missing),
+    (n) =>
+      !isDatalinkNode(n) &&
+      (!hideMissing || !n.missing) &&
+      (!hideUnknown || !isUnknownNode(n)),
   );
   let ids = new Set(nodes.map((n) => n.id));
   let edges = graph.edges.filter((e) => ids.has(e.source) && ids.has(e.target));
@@ -33,7 +46,9 @@ export function forDisplay(
     edges = edges.filter((e) => ids.has(e.source) && ids.has(e.target));
   }
 
-  const layers = graph.layers.filter((l) => l.id !== "datalinks");
+  const layers = graph.layers.filter(
+    (l) => l.id !== "datalinks" && (!hideUnknown || l.id !== "unknown"),
+  );
   const layerCounts = { ...(graph.project?.layerCounts || {}) };
   delete layerCounts.datalinks;
   for (const layer of layers) {

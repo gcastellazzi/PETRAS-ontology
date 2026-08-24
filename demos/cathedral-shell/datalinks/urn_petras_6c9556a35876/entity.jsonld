@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:6c9556a35876",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:df8fb79152eb",
+  "mapsTo": "urn:petras:project_report:f0f303246c93",
+  "operator": "report.cite",
+  "plugin": "assistant",
+  "parameters": {},
+  "label": "report.cite"
+}

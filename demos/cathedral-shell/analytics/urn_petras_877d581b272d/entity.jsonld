@@ -1,0 +1,16 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:877d581b272d",
+  "@type": "AnalysisComparison",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "FEM vs kinematic comparison",
+  "description": "Cross-check of FEM stresses against kinematic collapse multipliers for the report",
+  "basedOn": [
+    "urn:petras:femresult:42a556b35834",
+    "urn:petras:kinematicresult:58785ac0b39c"
+  ],
+  "comparedModels": [
+    "urn:petras:femmodel:f126d9f591f0",
+    "urn:petras:kinematicmodel:30255f464325"
+  ]
+}

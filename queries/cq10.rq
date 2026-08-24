@@ -1,0 +1,16 @@
+# Which operations were executed, in which order, and on which entities?
+#
+# Competency question CQ10 of the manuscript.
+
+PREFIX petras: <https://w3id.org/petras/ontology#>
+PREFIX prov:   <http://www.w3.org/ns/prov#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?when ?operator ?plugin ?target WHERE {
+  ?link petras:inLayer petras:DataLink ;
+        petras:operator ?operator ;
+        petras:mapsTo   ?target ;
+        prov:generatedAtTime ?when .
+  OPTIONAL { ?link petras:plugin ?plugin }
+}
+ORDER BY ?when

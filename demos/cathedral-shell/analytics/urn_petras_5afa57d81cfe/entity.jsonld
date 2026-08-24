@@ -1,0 +1,17 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:5afa57d81cfe",
+  "@type": "SensorRecord",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Monitoring (T, DX, DY)",
+  "description": "Empty shell \u2014 no binary payload",
+  "sourceDatalakeIDs": [
+    "urn:petras:9b299463df10"
+  ],
+  "nSamples": 48,
+  "channels": [
+    "Temperature",
+    "DX",
+    "DY"
+  ]
+}

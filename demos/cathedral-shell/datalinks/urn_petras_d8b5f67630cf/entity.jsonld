@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:d8b5f67630cf",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:kinematicmodel:30255f464325",
+  "mapsTo": "urn:petras:kinematicresult:58785ac0b39c",
+  "operator": "kinematic.solve",
+  "plugin": "kinematic_engine",
+  "parameters": {},
+  "label": "kinematic.solve"
+}

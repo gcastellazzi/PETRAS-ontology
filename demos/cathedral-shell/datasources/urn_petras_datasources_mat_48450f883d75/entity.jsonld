@@ -1,0 +1,11 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:datasources_mat:48450f883d75",
+  "@type": "MaterialDefinition",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Clay brick M10",
+  "description": "Empty shell \u2014 no binary payload",
+  "linkedEntities": [
+    "urn:petras:femmodel:f126d9f591f0"
+  ]
+}

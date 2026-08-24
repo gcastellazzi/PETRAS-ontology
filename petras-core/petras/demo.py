@@ -56,7 +56,7 @@ def _link(
     }
 
 
-def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Project:
+def generate_demo_project(out: Path, *, name: str = "Demo Project") -> Project:
     """Create a lightweight PETRAS project covering all 7 layers."""
     if out.exists() and any(out.iterdir()):
         # Rebuild into a clean tree under out
@@ -66,7 +66,7 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
         name=name,
         description=(
             "Empty-shell demonstrator aligned with the PETRAS benchmark backbone "
-            "(acquisition → mesh → FEM → analytics → report)."
+            "(acquisition → mesh → FEM / kinematic → analytics → report)."
         ),
     )
 
@@ -160,6 +160,21 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
         ),
     )
 
+    # Alternative structural model: kinematic (mechanism) analysis of the same mesh.
+    kinematic_model = new_urn_with_kind("kinematicmodel")
+    proj.write_entity(
+        OntologyLayer.DATASET,
+        kinematic_model,
+        _entity(
+            kinematic_model,
+            "KinematicModel",
+            label="Kinematic mechanism model",
+            description="Rigid-block kinematic model of the west façade (non-FEM)",
+            sourceMeshDatasetId=mesh_ds,
+            analysisFamily="kinematic",
+        ),
+    )
+
     # --- L5 DataSources ---
     mat_def = new_urn_with_kind("datasources_mat")
     diag = new_urn_with_kind("datasources_diag")
@@ -182,7 +197,7 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
             ),
         )
 
-    # --- L4 DataStore (5 FEM results: 2 static + 3 modal) ---
+    # --- L4 DataStore (5 FEM results + kinematic result) ---
     results: list[str] = []
     for i, kind in enumerate(["linear_statics", "linear_statics", "modal", "modal", "modal"], start=1):
         rid = new_urn_with_kind("femresult")
@@ -199,6 +214,20 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
             ),
         )
 
+    kinematic_result = new_urn_with_kind("kinematicresult")
+    proj.write_entity(
+        OntologyLayer.DATASTORE,
+        kinematic_result,
+        _entity(
+            kinematic_result,
+            "KinematicResultSet",
+            label="Kinematic collapse multipliers",
+            analysisType="kinematic_limit",
+            sourceModelId=kinematic_model,
+            comparedWithModelId=fem_model,
+        ),
+    )
+
     # --- L6 DataAnalytics ---
     job = new_urn_with_kind("analytics_finetools_job")
     masonry = new_urn_with_kind("analytics_masonry_check")
@@ -209,6 +238,7 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
     cmd_hist = new_urn()
     decision = new_urn()
     recommendation = new_urn()
+    fem_kinematic_compare = new_urn()
 
     proj.write_entity(
         OntologyLayer.DATAANALYTICS,
@@ -267,6 +297,18 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
         recommendation,
         _entity(recommendation, "Recommendation", label="Install tie rods", basedOn=decision),
     )
+    proj.write_entity(
+        OntologyLayer.DATAANALYTICS,
+        fem_kinematic_compare,
+        _entity(
+            fem_kinematic_compare,
+            "AnalysisComparison",
+            label="FEM vs kinematic comparison",
+            description="Cross-check of FEM stresses against kinematic collapse multipliers for the report",
+            basedOn=[results[0], kinematic_result],
+            comparedModels=[fem_model, kinematic_model],
+        ),
+    )
 
     # --- L7 DataReporting ---
     report_tech = new_urn_with_kind("project_report")
@@ -280,7 +322,17 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
     proj.write_entity(
         OntologyLayer.DATAREPORTING,
         report_full,
-        _entity(report_full, "ProjectReport", label="Full comprehensive report", template="full"),
+        _entity(
+            report_full,
+            "ProjectReport",
+            label="Full comprehensive report",
+            template="full",
+            description=(
+                "Synthesis report citing the project index and the supporting "
+                "FEM analysis, annotated survey, FEM/kinematic results, masonry "
+                "checks, façade strengthening decision, and tie-rod recommendation"
+            ),
+        ),
     )
     proj.write_entity(
         OntologyLayer.DATAREPORTING,
@@ -291,10 +343,10 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
     # --- L3 DataLinks (benchmark operators) ---
     chain: list[tuple[str, str, str, str]] = [
         (cloud_raw, cloud_ds, "cloud.import", "acquire_cloud"),
-        (cloud_ds, cloud_ds, "cloud.inspect", "acquire_cloud"),
         (cloud_ds, slice_set, "cloud.slice", "slice2d"),
         (slice_set, mesh_ds, "cloud2fem.mesh", "cloud2fem"),
         (mesh_ds, fem_model, "fem.model", "fem_generator"),
+        (mesh_ds, kinematic_model, "kinematic.model", "kinematic_generator"),
         (mat_def, fem_model, "fem.material", "material_library"),
         (fem_model, results[0], "fem.solve", "finetools_engine"),
         (fem_model, results[1], "fem.solve", "finetools_engine"),
@@ -302,6 +354,9 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
         (fem_model, results[3], "fem.solve", "finetools_engine"),
         (fem_model, results[4], "fem.solve", "finetools_engine"),
         (fem_model, job, "fem.job", "finetools_engine"),
+        (kinematic_model, kinematic_result, "kinematic.solve", "kinematic_engine"),
+        (results[0], fem_kinematic_compare, "compare.fem", "diagnostics"),
+        (kinematic_result, fem_kinematic_compare, "compare.kinematic", "diagnostics"),
         (sensor_sheet, cloud_ds, "documents.attach", "documents"),
         (ext_report, fem_model, "documents.attach", "documents"),
         (diag, mat_def, "documents.attach", "documents"),
@@ -309,12 +364,20 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
         (results[0], masonry, "masonry.check", "masonry_checks"),
         (masonry, decision, "decision.support", "diagnostics"),
         (decision, recommendation, "decision.recommend", "diagnostics"),
+        # Full comprehensive report: index hub + evidence cited in the narrative.
         (project_index, report_full, "report.cite", "indexer"),
-        (results[0], report_tech, "report.cite", "assistant"),
+        (job, report_full, "report.cite", "assistant"),
+        (cloud_ds, report_full, "report.cite", "assistant"),
+        (results[0], report_full, "report.cite", "assistant"),
+        (results[1], report_full, "report.cite", "assistant"),
+        (kinematic_result, report_full, "report.cite", "assistant"),
+        (fem_kinematic_compare, report_full, "report.cite", "assistant"),
+        (masonry, report_full, "report.cite", "assistant"),
+        (decision, report_full, "report.cite", "assistant"),
+        (recommendation, report_full, "report.cite", "assistant"),
         (temporal, report_full, "report.cite", "event_tracker"),
+        (results[0], report_tech, "report.cite", "assistant"),
     ]
-    # cloud.inspect self-edge is awkward; link inspect as cloud_ds → cloud_ds via a
-    # separate inspect artifact is fine for demo, but skip self-loops for clarity.
     for src, dst, operator, plugin in chain:
         if src == dst:
             continue
@@ -325,7 +388,7 @@ def generate_demo_project(out: Path, *, name: str = "Cathedral Shell") -> Projec
             _link(lid, maps_from=src, maps_to=dst, operator=operator, plugin=plugin),
         )
 
-    # Explicit inspect link: raw → annotated (already have import); add inspect meta-link
+    # Explicit inspect link: raw → annotated
     inspect_id = new_urn()
     proj.write_entity(
         OntologyLayer.DATALINK,

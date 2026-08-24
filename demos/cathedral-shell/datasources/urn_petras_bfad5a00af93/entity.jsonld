@@ -1,0 +1,11 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:bfad5a00af93",
+  "@type": "DataSources",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Sensor technical sheet",
+  "description": "Empty shell \u2014 no binary payload",
+  "linkedEntities": [
+    "urn:petras:a84ec7bb941e"
+  ]
+}

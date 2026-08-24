@@ -17,6 +17,14 @@ jobs:
         run: |
           python -m pip install -e "./petras-core[dev]"
           pytest petras-core/tests -q
+
+      # The manuscript claims the shapes validate and the competency questions
+      # answer. These two steps keep that claim true rather than asserted.
+      - name: SHACL shapes validate the demo project
+        run: petras validate demos/cathedral-shell
+
+      - name: Every competency question is answered
+        run: petras ask --all --project demos/cathedral-shell --limit 3
       - name: No c2f4dt in ontology/demos
         run: |
           if rg -n 'c2f4dt' ontology demos --glob '!**/.*'; then
@@ -28,6 +36,8 @@ jobs:
           python scripts/generate_demo_project.py --out demos/cathedral-shell
           python -m petras export-graph demos/cathedral-shell \
             -o viewer/public/demos/cathedral-shell/graph.json
+          python -m petras export-cq demos/cathedral-shell \
+            -o viewer/public/demos/cathedral-shell/cq-answers.json
 
   viewer:
     runs-on: ubuntu-latest

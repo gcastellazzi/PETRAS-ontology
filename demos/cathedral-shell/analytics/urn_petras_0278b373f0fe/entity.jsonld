@@ -1,9 +1,0 @@
-{
-  "@context": "https://w3id.org/petras/context.jsonld",
-  "@id": "urn:petras:0278b373f0fe",
-  "@type": "TemporalEvent",
-  "createdAt": "2026-08-22T16:27:12Z",
-  "label": "2012 Emilia seismic sequence",
-  "description": "Empty shell \u2014 no binary payload",
-  "eventType": "earthquake"
-}

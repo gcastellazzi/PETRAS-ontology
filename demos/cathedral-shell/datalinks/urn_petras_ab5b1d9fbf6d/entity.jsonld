@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:ab5b1d9fbf6d",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:7de00227c949",
+  "mapsTo": "urn:petras:217e22ee5e42",
+  "operator": "cloud2fem.mesh",
+  "plugin": "cloud2fem",
+  "parameters": {},
+  "label": "cloud2fem.mesh"
+}

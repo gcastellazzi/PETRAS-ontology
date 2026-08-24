@@ -1,0 +1,9 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:analytics:64fa6391e7b4",
+  "@type": "PointSelection3D",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Damage region selection",
+  "description": "Empty shell \u2014 no binary payload",
+  "sourceDatasetId": "urn:petras:a84ec7bb941e"
+}

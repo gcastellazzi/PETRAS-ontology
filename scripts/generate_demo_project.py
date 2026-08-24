@@ -15,7 +15,7 @@ from petras.demo import generate_demo_project  # noqa: E402
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, required=True)
-    parser.add_argument("--name", default="Cathedral Shell")
+    parser.add_argument("--name", default="Demo Project")
     args = parser.parse_args()
     proj = generate_demo_project(args.out, name=args.name)
     counts = proj.layer_counts()

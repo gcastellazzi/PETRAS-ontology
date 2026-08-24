@@ -1,0 +1,13 @@
+# What was the state of the Digital Twin at a given date, and what changed afterwards?
+#
+# Competency question CQ5 of the manuscript.
+
+PREFIX petras: <https://w3id.org/petras/ontology#>
+PREFIX prov:   <http://www.w3.org/ns/prov#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?when ?entity ?label WHERE {
+  ?entity prov:generatedAtTime ?when .
+  OPTIONAL { ?entity rdfs:label ?label }
+}
+ORDER BY ?when

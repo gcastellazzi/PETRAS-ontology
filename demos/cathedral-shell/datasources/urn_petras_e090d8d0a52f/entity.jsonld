@@ -1,0 +1,11 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:e090d8d0a52f",
+  "@type": "DataSources",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Previous external report",
+  "description": "Empty shell \u2014 no binary payload",
+  "linkedEntities": [
+    "urn:petras:a84ec7bb941e"
+  ]
+}

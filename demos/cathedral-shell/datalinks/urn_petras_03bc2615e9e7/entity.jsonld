@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:03bc2615e9e7",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:analytics_masonry_check:5f84c7076f9d",
+  "mapsTo": "urn:petras:df8fb79152eb",
+  "operator": "decision.support",
+  "plugin": "diagnostics",
+  "parameters": {},
+  "label": "decision.support"
+}

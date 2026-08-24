@@ -1,0 +1,9 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:project_report:3b6a55308aae",
+  "@type": "ProjectReport",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Technical internal report",
+  "description": "Empty shell \u2014 no binary payload",
+  "template": "technical"
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:femresult:c079beb3c989",
+  "@type": "FEMResultSet",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "FEM result 4 (modal)",
+  "description": "Empty shell \u2014 no binary payload",
+  "analysisType": "modal",
+  "sourceModelId": "urn:petras:femmodel:f126d9f591f0"
+}

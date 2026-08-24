@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:f13f8d497967",
+  "@type": "DataLink",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "mapsFrom": "urn:petras:bfad5a00af93",
+  "mapsTo": "urn:petras:a84ec7bb941e",
+  "operator": "documents.attach",
+  "plugin": "documents",
+  "parameters": {},
+  "label": "documents.attach"
+}

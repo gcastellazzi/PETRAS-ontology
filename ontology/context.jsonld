@@ -1,11 +1,11 @@
 {
   "@context": {
     "@version": 1.1,
+    "@vocab": "https://w3id.org/petras/ontology#",
     "petras": "https://w3id.org/petras/ontology#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "prov": "http://www.w3.org/ns/prov#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-
     "DataLake": "petras:DataLake",
     "DataSet": "petras:DataSet",
     "DataLink": "petras:DataLink",
@@ -31,7 +31,6 @@
     "Recommendation": "petras:Recommendation",
     "AssistantChatSession": "petras:AssistantChatSession",
     "CommandExecutionRecord": "petras:CommandExecutionRecord",
-
     "createdAt": {
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
@@ -44,7 +43,6 @@
     "checksum": "petras:checksum",
     "description": "rdfs:comment",
     "label": "rdfs:label",
-
     "geometryURI": {
       "@id": "petras:hasGeometryURI",
       "@type": "@id"
@@ -68,7 +66,6 @@
       "@type": "@id",
       "@container": "@set"
     },
-
     "mapsFrom": {
       "@id": "petras:mapsFrom",
       "@type": "@id"
@@ -80,7 +77,6 @@
     "operator": "petras:operator",
     "parameters": "petras:parameters",
     "plugin": "petras:plugin",
-
     "eventType": "petras:eventType",
     "deltaGeometry": "petras:deltaGeometry",
     "deltaAttributes": "petras:deltaAttributes",

@@ -1,0 +1,17 @@
+# Which operator, with which parameters and by which agent, produced a given DataSet?
+#
+# Competency question CQ2 of the manuscript.
+
+PREFIX petras: <https://w3id.org/petras/ontology#>
+PREFIX prov:   <http://www.w3.org/ns/prov#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?dataset ?operator ?plugin ?parameters ?when WHERE {
+  ?dataset petras:inLayer petras:DataSet .
+  ?link petras:mapsTo ?dataset ;
+        petras:operator ?operator ;
+        prov:generatedAtTime ?when .
+  OPTIONAL { ?link petras:plugin ?plugin }
+  OPTIONAL { ?link petras:parameters ?parameters }
+}
+ORDER BY ?when

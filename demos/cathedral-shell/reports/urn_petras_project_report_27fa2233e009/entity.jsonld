@@ -1,9 +1,0 @@
-{
-  "@context": "https://w3id.org/petras/context.jsonld",
-  "@id": "urn:petras:project_report:27fa2233e009",
-  "@type": "ProjectReport",
-  "createdAt": "2026-08-22T16:27:12Z",
-  "label": "Full comprehensive report",
-  "description": "Empty shell \u2014 no binary payload",
-  "template": "full"
-}

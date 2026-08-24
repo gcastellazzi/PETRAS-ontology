@@ -1,0 +1,9 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:project_report:f0f303246c93",
+  "@type": "ProjectReport",
+  "createdAt": "2026-08-23T08:41:27Z",
+  "label": "Full comprehensive report",
+  "description": "Synthesis report citing the project index and the supporting FEM analysis, annotated survey, FEM/kinematic results, masonry checks, fa\u00e7ade strengthening decision, and tie-rod recommendation",
+  "template": "full"
+}
