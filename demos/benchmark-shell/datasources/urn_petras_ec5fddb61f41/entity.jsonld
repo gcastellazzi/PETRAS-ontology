@@ -26,5 +26,9 @@
   "geo_lon": 11.141214,
   "geo_tz": "UTC",
   "geo_north_deg": 0.0,
-  "geolocatedAt": "2026-08-16T15:00:19.803971+00:00"
+  "geolocatedAt": "2026-08-16T15:00:19.803971+00:00",
+  "deleted": true,
+  "deletedAt": "2026-08-23T06:48:03.262550+00:00",
+  "updatedAt": "2026-08-23T06:48:03.262550+00:00",
+  "deletedBy": "dataset.optimize"
 }

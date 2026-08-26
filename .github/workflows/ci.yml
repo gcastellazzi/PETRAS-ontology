@@ -25,6 +25,12 @@ jobs:
 
       - name: Every competency question is answered
         run: petras ask --all --project demos/cathedral-shell --limit 3
+
+      # The benchmark is the project the paper's tables report on, and it is
+      # the one that regressed: a whole seismic sequence sat unlinked and CQ8
+      # returned no rows while the cathedral demo kept passing.
+      - name: Every competency question is answered on the benchmark
+        run: petras ask --all --project demos/benchmark-shell --limit 3
       - name: No c2f4dt in ontology/demos
         run: |
           if rg -n 'c2f4dt' ontology demos --glob '!**/.*'; then

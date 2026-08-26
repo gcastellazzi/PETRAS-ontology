@@ -1,0 +1,89 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "MaterialDefinition",
+  "@id": "urn:petras:datasources:mat_20ab42e6dd47",
+  "schema_version": "1.1",
+  "name": "Brick Restoration",
+  "key": "brick_restoration",
+  "category": "masonry_diagnostic",
+  "model": "linear_elastic_isotropic",
+  "mechanical_properties": {
+    "E": 2408548235.5261116,
+    "nu": 0.2,
+    "rho": 1800.0,
+    "fm": 6216287.453770141,
+    "tau0": 94071.83759940733
+  },
+  "thermal_properties": null,
+  "applicability": {
+    "elements": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 1,
+      "sample": [
+        "solid"
+      ]
+    },
+    "analyses": [
+      "mechanical"
+    ]
+  },
+  "source": "DiagnosticRecord urn:petras:datasources:diag_f5cd8660be89; nu/rho from urn:petras:datasources:mat_5beaa9b89528",
+  "notes": "MQI correlations are intervals; nominal E is their arithmetic midpoint.",
+  "color": "#7E3A27",
+  "createdAt": "2026-08-24T22:03:31.869668+00:00",
+  "bounds": {
+    "E": [
+      2025069540.4904413,
+      2792026930.561782
+    ],
+    "fm": [
+      4981980.664215308,
+      7450594.243324975
+    ],
+    "tau0": [
+      77653.8988001297,
+      110489.77639868495
+    ]
+  },
+  "boundsPolicy": "nominal",
+  "propertySources": {
+    "E": {
+      "diagnosticRef": "urn:petras:datasources:diag_f5cd8660be89",
+      "method": "mqi"
+    },
+    "fm": {
+      "diagnosticRef": "urn:petras:datasources:diag_f5cd8660be89",
+      "method": "mqi"
+    },
+    "tau0": {
+      "diagnosticRef": "urn:petras:datasources:diag_f5cd8660be89",
+      "method": "mqi"
+    },
+    "nu": {
+      "materialRef": "urn:petras:datasources:mat_5beaa9b89528"
+    },
+    "rho": {
+      "materialRef": "urn:petras:datasources:mat_5beaa9b89528"
+    }
+  },
+  "assumptions": [
+    "MQI correlations provide intervals rather than measured scalar values.",
+    "Nominal bounded properties are the arithmetic midpoint of lower and upper bounds.",
+    "Poisson ratio and density are adopted from base material urn:petras:datasources:mat_5beaa9b89528."
+  ],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-24T22:03:31.869940+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-24T22:03:31.869940+00:00",
+  "updatedAt": "2026-08-25T13:18:40.061455+00:00"
+}

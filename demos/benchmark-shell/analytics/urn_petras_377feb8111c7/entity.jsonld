@@ -1,0 +1,28 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "ProjectIndex",
+  "@id": "urn:petras:377feb8111c7",
+  "generatedAt": "2026-08-25T08:55:42.762339+00:00",
+  "generator": "petras.indexer.v1",
+  "schemaVersion": "1.0",
+  "stats": {
+    "entities": 344,
+    "refs_edges": 1043,
+    "jsonld_files": 363,
+    "artifact_files": 272,
+    "warnings": 5
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-25T08:55:42.762479+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-25T08:55:42.762479+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:1b0d0318f87a",
+  "@type": "DataLink",
+  "createdAt": "2026-08-26T15:08:38.301518+00:00",
+  "mapsFrom": "urn:petras:e2984986289f",
+  "mapsTo": "urn:petras:datasources:mat_20ab42e6dd47",
+  "operator": "event_tracker.attach_material",
+  "parameters": {
+    "relationshipType": "event_material_effect",
+    "effect": "degradation",
+    "affectedProperties": [
+      "E",
+      "fm"
+    ],
+    "note": "Percolation of water, degradation of the mortar"
+  },
+  "plugin": "event_tracker"
+}

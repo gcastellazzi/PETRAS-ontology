@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:3eb6904bef82",
+  "@type": "DataLink",
+  "createdAt": "2026-08-25T16:49:03.414180+00:00",
+  "mapsFrom": "urn:petras:f59877a97cc8",
+  "mapsTo": "urn:petras:6718c0b185d8",
+  "operator": "cloud2fem.duplicate",
+  "parameters": {
+    "nSlices": 46
+  },
+  "plugin": "cloud2fem"
+}

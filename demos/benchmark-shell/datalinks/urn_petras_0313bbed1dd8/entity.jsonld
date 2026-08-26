@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:0313bbed1dd8",
+  "@type": "DataLink",
+  "createdAt": "2026-08-24T19:26:11.731138+00:00",
+  "mapsFrom": "urn:petras:506d55dfe0d3",
+  "mapsTo": "urn:petras:cf820781e312",
+  "operator": "kinematics.disconnect",
+  "parameters": {
+    "nSeamNodesDuplicated": 1499
+  },
+  "plugin": "kinematics"
+}

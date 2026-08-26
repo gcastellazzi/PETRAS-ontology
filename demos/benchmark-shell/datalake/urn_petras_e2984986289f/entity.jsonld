@@ -1,0 +1,50 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:e2984986289f",
+  "@type": "TemporalEvent",
+  "createdAt": "2026-08-26T14:52:06.194081+00:00",
+  "updatedAt": "2026-08-26T15:08:38.304149+00:00",
+  "label": "Missing roofing structure",
+  "startDate": "2012-05-29T14:48:18+00:00",
+  "endDate": "2012-08-30T14:48:18+00:00",
+  "eventType": "maintenance",
+  "severity": "critical",
+  "description": "Collapsed roofing structures expose the masonry to rain. Material degradation is expected due to water percolation.",
+  "location": {},
+  "affectedZones": [
+    "North tower"
+  ],
+  "measurements": {},
+  "attachments": [],
+  "relatedEvents": [],
+  "tags": [
+    "water percolation"
+  ],
+  "visibility": "internal",
+  "deleted": false,
+  "deletedAt": "",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-26T14:52:06.194186+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-26T14:52:06.194186+00:00",
+  "relatedMaterials": [
+    {
+      "materialRef": "urn:petras:datasources:mat_20ab42e6dd47",
+      "effect": "degradation",
+      "affectedProperties": [
+        "E",
+        "fm"
+      ],
+      "note": "Percolation of water, degradation of the mortar"
+    }
+  ]
+}

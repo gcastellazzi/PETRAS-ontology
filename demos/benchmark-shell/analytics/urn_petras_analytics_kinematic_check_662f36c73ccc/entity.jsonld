@@ -1,0 +1,116 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:analytics:kinematic_check:662f36c73ccc",
+  "@type": "KinematicCheckResult",
+  "schemaVersion": "1.0",
+  "createdAt": "2026-08-26T07:42:32.803738+00:00",
+  "artifactType": "structural_verification",
+  "method": "ntc_c8.7.1_linear_kinematic",
+  "sourceMechanismId": "urn:petras:analytics:local_mechanism:bcd1d8187120",
+  "sourceModelId": "urn:petras:femmodel:8d47f6d417ef",
+  "sourceMeshDatasetId": "urn:petras:aca528c25f65",
+  "meshSignature": "f9014a97d0d1d990bd00ea7e019d3ddab783b5063cbfbccc8f665673a967677e",
+  "meshGeometryType": "mesh3d",
+  "nCells": 132194,
+  "nBlockCells": 29050,
+  "cellGroup": "MACRO_5",
+  "hinge": {
+    "point": [
+      50.331,
+      98.2266,
+      41.3489
+    ],
+    "direction": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "senseMode": "auto"
+  },
+  "seismicDirection": [
+    -1.0,
+    0.0,
+    0.0
+  ],
+  "verticalDirection": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "gravity": 9.80665,
+  "confidenceFactor": 1.0,
+  "appliedSense": -1,
+  "massNorm": "horizontal",
+  "densityPolicy": "nominal",
+  "materials": [
+    {
+      "materialRef": "urn:petras:datasources:mat_20ab42e6dd47",
+      "materialName": "Brick Restoration",
+      "rhoKgM3": 1800.0,
+      "source": "material_bounds:nominal",
+      "groups": [
+        "MAT_BRICK_RESTORATION"
+      ],
+      "nCells": 6656
+    },
+    {
+      "materialRef": "urn:petras:datasources:mat_abc79313bde6",
+      "materialName": "M24 Clay Brick",
+      "rhoKgM3": 1800.0,
+      "source": "material_scalar",
+      "groups": [
+        "MAT_M24_CLAY_BRICK"
+      ],
+      "nCells": 22394
+    }
+  ],
+  "totals": {
+    "blockVolumeM3": 198.60405060799718,
+    "weightN": 3505752.743210848,
+    "massKg": 357487.2910943949,
+    "nInvertedCells": 0
+  },
+  "works": {
+    "drivingPerAlpha": 30559783.41236192,
+    "gravity": -6777308.1272987425,
+    "actions": 0.0
+  },
+  "alpha0": 0.22177212566752724,
+  "participatingMassKg": 301626.71168807754,
+  "massFraction": 0.8437410761224311,
+  "spectralAccelerationMS2": 2.5776173256520174,
+  "spectralAccelerationG": 0.26284381778201704,
+  "participatingMassKgFullNorm": 280041.803796102,
+  "massFractionFullNorm": 0.783361564935064,
+  "demandComparison": null,
+  "note": "seismic demand is not evaluated by this plugin",
+  "outputs": {
+    "dataFile": "kinematic_check.npz",
+    "scalarKey": "kinematic_delta_x",
+    "blockKey": "kinematic_block",
+    "association": "cell",
+    "alpha0": 0.22177212566752724,
+    "a0StarMS2": 2.5776173256520174,
+    "sidecarFields": {
+      "kinematic_block": "1 inside the macroelement, 0 outside",
+      "kinematic_delta_x": "virtual displacement along the seismic direction",
+      "cell_weight_n": "cell weight in newtons"
+    }
+  },
+  "blockMeshDatasetId": "urn:petras:f26134a31493",
+  "motionResultId": "urn:petras:datastore:kinematic_motion:0387dfff5206",
+  "nSeamNodesDuplicated": 1806,
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-26T07:42:33.009717+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-26T07:42:33.009717+00:00"
+}

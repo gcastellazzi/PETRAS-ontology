@@ -3,7 +3,7 @@
   "@id": "urn:petras:e6d5cdb28c76",
   "@type": "TemporalEvent",
   "createdAt": "2026-07-30T09:12:24.357368+00:00",
-  "updatedAt": "2026-07-30T09:12:24.357368+00:00",
+  "updatedAt": "2026-08-23T06:48:03.259199+00:00",
   "label": "M4 — 3 km E of Mirandola, Italy",
   "startDate": "2012-05-25T13:14:05+00:00",
   "endDate": "2012-05-25T13:14:05+00:00",
@@ -29,8 +29,8 @@
     "usgs"
   ],
   "visibility": "public",
-  "deleted": false,
-  "deletedAt": "",
+  "deleted": true,
+  "deletedAt": "2026-08-23T06:48:03.259199+00:00",
   "geolocation": {
     "latitude": 44.838925,
     "longitude": 11.141214,
@@ -65,5 +65,6 @@
     },
     "cacheKey": "7d5e21c52d61f6937764980c",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000jkx3"
-  }
+  },
+  "deletedBy": "dataset.optimize"
 }

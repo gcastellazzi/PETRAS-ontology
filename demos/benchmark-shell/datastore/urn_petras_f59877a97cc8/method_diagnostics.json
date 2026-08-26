@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-08T15:13:06.354078+00:00",
+  "nSlices": 32,
+  "methods": {
+    "improved": {
+      "available": true,
+      "updatedAt": "2026-07-08T15:13:06.353454+00:00",
+      "nSlices": 32,
+      "partial": false,
+      "sliceIndices": null,
+      "methodParams": {
+        "r_max": null,
+        "delta_max": null,
+        "r_min": null,
+        "max_depth": 8,
+        "min_points_leaf": 12,
+        "dipole_grid_res": 256,
+        "dipole_margin_factor": 0.1,
+        "dipole_r_min_factor": 0.5,
+        "dipole_level": -0.5,
+        "dipole_auto_sign": true,
+        "dipole_morph_close_iters": 1,
+        "dipole_point_batch_size": 64,
+        "dipole_grid_chunk_size": 32768,
+        "dipole_fill_hole_max": 0.0,
+        "improved_profile": "balanced",
+        "refine_after_closure": false,
+        "adaptive_radius": false,
+        "improved_fit_tol": null,
+        "improved_min_fit_support": 3,
+        "improved_max_support_gap_fraction": 0.75,
+        "improved_orphan_ratio_max": null,
+        "fallback_methods": [
+          "aware",
+          "flooding",
+          "original",
+          "empty_declared"
+        ],
+        "slice_normal_mask": true
+      },
+      "qualitySummary": {
+        "classification_cache_written": false,
+        "dipole_fallback_slices": 0,
+        "dipole_valid_normals": 0,
+        "filled_cells": 0.0,
+        "improved_fallback_slices": 0,
+        "improved_slices": 32,
+        "method_empty_slices": 0,
+        "n_empty_slices": 0,
+        "n_polylines_total": 2001
+      },
+      "diagnostics": []
+    }
+  }
+}

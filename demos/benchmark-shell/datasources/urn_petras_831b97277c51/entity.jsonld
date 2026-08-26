@@ -1,0 +1,30 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:831b97277c51",
+  "@type": "DataSources",
+  "createdAt": "2026-08-26T14:53:53.667334+00:00",
+  "sourceType": "pdf",
+  "title": "north_tower_top_after_earthquake_water_percolation",
+  "authors": [],
+  "doi": "",
+  "uri": {
+    "_stripped": true,
+    "kind": "path",
+    "name": "north_tower_top_after_earthquake_water_percolation.pdf"
+  },
+  "checksum": "fd1c432b851314c6df44d12215129625a7d53f7c8ef04d39dea1fdfa403da407",
+  "linkedEntities": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-26T14:53:53.667431+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-26T14:53:53.667431+00:00"
+}

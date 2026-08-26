@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:395d8a4df00b",
+  "@type": "DataLink",
+  "createdAt": "2026-08-25T22:51:25.570795+00:00",
+  "mapsFrom": "urn:petras:datasources:mat_20ab42e6dd47",
+  "mapsTo": "urn:petras:femmodel:8d47f6d417ef",
+  "operator": "finetools_engine.material",
+  "parameters": {
+    "target": "cellgroup:MAT_BRICK_RESTORATION"
+  },
+  "plugin": "finetools_engine"
+}

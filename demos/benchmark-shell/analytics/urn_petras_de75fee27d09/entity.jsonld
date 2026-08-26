@@ -11,5 +11,9 @@
     "jsonld_files": 26,
     "artifact_files": 25,
     "warnings": 7
-  }
+  },
+  "deleted": true,
+  "deletedAt": "2026-08-23T06:48:03.255781+00:00",
+  "updatedAt": "2026-08-23T06:48:03.255781+00:00",
+  "deletedBy": "dataset.optimize"
 }

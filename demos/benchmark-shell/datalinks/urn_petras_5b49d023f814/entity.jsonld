@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:5b49d023f814",
+  "@type": "DataLink",
+  "createdAt": "2026-08-24T22:43:10.733884+00:00",
+  "mapsFrom": "urn:petras:datasources:mat_20ab42e6dd47",
+  "mapsTo": "urn:petras:femmodel:1b1562964636",
+  "operator": "finetools_engine.material",
+  "parameters": {
+    "target": "cellgroup:MAT_CLAY_BRICKS_NEW_RESTORATION"
+  },
+  "plugin": "finetools_engine"
+}

@@ -643,6 +643,210 @@
           1
         ]
       }
+    },
+    "MACRO_1": {
+      "kind": "cell",
+      "selector": "halfspaces",
+      "count": 15183,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 15183,
+        "sample": [
+          17,
+          21
+        ]
+      },
+      "baseGroup": "ALL",
+      "planes": [
+        {
+          "point": [
+            50.353,
+            96.1266,
+            41.4394
+          ],
+          "normal": [
+            -0.9191450300180579,
+            0.0,
+            0.3939192985791677
+          ],
+          "keep": "positive",
+          "offset": 0.0,
+          "tolerance": 0.0,
+          "label": ""
+        },
+        {
+          "point": [
+            56.3724,
+            96.4266,
+            48.8052
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "keep": "positive",
+          "offset": 0.0,
+          "tolerance": 0.0,
+          "label": ""
+        }
+      ],
+      "meshSignature": "5833ac5aca10057b0568a37550d19071a22d38ea17e2c2107546b03ca563cfda",
+      "createdAt": "2026-08-24T15:38:17.644955+00:00"
+    },
+    "MACRO_2": {
+      "kind": "cell",
+      "selector": "halfspaces",
+      "count": 23899,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 23899,
+        "sample": [
+          51281,
+          51862
+        ]
+      },
+      "baseGroup": "ALL",
+      "planes": [
+        {
+          "point": [
+            56.3724,
+            96.4266,
+            48.8052
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "keep": "positive",
+          "offset": 0.0,
+          "tolerance": 0.0,
+          "label": ""
+        },
+        {
+          "point": [
+            50.353,
+            96.1266,
+            41.4394
+          ],
+          "normal": [
+            -0.7071067811865475,
+            0.0,
+            0.7071067811865475
+          ],
+          "keep": "positive",
+          "offset": 0.0,
+          "tolerance": 0.0,
+          "label": ""
+        }
+      ],
+      "meshSignature": "5833ac5aca10057b0568a37550d19071a22d38ea17e2c2107546b03ca563cfda",
+      "createdAt": "2026-08-24T15:39:06.139914+00:00"
+    },
+    "MACRO_3": {
+      "kind": "cell",
+      "selector": "halfspaces",
+      "count": 24206,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 24206,
+        "sample": [
+          48438,
+          48520
+        ]
+      },
+      "baseGroup": "ALL",
+      "planes": [
+        {
+          "point": [
+            56.331,
+            95.1108,
+            38.9084
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "keep": "positive",
+          "offset": 0.0,
+          "tolerance": 0.0,
+          "label": ""
+        },
+        {
+          "point": [
+            50.3685,
+            98.2266,
+            41.28
+          ],
+          "normal": [
+            -0.7071067811865475,
+            0.0,
+            0.7071067811865475
+          ],
+          "keep": "positive",
+          "offset": 0.0,
+          "tolerance": 0.0,
+          "label": ""
+        }
+      ],
+      "meshSignature": "5833ac5aca10057b0568a37550d19071a22d38ea17e2c2107546b03ca563cfda",
+      "createdAt": "2026-08-24T19:23:19.379634+00:00"
+    },
+    "MACRO_4": {
+      "kind": "cell",
+      "selector": "halfspaces",
+      "count": 21430,
+      "cell_ids": {
+        "_stripped": true,
+        "kind": "list",
+        "count": 21430,
+        "sample": [
+          51281,
+          51862
+        ]
+      },
+      "baseGroup": "ALL",
+      "planes": [
+        {
+          "point": [
+            55.8809,
+            96.2138,
+            52.6936
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "keep": "positive",
+          "offset": 0.0,
+          "tolerance": 0.0,
+          "label": ""
+        },
+        {
+          "point": [
+            50.331,
+            97.8145,
+            41.3385
+          ],
+          "normal": [
+            -0.7071067811865475,
+            0.0,
+            0.7071067811865475
+          ],
+          "keep": "positive",
+          "offset": 0.0,
+          "tolerance": 0.0,
+          "label": ""
+        }
+      ],
+      "meshSignature": "5833ac5aca10057b0568a37550d19071a22d38ea17e2c2107546b03ca563cfda",
+      "createdAt": "2026-08-25T23:05:37.557720+00:00"
     }
   },
   "createdAt": "2026-08-21T15:05:12.188131+00:00",
@@ -682,9 +886,9 @@
         0.0
       ],
       "source": "explicit",
-      "updatedAt": "2026-08-21T16:41:45.095268+00:00",
+      "updatedAt": "2026-08-25T08:45:33.995199+00:00",
       "nCells": 122851
     }
   },
-  "updatedAt": "2026-08-21T16:41:45.095280+00:00"
+  "updatedAt": "2026-08-25T23:05:37.557759+00:00"
 }

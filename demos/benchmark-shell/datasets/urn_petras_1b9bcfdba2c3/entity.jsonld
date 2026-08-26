@@ -1,0 +1,60 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:1b9bcfdba2c3",
+  "@type": "DataSet",
+  "createdAt": "2026-08-24T22:33:44.776988+00:00",
+  "geometryURI": null,
+  "geometryType": "mesh3d",
+  "materials": {},
+  "boundaryConditions": {},
+  "discretization": {},
+  "version": 1,
+  "parentID": null,
+  "sourceDatalakeIDs": [
+    "urn:petras:f59877a97cc8"
+  ],
+  "geometryObjects": {
+    "mesh3d": "urn:petras:geom:843210b361d1"
+  },
+  "sourceDatasetIDs": [],
+  "materialAssignments": [
+    {
+      "id": 1,
+      "materialRef": "urn:petras:datasources:mat_20ab42e6dd47",
+      "name": "Clay Bricks New Restoration",
+      "key": "clay_bricks_new_restoration",
+      "color": "#DDA63C"
+    },
+    {
+      "id": 2,
+      "materialRef": "urn:petras:datasources:mat_5beaa9b89528",
+      "name": "M10 Clay Brick",
+      "key": "m10_clay_brick",
+      "color": "#CB7169"
+    },
+    {
+      "id": 3,
+      "materialRef": "urn:petras:datasources:mat_abc79313bde6",
+      "name": "M24 Clay Brick",
+      "key": "m24_clay_brick",
+      "color": "#E0AD84"
+    }
+  ],
+  "materialCellData": "material_id",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-24T22:33:44.801107+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-24T22:33:44.801107+00:00",
+  "updatedAt": "2026-08-25T22:49:11.855421+00:00",
+  "deleted": true,
+  "deletedAt": "2026-08-25T22:49:11.855421+00:00"
+}

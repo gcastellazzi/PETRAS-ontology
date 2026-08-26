@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:107c44e1f2c9",
+  "@type": "DataLink",
+  "createdAt": "2026-08-25T23:06:33.280968+00:00",
+  "mapsFrom": "urn:petras:femmodel:b9450d4907ae",
+  "mapsTo": "urn:petras:analytics:local_mechanism:88830c55e6f6",
+  "operator": "kinematics.macroelement",
+  "parameters": {
+    "cellGroup": "MACRO_4",
+    "nBlockCells": 21430
+  },
+  "plugin": "kinematics"
+}

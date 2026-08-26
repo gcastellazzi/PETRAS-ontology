@@ -1,0 +1,56 @@
+{
+  "n_entities": 396,
+  "n_commands": 100,
+  "n_success": 98,
+  "n_failed": 2,
+  "success_rate": 98.0,
+  "template": "full",
+  "method": "ai",
+  "llm_model": "qwen3:8b",
+  "llm_timeout_s": 300.0,
+  "llm_duration_ms": 204375,
+  "log_sources": [
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-26_5d92c049.jsonl"
+      },
+      "file": "2026-08-26_5d92c049.jsonl",
+      "count": 8,
+      "first_ts": "2026-08-26T07:35:32.847870+00:00",
+      "last_ts": "2026-08-26T09:10:35.716712+00:00"
+    },
+    {
+      "path": {
+        "_stripped": true,
+        "kind": "path",
+        "name": "2026-08-25_5d92c049.jsonl"
+      },
+      "file": "2026-08-25_5d92c049.jsonl",
+      "count": 92,
+      "first_ts": "2026-08-25T22:27:27.450137+00:00",
+      "last_ts": "2026-08-25T23:07:01.015835+00:00"
+    }
+  ],
+  "referenced_entities": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 396,
+    "sample": [
+      "urn:petras:0273e9655a35",
+      "urn:petras:02b64966b65d"
+    ]
+  },
+  "referenced_entity_count": 396,
+  "referencedEntities": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 396,
+    "sample": [
+      "urn:petras:0273e9655a35",
+      "urn:petras:02b64966b65d"
+    ]
+  },
+  "referencedEntityCount": 396
+}

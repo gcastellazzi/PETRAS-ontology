@@ -428,6 +428,11 @@ petras:materialGroups a owl:DatatypeProperty ;
 
 ### DataStore results
 
+petras:TemporalEvent a owl:Class ;
+    rdfs:subClassOf petras:DataEvent ;
+    rdfs:label "Temporal Event"@en ;
+    rdfs:comment "Name under which the reference implementation writes a DataEvent. Declared so that the class the data uses and the class the specification names are the same thing."@en .
+
 petras:eventType a owl:DatatypeProperty ;
     rdfs:label "event type"@en ;
     rdfs:comment "Kind of computational fact recorded, e.g. a finite element simulation."@en ;
@@ -630,3 +635,38 @@ petras:isCoordinateSystemOf a owl:ObjectProperty ;
     rdfs:domain petras:CoordinateSystem ;
     rdfs:range petras:DescribedArtifact ;
     owl:inverseOf petras:hasCoordinateSystem .
+
+#################################################################
+# Event effects on materials
+#
+# A DataEvent is linked to what it acted upon by an ordinary
+# DataLink; these properties qualify that link. They were reachable
+# through the @vocab of the JSON-LD context before being declared
+# here, which made them queryable but invisible to documentation
+# and to ontology linting.
+#################################################################
+
+petras:effect a owl:DatatypeProperty ;
+    rdfs:label "effect"@en ;
+    rdfs:comment "What an event did to a material: degradation, improvement, or exposure. Exposure records that the material was subjected to the event without asserting a consequence, which is what an archive can state when no post-event survey exists."@en ;
+    rdfs:domain petras:DataLink .
+
+petras:affectedProperties a owl:DatatypeProperty ;
+    rdfs:label "affected properties"@en ;
+    rdfs:comment "Material properties or masonry-quality parameters the event is recorded as acting upon."@en ;
+    rdfs:domain petras:DataLink .
+
+petras:relationshipType a owl:DatatypeProperty ;
+    rdfs:label "relationship type"@en ;
+    rdfs:comment "Kind of association a DataLink carries when it does not describe a computational transformation."@en ;
+    rdfs:domain petras:DataLink .
+
+petras:eventType a owl:DatatypeProperty ;
+    rdfs:label "event type"@en ;
+    rdfs:comment "Kind of occurrence a DataEvent records, such as seismic_activity, flood or roof_loss."@en ;
+    rdfs:domain petras:DataEvent .
+
+petras:severity a owl:DatatypeProperty ;
+    rdfs:label "severity"@en ;
+    rdfs:comment "Severity attributed to a DataEvent."@en ;
+    rdfs:domain petras:DataEvent .

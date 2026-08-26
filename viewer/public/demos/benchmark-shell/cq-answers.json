@@ -1,6 +1,6 @@
 {
   "project": "demos/benchmark-shell",
-  "tripleCount": 14063,
+  "tripleCount": 18222,
   "questions": [
     {
       "id": "CQ1",
@@ -12,8 +12,44 @@
       ],
       "rows": [
         [
-          "femresult:3bae2ef3080a",
-          "0273e9655a35"
+          "0273e9655a35",
+          "32f7202be022"
+        ],
+        [
+          "6718c0b185d8",
+          "32f7202be022"
+        ],
+        [
+          "datastore:kinematic_motion:0387dfff5206",
+          "32f7202be022"
+        ],
+        [
+          "datastore:kinematic_motion:0387dfff5206",
+          "e2984986289f"
+        ],
+        [
+          "datastore:kinematic_motion:063324e08d43",
+          "32f7202be022"
+        ],
+        [
+          "datastore:kinematic_motion:7d6f2799eeb7",
+          "32f7202be022"
+        ],
+        [
+          "datastore:kinematic_motion:f3066570c690",
+          "32f7202be022"
+        ],
+        [
+          "f59877a97cc8",
+          "32f7202be022"
+        ],
+        [
+          "femresult:0221837209b5",
+          "32f7202be022"
+        ],
+        [
+          "femresult:0221837209b5",
+          "e2984986289f"
         ],
         [
           "femresult:3bae2ef3080a",
@@ -21,23 +57,19 @@
         ],
         [
           "femresult:4f0413c2c0f3",
-          "0273e9655a35"
-        ],
-        [
-          "femresult:4f0413c2c0f3",
           "32f7202be022"
         ],
         [
-          "femresult:b08dce20fec4",
-          "0273e9655a35"
+          "femresult:a0ccf3c2347c",
+          "32f7202be022"
+        ],
+        [
+          "femresult:a0ccf3c2347c",
+          "e2984986289f"
         ],
         [
           "femresult:b08dce20fec4",
           "32f7202be022"
-        ],
-        [
-          "femresult:d2585ab00e02",
-          "0273e9655a35"
         ],
         [
           "femresult:d2585ab00e02",
@@ -46,8 +78,44 @@
       ],
       "rawRows": [
         [
-          "urn:petras:femresult:3bae2ef3080a",
-          "urn:petras:0273e9655a35"
+          "urn:petras:0273e9655a35",
+          "urn:petras:32f7202be022"
+        ],
+        [
+          "urn:petras:6718c0b185d8",
+          "urn:petras:32f7202be022"
+        ],
+        [
+          "urn:petras:datastore:kinematic_motion:0387dfff5206",
+          "urn:petras:32f7202be022"
+        ],
+        [
+          "urn:petras:datastore:kinematic_motion:0387dfff5206",
+          "urn:petras:e2984986289f"
+        ],
+        [
+          "urn:petras:datastore:kinematic_motion:063324e08d43",
+          "urn:petras:32f7202be022"
+        ],
+        [
+          "urn:petras:datastore:kinematic_motion:7d6f2799eeb7",
+          "urn:petras:32f7202be022"
+        ],
+        [
+          "urn:petras:datastore:kinematic_motion:f3066570c690",
+          "urn:petras:32f7202be022"
+        ],
+        [
+          "urn:petras:f59877a97cc8",
+          "urn:petras:32f7202be022"
+        ],
+        [
+          "urn:petras:femresult:0221837209b5",
+          "urn:petras:32f7202be022"
+        ],
+        [
+          "urn:petras:femresult:0221837209b5",
+          "urn:petras:e2984986289f"
         ],
         [
           "urn:petras:femresult:3bae2ef3080a",
@@ -55,30 +123,26 @@
         ],
         [
           "urn:petras:femresult:4f0413c2c0f3",
-          "urn:petras:0273e9655a35"
-        ],
-        [
-          "urn:petras:femresult:4f0413c2c0f3",
           "urn:petras:32f7202be022"
         ],
         [
-          "urn:petras:femresult:b08dce20fec4",
-          "urn:petras:0273e9655a35"
+          "urn:petras:femresult:a0ccf3c2347c",
+          "urn:petras:32f7202be022"
+        ],
+        [
+          "urn:petras:femresult:a0ccf3c2347c",
+          "urn:petras:e2984986289f"
         ],
         [
           "urn:petras:femresult:b08dce20fec4",
           "urn:petras:32f7202be022"
-        ],
-        [
-          "urn:petras:femresult:d2585ab00e02",
-          "urn:petras:0273e9655a35"
         ],
         [
           "urn:petras:femresult:d2585ab00e02",
           "urn:petras:32f7202be022"
         ]
       ],
-      "rowCount": 8,
+      "rowCount": 16,
       "answered": true
     },
     {
@@ -97,218 +161,323 @@
           "4deaa0b067cc",
           "import_cloud",
           "acquire_cloud",
-          "Nfeb71f4bb1054bd79da604a497509c4e",
+          "N0665a8d5af1c41edb939b1a1b77bc69b",
           "2026-07-08T08:02:51.073015+00:00"
         ],
         [
           "4deaa0b067cc",
           "inspect_cloud",
           "inspect_cloud",
-          "Nbf818a13176c467ca289e5e68b695aae",
+          "Na7eb41bd479f4c9a9b6f58dc4ed7a80e",
           "2026-07-08T08:04:51.011010+00:00"
         ],
         [
           "4deaa0b067cc",
           "inspect_cloud.group_rules",
           "inspect_cloud",
-          "Na519e8fab3674ab7b8dd7206ca8e92c0",
+          "N3f524b1993f54621bce218d8e0ac5ce5",
           "2026-07-08T08:14:55.721899+00:00"
         ],
         [
           "4deaa0b067cc",
           "inspect_cloud.group_rules",
           "inspect_cloud",
-          "N2772b32809b749b593388216486ea8dc",
+          "Na8990773084349368d3703413885d657",
           "2026-07-08T08:15:29.275437+00:00"
         ],
         [
           "4deaa0b067cc",
           "inspect_cloud.group_rules",
           "inspect_cloud",
-          "N7c4f09f1811c4692b70b134d5b1fd3b1",
+          "N3950b2b7631945c3a7fbd3d8e25e50a4",
           "2026-07-08T08:15:54.506488+00:00"
         ],
         [
           "5da5159f4127",
           "cloud2fem_mesh",
           "cloud2fem",
-          "N8dacb3f1773a4dd39b1be0f5201f5d6d",
+          "Nb8ceda1d7462447089af0af2f5f23541",
           "2026-07-27T16:07:11.282171+00:00"
         ],
         [
           "5da5159f4127",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N3d2c55f9086b4930ac5f03137cdddbc1",
+          "Nbae883347be64d66a68bb981cafd56c0",
           "2026-07-27T16:08:17.967218+00:00"
         ],
         [
           "femmodel:08ee90084402",
           "finetools_engine.model",
           "finetools_engine",
-          "Ne2b9283ed7134847901a365e434531d7",
+          "N521ea8ee95084e4b8d43e05021d06a65",
           "2026-07-31T07:24:50.007441+00:00"
         ],
         [
           "femmodel:08ee90084402",
           "finetools_engine.material",
           "finetools_engine",
-          "N5643f213e3ca40629b59e88236ca850f",
+          "N5e2ae2de0dd644bc81b52ead0b93895f",
           "2026-07-31T07:25:04.811233+00:00"
         ],
         [
           "5da5159f4127",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "Nc7906ed98acd419c9e825aa92be662a3",
+          "Nfce92a9eeb794045a7a308d0624c4391",
           "2026-08-08T20:06:11.530372+00:00"
         ],
         [
           "bfebe2a33f9b",
           "cloud_registration.smooth_taubin",
           "cloud_registration",
-          "N38f40dcd878b415e8f94e21e78c02737",
+          "N86d5f9ce985b4c53a2e118d663a5e268",
           "2026-08-09T13:13:15.885735+00:00"
         ],
         [
           "d62a56690d15",
           "cloud_registration.smooth_taubin",
           "cloud_registration",
-          "N17530a7c38064f568ef67eb24b6cb8cc",
+          "N7baf4780c1304595b399ad0845426b4a",
           "2026-08-09T13:14:30.573167+00:00"
         ],
         [
           "a904df251bba",
           "cloud_registration.smooth_taubin",
           "cloud_registration",
-          "Ne7719b5ecf2a45ef9d41a49863f578a4",
+          "Ndf21bcee4f394db0838957b2f548ff63",
           "2026-08-09T13:14:47.637945+00:00"
         ],
         [
           "5cb3c5c8d631",
           "cloud_registration.smooth_taubin",
           "cloud_registration",
-          "Nf51cc7eb37b54a37bfab0386059bd88f",
+          "Nd3c96c8fa38c4a938d581961b87a788d",
           "2026-08-09T13:40:28.736786+00:00"
         ],
         [
           "femmodel:6aa1378dd920",
           "finetools_engine.model",
           "finetools_engine",
-          "N4cdcca18dc5e4b6b8805e70981e20991",
+          "N5d9a3dec85f24160a21305b3d608a570",
           "2026-08-09T13:48:32.792247+00:00"
         ],
         [
           "femmodel:08ee90084402",
           "finetools_engine.material",
           "finetools_engine",
-          "Nf1806696a9b94ac78271b55d74b6fd20",
+          "N8b2c93f2af084e739eb8546746d44e09",
           "2026-08-09T13:48:46.386735+00:00"
         ],
         [
           "femmodel:6aa1378dd920",
           "finetools_engine.material",
           "finetools_engine",
-          "N4b55d7162cdf435c8f8b5be6d1e52785",
+          "N52caecb9f5f04965858fd763893afe5b",
           "2026-08-09T13:48:56.555592+00:00"
         ],
         [
           "femmodel:6aa1378dd920",
           "finetools_engine.material",
           "finetools_engine",
-          "Nd219654c96e84c6897302853b3c449fe",
+          "Nc5eadbb5966e4c8eb18bb7dbc2af4e9b",
           "2026-08-09T14:09:07.533457+00:00"
         ],
         [
           "femmodel:6aa1378dd920",
           "finetools_engine.material",
           "finetools_engine",
-          "Ne56232f20bb243d58a46cccf71379753",
+          "N230a6b09ecc7456d9090d5bf6bb41e07",
           "2026-08-09T14:11:16.162325+00:00"
         ],
         [
           "femmodel:6aa1378dd920",
           "finetools_engine.material",
           "finetools_engine",
-          "N401cc45f50bc4042becc732ada35cee4",
+          "N1ccbaf185ff748b5a00176e7344f044b",
           "2026-08-09T14:44:48.109953+00:00"
         ],
         [
           "5cb3c5c8d631",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N4ad30ed186ca4014aeb1295687577f4b",
+          "N427fda3bd9bc466b9b9c82cc8723af8f",
           "2026-08-10T17:04:42.842327+00:00"
         ],
         [
           "5cb3c5c8d631",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N7f2fee1a13ff4bacba9352957f030912",
+          "N31d37d45f43b4981b4fe8ea452e94062",
           "2026-08-10T17:09:34.227937+00:00"
         ],
         [
           "8aae5a7954a0",
           "cloud2fem_mesh",
           "cloud2fem",
-          "N00324d1f2c9d4cfeb435a605f5976683",
+          "Nb1c2596897ff4e338bbcd7c8fd326462",
           "2026-08-20T16:30:01.404784+00:00"
         ],
         [
           "506d55dfe0d3",
           "cloud2fem_mesh",
           "cloud2fem",
-          "Nad8733c4ba51438a87b33320c05a722c",
+          "Nc6f0a862dfb04b3abc3dd650d880b5d5",
           "2026-08-21T14:42:56.413237+00:00"
         ],
         [
           "femmodel:b9450d4907ae",
           "finetools_engine.model",
           "finetools_engine",
-          "Ncf2c6261ed5d471584a0a764d71603fe",
+          "N2200c93f56534ad592b0202c84b81e9f",
           "2026-08-21T15:05:17.559214+00:00"
         ],
         [
           "femmodel:b9450d4907ae",
           "finetools_engine.material",
           "finetools_engine",
-          "N03ae6d22e54b4c2080d85083d034a5b4",
+          "Nb401e68dc8e0416b93e2dc25cf5ccbc0",
           "2026-08-21T15:05:49.468553+00:00"
         ],
         [
           "femmodel:b9450d4907ae",
           "finetools_engine.material",
           "finetools_engine",
-          "Nf0122a161b8848a3ad12ddaf4606c7c4",
+          "Nd2eb2b561f9e42d48580a8210056370d",
           "2026-08-21T15:06:09.073130+00:00"
         ],
         [
           "506d55dfe0d3",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "Na306ea534c7041dbb1c8d8baa232044d",
+          "N5771462127fe46208d84c0354c42a975",
           "2026-08-21T16:44:25.237924+00:00"
         ],
         [
           "506d55dfe0d3",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N9911e0de265a420e97d13a40365b4b4c",
+          "N5a4a47f5f4fd4978bf8fad42f9248e33",
           "2026-08-21T16:45:56.453568+00:00"
         ],
         [
           "506d55dfe0d3",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N8048940b6c2644f794440f4291faa15d",
+          "N94a92635078a49e392ab8c6218472ab0",
           "2026-08-21T16:46:48.074720+00:00"
         ],
         [
           "506d55dfe0d3",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N33979074b40f477cb188f2553527ded8",
+          "Ne3da66d5c5e341f6a40a1ece62414c56",
           "2026-08-21T16:48:05.464532+00:00"
+        ],
+        [
+          "cf820781e312",
+          "kinematics.disconnect",
+          "kinematics",
+          "N423d4958a51b4e7aae586018b16ce180",
+          "2026-08-24T19:26:11.731138+00:00"
+        ],
+        [
+          "c4369b1863bd",
+          "kinematics.disconnect",
+          "kinematics",
+          "Na0fbdea4458b4236b02aa2d3b0ca6474",
+          "2026-08-24T19:55:19.706851+00:00"
+        ],
+        [
+          "60d5a721578c",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "N2da8d94947e540f98d36666dbe30e907",
+          "2026-08-24T22:26:05.408341+00:00"
+        ],
+        [
+          "1b9bcfdba2c3",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "N7455d7cd2be74e33a9c940f499ce14cc",
+          "2026-08-24T22:33:44.804092+00:00"
+        ],
+        [
+          "d2281c7df258",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "N7e0d2261ee1944b3b5ee36d7157f20e6",
+          "2026-08-24T22:40:26.317534+00:00"
+        ],
+        [
+          "femmodel:1b1562964636",
+          "finetools_engine.model",
+          "finetools_engine",
+          "N3b46fd76ada9419a85b29bb20d24c526",
+          "2026-08-24T22:41:35.663230+00:00"
+        ],
+        [
+          "femmodel:1b1562964636",
+          "finetools_engine.material",
+          "finetools_engine",
+          "N7be3e1fc923b46d49ac63aa3c37d727f",
+          "2026-08-24T22:42:14.506606+00:00"
+        ],
+        [
+          "femmodel:1b1562964636",
+          "finetools_engine.material",
+          "finetools_engine",
+          "N8f9db73e5caf411a849476db2d7812b0",
+          "2026-08-24T22:42:41.831481+00:00"
+        ],
+        [
+          "femmodel:1b1562964636",
+          "finetools_engine.material",
+          "finetools_engine",
+          "Na6363841c9e44caea97f2d018314f765",
+          "2026-08-24T22:43:10.733884+00:00"
+        ],
+        [
+          "aca528c25f65",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "N5aa49a06ead44ccf8279bbf39ad5fc67",
+          "2026-08-25T22:44:47.913599+00:00"
+        ],
+        [
+          "femmodel:8d47f6d417ef",
+          "finetools_engine.model",
+          "finetools_engine",
+          "N561005510f524ea7bc78912cb7370ccc",
+          "2026-08-25T22:50:35.923510+00:00"
+        ],
+        [
+          "femmodel:8d47f6d417ef",
+          "finetools_engine.material",
+          "finetools_engine",
+          "Nfaa5719c010845228ca9ba1ab178c9b0",
+          "2026-08-25T22:51:25.570795+00:00"
+        ],
+        [
+          "femmodel:8d47f6d417ef",
+          "finetools_engine.material",
+          "finetools_engine",
+          "N3db38eb6a4124d4c881918fce82b6e47",
+          "2026-08-25T22:52:13.537752+00:00"
+        ],
+        [
+          "268b382cf975",
+          "kinematics.disconnect",
+          "kinematics",
+          "Ncc1300427d15476490096ce71a15b5df",
+          "2026-08-25T23:07:24.761168+00:00"
+        ],
+        [
+          "f26134a31493",
+          "kinematics.disconnect",
+          "kinematics",
+          "N9a3013cf51744432a934676018d88f2b",
+          "2026-08-26T07:42:33.017133+00:00"
         ]
       ],
       "rawRows": [
@@ -316,221 +485,326 @@
           "urn:petras:4deaa0b067cc",
           "import_cloud",
           "acquire_cloud",
-          "Nfeb71f4bb1054bd79da604a497509c4e",
+          "N0665a8d5af1c41edb939b1a1b77bc69b",
           "2026-07-08T08:02:51.073015+00:00"
         ],
         [
           "urn:petras:4deaa0b067cc",
           "inspect_cloud",
           "inspect_cloud",
-          "Nbf818a13176c467ca289e5e68b695aae",
+          "Na7eb41bd479f4c9a9b6f58dc4ed7a80e",
           "2026-07-08T08:04:51.011010+00:00"
         ],
         [
           "urn:petras:4deaa0b067cc",
           "inspect_cloud.group_rules",
           "inspect_cloud",
-          "Na519e8fab3674ab7b8dd7206ca8e92c0",
+          "N3f524b1993f54621bce218d8e0ac5ce5",
           "2026-07-08T08:14:55.721899+00:00"
         ],
         [
           "urn:petras:4deaa0b067cc",
           "inspect_cloud.group_rules",
           "inspect_cloud",
-          "N2772b32809b749b593388216486ea8dc",
+          "Na8990773084349368d3703413885d657",
           "2026-07-08T08:15:29.275437+00:00"
         ],
         [
           "urn:petras:4deaa0b067cc",
           "inspect_cloud.group_rules",
           "inspect_cloud",
-          "N7c4f09f1811c4692b70b134d5b1fd3b1",
+          "N3950b2b7631945c3a7fbd3d8e25e50a4",
           "2026-07-08T08:15:54.506488+00:00"
         ],
         [
           "urn:petras:5da5159f4127",
           "cloud2fem_mesh",
           "cloud2fem",
-          "N8dacb3f1773a4dd39b1be0f5201f5d6d",
+          "Nb8ceda1d7462447089af0af2f5f23541",
           "2026-07-27T16:07:11.282171+00:00"
         ],
         [
           "urn:petras:5da5159f4127",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N3d2c55f9086b4930ac5f03137cdddbc1",
+          "Nbae883347be64d66a68bb981cafd56c0",
           "2026-07-27T16:08:17.967218+00:00"
         ],
         [
           "urn:petras:femmodel:08ee90084402",
           "finetools_engine.model",
           "finetools_engine",
-          "Ne2b9283ed7134847901a365e434531d7",
+          "N521ea8ee95084e4b8d43e05021d06a65",
           "2026-07-31T07:24:50.007441+00:00"
         ],
         [
           "urn:petras:femmodel:08ee90084402",
           "finetools_engine.material",
           "finetools_engine",
-          "N5643f213e3ca40629b59e88236ca850f",
+          "N5e2ae2de0dd644bc81b52ead0b93895f",
           "2026-07-31T07:25:04.811233+00:00"
         ],
         [
           "urn:petras:5da5159f4127",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "Nc7906ed98acd419c9e825aa92be662a3",
+          "Nfce92a9eeb794045a7a308d0624c4391",
           "2026-08-08T20:06:11.530372+00:00"
         ],
         [
           "urn:petras:bfebe2a33f9b",
           "cloud_registration.smooth_taubin",
           "cloud_registration",
-          "N38f40dcd878b415e8f94e21e78c02737",
+          "N86d5f9ce985b4c53a2e118d663a5e268",
           "2026-08-09T13:13:15.885735+00:00"
         ],
         [
           "urn:petras:d62a56690d15",
           "cloud_registration.smooth_taubin",
           "cloud_registration",
-          "N17530a7c38064f568ef67eb24b6cb8cc",
+          "N7baf4780c1304595b399ad0845426b4a",
           "2026-08-09T13:14:30.573167+00:00"
         ],
         [
           "urn:petras:a904df251bba",
           "cloud_registration.smooth_taubin",
           "cloud_registration",
-          "Ne7719b5ecf2a45ef9d41a49863f578a4",
+          "Ndf21bcee4f394db0838957b2f548ff63",
           "2026-08-09T13:14:47.637945+00:00"
         ],
         [
           "urn:petras:5cb3c5c8d631",
           "cloud_registration.smooth_taubin",
           "cloud_registration",
-          "Nf51cc7eb37b54a37bfab0386059bd88f",
+          "Nd3c96c8fa38c4a938d581961b87a788d",
           "2026-08-09T13:40:28.736786+00:00"
         ],
         [
           "urn:petras:femmodel:6aa1378dd920",
           "finetools_engine.model",
           "finetools_engine",
-          "N4cdcca18dc5e4b6b8805e70981e20991",
+          "N5d9a3dec85f24160a21305b3d608a570",
           "2026-08-09T13:48:32.792247+00:00"
         ],
         [
           "urn:petras:femmodel:08ee90084402",
           "finetools_engine.material",
           "finetools_engine",
-          "Nf1806696a9b94ac78271b55d74b6fd20",
+          "N8b2c93f2af084e739eb8546746d44e09",
           "2026-08-09T13:48:46.386735+00:00"
         ],
         [
           "urn:petras:femmodel:6aa1378dd920",
           "finetools_engine.material",
           "finetools_engine",
-          "N4b55d7162cdf435c8f8b5be6d1e52785",
+          "N52caecb9f5f04965858fd763893afe5b",
           "2026-08-09T13:48:56.555592+00:00"
         ],
         [
           "urn:petras:femmodel:6aa1378dd920",
           "finetools_engine.material",
           "finetools_engine",
-          "Nd219654c96e84c6897302853b3c449fe",
+          "Nc5eadbb5966e4c8eb18bb7dbc2af4e9b",
           "2026-08-09T14:09:07.533457+00:00"
         ],
         [
           "urn:petras:femmodel:6aa1378dd920",
           "finetools_engine.material",
           "finetools_engine",
-          "Ne56232f20bb243d58a46cccf71379753",
+          "N230a6b09ecc7456d9090d5bf6bb41e07",
           "2026-08-09T14:11:16.162325+00:00"
         ],
         [
           "urn:petras:femmodel:6aa1378dd920",
           "finetools_engine.material",
           "finetools_engine",
-          "N401cc45f50bc4042becc732ada35cee4",
+          "N1ccbaf185ff748b5a00176e7344f044b",
           "2026-08-09T14:44:48.109953+00:00"
         ],
         [
           "urn:petras:5cb3c5c8d631",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N4ad30ed186ca4014aeb1295687577f4b",
+          "N427fda3bd9bc466b9b9c82cc8723af8f",
           "2026-08-10T17:04:42.842327+00:00"
         ],
         [
           "urn:petras:5cb3c5c8d631",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N7f2fee1a13ff4bacba9352957f030912",
+          "N31d37d45f43b4981b4fe8ea452e94062",
           "2026-08-10T17:09:34.227937+00:00"
         ],
         [
           "urn:petras:8aae5a7954a0",
           "cloud2fem_mesh",
           "cloud2fem",
-          "N00324d1f2c9d4cfeb435a605f5976683",
+          "Nb1c2596897ff4e338bbcd7c8fd326462",
           "2026-08-20T16:30:01.404784+00:00"
         ],
         [
           "urn:petras:506d55dfe0d3",
           "cloud2fem_mesh",
           "cloud2fem",
-          "Nad8733c4ba51438a87b33320c05a722c",
+          "Nc6f0a862dfb04b3abc3dd650d880b5d5",
           "2026-08-21T14:42:56.413237+00:00"
         ],
         [
           "urn:petras:femmodel:b9450d4907ae",
           "finetools_engine.model",
           "finetools_engine",
-          "Ncf2c6261ed5d471584a0a764d71603fe",
+          "N2200c93f56534ad592b0202c84b81e9f",
           "2026-08-21T15:05:17.559214+00:00"
         ],
         [
           "urn:petras:femmodel:b9450d4907ae",
           "finetools_engine.material",
           "finetools_engine",
-          "N03ae6d22e54b4c2080d85083d034a5b4",
+          "Nb401e68dc8e0416b93e2dc25cf5ccbc0",
           "2026-08-21T15:05:49.468553+00:00"
         ],
         [
           "urn:petras:femmodel:b9450d4907ae",
           "finetools_engine.material",
           "finetools_engine",
-          "Nf0122a161b8848a3ad12ddaf4606c7c4",
+          "Nd2eb2b561f9e42d48580a8210056370d",
           "2026-08-21T15:06:09.073130+00:00"
         ],
         [
           "urn:petras:506d55dfe0d3",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "Na306ea534c7041dbb1c8d8baa232044d",
+          "N5771462127fe46208d84c0354c42a975",
           "2026-08-21T16:44:25.237924+00:00"
         ],
         [
           "urn:petras:506d55dfe0d3",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N9911e0de265a420e97d13a40365b4b4c",
+          "N5a4a47f5f4fd4978bf8fad42f9248e33",
           "2026-08-21T16:45:56.453568+00:00"
         ],
         [
           "urn:petras:506d55dfe0d3",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N8048940b6c2644f794440f4291faa15d",
+          "N94a92635078a49e392ab8c6218472ab0",
           "2026-08-21T16:46:48.074720+00:00"
         ],
         [
           "urn:petras:506d55dfe0d3",
           "inspect_cloud.compare_fem",
           "inspect_cloud",
-          "N33979074b40f477cb188f2553527ded8",
+          "Ne3da66d5c5e341f6a40a1ece62414c56",
           "2026-08-21T16:48:05.464532+00:00"
+        ],
+        [
+          "urn:petras:cf820781e312",
+          "kinematics.disconnect",
+          "kinematics",
+          "N423d4958a51b4e7aae586018b16ce180",
+          "2026-08-24T19:26:11.731138+00:00"
+        ],
+        [
+          "urn:petras:c4369b1863bd",
+          "kinematics.disconnect",
+          "kinematics",
+          "Na0fbdea4458b4236b02aa2d3b0ca6474",
+          "2026-08-24T19:55:19.706851+00:00"
+        ],
+        [
+          "urn:petras:60d5a721578c",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "N2da8d94947e540f98d36666dbe30e907",
+          "2026-08-24T22:26:05.408341+00:00"
+        ],
+        [
+          "urn:petras:1b9bcfdba2c3",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "N7455d7cd2be74e33a9c940f499ce14cc",
+          "2026-08-24T22:33:44.804092+00:00"
+        ],
+        [
+          "urn:petras:d2281c7df258",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "N7e0d2261ee1944b3b5ee36d7157f20e6",
+          "2026-08-24T22:40:26.317534+00:00"
+        ],
+        [
+          "urn:petras:femmodel:1b1562964636",
+          "finetools_engine.model",
+          "finetools_engine",
+          "N3b46fd76ada9419a85b29bb20d24c526",
+          "2026-08-24T22:41:35.663230+00:00"
+        ],
+        [
+          "urn:petras:femmodel:1b1562964636",
+          "finetools_engine.material",
+          "finetools_engine",
+          "N7be3e1fc923b46d49ac63aa3c37d727f",
+          "2026-08-24T22:42:14.506606+00:00"
+        ],
+        [
+          "urn:petras:femmodel:1b1562964636",
+          "finetools_engine.material",
+          "finetools_engine",
+          "N8f9db73e5caf411a849476db2d7812b0",
+          "2026-08-24T22:42:41.831481+00:00"
+        ],
+        [
+          "urn:petras:femmodel:1b1562964636",
+          "finetools_engine.material",
+          "finetools_engine",
+          "Na6363841c9e44caea97f2d018314f765",
+          "2026-08-24T22:43:10.733884+00:00"
+        ],
+        [
+          "urn:petras:aca528c25f65",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "N5aa49a06ead44ccf8279bbf39ad5fc67",
+          "2026-08-25T22:44:47.913599+00:00"
+        ],
+        [
+          "urn:petras:femmodel:8d47f6d417ef",
+          "finetools_engine.model",
+          "finetools_engine",
+          "N561005510f524ea7bc78912cb7370ccc",
+          "2026-08-25T22:50:35.923510+00:00"
+        ],
+        [
+          "urn:petras:femmodel:8d47f6d417ef",
+          "finetools_engine.material",
+          "finetools_engine",
+          "Nfaa5719c010845228ca9ba1ab178c9b0",
+          "2026-08-25T22:51:25.570795+00:00"
+        ],
+        [
+          "urn:petras:femmodel:8d47f6d417ef",
+          "finetools_engine.material",
+          "finetools_engine",
+          "N3db38eb6a4124d4c881918fce82b6e47",
+          "2026-08-25T22:52:13.537752+00:00"
+        ],
+        [
+          "urn:petras:268b382cf975",
+          "kinematics.disconnect",
+          "kinematics",
+          "Ncc1300427d15476490096ce71a15b5df",
+          "2026-08-25T23:07:24.761168+00:00"
+        ],
+        [
+          "urn:petras:f26134a31493",
+          "kinematics.disconnect",
+          "kinematics",
+          "N9a3013cf51744432a934676018d88f2b",
+          "2026-08-26T07:42:33.017133+00:00"
         ]
       ],
-      "rowCount": 31,
+      "rowCount": 46,
       "answered": true
     },
     {
@@ -575,46 +849,10 @@
           "4deaa0b067cc"
         ],
         [
-          "2026-07-08T12:25:13.644002+00:00",
-          "4deaa0b067cc",
-          "slice_cloud",
-          "79bde0e29615"
-        ],
-        [
           "2026-07-08T15:06:59.799823+00:00",
           "4deaa0b067cc",
           "slice_cloud",
           "0273e9655a35"
-        ],
-        [
-          "2026-07-08T22:54:59.089804+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "2184e7a90d8c"
-        ],
-        [
-          "2026-07-09T15:41:34.037961+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "5cc42bf950bd"
-        ],
-        [
-          "2026-07-09T15:42:31.058619+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "4d370c664817"
-        ],
-        [
-          "2026-07-09T15:44:08.840386+00:00",
-          "datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "femmodel:d0b3d34516dc"
-        ],
-        [
-          "2026-07-09T16:45:18.772216+00:00",
-          "femmodel:d0b3d34516dc",
-          "finetools_engine.solve",
-          "femresult:b10145b068c5"
         ],
         [
           "2026-07-09T16:45:18.808309+00:00",
@@ -623,142 +861,16 @@
           "analytics:finetools_job:493faaef9c42"
         ],
         [
-          "2026-07-09T20:01:51.327198+00:00",
-          "4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "5cc42bf950bd"
-        ],
-        [
-          "2026-07-09T20:03:36.239550+00:00",
-          "4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "5cc42bf950bd"
-        ],
-        [
-          "2026-07-10T07:13:52.786654+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "5598aa76bccd"
-        ],
-        [
-          "2026-07-10T10:18:03.034294+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "69b02073a859"
-        ],
-        [
-          "2026-07-10T10:33:40.421437+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "78be717298b9"
-        ],
-        [
-          "2026-07-10T10:37:36.308665+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "eb05e0b56e0a"
-        ],
-        [
-          "2026-07-10T10:39:17.391485+00:00",
-          "datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "femmodel:93ac0ec58290"
-        ],
-        [
-          "2026-07-10T10:46:21.072339+00:00",
-          "femmodel:93ac0ec58290",
-          "finetools_engine.solve",
-          "femresult:7f44d2faae38"
-        ],
-        [
           "2026-07-10T10:46:21.403853+00:00",
           "femresult:7f44d2faae38",
           "finetools_engine.job",
           "analytics:finetools_job:631b8e2661cc"
         ],
         [
-          "2026-07-10T10:46:50.855561+00:00",
-          "4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "eb05e0b56e0a"
-        ],
-        [
-          "2026-07-10T10:54:14.646913+00:00",
-          "femmodel:93ac0ec58290",
-          "finetools_engine.solve",
-          "femresult:bfa83c512bab"
-        ],
-        [
           "2026-07-10T10:54:14.653204+00:00",
           "femresult:bfa83c512bab",
           "finetools_engine.job",
           "analytics:finetools_job:9d728e1901d0"
-        ],
-        [
-          "2026-07-10T13:23:05.503489+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "a0482625de9e"
-        ],
-        [
-          "2026-07-10T13:24:24.049057+00:00",
-          "4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "a0482625de9e"
-        ],
-        [
-          "2026-07-10T15:18:14.880573+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "30cf2da0db83"
-        ],
-        [
-          "2026-07-10T15:22:04.616906+00:00",
-          "4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "30cf2da0db83"
-        ],
-        [
-          "2026-07-10T17:25:11.178728+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "16171c53ec17"
-        ],
-        [
-          "2026-07-10T18:50:57.220602+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "11dd4d6a73e5"
-        ],
-        [
-          "2026-07-10T18:52:19.976318+00:00",
-          "4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "11dd4d6a73e5"
-        ],
-        [
-          "2026-07-10T19:25:02.139325+00:00",
-          "datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "femmodel:cd8fcd5e8839"
-        ],
-        [
-          "2026-07-11T11:51:32.076971+00:00",
-          "5e92e3bf86d1",
-          "osm_extrude",
-          "7b66993b86f8"
-        ],
-        [
-          "2026-07-13T13:02:12.416592+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "deba4d3286bb"
-        ],
-        [
-          "2026-07-14T08:46:50.823460+00:00",
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "aa1cf87b895e"
         ],
         [
           "2026-07-27T16:07:11.282171+00:00",
@@ -1161,6 +1273,318 @@
           "4deaa0b067cc",
           "inspect_cloud.compare_fem",
           "506d55dfe0d3"
+        ],
+        [
+          "2026-08-24T15:40:32.667035+00:00",
+          "femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "analytics:local_mechanism:a89b5ac7e90e"
+        ],
+        [
+          "2026-08-24T15:42:20.483044+00:00",
+          "femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "analytics:local_mechanism:37fcf987e6cd"
+        ],
+        [
+          "2026-08-24T15:44:02.588765+00:00",
+          "femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "analytics:local_mechanism:7a54e87f9537"
+        ],
+        [
+          "2026-08-24T15:44:43.895009+00:00",
+          "analytics:local_mechanism:7a54e87f9537",
+          "kinematics.solve",
+          "analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T15:44:43.898465+00:00",
+          "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T15:44:43.900686+00:00",
+          "datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T19:25:24.859089+00:00",
+          "femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "analytics:local_mechanism:f5fade8bf4f8"
+        ],
+        [
+          "2026-08-24T19:26:11.727150+00:00",
+          "analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.solve",
+          "analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:26:11.729190+00:00",
+          "analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.motion",
+          "datastore:kinematic_motion:f3066570c690"
+        ],
+        [
+          "2026-08-24T19:26:11.731138+00:00",
+          "506d55dfe0d3",
+          "kinematics.disconnect",
+          "cf820781e312"
+        ],
+        [
+          "2026-08-24T19:26:11.732957+00:00",
+          "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:26:11.735086+00:00",
+          "datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:55:19.702114+00:00",
+          "analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.solve",
+          "analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T19:55:19.704647+00:00",
+          "analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.motion",
+          "datastore:kinematic_motion:063324e08d43"
+        ],
+        [
+          "2026-08-24T19:55:19.706851+00:00",
+          "506d55dfe0d3",
+          "kinematics.disconnect",
+          "c4369b1863bd"
+        ],
+        [
+          "2026-08-24T19:55:19.708992+00:00",
+          "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T19:55:19.711385+00:00",
+          "datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T21:48:03.433722+00:00",
+          "0273e9655a35",
+          "cloud2fem.duplicate",
+          "f59877a97cc8"
+        ],
+        [
+          "2026-08-24T22:26:05.408341+00:00",
+          "f59877a97cc8",
+          "cloud2fem_mesh",
+          "60d5a721578c"
+        ],
+        [
+          "2026-08-24T22:33:44.804092+00:00",
+          "f59877a97cc8",
+          "cloud2fem_mesh",
+          "1b9bcfdba2c3"
+        ],
+        [
+          "2026-08-24T22:40:26.317534+00:00",
+          "f59877a97cc8",
+          "cloud2fem_mesh",
+          "d2281c7df258"
+        ],
+        [
+          "2026-08-24T22:41:35.663230+00:00",
+          "d2281c7df258",
+          "finetools_engine.model",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:42:14.506606+00:00",
+          "datasources:mat_5beaa9b89528",
+          "finetools_engine.material",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:42:41.831481+00:00",
+          "datasources:mat_abc79313bde6",
+          "finetools_engine.material",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:43:10.733884+00:00",
+          "datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T23:43:27.222836+00:00",
+          "femmodel:1b1562964636",
+          "finetools_engine.solve",
+          "femresult:a0ccf3c2347c"
+        ],
+        [
+          "2026-08-24T23:43:27.227353+00:00",
+          "femresult:a0ccf3c2347c",
+          "finetools_engine.job",
+          "analytics:finetools_job:4e6500dd9756"
+        ],
+        [
+          "2026-08-25T08:45:53.310970+00:00",
+          "femresult:b08dce20fec4",
+          "masonry_checks.biaxial",
+          "analytics:masonry_check:aa569206f170"
+        ],
+        [
+          "2026-08-25T08:45:53.313203+00:00",
+          "femmodel:b9450d4907ae",
+          "masonry_checks.orientation_context",
+          "analytics:masonry_check:aa569206f170"
+        ],
+        [
+          "2026-08-25T08:46:30.746030+00:00",
+          "femresult:a0ccf3c2347c",
+          "masonry_checks.biaxial",
+          "analytics:masonry_check:40ba82137ad7"
+        ],
+        [
+          "2026-08-25T08:46:30.747981+00:00",
+          "femmodel:1b1562964636",
+          "masonry_checks.orientation_context",
+          "analytics:masonry_check:40ba82137ad7"
+        ],
+        [
+          "2026-08-25T16:49:03.414180+00:00",
+          "f59877a97cc8",
+          "cloud2fem.duplicate",
+          "6718c0b185d8"
+        ],
+        [
+          "2026-08-25T22:44:47.913599+00:00",
+          "6718c0b185d8",
+          "cloud2fem_mesh",
+          "aca528c25f65"
+        ],
+        [
+          "2026-08-25T22:50:35.923510+00:00",
+          "aca528c25f65",
+          "finetools_engine.model",
+          "femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T22:51:25.570795+00:00",
+          "datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
+          "femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T22:52:13.537752+00:00",
+          "datasources:mat_abc79313bde6",
+          "finetools_engine.material",
+          "femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T23:06:33.280968+00:00",
+          "femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "analytics:local_mechanism:88830c55e6f6"
+        ],
+        [
+          "2026-08-25T23:07:24.756743+00:00",
+          "analytics:local_mechanism:88830c55e6f6",
+          "kinematics.solve",
+          "analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-25T23:07:24.758964+00:00",
+          "analytics:local_mechanism:88830c55e6f6",
+          "kinematics.motion",
+          "datastore:kinematic_motion:7d6f2799eeb7"
+        ],
+        [
+          "2026-08-25T23:07:24.761168+00:00",
+          "506d55dfe0d3",
+          "kinematics.disconnect",
+          "268b382cf975"
+        ],
+        [
+          "2026-08-25T23:07:24.763323+00:00",
+          "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-25T23:07:24.765617+00:00",
+          "datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-26T00:13:11.051094+00:00",
+          "femmodel:8d47f6d417ef",
+          "finetools_engine.solve",
+          "femresult:0221837209b5"
+        ],
+        [
+          "2026-08-26T00:13:11.058345+00:00",
+          "femresult:0221837209b5",
+          "finetools_engine.job",
+          "analytics:finetools_job:f3067174a72d"
+        ],
+        [
+          "2026-08-26T07:40:22.521207+00:00",
+          "femmodel:8d47f6d417ef",
+          "kinematics.macroelement",
+          "analytics:local_mechanism:bcd1d8187120"
+        ],
+        [
+          "2026-08-26T07:42:33.012099+00:00",
+          "analytics:local_mechanism:bcd1d8187120",
+          "kinematics.solve",
+          "analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T07:42:33.014056+00:00",
+          "analytics:local_mechanism:bcd1d8187120",
+          "kinematics.motion",
+          "datastore:kinematic_motion:0387dfff5206"
+        ],
+        [
+          "2026-08-26T07:42:33.017133+00:00",
+          "aca528c25f65",
+          "kinematics.disconnect",
+          "f26134a31493"
+        ],
+        [
+          "2026-08-26T07:42:33.019851+00:00",
+          "datasources:mat_20ab42e6dd47",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T07:42:33.031772+00:00",
+          "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T15:08:38.301518+00:00",
+          "e2984986289f",
+          "event_tracker.attach_material",
+          "datasources:mat_20ab42e6dd47"
+        ],
+        [
+          "2026-08-26T16:15:17.697943+00:00",
+          "670162f0273b",
+          "event_tracker.attach_signal",
+          "ae09195acee9"
         ]
       ],
       "rawRows": [
@@ -1195,46 +1619,10 @@
           "urn:petras:4deaa0b067cc"
         ],
         [
-          "2026-07-08T12:25:13.644002+00:00",
-          "urn:petras:4deaa0b067cc",
-          "slice_cloud",
-          "urn:petras:79bde0e29615"
-        ],
-        [
           "2026-07-08T15:06:59.799823+00:00",
           "urn:petras:4deaa0b067cc",
           "slice_cloud",
           "urn:petras:0273e9655a35"
-        ],
-        [
-          "2026-07-08T22:54:59.089804+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:2184e7a90d8c"
-        ],
-        [
-          "2026-07-09T15:41:34.037961+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:5cc42bf950bd"
-        ],
-        [
-          "2026-07-09T15:42:31.058619+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:4d370c664817"
-        ],
-        [
-          "2026-07-09T15:44:08.840386+00:00",
-          "urn:petras:datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "urn:petras:femmodel:d0b3d34516dc"
-        ],
-        [
-          "2026-07-09T16:45:18.772216+00:00",
-          "urn:petras:femmodel:d0b3d34516dc",
-          "finetools_engine.solve",
-          "urn:petras:femresult:b10145b068c5"
         ],
         [
           "2026-07-09T16:45:18.808309+00:00",
@@ -1243,142 +1631,16 @@
           "urn:petras:analytics:finetools_job:493faaef9c42"
         ],
         [
-          "2026-07-09T20:01:51.327198+00:00",
-          "urn:petras:4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "urn:petras:5cc42bf950bd"
-        ],
-        [
-          "2026-07-09T20:03:36.239550+00:00",
-          "urn:petras:4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "urn:petras:5cc42bf950bd"
-        ],
-        [
-          "2026-07-10T07:13:52.786654+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:5598aa76bccd"
-        ],
-        [
-          "2026-07-10T10:18:03.034294+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:69b02073a859"
-        ],
-        [
-          "2026-07-10T10:33:40.421437+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:78be717298b9"
-        ],
-        [
-          "2026-07-10T10:37:36.308665+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:eb05e0b56e0a"
-        ],
-        [
-          "2026-07-10T10:39:17.391485+00:00",
-          "urn:petras:datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "urn:petras:femmodel:93ac0ec58290"
-        ],
-        [
-          "2026-07-10T10:46:21.072339+00:00",
-          "urn:petras:femmodel:93ac0ec58290",
-          "finetools_engine.solve",
-          "urn:petras:femresult:7f44d2faae38"
-        ],
-        [
           "2026-07-10T10:46:21.403853+00:00",
           "urn:petras:femresult:7f44d2faae38",
           "finetools_engine.job",
           "urn:petras:analytics:finetools_job:631b8e2661cc"
         ],
         [
-          "2026-07-10T10:46:50.855561+00:00",
-          "urn:petras:4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "urn:petras:eb05e0b56e0a"
-        ],
-        [
-          "2026-07-10T10:54:14.646913+00:00",
-          "urn:petras:femmodel:93ac0ec58290",
-          "finetools_engine.solve",
-          "urn:petras:femresult:bfa83c512bab"
-        ],
-        [
           "2026-07-10T10:54:14.653204+00:00",
           "urn:petras:femresult:bfa83c512bab",
           "finetools_engine.job",
           "urn:petras:analytics:finetools_job:9d728e1901d0"
-        ],
-        [
-          "2026-07-10T13:23:05.503489+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:a0482625de9e"
-        ],
-        [
-          "2026-07-10T13:24:24.049057+00:00",
-          "urn:petras:4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "urn:petras:a0482625de9e"
-        ],
-        [
-          "2026-07-10T15:18:14.880573+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:30cf2da0db83"
-        ],
-        [
-          "2026-07-10T15:22:04.616906+00:00",
-          "urn:petras:4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "urn:petras:30cf2da0db83"
-        ],
-        [
-          "2026-07-10T17:25:11.178728+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:16171c53ec17"
-        ],
-        [
-          "2026-07-10T18:50:57.220602+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:11dd4d6a73e5"
-        ],
-        [
-          "2026-07-10T18:52:19.976318+00:00",
-          "urn:petras:4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "urn:petras:11dd4d6a73e5"
-        ],
-        [
-          "2026-07-10T19:25:02.139325+00:00",
-          "urn:petras:datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "urn:petras:femmodel:cd8fcd5e8839"
-        ],
-        [
-          "2026-07-11T11:51:32.076971+00:00",
-          "urn:petras:5e92e3bf86d1",
-          "osm_extrude",
-          "urn:petras:7b66993b86f8"
-        ],
-        [
-          "2026-07-13T13:02:12.416592+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:deba4d3286bb"
-        ],
-        [
-          "2026-07-14T08:46:50.823460+00:00",
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:aa1cf87b895e"
         ],
         [
           "2026-07-27T16:07:11.282171+00:00",
@@ -1781,9 +2043,321 @@
           "urn:petras:4deaa0b067cc",
           "inspect_cloud.compare_fem",
           "urn:petras:506d55dfe0d3"
+        ],
+        [
+          "2026-08-24T15:40:32.667035+00:00",
+          "urn:petras:femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "urn:petras:analytics:local_mechanism:a89b5ac7e90e"
+        ],
+        [
+          "2026-08-24T15:42:20.483044+00:00",
+          "urn:petras:femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "urn:petras:analytics:local_mechanism:37fcf987e6cd"
+        ],
+        [
+          "2026-08-24T15:44:02.588765+00:00",
+          "urn:petras:femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "urn:petras:analytics:local_mechanism:7a54e87f9537"
+        ],
+        [
+          "2026-08-24T15:44:43.895009+00:00",
+          "urn:petras:analytics:local_mechanism:7a54e87f9537",
+          "kinematics.solve",
+          "urn:petras:analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T15:44:43.898465+00:00",
+          "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T15:44:43.900686+00:00",
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T19:25:24.859089+00:00",
+          "urn:petras:femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "urn:petras:analytics:local_mechanism:f5fade8bf4f8"
+        ],
+        [
+          "2026-08-24T19:26:11.727150+00:00",
+          "urn:petras:analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.solve",
+          "urn:petras:analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:26:11.729190+00:00",
+          "urn:petras:analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.motion",
+          "urn:petras:datastore:kinematic_motion:f3066570c690"
+        ],
+        [
+          "2026-08-24T19:26:11.731138+00:00",
+          "urn:petras:506d55dfe0d3",
+          "kinematics.disconnect",
+          "urn:petras:cf820781e312"
+        ],
+        [
+          "2026-08-24T19:26:11.732957+00:00",
+          "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:26:11.735086+00:00",
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:55:19.702114+00:00",
+          "urn:petras:analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.solve",
+          "urn:petras:analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T19:55:19.704647+00:00",
+          "urn:petras:analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.motion",
+          "urn:petras:datastore:kinematic_motion:063324e08d43"
+        ],
+        [
+          "2026-08-24T19:55:19.706851+00:00",
+          "urn:petras:506d55dfe0d3",
+          "kinematics.disconnect",
+          "urn:petras:c4369b1863bd"
+        ],
+        [
+          "2026-08-24T19:55:19.708992+00:00",
+          "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T19:55:19.711385+00:00",
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T21:48:03.433722+00:00",
+          "urn:petras:0273e9655a35",
+          "cloud2fem.duplicate",
+          "urn:petras:f59877a97cc8"
+        ],
+        [
+          "2026-08-24T22:26:05.408341+00:00",
+          "urn:petras:f59877a97cc8",
+          "cloud2fem_mesh",
+          "urn:petras:60d5a721578c"
+        ],
+        [
+          "2026-08-24T22:33:44.804092+00:00",
+          "urn:petras:f59877a97cc8",
+          "cloud2fem_mesh",
+          "urn:petras:1b9bcfdba2c3"
+        ],
+        [
+          "2026-08-24T22:40:26.317534+00:00",
+          "urn:petras:f59877a97cc8",
+          "cloud2fem_mesh",
+          "urn:petras:d2281c7df258"
+        ],
+        [
+          "2026-08-24T22:41:35.663230+00:00",
+          "urn:petras:d2281c7df258",
+          "finetools_engine.model",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:42:14.506606+00:00",
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "finetools_engine.material",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:42:41.831481+00:00",
+          "urn:petras:datasources:mat_abc79313bde6",
+          "finetools_engine.material",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:43:10.733884+00:00",
+          "urn:petras:datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T23:43:27.222836+00:00",
+          "urn:petras:femmodel:1b1562964636",
+          "finetools_engine.solve",
+          "urn:petras:femresult:a0ccf3c2347c"
+        ],
+        [
+          "2026-08-24T23:43:27.227353+00:00",
+          "urn:petras:femresult:a0ccf3c2347c",
+          "finetools_engine.job",
+          "urn:petras:analytics:finetools_job:4e6500dd9756"
+        ],
+        [
+          "2026-08-25T08:45:53.310970+00:00",
+          "urn:petras:femresult:b08dce20fec4",
+          "masonry_checks.biaxial",
+          "urn:petras:analytics:masonry_check:aa569206f170"
+        ],
+        [
+          "2026-08-25T08:45:53.313203+00:00",
+          "urn:petras:femmodel:b9450d4907ae",
+          "masonry_checks.orientation_context",
+          "urn:petras:analytics:masonry_check:aa569206f170"
+        ],
+        [
+          "2026-08-25T08:46:30.746030+00:00",
+          "urn:petras:femresult:a0ccf3c2347c",
+          "masonry_checks.biaxial",
+          "urn:petras:analytics:masonry_check:40ba82137ad7"
+        ],
+        [
+          "2026-08-25T08:46:30.747981+00:00",
+          "urn:petras:femmodel:1b1562964636",
+          "masonry_checks.orientation_context",
+          "urn:petras:analytics:masonry_check:40ba82137ad7"
+        ],
+        [
+          "2026-08-25T16:49:03.414180+00:00",
+          "urn:petras:f59877a97cc8",
+          "cloud2fem.duplicate",
+          "urn:petras:6718c0b185d8"
+        ],
+        [
+          "2026-08-25T22:44:47.913599+00:00",
+          "urn:petras:6718c0b185d8",
+          "cloud2fem_mesh",
+          "urn:petras:aca528c25f65"
+        ],
+        [
+          "2026-08-25T22:50:35.923510+00:00",
+          "urn:petras:aca528c25f65",
+          "finetools_engine.model",
+          "urn:petras:femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T22:51:25.570795+00:00",
+          "urn:petras:datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
+          "urn:petras:femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T22:52:13.537752+00:00",
+          "urn:petras:datasources:mat_abc79313bde6",
+          "finetools_engine.material",
+          "urn:petras:femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T23:06:33.280968+00:00",
+          "urn:petras:femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "urn:petras:analytics:local_mechanism:88830c55e6f6"
+        ],
+        [
+          "2026-08-25T23:07:24.756743+00:00",
+          "urn:petras:analytics:local_mechanism:88830c55e6f6",
+          "kinematics.solve",
+          "urn:petras:analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-25T23:07:24.758964+00:00",
+          "urn:petras:analytics:local_mechanism:88830c55e6f6",
+          "kinematics.motion",
+          "urn:petras:datastore:kinematic_motion:7d6f2799eeb7"
+        ],
+        [
+          "2026-08-25T23:07:24.761168+00:00",
+          "urn:petras:506d55dfe0d3",
+          "kinematics.disconnect",
+          "urn:petras:268b382cf975"
+        ],
+        [
+          "2026-08-25T23:07:24.763323+00:00",
+          "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-25T23:07:24.765617+00:00",
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-26T00:13:11.051094+00:00",
+          "urn:petras:femmodel:8d47f6d417ef",
+          "finetools_engine.solve",
+          "urn:petras:femresult:0221837209b5"
+        ],
+        [
+          "2026-08-26T00:13:11.058345+00:00",
+          "urn:petras:femresult:0221837209b5",
+          "finetools_engine.job",
+          "urn:petras:analytics:finetools_job:f3067174a72d"
+        ],
+        [
+          "2026-08-26T07:40:22.521207+00:00",
+          "urn:petras:femmodel:8d47f6d417ef",
+          "kinematics.macroelement",
+          "urn:petras:analytics:local_mechanism:bcd1d8187120"
+        ],
+        [
+          "2026-08-26T07:42:33.012099+00:00",
+          "urn:petras:analytics:local_mechanism:bcd1d8187120",
+          "kinematics.solve",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T07:42:33.014056+00:00",
+          "urn:petras:analytics:local_mechanism:bcd1d8187120",
+          "kinematics.motion",
+          "urn:petras:datastore:kinematic_motion:0387dfff5206"
+        ],
+        [
+          "2026-08-26T07:42:33.017133+00:00",
+          "urn:petras:aca528c25f65",
+          "kinematics.disconnect",
+          "urn:petras:f26134a31493"
+        ],
+        [
+          "2026-08-26T07:42:33.019851+00:00",
+          "urn:petras:datasources:mat_20ab42e6dd47",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T07:42:33.031772+00:00",
+          "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T15:08:38.301518+00:00",
+          "urn:petras:e2984986289f",
+          "event_tracker.attach_material",
+          "urn:petras:datasources:mat_20ab42e6dd47"
+        ],
+        [
+          "2026-08-26T16:15:17.697943+00:00",
+          "urn:petras:670162f0273b",
+          "event_tracker.attach_signal",
+          "urn:petras:ae09195acee9"
         ]
       ],
-      "rowCount": 103,
+      "rowCount": 128,
       "answered": true
     },
     {
@@ -1796,21 +2370,6 @@
         "to"
       ],
       "rows": [
-        [
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "506d55dfe0d3"
-        ],
-        [
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "8aae5a7954a0"
-        ],
-        [
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "5da5159f4127"
-        ],
         [
           "5da5159f4127",
           "cloud_registration.smooth_taubin",
@@ -1840,6 +2399,16 @@
           "506d55dfe0d3",
           "finetools_engine.model",
           "femmodel:b9450d4907ae"
+        ],
+        [
+          "aca528c25f65",
+          "finetools_engine.model",
+          "femmodel:8d47f6d417ef"
+        ],
+        [
+          "d2281c7df258",
+          "finetools_engine.model",
+          "femmodel:1b1562964636"
         ],
         [
           "5cb3c5c8d631",
@@ -1910,24 +2479,29 @@
           "4deaa0b067cc",
           "inspect_cloud.group_rules",
           "4deaa0b067cc"
+        ],
+        [
+          "506d55dfe0d3",
+          "kinematics.disconnect",
+          "cf820781e312"
+        ],
+        [
+          "506d55dfe0d3",
+          "kinematics.disconnect",
+          "c4369b1863bd"
+        ],
+        [
+          "506d55dfe0d3",
+          "kinematics.disconnect",
+          "268b382cf975"
+        ],
+        [
+          "aca528c25f65",
+          "kinematics.disconnect",
+          "f26134a31493"
         ]
       ],
       "rawRows": [
-        [
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:506d55dfe0d3"
-        ],
-        [
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:8aae5a7954a0"
-        ],
-        [
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "urn:petras:5da5159f4127"
-        ],
         [
           "urn:petras:5da5159f4127",
           "cloud_registration.smooth_taubin",
@@ -1957,6 +2531,16 @@
           "urn:petras:506d55dfe0d3",
           "finetools_engine.model",
           "urn:petras:femmodel:b9450d4907ae"
+        ],
+        [
+          "urn:petras:aca528c25f65",
+          "finetools_engine.model",
+          "urn:petras:femmodel:8d47f6d417ef"
+        ],
+        [
+          "urn:petras:d2281c7df258",
+          "finetools_engine.model",
+          "urn:petras:femmodel:1b1562964636"
         ],
         [
           "urn:petras:5cb3c5c8d631",
@@ -2027,9 +2611,29 @@
           "urn:petras:4deaa0b067cc",
           "inspect_cloud.group_rules",
           "urn:petras:4deaa0b067cc"
+        ],
+        [
+          "urn:petras:506d55dfe0d3",
+          "kinematics.disconnect",
+          "urn:petras:cf820781e312"
+        ],
+        [
+          "urn:petras:506d55dfe0d3",
+          "kinematics.disconnect",
+          "urn:petras:c4369b1863bd"
+        ],
+        [
+          "urn:petras:506d55dfe0d3",
+          "kinematics.disconnect",
+          "urn:petras:268b382cf975"
+        ],
+        [
+          "urn:petras:aca528c25f65",
+          "kinematics.disconnect",
+          "urn:petras:f26134a31493"
         ]
       ],
-      "rowCount": 23,
+      "rowCount": 26,
       "answered": true
     },
     {
@@ -2098,11 +2702,6 @@
           ""
         ],
         [
-          "2026-07-08T12:25:13.644002+00:00",
-          "c5766806512c",
-          ""
-        ],
-        [
           "2026-07-08T15:06:59.739215+00:00",
           "0273e9655a35",
           ""
@@ -2128,11 +2727,6 @@
           ""
         ],
         [
-          "2026-07-08T22:54:59.089804+00:00",
-          "d96427b40530",
-          ""
-        ],
-        [
           "2026-07-09T12:46:27.937004+00:00",
           "658e1aae0dc0",
           ""
@@ -2153,23 +2747,8 @@
           ""
         ],
         [
-          "2026-07-09T15:41:34.037961+00:00",
-          "1992f16ba201",
-          ""
-        ],
-        [
-          "2026-07-09T15:42:31.058619+00:00",
-          "0308aed1770a",
-          ""
-        ],
-        [
           "2026-07-09T15:43:36.961435+00:00",
           "datasources:mat_abc79313bde6",
-          ""
-        ],
-        [
-          "2026-07-09T15:44:08.840386+00:00",
-          "4f3b8a22753b",
           ""
         ],
         [
@@ -2183,18 +2762,8 @@
           ""
         ],
         [
-          "2026-07-09T16:45:18.772216+00:00",
-          "32e9b16206d3",
-          ""
-        ],
-        [
           "2026-07-09T16:45:18.808309+00:00",
           "ce258cf7b380",
-          ""
-        ],
-        [
-          "2026-07-09T20:01:51.327198+00:00",
-          "af7599d3252f",
           ""
         ],
         [
@@ -2203,38 +2772,8 @@
           ""
         ],
         [
-          "2026-07-09T20:03:36.239550+00:00",
-          "c9283a91d1a7",
-          ""
-        ],
-        [
           "2026-07-09T20:03:36.252253+00:00",
           "analytics:80a7c862b58042f891aa7deedd7ca9c5",
-          ""
-        ],
-        [
-          "2026-07-10T07:13:52.786654+00:00",
-          "e91808812b1c",
-          ""
-        ],
-        [
-          "2026-07-10T10:18:03.034294+00:00",
-          "2d5b4cc0df56",
-          ""
-        ],
-        [
-          "2026-07-10T10:33:40.421437+00:00",
-          "a5bc55af6a4c",
-          ""
-        ],
-        [
-          "2026-07-10T10:37:36.308665+00:00",
-          "ef92ebab3d75",
-          ""
-        ],
-        [
-          "2026-07-10T10:39:17.391485+00:00",
-          "365fd01b5d6d",
           ""
         ],
         [
@@ -2248,18 +2787,8 @@
           ""
         ],
         [
-          "2026-07-10T10:46:21.072339+00:00",
-          "cc507f453b4f",
-          ""
-        ],
-        [
           "2026-07-10T10:46:21.403853+00:00",
           "49e3fd907690",
-          ""
-        ],
-        [
-          "2026-07-10T10:46:50.855561+00:00",
-          "af0c90ff7ab7",
           ""
         ],
         [
@@ -2278,23 +2807,8 @@
           ""
         ],
         [
-          "2026-07-10T10:54:14.646913+00:00",
-          "c96142cac51a",
-          ""
-        ],
-        [
           "2026-07-10T10:54:14.653204+00:00",
           "ba4c19f02ebb",
-          ""
-        ],
-        [
-          "2026-07-10T13:23:05.503489+00:00",
-          "c6ef02733637",
-          ""
-        ],
-        [
-          "2026-07-10T13:24:24.049057+00:00",
-          "a86e82ff342d",
           ""
         ],
         [
@@ -2308,43 +2822,13 @@
           ""
         ],
         [
-          "2026-07-10T15:18:14.880573+00:00",
-          "715f73398c93",
-          ""
-        ],
-        [
-          "2026-07-10T15:22:04.616906+00:00",
-          "b9d903c4cab3",
-          ""
-        ],
-        [
           "2026-07-10T15:22:04.620707+00:00",
           "analytics:39dc7d8c39c34dfea724aa2ecd870b52",
           ""
         ],
         [
-          "2026-07-10T17:25:11.178728+00:00",
-          "d5747245e960",
-          ""
-        ],
-        [
-          "2026-07-10T18:50:57.220602+00:00",
-          "fa302184024b",
-          ""
-        ],
-        [
-          "2026-07-10T18:52:19.976318+00:00",
-          "982f5668e7fd",
-          ""
-        ],
-        [
           "2026-07-10T18:52:19.983663+00:00",
           "analytics:cd63f8ea07ab4249a98b42e3286a291a",
-          ""
-        ],
-        [
-          "2026-07-10T19:25:02.139325+00:00",
-          "519e93f5e21e",
           ""
         ],
         [
@@ -2355,21 +2839,6 @@
         [
           "2026-07-11T11:51:09.021217+00:00",
           "5e92e3bf86d1",
-          ""
-        ],
-        [
-          "2026-07-11T11:51:32.076971+00:00",
-          "f779099778f1",
-          ""
-        ],
-        [
-          "2026-07-13T13:02:12.416592+00:00",
-          "e278088d40ed",
-          ""
-        ],
-        [
-          "2026-07-14T08:46:50.823460+00:00",
-          "839ff641a972",
           ""
         ],
         [
@@ -3236,6 +3705,481 @@
           "2026-08-21T16:48:05.466849+00:00",
           "analytics:b96a66dd65f4427bb1623422e52f2568",
           ""
+        ],
+        [
+          "2026-08-24T15:38:17.644955+00:00",
+          "N5971846257f74fa994bd47527dff22ec",
+          ""
+        ],
+        [
+          "2026-08-24T15:39:06.139914+00:00",
+          "N377a7c004b3a4c0abc9198a12421ee81",
+          ""
+        ],
+        [
+          "2026-08-24T15:40:32.663969+00:00",
+          "analytics:local_mechanism:a89b5ac7e90e",
+          ""
+        ],
+        [
+          "2026-08-24T15:40:32.667035+00:00",
+          "4e2da322e57c",
+          ""
+        ],
+        [
+          "2026-08-24T15:42:20.480358+00:00",
+          "analytics:local_mechanism:37fcf987e6cd",
+          ""
+        ],
+        [
+          "2026-08-24T15:42:20.483044+00:00",
+          "31bea38fbcb3",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:02.584236+00:00",
+          "analytics:local_mechanism:7a54e87f9537",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:02.588765+00:00",
+          "1aac8edfbac7",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:43.873370+00:00",
+          "analytics:kinematic_check:3dd78e0afc80",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:43.895009+00:00",
+          "613944345fad",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:43.898465+00:00",
+          "aeadd125ed78",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:43.900686+00:00",
+          "fadd6a69840d",
+          ""
+        ],
+        [
+          "2026-08-24T19:23:19.379634+00:00",
+          "Nb3a8cc112ada426487537a37b3f83e42",
+          ""
+        ],
+        [
+          "2026-08-24T19:25:24.853844+00:00",
+          "analytics:local_mechanism:f5fade8bf4f8",
+          ""
+        ],
+        [
+          "2026-08-24T19:25:24.859089+00:00",
+          "7b10ad93e261",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.546071+00:00",
+          "analytics:kinematic_check:bde2410127c5",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.583911+00:00",
+          "cf820781e312",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.718656+00:00",
+          "datastore:kinematic_motion:f3066570c690",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.727150+00:00",
+          "a70b12288d89",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.729190+00:00",
+          "193cccf78726",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.731138+00:00",
+          "0313bbed1dd8",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.732957+00:00",
+          "c3fd741823a2",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.735086+00:00",
+          "c97717fabf1e",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.494912+00:00",
+          "analytics:kinematic_check:8dda8d29ccea",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.534005+00:00",
+          "c4369b1863bd",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.696844+00:00",
+          "datastore:kinematic_motion:063324e08d43",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.702114+00:00",
+          "387b94835401",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.704647+00:00",
+          "d567a5da65e5",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.706851+00:00",
+          "bf486ea87e4b",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.708992+00:00",
+          "af0cafe2e57b",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.711385+00:00",
+          "33a210555035",
+          ""
+        ],
+        [
+          "2026-08-24T21:48:03.433052+00:00",
+          "f59877a97cc8",
+          ""
+        ],
+        [
+          "2026-08-24T21:48:03.433722+00:00",
+          "84e0d6344626",
+          ""
+        ],
+        [
+          "2026-08-24T22:03:31.869668+00:00",
+          "datasources:mat_20ab42e6dd47",
+          ""
+        ],
+        [
+          "2026-08-24T22:26:05.387276+00:00",
+          "60d5a721578c",
+          ""
+        ],
+        [
+          "2026-08-24T22:26:05.408341+00:00",
+          "1b58762e9445",
+          ""
+        ],
+        [
+          "2026-08-24T22:33:44.776988+00:00",
+          "1b9bcfdba2c3",
+          ""
+        ],
+        [
+          "2026-08-24T22:33:44.804092+00:00",
+          "881d6abea660",
+          ""
+        ],
+        [
+          "2026-08-24T22:40:26.284055+00:00",
+          "d2281c7df258",
+          ""
+        ],
+        [
+          "2026-08-24T22:40:26.317534+00:00",
+          "f99e53816444",
+          ""
+        ],
+        [
+          "2026-08-24T22:41:29.819902+00:00",
+          "femmodel:1b1562964636",
+          ""
+        ],
+        [
+          "2026-08-24T22:41:35.663230+00:00",
+          "6ea6c42a0aca",
+          ""
+        ],
+        [
+          "2026-08-24T22:42:14.506606+00:00",
+          "efc601f2aabe",
+          ""
+        ],
+        [
+          "2026-08-24T22:42:41.831481+00:00",
+          "d3fbb0bbab3b",
+          ""
+        ],
+        [
+          "2026-08-24T22:43:10.733884+00:00",
+          "5b49d023f814",
+          ""
+        ],
+        [
+          "2026-08-24T22:58:38.755872+00:00",
+          "analytics:finetools_job:4e6500dd9756",
+          ""
+        ],
+        [
+          "2026-08-24T23:43:27.211210+00:00",
+          "femresult:a0ccf3c2347c",
+          ""
+        ],
+        [
+          "2026-08-24T23:43:27.222836+00:00",
+          "02b64966b65d",
+          ""
+        ],
+        [
+          "2026-08-24T23:43:27.227353+00:00",
+          "9e5b0583f327",
+          ""
+        ],
+        [
+          "2026-08-25T08:45:53.307848+00:00",
+          "analytics:masonry_check:aa569206f170",
+          ""
+        ],
+        [
+          "2026-08-25T08:45:53.310970+00:00",
+          "d0519a7203bf",
+          ""
+        ],
+        [
+          "2026-08-25T08:45:53.313203+00:00",
+          "7c0ff1b03df5",
+          ""
+        ],
+        [
+          "2026-08-25T08:46:30.743507+00:00",
+          "analytics:masonry_check:40ba82137ad7",
+          ""
+        ],
+        [
+          "2026-08-25T08:46:30.746030+00:00",
+          "39ac91dc7655",
+          ""
+        ],
+        [
+          "2026-08-25T08:46:30.747981+00:00",
+          "66015faf8842",
+          ""
+        ],
+        [
+          "2026-08-25T16:49:03.413644+00:00",
+          "6718c0b185d8",
+          ""
+        ],
+        [
+          "2026-08-25T16:49:03.414180+00:00",
+          "3eb6904bef82",
+          ""
+        ],
+        [
+          "2026-08-25T21:05:07.697260+00:00",
+          "8ea6d217bf52",
+          ""
+        ],
+        [
+          "2026-08-25T22:35:36.674368+00:00",
+          "153a501aa1ad",
+          ""
+        ],
+        [
+          "2026-08-25T22:44:47.898503+00:00",
+          "aca528c25f65",
+          ""
+        ],
+        [
+          "2026-08-25T22:44:47.913599+00:00",
+          "9c1a635ce1fa",
+          ""
+        ],
+        [
+          "2026-08-25T22:50:30.316918+00:00",
+          "femmodel:8d47f6d417ef",
+          ""
+        ],
+        [
+          "2026-08-25T22:50:35.923510+00:00",
+          "32b83e1d45c9",
+          ""
+        ],
+        [
+          "2026-08-25T22:51:25.570795+00:00",
+          "395d8a4df00b",
+          ""
+        ],
+        [
+          "2026-08-25T22:52:13.537752+00:00",
+          "d12521ea1393",
+          ""
+        ],
+        [
+          "2026-08-25T22:58:12.311306+00:00",
+          "analytics:finetools_job:f3067174a72d",
+          ""
+        ],
+        [
+          "2026-08-25T23:05:37.557720+00:00",
+          "N4d4ffe617a064e5cae63f20c06801600",
+          ""
+        ],
+        [
+          "2026-08-25T23:06:33.278194+00:00",
+          "analytics:local_mechanism:88830c55e6f6",
+          ""
+        ],
+        [
+          "2026-08-25T23:06:33.280968+00:00",
+          "107c44e1f2c9",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.514861+00:00",
+          "analytics:kinematic_check:4906c937a10e",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.557582+00:00",
+          "268b382cf975",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.750414+00:00",
+          "datastore:kinematic_motion:7d6f2799eeb7",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.756743+00:00",
+          "5dd98efe3751",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.758964+00:00",
+          "b049740082ba",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.761168+00:00",
+          "ff8a9c4f4bca",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.763323+00:00",
+          "490113180da7",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.765617+00:00",
+          "3c55bd1e941e",
+          ""
+        ],
+        [
+          "2026-08-26T00:13:11.039864+00:00",
+          "femresult:0221837209b5",
+          ""
+        ],
+        [
+          "2026-08-26T00:13:11.051094+00:00",
+          "aa595f9362ec",
+          ""
+        ],
+        [
+          "2026-08-26T00:13:11.058345+00:00",
+          "07125dd28171",
+          ""
+        ],
+        [
+          "2026-08-26T07:39:18.315565+00:00",
+          "N2d99e7654e0246439fcf22dfdcdecd79",
+          ""
+        ],
+        [
+          "2026-08-26T07:40:22.517975+00:00",
+          "analytics:local_mechanism:bcd1d8187120",
+          ""
+        ],
+        [
+          "2026-08-26T07:40:22.521207+00:00",
+          "b00b337ac5c2",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:32.803738+00:00",
+          "analytics:kinematic_check:662f36c73ccc",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:32.848386+00:00",
+          "f26134a31493",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.007610+00:00",
+          "datastore:kinematic_motion:0387dfff5206",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.012099+00:00",
+          "94a2a66d6c51",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.014056+00:00",
+          "bb00e5bd0a15",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.017133+00:00",
+          "f43feecfb063",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.019851+00:00",
+          "d8fe66eb8cc1",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.031772+00:00",
+          "be66ff8dda5a",
+          ""
+        ],
+        [
+          "2026-08-26T14:52:06.194081+00:00",
+          "e2984986289f",
+          "Missing roofing structure"
+        ],
+        [
+          "2026-08-26T14:53:53.667334+00:00",
+          "831b97277c51",
+          ""
+        ],
+        [
+          "2026-08-26T15:08:38.301518+00:00",
+          "1b0d0318f87a",
+          ""
+        ],
+        [
+          "2026-08-26T16:15:17.697943+00:00",
+          "a0106eaef654",
+          ""
         ]
       ],
       "rawRows": [
@@ -3295,11 +4239,6 @@
           ""
         ],
         [
-          "2026-07-08T12:25:13.644002+00:00",
-          "urn:petras:c5766806512c",
-          ""
-        ],
-        [
           "2026-07-08T15:06:59.739215+00:00",
           "urn:petras:0273e9655a35",
           ""
@@ -3325,11 +4264,6 @@
           ""
         ],
         [
-          "2026-07-08T22:54:59.089804+00:00",
-          "urn:petras:d96427b40530",
-          ""
-        ],
-        [
           "2026-07-09T12:46:27.937004+00:00",
           "urn:petras:658e1aae0dc0",
           ""
@@ -3350,23 +4284,8 @@
           ""
         ],
         [
-          "2026-07-09T15:41:34.037961+00:00",
-          "urn:petras:1992f16ba201",
-          ""
-        ],
-        [
-          "2026-07-09T15:42:31.058619+00:00",
-          "urn:petras:0308aed1770a",
-          ""
-        ],
-        [
           "2026-07-09T15:43:36.961435+00:00",
           "urn:petras:datasources:mat_abc79313bde6",
-          ""
-        ],
-        [
-          "2026-07-09T15:44:08.840386+00:00",
-          "urn:petras:4f3b8a22753b",
           ""
         ],
         [
@@ -3380,18 +4299,8 @@
           ""
         ],
         [
-          "2026-07-09T16:45:18.772216+00:00",
-          "urn:petras:32e9b16206d3",
-          ""
-        ],
-        [
           "2026-07-09T16:45:18.808309+00:00",
           "urn:petras:ce258cf7b380",
-          ""
-        ],
-        [
-          "2026-07-09T20:01:51.327198+00:00",
-          "urn:petras:af7599d3252f",
           ""
         ],
         [
@@ -3400,38 +4309,8 @@
           ""
         ],
         [
-          "2026-07-09T20:03:36.239550+00:00",
-          "urn:petras:c9283a91d1a7",
-          ""
-        ],
-        [
           "2026-07-09T20:03:36.252253+00:00",
           "urn:petras:analytics:80a7c862b58042f891aa7deedd7ca9c5",
-          ""
-        ],
-        [
-          "2026-07-10T07:13:52.786654+00:00",
-          "urn:petras:e91808812b1c",
-          ""
-        ],
-        [
-          "2026-07-10T10:18:03.034294+00:00",
-          "urn:petras:2d5b4cc0df56",
-          ""
-        ],
-        [
-          "2026-07-10T10:33:40.421437+00:00",
-          "urn:petras:a5bc55af6a4c",
-          ""
-        ],
-        [
-          "2026-07-10T10:37:36.308665+00:00",
-          "urn:petras:ef92ebab3d75",
-          ""
-        ],
-        [
-          "2026-07-10T10:39:17.391485+00:00",
-          "urn:petras:365fd01b5d6d",
           ""
         ],
         [
@@ -3445,18 +4324,8 @@
           ""
         ],
         [
-          "2026-07-10T10:46:21.072339+00:00",
-          "urn:petras:cc507f453b4f",
-          ""
-        ],
-        [
           "2026-07-10T10:46:21.403853+00:00",
           "urn:petras:49e3fd907690",
-          ""
-        ],
-        [
-          "2026-07-10T10:46:50.855561+00:00",
-          "urn:petras:af0c90ff7ab7",
           ""
         ],
         [
@@ -3475,23 +4344,8 @@
           ""
         ],
         [
-          "2026-07-10T10:54:14.646913+00:00",
-          "urn:petras:c96142cac51a",
-          ""
-        ],
-        [
           "2026-07-10T10:54:14.653204+00:00",
           "urn:petras:ba4c19f02ebb",
-          ""
-        ],
-        [
-          "2026-07-10T13:23:05.503489+00:00",
-          "urn:petras:c6ef02733637",
-          ""
-        ],
-        [
-          "2026-07-10T13:24:24.049057+00:00",
-          "urn:petras:a86e82ff342d",
           ""
         ],
         [
@@ -3505,43 +4359,13 @@
           ""
         ],
         [
-          "2026-07-10T15:18:14.880573+00:00",
-          "urn:petras:715f73398c93",
-          ""
-        ],
-        [
-          "2026-07-10T15:22:04.616906+00:00",
-          "urn:petras:b9d903c4cab3",
-          ""
-        ],
-        [
           "2026-07-10T15:22:04.620707+00:00",
           "urn:petras:analytics:39dc7d8c39c34dfea724aa2ecd870b52",
           ""
         ],
         [
-          "2026-07-10T17:25:11.178728+00:00",
-          "urn:petras:d5747245e960",
-          ""
-        ],
-        [
-          "2026-07-10T18:50:57.220602+00:00",
-          "urn:petras:fa302184024b",
-          ""
-        ],
-        [
-          "2026-07-10T18:52:19.976318+00:00",
-          "urn:petras:982f5668e7fd",
-          ""
-        ],
-        [
           "2026-07-10T18:52:19.983663+00:00",
           "urn:petras:analytics:cd63f8ea07ab4249a98b42e3286a291a",
-          ""
-        ],
-        [
-          "2026-07-10T19:25:02.139325+00:00",
-          "urn:petras:519e93f5e21e",
           ""
         ],
         [
@@ -3552,21 +4376,6 @@
         [
           "2026-07-11T11:51:09.021217+00:00",
           "urn:petras:5e92e3bf86d1",
-          ""
-        ],
-        [
-          "2026-07-11T11:51:32.076971+00:00",
-          "urn:petras:f779099778f1",
-          ""
-        ],
-        [
-          "2026-07-13T13:02:12.416592+00:00",
-          "urn:petras:e278088d40ed",
-          ""
-        ],
-        [
-          "2026-07-14T08:46:50.823460+00:00",
-          "urn:petras:839ff641a972",
           ""
         ],
         [
@@ -4433,9 +5242,484 @@
           "2026-08-21T16:48:05.466849+00:00",
           "urn:petras:analytics:b96a66dd65f4427bb1623422e52f2568",
           ""
+        ],
+        [
+          "2026-08-24T15:38:17.644955+00:00",
+          "N5971846257f74fa994bd47527dff22ec",
+          ""
+        ],
+        [
+          "2026-08-24T15:39:06.139914+00:00",
+          "N377a7c004b3a4c0abc9198a12421ee81",
+          ""
+        ],
+        [
+          "2026-08-24T15:40:32.663969+00:00",
+          "urn:petras:analytics:local_mechanism:a89b5ac7e90e",
+          ""
+        ],
+        [
+          "2026-08-24T15:40:32.667035+00:00",
+          "urn:petras:4e2da322e57c",
+          ""
+        ],
+        [
+          "2026-08-24T15:42:20.480358+00:00",
+          "urn:petras:analytics:local_mechanism:37fcf987e6cd",
+          ""
+        ],
+        [
+          "2026-08-24T15:42:20.483044+00:00",
+          "urn:petras:31bea38fbcb3",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:02.584236+00:00",
+          "urn:petras:analytics:local_mechanism:7a54e87f9537",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:02.588765+00:00",
+          "urn:petras:1aac8edfbac7",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:43.873370+00:00",
+          "urn:petras:analytics:kinematic_check:3dd78e0afc80",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:43.895009+00:00",
+          "urn:petras:613944345fad",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:43.898465+00:00",
+          "urn:petras:aeadd125ed78",
+          ""
+        ],
+        [
+          "2026-08-24T15:44:43.900686+00:00",
+          "urn:petras:fadd6a69840d",
+          ""
+        ],
+        [
+          "2026-08-24T19:23:19.379634+00:00",
+          "Nb3a8cc112ada426487537a37b3f83e42",
+          ""
+        ],
+        [
+          "2026-08-24T19:25:24.853844+00:00",
+          "urn:petras:analytics:local_mechanism:f5fade8bf4f8",
+          ""
+        ],
+        [
+          "2026-08-24T19:25:24.859089+00:00",
+          "urn:petras:7b10ad93e261",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.546071+00:00",
+          "urn:petras:analytics:kinematic_check:bde2410127c5",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.583911+00:00",
+          "urn:petras:cf820781e312",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.718656+00:00",
+          "urn:petras:datastore:kinematic_motion:f3066570c690",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.727150+00:00",
+          "urn:petras:a70b12288d89",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.729190+00:00",
+          "urn:petras:193cccf78726",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.731138+00:00",
+          "urn:petras:0313bbed1dd8",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.732957+00:00",
+          "urn:petras:c3fd741823a2",
+          ""
+        ],
+        [
+          "2026-08-24T19:26:11.735086+00:00",
+          "urn:petras:c97717fabf1e",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.494912+00:00",
+          "urn:petras:analytics:kinematic_check:8dda8d29ccea",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.534005+00:00",
+          "urn:petras:c4369b1863bd",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.696844+00:00",
+          "urn:petras:datastore:kinematic_motion:063324e08d43",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.702114+00:00",
+          "urn:petras:387b94835401",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.704647+00:00",
+          "urn:petras:d567a5da65e5",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.706851+00:00",
+          "urn:petras:bf486ea87e4b",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.708992+00:00",
+          "urn:petras:af0cafe2e57b",
+          ""
+        ],
+        [
+          "2026-08-24T19:55:19.711385+00:00",
+          "urn:petras:33a210555035",
+          ""
+        ],
+        [
+          "2026-08-24T21:48:03.433052+00:00",
+          "urn:petras:f59877a97cc8",
+          ""
+        ],
+        [
+          "2026-08-24T21:48:03.433722+00:00",
+          "urn:petras:84e0d6344626",
+          ""
+        ],
+        [
+          "2026-08-24T22:03:31.869668+00:00",
+          "urn:petras:datasources:mat_20ab42e6dd47",
+          ""
+        ],
+        [
+          "2026-08-24T22:26:05.387276+00:00",
+          "urn:petras:60d5a721578c",
+          ""
+        ],
+        [
+          "2026-08-24T22:26:05.408341+00:00",
+          "urn:petras:1b58762e9445",
+          ""
+        ],
+        [
+          "2026-08-24T22:33:44.776988+00:00",
+          "urn:petras:1b9bcfdba2c3",
+          ""
+        ],
+        [
+          "2026-08-24T22:33:44.804092+00:00",
+          "urn:petras:881d6abea660",
+          ""
+        ],
+        [
+          "2026-08-24T22:40:26.284055+00:00",
+          "urn:petras:d2281c7df258",
+          ""
+        ],
+        [
+          "2026-08-24T22:40:26.317534+00:00",
+          "urn:petras:f99e53816444",
+          ""
+        ],
+        [
+          "2026-08-24T22:41:29.819902+00:00",
+          "urn:petras:femmodel:1b1562964636",
+          ""
+        ],
+        [
+          "2026-08-24T22:41:35.663230+00:00",
+          "urn:petras:6ea6c42a0aca",
+          ""
+        ],
+        [
+          "2026-08-24T22:42:14.506606+00:00",
+          "urn:petras:efc601f2aabe",
+          ""
+        ],
+        [
+          "2026-08-24T22:42:41.831481+00:00",
+          "urn:petras:d3fbb0bbab3b",
+          ""
+        ],
+        [
+          "2026-08-24T22:43:10.733884+00:00",
+          "urn:petras:5b49d023f814",
+          ""
+        ],
+        [
+          "2026-08-24T22:58:38.755872+00:00",
+          "urn:petras:analytics:finetools_job:4e6500dd9756",
+          ""
+        ],
+        [
+          "2026-08-24T23:43:27.211210+00:00",
+          "urn:petras:femresult:a0ccf3c2347c",
+          ""
+        ],
+        [
+          "2026-08-24T23:43:27.222836+00:00",
+          "urn:petras:02b64966b65d",
+          ""
+        ],
+        [
+          "2026-08-24T23:43:27.227353+00:00",
+          "urn:petras:9e5b0583f327",
+          ""
+        ],
+        [
+          "2026-08-25T08:45:53.307848+00:00",
+          "urn:petras:analytics:masonry_check:aa569206f170",
+          ""
+        ],
+        [
+          "2026-08-25T08:45:53.310970+00:00",
+          "urn:petras:d0519a7203bf",
+          ""
+        ],
+        [
+          "2026-08-25T08:45:53.313203+00:00",
+          "urn:petras:7c0ff1b03df5",
+          ""
+        ],
+        [
+          "2026-08-25T08:46:30.743507+00:00",
+          "urn:petras:analytics:masonry_check:40ba82137ad7",
+          ""
+        ],
+        [
+          "2026-08-25T08:46:30.746030+00:00",
+          "urn:petras:39ac91dc7655",
+          ""
+        ],
+        [
+          "2026-08-25T08:46:30.747981+00:00",
+          "urn:petras:66015faf8842",
+          ""
+        ],
+        [
+          "2026-08-25T16:49:03.413644+00:00",
+          "urn:petras:6718c0b185d8",
+          ""
+        ],
+        [
+          "2026-08-25T16:49:03.414180+00:00",
+          "urn:petras:3eb6904bef82",
+          ""
+        ],
+        [
+          "2026-08-25T21:05:07.697260+00:00",
+          "urn:petras:8ea6d217bf52",
+          ""
+        ],
+        [
+          "2026-08-25T22:35:36.674368+00:00",
+          "urn:petras:153a501aa1ad",
+          ""
+        ],
+        [
+          "2026-08-25T22:44:47.898503+00:00",
+          "urn:petras:aca528c25f65",
+          ""
+        ],
+        [
+          "2026-08-25T22:44:47.913599+00:00",
+          "urn:petras:9c1a635ce1fa",
+          ""
+        ],
+        [
+          "2026-08-25T22:50:30.316918+00:00",
+          "urn:petras:femmodel:8d47f6d417ef",
+          ""
+        ],
+        [
+          "2026-08-25T22:50:35.923510+00:00",
+          "urn:petras:32b83e1d45c9",
+          ""
+        ],
+        [
+          "2026-08-25T22:51:25.570795+00:00",
+          "urn:petras:395d8a4df00b",
+          ""
+        ],
+        [
+          "2026-08-25T22:52:13.537752+00:00",
+          "urn:petras:d12521ea1393",
+          ""
+        ],
+        [
+          "2026-08-25T22:58:12.311306+00:00",
+          "urn:petras:analytics:finetools_job:f3067174a72d",
+          ""
+        ],
+        [
+          "2026-08-25T23:05:37.557720+00:00",
+          "N4d4ffe617a064e5cae63f20c06801600",
+          ""
+        ],
+        [
+          "2026-08-25T23:06:33.278194+00:00",
+          "urn:petras:analytics:local_mechanism:88830c55e6f6",
+          ""
+        ],
+        [
+          "2026-08-25T23:06:33.280968+00:00",
+          "urn:petras:107c44e1f2c9",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.514861+00:00",
+          "urn:petras:analytics:kinematic_check:4906c937a10e",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.557582+00:00",
+          "urn:petras:268b382cf975",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.750414+00:00",
+          "urn:petras:datastore:kinematic_motion:7d6f2799eeb7",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.756743+00:00",
+          "urn:petras:5dd98efe3751",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.758964+00:00",
+          "urn:petras:b049740082ba",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.761168+00:00",
+          "urn:petras:ff8a9c4f4bca",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.763323+00:00",
+          "urn:petras:490113180da7",
+          ""
+        ],
+        [
+          "2026-08-25T23:07:24.765617+00:00",
+          "urn:petras:3c55bd1e941e",
+          ""
+        ],
+        [
+          "2026-08-26T00:13:11.039864+00:00",
+          "urn:petras:femresult:0221837209b5",
+          ""
+        ],
+        [
+          "2026-08-26T00:13:11.051094+00:00",
+          "urn:petras:aa595f9362ec",
+          ""
+        ],
+        [
+          "2026-08-26T00:13:11.058345+00:00",
+          "urn:petras:07125dd28171",
+          ""
+        ],
+        [
+          "2026-08-26T07:39:18.315565+00:00",
+          "N2d99e7654e0246439fcf22dfdcdecd79",
+          ""
+        ],
+        [
+          "2026-08-26T07:40:22.517975+00:00",
+          "urn:petras:analytics:local_mechanism:bcd1d8187120",
+          ""
+        ],
+        [
+          "2026-08-26T07:40:22.521207+00:00",
+          "urn:petras:b00b337ac5c2",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:32.803738+00:00",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:32.848386+00:00",
+          "urn:petras:f26134a31493",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.007610+00:00",
+          "urn:petras:datastore:kinematic_motion:0387dfff5206",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.012099+00:00",
+          "urn:petras:94a2a66d6c51",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.014056+00:00",
+          "urn:petras:bb00e5bd0a15",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.017133+00:00",
+          "urn:petras:f43feecfb063",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.019851+00:00",
+          "urn:petras:d8fe66eb8cc1",
+          ""
+        ],
+        [
+          "2026-08-26T07:42:33.031772+00:00",
+          "urn:petras:be66ff8dda5a",
+          ""
+        ],
+        [
+          "2026-08-26T14:52:06.194081+00:00",
+          "urn:petras:e2984986289f",
+          "Missing roofing structure"
+        ],
+        [
+          "2026-08-26T14:53:53.667334+00:00",
+          "urn:petras:831b97277c51",
+          ""
+        ],
+        [
+          "2026-08-26T15:08:38.301518+00:00",
+          "urn:petras:1b0d0318f87a",
+          ""
+        ],
+        [
+          "2026-08-26T16:15:17.697943+00:00",
+          "urn:petras:a0106eaef654",
+          ""
         ]
       ],
-      "rowCount": 239,
+      "rowCount": 307,
       "answered": true
     },
     {
@@ -4555,103 +5839,7 @@
           "ae09195acee9",
           "read_iot.append",
           "ae09195acee9",
-          "05c2913b598d"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "16958d124efd"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "26842332b062"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "44d7710925f0"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "670162f0273b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "6e8bcbe0d28a"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "77bc2f900995"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "7e70d93802c8"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "b02f9b29d032"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "b75bc87a9c9b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "d38752e7b409"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "dd387f3e97e6"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e66088c5e401"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e6d5cdb28c76"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e82069d42cbf"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "f0421eda9b9e"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "f45896ac464e"
+          "e2984986289f"
         ],
         [
           "ae09195acee9",
@@ -4759,103 +5947,7 @@
           "ae09195acee9",
           "read_iot.append",
           "ae09195acee9",
-          "05c2913b598d"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "16958d124efd"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "26842332b062"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "44d7710925f0"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "670162f0273b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "6e8bcbe0d28a"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "77bc2f900995"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "7e70d93802c8"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "b02f9b29d032"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "b75bc87a9c9b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "d38752e7b409"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "dd387f3e97e6"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e66088c5e401"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e6d5cdb28c76"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e82069d42cbf"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "f0421eda9b9e"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "f45896ac464e"
+          "e2984986289f"
         ],
         [
           "ae09195acee9",
@@ -4963,103 +6055,7 @@
           "ae09195acee9",
           "read_iot.append",
           "ae09195acee9",
-          "05c2913b598d"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "16958d124efd"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "26842332b062"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "44d7710925f0"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "670162f0273b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "6e8bcbe0d28a"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "77bc2f900995"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "7e70d93802c8"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "b02f9b29d032"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "b75bc87a9c9b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "d38752e7b409"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "dd387f3e97e6"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e66088c5e401"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e6d5cdb28c76"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e82069d42cbf"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "f0421eda9b9e"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "f45896ac464e"
+          "e2984986289f"
         ],
         [
           "ae09195acee9",
@@ -5167,205 +6163,7 @@
           "ae09195acee9",
           "read_iot.append",
           "ae09195acee9",
-          "05c2913b598d"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "16958d124efd"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "26842332b062"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "44d7710925f0"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "670162f0273b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "6e8bcbe0d28a"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "77bc2f900995"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "7e70d93802c8"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "b02f9b29d032"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "b75bc87a9c9b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "d38752e7b409"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "dd387f3e97e6"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e66088c5e401"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e6d5cdb28c76"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "e82069d42cbf"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "f0421eda9b9e"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.append",
-          "ae09195acee9",
-          "f45896ac464e"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "05c2913b598d"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "16958d124efd"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "26842332b062"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "44d7710925f0"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "670162f0273b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "6e8bcbe0d28a"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "77bc2f900995"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "7e70d93802c8"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "b02f9b29d032"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "b75bc87a9c9b"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "d38752e7b409"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "dd387f3e97e6"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "e66088c5e401"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "e6d5cdb28c76"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "e82069d42cbf"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "f0421eda9b9e"
-        ],
-        [
-          "ae09195acee9",
-          "read_iot.refresh",
-          "ae09195acee9",
-          "f45896ac464e"
+          "e2984986289f"
         ],
         [
           "ae09195acee9",
@@ -5468,6 +6266,552 @@
           "read_iot.append",
           "ae09195acee9",
           "f45896ac464e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e2984986289f"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "05c2913b598d"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "16958d124efd"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "26842332b062"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "44d7710925f0"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "670162f0273b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "6e8bcbe0d28a"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "77bc2f900995"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "7e70d93802c8"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "b02f9b29d032"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "b75bc87a9c9b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "d38752e7b409"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "dd387f3e97e6"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e66088c5e401"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e6d5cdb28c76"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e82069d42cbf"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "f0421eda9b9e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "f45896ac464e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e2984986289f"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "05c2913b598d"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "16958d124efd"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "26842332b062"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "44d7710925f0"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "670162f0273b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "6e8bcbe0d28a"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "77bc2f900995"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "7e70d93802c8"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "b02f9b29d032"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "b75bc87a9c9b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "d38752e7b409"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "dd387f3e97e6"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e66088c5e401"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e6d5cdb28c76"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e82069d42cbf"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "f0421eda9b9e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "f45896ac464e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e2984986289f"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "05c2913b598d"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "16958d124efd"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "26842332b062"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "44d7710925f0"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "670162f0273b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "6e8bcbe0d28a"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "77bc2f900995"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "7e70d93802c8"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "b02f9b29d032"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "b75bc87a9c9b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "d38752e7b409"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "dd387f3e97e6"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e66088c5e401"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e6d5cdb28c76"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e82069d42cbf"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "f0421eda9b9e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "f45896ac464e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e2984986289f"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "05c2913b598d"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "16958d124efd"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "26842332b062"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "44d7710925f0"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "670162f0273b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "6e8bcbe0d28a"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "77bc2f900995"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "7e70d93802c8"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "b02f9b29d032"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "b75bc87a9c9b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "d38752e7b409"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "dd387f3e97e6"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "e66088c5e401"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "e6d5cdb28c76"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "e82069d42cbf"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "f0421eda9b9e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "f45896ac464e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.refresh",
+          "ae09195acee9",
+          "e2984986289f"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "05c2913b598d"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "16958d124efd"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "26842332b062"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "44d7710925f0"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "670162f0273b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "6e8bcbe0d28a"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "77bc2f900995"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "7e70d93802c8"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "b02f9b29d032"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "b75bc87a9c9b"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "d38752e7b409"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "dd387f3e97e6"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e66088c5e401"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e6d5cdb28c76"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e82069d42cbf"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "f0421eda9b9e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "f45896ac464e"
+        ],
+        [
+          "ae09195acee9",
+          "read_iot.append",
+          "ae09195acee9",
+          "e2984986289f"
         ]
       ],
       "rawRows": [
@@ -5577,103 +6921,7 @@
           "urn:petras:ae09195acee9",
           "read_iot.append",
           "urn:petras:ae09195acee9",
-          "urn:petras:05c2913b598d"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:16958d124efd"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:26842332b062"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:44d7710925f0"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:670162f0273b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:6e8bcbe0d28a"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:77bc2f900995"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:7e70d93802c8"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b02f9b29d032"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b75bc87a9c9b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:d38752e7b409"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:dd387f3e97e6"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e66088c5e401"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e6d5cdb28c76"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e82069d42cbf"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f0421eda9b9e"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f45896ac464e"
+          "urn:petras:e2984986289f"
         ],
         [
           "urn:petras:ae09195acee9",
@@ -5781,103 +7029,7 @@
           "urn:petras:ae09195acee9",
           "read_iot.append",
           "urn:petras:ae09195acee9",
-          "urn:petras:05c2913b598d"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:16958d124efd"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:26842332b062"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:44d7710925f0"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:670162f0273b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:6e8bcbe0d28a"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:77bc2f900995"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:7e70d93802c8"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b02f9b29d032"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b75bc87a9c9b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:d38752e7b409"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:dd387f3e97e6"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e66088c5e401"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e6d5cdb28c76"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e82069d42cbf"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f0421eda9b9e"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f45896ac464e"
+          "urn:petras:e2984986289f"
         ],
         [
           "urn:petras:ae09195acee9",
@@ -5985,103 +7137,7 @@
           "urn:petras:ae09195acee9",
           "read_iot.append",
           "urn:petras:ae09195acee9",
-          "urn:petras:05c2913b598d"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:16958d124efd"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:26842332b062"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:44d7710925f0"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:670162f0273b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:6e8bcbe0d28a"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:77bc2f900995"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:7e70d93802c8"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b02f9b29d032"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b75bc87a9c9b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:d38752e7b409"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:dd387f3e97e6"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e66088c5e401"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e6d5cdb28c76"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e82069d42cbf"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f0421eda9b9e"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f45896ac464e"
+          "urn:petras:e2984986289f"
         ],
         [
           "urn:petras:ae09195acee9",
@@ -6189,205 +7245,7 @@
           "urn:petras:ae09195acee9",
           "read_iot.append",
           "urn:petras:ae09195acee9",
-          "urn:petras:05c2913b598d"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:16958d124efd"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:26842332b062"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:44d7710925f0"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:670162f0273b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:6e8bcbe0d28a"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:77bc2f900995"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:7e70d93802c8"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b02f9b29d032"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b75bc87a9c9b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:d38752e7b409"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:dd387f3e97e6"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e66088c5e401"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e6d5cdb28c76"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e82069d42cbf"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f0421eda9b9e"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.append",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f45896ac464e"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:05c2913b598d"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:16958d124efd"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:26842332b062"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:44d7710925f0"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:670162f0273b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:6e8bcbe0d28a"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:77bc2f900995"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:7e70d93802c8"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b02f9b29d032"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:b75bc87a9c9b"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:d38752e7b409"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:dd387f3e97e6"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e66088c5e401"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e6d5cdb28c76"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:e82069d42cbf"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f0421eda9b9e"
-        ],
-        [
-          "urn:petras:ae09195acee9",
-          "read_iot.refresh",
-          "urn:petras:ae09195acee9",
-          "urn:petras:f45896ac464e"
+          "urn:petras:e2984986289f"
         ],
         [
           "urn:petras:ae09195acee9",
@@ -6490,9 +7348,555 @@
           "read_iot.append",
           "urn:petras:ae09195acee9",
           "urn:petras:f45896ac464e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e2984986289f"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:05c2913b598d"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:16958d124efd"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:26842332b062"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:44d7710925f0"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:670162f0273b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:6e8bcbe0d28a"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:77bc2f900995"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:7e70d93802c8"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b02f9b29d032"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b75bc87a9c9b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:d38752e7b409"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:dd387f3e97e6"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e66088c5e401"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e6d5cdb28c76"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e82069d42cbf"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f0421eda9b9e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f45896ac464e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e2984986289f"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:05c2913b598d"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:16958d124efd"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:26842332b062"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:44d7710925f0"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:670162f0273b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:6e8bcbe0d28a"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:77bc2f900995"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:7e70d93802c8"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b02f9b29d032"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b75bc87a9c9b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:d38752e7b409"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:dd387f3e97e6"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e66088c5e401"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e6d5cdb28c76"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e82069d42cbf"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f0421eda9b9e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f45896ac464e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e2984986289f"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:05c2913b598d"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:16958d124efd"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:26842332b062"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:44d7710925f0"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:670162f0273b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:6e8bcbe0d28a"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:77bc2f900995"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:7e70d93802c8"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b02f9b29d032"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b75bc87a9c9b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:d38752e7b409"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:dd387f3e97e6"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e66088c5e401"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e6d5cdb28c76"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e82069d42cbf"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f0421eda9b9e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f45896ac464e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e2984986289f"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:05c2913b598d"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:16958d124efd"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:26842332b062"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:44d7710925f0"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:670162f0273b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:6e8bcbe0d28a"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:77bc2f900995"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:7e70d93802c8"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b02f9b29d032"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b75bc87a9c9b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:d38752e7b409"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:dd387f3e97e6"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e66088c5e401"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e6d5cdb28c76"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e82069d42cbf"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f0421eda9b9e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f45896ac464e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.refresh",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e2984986289f"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:05c2913b598d"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:16958d124efd"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:26842332b062"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:44d7710925f0"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:670162f0273b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:6e8bcbe0d28a"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:77bc2f900995"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:7e70d93802c8"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b02f9b29d032"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:b75bc87a9c9b"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:d38752e7b409"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:dd387f3e97e6"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e66088c5e401"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e6d5cdb28c76"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e82069d42cbf"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f0421eda9b9e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:f45896ac464e"
+        ],
+        [
+          "urn:petras:ae09195acee9",
+          "read_iot.append",
+          "urn:petras:ae09195acee9",
+          "urn:petras:e2984986289f"
         ]
       ],
-      "rowCount": 170,
+      "rowCount": 180,
       "answered": true
     },
     {
@@ -6516,14 +7920,54 @@
           "datasources:mat_36b4169eecfb"
         ],
         [
+          "datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
+          "femmodel:8d47f6d417ef"
+        ],
+        [
+          "datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "datasources:mat_20ab42e6dd47",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
           "datasources:mat_5beaa9b89528",
           "finetools_engine.material",
           "femmodel:b9450d4907ae"
         ],
         [
           "datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "datasources:mat_5beaa9b89528",
           "diagnostics.material_base",
           "datasources:mat_36b4169eecfb"
+        ],
+        [
+          "datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "datasources:mat_5beaa9b89528",
+          "finetools_engine.material",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:3dd78e0afc80"
         ],
         [
           "datasources:mat_abc79313bde6",
@@ -6532,18 +7976,8 @@
         ],
         [
           "datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "femmodel:93ac0ec58290"
-        ],
-        [
-          "datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "femmodel:d0b3d34516dc"
-        ],
-        [
-          "datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "femmodel:cd8fcd5e8839"
+          "kinematics.mass_context",
+          "analytics:kinematic_check:4906c937a10e"
         ],
         [
           "datasources:mat_abc79313bde6",
@@ -6567,8 +8001,38 @@
         ],
         [
           "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "datasources:mat_abc79313bde6",
           "finetools_engine.material",
           "femmodel:6aa1378dd920"
+        ],
+        [
+          "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "datasources:mat_abc79313bde6",
+          "finetools_engine.material",
+          "femmodel:8d47f6d417ef"
+        ],
+        [
+          "datasources:mat_abc79313bde6",
+          "finetools_engine.material",
+          "femmodel:1b1562964636"
         ],
         [
           "datasources:mat_abc79313bde6",
@@ -6593,14 +8057,54 @@
           "urn:petras:datasources:mat_36b4169eecfb"
         ],
         [
+          "urn:petras:datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
+          "urn:petras:femmodel:8d47f6d417ef"
+        ],
+        [
+          "urn:petras:datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "urn:petras:datasources:mat_20ab42e6dd47",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
           "urn:petras:datasources:mat_5beaa9b89528",
           "finetools_engine.material",
           "urn:petras:femmodel:b9450d4907ae"
         ],
         [
           "urn:petras:datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "urn:petras:datasources:mat_5beaa9b89528",
           "diagnostics.material_base",
           "urn:petras:datasources:mat_36b4169eecfb"
+        ],
+        [
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "finetools_engine.material",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:3dd78e0afc80"
         ],
         [
           "urn:petras:datasources:mat_abc79313bde6",
@@ -6609,18 +8113,8 @@
         ],
         [
           "urn:petras:datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "urn:petras:femmodel:93ac0ec58290"
-        ],
-        [
-          "urn:petras:datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "urn:petras:femmodel:d0b3d34516dc"
-        ],
-        [
-          "urn:petras:datasources:mat_abc79313bde6",
-          "finetools_engine.material",
-          "urn:petras:femmodel:cd8fcd5e8839"
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:4906c937a10e"
         ],
         [
           "urn:petras:datasources:mat_abc79313bde6",
@@ -6644,8 +8138,38 @@
         ],
         [
           "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "urn:petras:datasources:mat_abc79313bde6",
           "finetools_engine.material",
           "urn:petras:femmodel:6aa1378dd920"
+        ],
+        [
+          "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "urn:petras:analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "urn:petras:datasources:mat_abc79313bde6",
+          "finetools_engine.material",
+          "urn:petras:femmodel:8d47f6d417ef"
+        ],
+        [
+          "urn:petras:datasources:mat_abc79313bde6",
+          "finetools_engine.material",
+          "urn:petras:femmodel:1b1562964636"
         ],
         [
           "urn:petras:datasources:mat_abc79313bde6",
@@ -6658,7 +8182,7 @@
           "urn:petras:femmodel:6aa1378dd920"
         ]
       ],
-      "rowCount": 15,
+      "rowCount": 27,
       "answered": true
     },
     {
@@ -6670,10 +8194,152 @@
         "affected",
         "operator"
       ],
-      "rows": [],
-      "rawRows": [],
-      "rowCount": 0,
-      "answered": false
+      "rows": [
+        [
+          "670162f0273b",
+          "ae09195acee9",
+          "event_tracker.attach_signal"
+        ],
+        [
+          "670162f0273b",
+          "analytics:ce0860fbb1a34d4cb1652ad9bcfc999b",
+          "event_tracker.attach_signal"
+        ],
+        [
+          "670162f0273b",
+          "analytics:d797c65ac07f4f86851a8c04d490e481",
+          "event_tracker.attach_signal"
+        ],
+        [
+          "e2984986289f",
+          "analytics:finetools_job:4e6500dd9756",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "analytics:finetools_job:f3067174a72d",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "analytics:kinematic_check:662f36c73ccc",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "analytics:local_mechanism:bcd1d8187120",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "analytics:masonry_check:40ba82137ad7",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "datasources:mat_20ab42e6dd47",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "datastore:kinematic_motion:0387dfff5206",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "femmodel:1b1562964636",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "femmodel:8d47f6d417ef",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "femresult:0221837209b5",
+          "event_tracker.attach_material"
+        ],
+        [
+          "e2984986289f",
+          "femresult:a0ccf3c2347c",
+          "event_tracker.attach_material"
+        ]
+      ],
+      "rawRows": [
+        [
+          "urn:petras:670162f0273b",
+          "urn:petras:ae09195acee9",
+          "event_tracker.attach_signal"
+        ],
+        [
+          "urn:petras:670162f0273b",
+          "urn:petras:analytics:ce0860fbb1a34d4cb1652ad9bcfc999b",
+          "event_tracker.attach_signal"
+        ],
+        [
+          "urn:petras:670162f0273b",
+          "urn:petras:analytics:d797c65ac07f4f86851a8c04d490e481",
+          "event_tracker.attach_signal"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:analytics:finetools_job:4e6500dd9756",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:analytics:finetools_job:f3067174a72d",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:analytics:local_mechanism:bcd1d8187120",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:analytics:masonry_check:40ba82137ad7",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:datasources:mat_20ab42e6dd47",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:datastore:kinematic_motion:0387dfff5206",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:femmodel:1b1562964636",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:femmodel:8d47f6d417ef",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:femresult:0221837209b5",
+          "event_tracker.attach_material"
+        ],
+        [
+          "urn:petras:e2984986289f",
+          "urn:petras:femresult:a0ccf3c2347c",
+          "event_tracker.attach_material"
+        ]
+      ],
+      "rowCount": 14,
+      "answered": true
     },
     {
       "id": "CQ9",
@@ -6686,19 +8352,19 @@
       ],
       "rows": [
         [
-          "0273e9655a35",
-          "cloud2fem_mesh",
-          "16"
-        ],
-        [
-          "4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "8"
+          "femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "5"
         ],
         [
           "datasources:mat_abc79313bde6",
           "finetools_engine.material",
-          "6"
+          "5"
+        ],
+        [
+          "datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "5"
         ],
         [
           "5da5159f4127",
@@ -6706,6 +8372,41 @@
           "4"
         ],
         [
+          "datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "4"
+        ],
+        [
+          "506d55dfe0d3",
+          "kinematics.disconnect",
+          "3"
+        ],
+        [
+          "4deaa0b067cc",
+          "inspect_cloud.compare_fem",
+          "3"
+        ],
+        [
+          "femmodel:b9450d4907ae",
+          "masonry_checks.orientation_context",
+          "3"
+        ],
+        [
+          "f59877a97cc8",
+          "cloud2fem_mesh",
+          "3"
+        ],
+        [
+          "femresult:b08dce20fec4",
+          "masonry_checks.biaxial",
+          "3"
+        ],
+        [
+          "0273e9655a35",
+          "cloud2fem_mesh",
+          "3"
+        ],
+        [
           "5da5159f4127",
           "labels.anchor_dataset",
           "2"
@@ -6713,11 +8414,6 @@
         [
           "4deaa0b067cc",
           "labels.anchor_dataset",
-          "2"
-        ],
-        [
-          "4deaa0b067cc",
-          "slice_cloud",
           "2"
         ],
         [
@@ -6731,18 +8427,23 @@
           "2"
         ],
         [
-          "femmodel:b9450d4907ae",
-          "masonry_checks.orientation_context",
+          "analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.motion",
           "2"
         ],
         [
-          "femresult:b08dce20fec4",
-          "masonry_checks.biaxial",
+          "analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.solve",
           "2"
         ],
         [
-          "femmodel:93ac0ec58290",
-          "finetools_engine.solve",
+          "datasources:mat_5beaa9b89528",
+          "finetools_engine.material",
+          "2"
+        ],
+        [
+          "datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
           "2"
         ],
         [
@@ -6753,19 +8454,19 @@
       ],
       "rawRows": [
         [
-          "urn:petras:0273e9655a35",
-          "cloud2fem_mesh",
-          "16"
-        ],
-        [
-          "urn:petras:4deaa0b067cc",
-          "inspect_cloud.compare_fem",
-          "8"
+          "urn:petras:femmodel:b9450d4907ae",
+          "kinematics.macroelement",
+          "5"
         ],
         [
           "urn:petras:datasources:mat_abc79313bde6",
           "finetools_engine.material",
-          "6"
+          "5"
+        ],
+        [
+          "urn:petras:datasources:mat_abc79313bde6",
+          "kinematics.mass_context",
+          "5"
         ],
         [
           "urn:petras:5da5159f4127",
@@ -6773,6 +8474,41 @@
           "4"
         ],
         [
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "kinematics.mass_context",
+          "4"
+        ],
+        [
+          "urn:petras:506d55dfe0d3",
+          "kinematics.disconnect",
+          "3"
+        ],
+        [
+          "urn:petras:4deaa0b067cc",
+          "inspect_cloud.compare_fem",
+          "3"
+        ],
+        [
+          "urn:petras:femmodel:b9450d4907ae",
+          "masonry_checks.orientation_context",
+          "3"
+        ],
+        [
+          "urn:petras:f59877a97cc8",
+          "cloud2fem_mesh",
+          "3"
+        ],
+        [
+          "urn:petras:femresult:b08dce20fec4",
+          "masonry_checks.biaxial",
+          "3"
+        ],
+        [
+          "urn:petras:0273e9655a35",
+          "cloud2fem_mesh",
+          "3"
+        ],
+        [
           "urn:petras:5da5159f4127",
           "labels.anchor_dataset",
           "2"
@@ -6780,11 +8516,6 @@
         [
           "urn:petras:4deaa0b067cc",
           "labels.anchor_dataset",
-          "2"
-        ],
-        [
-          "urn:petras:4deaa0b067cc",
-          "slice_cloud",
           "2"
         ],
         [
@@ -6798,18 +8529,23 @@
           "2"
         ],
         [
-          "urn:petras:femmodel:b9450d4907ae",
-          "masonry_checks.orientation_context",
+          "urn:petras:analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.motion",
           "2"
         ],
         [
-          "urn:petras:femresult:b08dce20fec4",
-          "masonry_checks.biaxial",
+          "urn:petras:analytics:local_mechanism:f5fade8bf4f8",
+          "kinematics.solve",
           "2"
         ],
         [
-          "urn:petras:femmodel:93ac0ec58290",
-          "finetools_engine.solve",
+          "urn:petras:datasources:mat_5beaa9b89528",
+          "finetools_engine.material",
+          "2"
+        ],
+        [
+          "urn:petras:datasources:mat_20ab42e6dd47",
+          "finetools_engine.material",
           "2"
         ],
         [
@@ -6818,7 +8554,7 @@
           "2"
         ]
       ],
-      "rowCount": 13,
+      "rowCount": 20,
       "answered": true
     },
     {
@@ -6863,46 +8599,10 @@
           "4deaa0b067cc"
         ],
         [
-          "2026-07-08T12:25:13.644002+00:00",
-          "slice_cloud",
-          "cloud2fem",
-          "79bde0e29615"
-        ],
-        [
           "2026-07-08T15:06:59.799823+00:00",
           "slice_cloud",
           "cloud2fem",
           "0273e9655a35"
-        ],
-        [
-          "2026-07-08T22:54:59.089804+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "2184e7a90d8c"
-        ],
-        [
-          "2026-07-09T15:41:34.037961+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "5cc42bf950bd"
-        ],
-        [
-          "2026-07-09T15:42:31.058619+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "4d370c664817"
-        ],
-        [
-          "2026-07-09T15:44:08.840386+00:00",
-          "finetools_engine.material",
-          "finetools_engine",
-          "femmodel:d0b3d34516dc"
-        ],
-        [
-          "2026-07-09T16:45:18.772216+00:00",
-          "finetools_engine.solve",
-          "finetools_engine",
-          "femresult:b10145b068c5"
         ],
         [
           "2026-07-09T16:45:18.808309+00:00",
@@ -6911,142 +8611,16 @@
           "analytics:finetools_job:493faaef9c42"
         ],
         [
-          "2026-07-09T20:01:51.327198+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "5cc42bf950bd"
-        ],
-        [
-          "2026-07-09T20:03:36.239550+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "5cc42bf950bd"
-        ],
-        [
-          "2026-07-10T07:13:52.786654+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "5598aa76bccd"
-        ],
-        [
-          "2026-07-10T10:18:03.034294+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "69b02073a859"
-        ],
-        [
-          "2026-07-10T10:33:40.421437+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "78be717298b9"
-        ],
-        [
-          "2026-07-10T10:37:36.308665+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "eb05e0b56e0a"
-        ],
-        [
-          "2026-07-10T10:39:17.391485+00:00",
-          "finetools_engine.material",
-          "finetools_engine",
-          "femmodel:93ac0ec58290"
-        ],
-        [
-          "2026-07-10T10:46:21.072339+00:00",
-          "finetools_engine.solve",
-          "finetools_engine",
-          "femresult:7f44d2faae38"
-        ],
-        [
           "2026-07-10T10:46:21.403853+00:00",
           "finetools_engine.job",
           "finetools_engine",
           "analytics:finetools_job:631b8e2661cc"
         ],
         [
-          "2026-07-10T10:46:50.855561+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "eb05e0b56e0a"
-        ],
-        [
-          "2026-07-10T10:54:14.646913+00:00",
-          "finetools_engine.solve",
-          "finetools_engine",
-          "femresult:bfa83c512bab"
-        ],
-        [
           "2026-07-10T10:54:14.653204+00:00",
           "finetools_engine.job",
           "finetools_engine",
           "analytics:finetools_job:9d728e1901d0"
-        ],
-        [
-          "2026-07-10T13:23:05.503489+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "a0482625de9e"
-        ],
-        [
-          "2026-07-10T13:24:24.049057+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "a0482625de9e"
-        ],
-        [
-          "2026-07-10T15:18:14.880573+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "30cf2da0db83"
-        ],
-        [
-          "2026-07-10T15:22:04.616906+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "30cf2da0db83"
-        ],
-        [
-          "2026-07-10T17:25:11.178728+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "16171c53ec17"
-        ],
-        [
-          "2026-07-10T18:50:57.220602+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "11dd4d6a73e5"
-        ],
-        [
-          "2026-07-10T18:52:19.976318+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "11dd4d6a73e5"
-        ],
-        [
-          "2026-07-10T19:25:02.139325+00:00",
-          "finetools_engine.material",
-          "finetools_engine",
-          "femmodel:cd8fcd5e8839"
-        ],
-        [
-          "2026-07-11T11:51:32.076971+00:00",
-          "osm_extrude",
-          "osm_env",
-          "7b66993b86f8"
-        ],
-        [
-          "2026-07-13T13:02:12.416592+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "deba4d3286bb"
-        ],
-        [
-          "2026-07-14T08:46:50.823460+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "aa1cf87b895e"
         ],
         [
           "2026-07-27T16:07:11.282171+00:00",
@@ -7449,6 +9023,318 @@
           "inspect_cloud.compare_fem",
           "inspect_cloud",
           "506d55dfe0d3"
+        ],
+        [
+          "2026-08-24T15:40:32.667035+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "analytics:local_mechanism:a89b5ac7e90e"
+        ],
+        [
+          "2026-08-24T15:42:20.483044+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "analytics:local_mechanism:37fcf987e6cd"
+        ],
+        [
+          "2026-08-24T15:44:02.588765+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "analytics:local_mechanism:7a54e87f9537"
+        ],
+        [
+          "2026-08-24T15:44:43.895009+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T15:44:43.898465+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T15:44:43.900686+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T19:25:24.859089+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "analytics:local_mechanism:f5fade8bf4f8"
+        ],
+        [
+          "2026-08-24T19:26:11.727150+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:26:11.729190+00:00",
+          "kinematics.motion",
+          "kinematics",
+          "datastore:kinematic_motion:f3066570c690"
+        ],
+        [
+          "2026-08-24T19:26:11.731138+00:00",
+          "kinematics.disconnect",
+          "kinematics",
+          "cf820781e312"
+        ],
+        [
+          "2026-08-24T19:26:11.732957+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:26:11.735086+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:55:19.702114+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T19:55:19.704647+00:00",
+          "kinematics.motion",
+          "kinematics",
+          "datastore:kinematic_motion:063324e08d43"
+        ],
+        [
+          "2026-08-24T19:55:19.706851+00:00",
+          "kinematics.disconnect",
+          "kinematics",
+          "c4369b1863bd"
+        ],
+        [
+          "2026-08-24T19:55:19.708992+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T19:55:19.711385+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T21:48:03.433722+00:00",
+          "cloud2fem.duplicate",
+          "cloud2fem",
+          "f59877a97cc8"
+        ],
+        [
+          "2026-08-24T22:26:05.408341+00:00",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "60d5a721578c"
+        ],
+        [
+          "2026-08-24T22:33:44.804092+00:00",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "1b9bcfdba2c3"
+        ],
+        [
+          "2026-08-24T22:40:26.317534+00:00",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "d2281c7df258"
+        ],
+        [
+          "2026-08-24T22:41:35.663230+00:00",
+          "finetools_engine.model",
+          "finetools_engine",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:42:14.506606+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:42:41.831481+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:43:10.733884+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T23:43:27.222836+00:00",
+          "finetools_engine.solve",
+          "finetools_engine",
+          "femresult:a0ccf3c2347c"
+        ],
+        [
+          "2026-08-24T23:43:27.227353+00:00",
+          "finetools_engine.job",
+          "finetools_engine",
+          "analytics:finetools_job:4e6500dd9756"
+        ],
+        [
+          "2026-08-25T08:45:53.310970+00:00",
+          "masonry_checks.biaxial",
+          "masonry_checks",
+          "analytics:masonry_check:aa569206f170"
+        ],
+        [
+          "2026-08-25T08:45:53.313203+00:00",
+          "masonry_checks.orientation_context",
+          "masonry_checks",
+          "analytics:masonry_check:aa569206f170"
+        ],
+        [
+          "2026-08-25T08:46:30.746030+00:00",
+          "masonry_checks.biaxial",
+          "masonry_checks",
+          "analytics:masonry_check:40ba82137ad7"
+        ],
+        [
+          "2026-08-25T08:46:30.747981+00:00",
+          "masonry_checks.orientation_context",
+          "masonry_checks",
+          "analytics:masonry_check:40ba82137ad7"
+        ],
+        [
+          "2026-08-25T16:49:03.414180+00:00",
+          "cloud2fem.duplicate",
+          "cloud2fem",
+          "6718c0b185d8"
+        ],
+        [
+          "2026-08-25T22:44:47.913599+00:00",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "aca528c25f65"
+        ],
+        [
+          "2026-08-25T22:50:35.923510+00:00",
+          "finetools_engine.model",
+          "finetools_engine",
+          "femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T22:51:25.570795+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T22:52:13.537752+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T23:06:33.280968+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "analytics:local_mechanism:88830c55e6f6"
+        ],
+        [
+          "2026-08-25T23:07:24.756743+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-25T23:07:24.758964+00:00",
+          "kinematics.motion",
+          "kinematics",
+          "datastore:kinematic_motion:7d6f2799eeb7"
+        ],
+        [
+          "2026-08-25T23:07:24.761168+00:00",
+          "kinematics.disconnect",
+          "kinematics",
+          "268b382cf975"
+        ],
+        [
+          "2026-08-25T23:07:24.763323+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-25T23:07:24.765617+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-26T00:13:11.051094+00:00",
+          "finetools_engine.solve",
+          "finetools_engine",
+          "femresult:0221837209b5"
+        ],
+        [
+          "2026-08-26T00:13:11.058345+00:00",
+          "finetools_engine.job",
+          "finetools_engine",
+          "analytics:finetools_job:f3067174a72d"
+        ],
+        [
+          "2026-08-26T07:40:22.521207+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "analytics:local_mechanism:bcd1d8187120"
+        ],
+        [
+          "2026-08-26T07:42:33.012099+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T07:42:33.014056+00:00",
+          "kinematics.motion",
+          "kinematics",
+          "datastore:kinematic_motion:0387dfff5206"
+        ],
+        [
+          "2026-08-26T07:42:33.017133+00:00",
+          "kinematics.disconnect",
+          "kinematics",
+          "f26134a31493"
+        ],
+        [
+          "2026-08-26T07:42:33.019851+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T07:42:33.031772+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T15:08:38.301518+00:00",
+          "event_tracker.attach_material",
+          "event_tracker",
+          "datasources:mat_20ab42e6dd47"
+        ],
+        [
+          "2026-08-26T16:15:17.697943+00:00",
+          "event_tracker.attach_signal",
+          "event_tracker",
+          "ae09195acee9"
         ]
       ],
       "rawRows": [
@@ -7483,46 +9369,10 @@
           "urn:petras:4deaa0b067cc"
         ],
         [
-          "2026-07-08T12:25:13.644002+00:00",
-          "slice_cloud",
-          "cloud2fem",
-          "urn:petras:79bde0e29615"
-        ],
-        [
           "2026-07-08T15:06:59.799823+00:00",
           "slice_cloud",
           "cloud2fem",
           "urn:petras:0273e9655a35"
-        ],
-        [
-          "2026-07-08T22:54:59.089804+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:2184e7a90d8c"
-        ],
-        [
-          "2026-07-09T15:41:34.037961+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:5cc42bf950bd"
-        ],
-        [
-          "2026-07-09T15:42:31.058619+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:4d370c664817"
-        ],
-        [
-          "2026-07-09T15:44:08.840386+00:00",
-          "finetools_engine.material",
-          "finetools_engine",
-          "urn:petras:femmodel:d0b3d34516dc"
-        ],
-        [
-          "2026-07-09T16:45:18.772216+00:00",
-          "finetools_engine.solve",
-          "finetools_engine",
-          "urn:petras:femresult:b10145b068c5"
         ],
         [
           "2026-07-09T16:45:18.808309+00:00",
@@ -7531,142 +9381,16 @@
           "urn:petras:analytics:finetools_job:493faaef9c42"
         ],
         [
-          "2026-07-09T20:01:51.327198+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "urn:petras:5cc42bf950bd"
-        ],
-        [
-          "2026-07-09T20:03:36.239550+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "urn:petras:5cc42bf950bd"
-        ],
-        [
-          "2026-07-10T07:13:52.786654+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:5598aa76bccd"
-        ],
-        [
-          "2026-07-10T10:18:03.034294+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:69b02073a859"
-        ],
-        [
-          "2026-07-10T10:33:40.421437+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:78be717298b9"
-        ],
-        [
-          "2026-07-10T10:37:36.308665+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:eb05e0b56e0a"
-        ],
-        [
-          "2026-07-10T10:39:17.391485+00:00",
-          "finetools_engine.material",
-          "finetools_engine",
-          "urn:petras:femmodel:93ac0ec58290"
-        ],
-        [
-          "2026-07-10T10:46:21.072339+00:00",
-          "finetools_engine.solve",
-          "finetools_engine",
-          "urn:petras:femresult:7f44d2faae38"
-        ],
-        [
           "2026-07-10T10:46:21.403853+00:00",
           "finetools_engine.job",
           "finetools_engine",
           "urn:petras:analytics:finetools_job:631b8e2661cc"
         ],
         [
-          "2026-07-10T10:46:50.855561+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "urn:petras:eb05e0b56e0a"
-        ],
-        [
-          "2026-07-10T10:54:14.646913+00:00",
-          "finetools_engine.solve",
-          "finetools_engine",
-          "urn:petras:femresult:bfa83c512bab"
-        ],
-        [
           "2026-07-10T10:54:14.653204+00:00",
           "finetools_engine.job",
           "finetools_engine",
           "urn:petras:analytics:finetools_job:9d728e1901d0"
-        ],
-        [
-          "2026-07-10T13:23:05.503489+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:a0482625de9e"
-        ],
-        [
-          "2026-07-10T13:24:24.049057+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "urn:petras:a0482625de9e"
-        ],
-        [
-          "2026-07-10T15:18:14.880573+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:30cf2da0db83"
-        ],
-        [
-          "2026-07-10T15:22:04.616906+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "urn:petras:30cf2da0db83"
-        ],
-        [
-          "2026-07-10T17:25:11.178728+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:16171c53ec17"
-        ],
-        [
-          "2026-07-10T18:50:57.220602+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:11dd4d6a73e5"
-        ],
-        [
-          "2026-07-10T18:52:19.976318+00:00",
-          "inspect_cloud.compare_fem",
-          "inspect_cloud",
-          "urn:petras:11dd4d6a73e5"
-        ],
-        [
-          "2026-07-10T19:25:02.139325+00:00",
-          "finetools_engine.material",
-          "finetools_engine",
-          "urn:petras:femmodel:cd8fcd5e8839"
-        ],
-        [
-          "2026-07-11T11:51:32.076971+00:00",
-          "osm_extrude",
-          "osm_env",
-          "urn:petras:7b66993b86f8"
-        ],
-        [
-          "2026-07-13T13:02:12.416592+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:deba4d3286bb"
-        ],
-        [
-          "2026-07-14T08:46:50.823460+00:00",
-          "cloud2fem_mesh",
-          "cloud2fem",
-          "urn:petras:aa1cf87b895e"
         ],
         [
           "2026-07-27T16:07:11.282171+00:00",
@@ -8069,14 +9793,324 @@
           "inspect_cloud.compare_fem",
           "inspect_cloud",
           "urn:petras:506d55dfe0d3"
+        ],
+        [
+          "2026-08-24T15:40:32.667035+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "urn:petras:analytics:local_mechanism:a89b5ac7e90e"
+        ],
+        [
+          "2026-08-24T15:42:20.483044+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "urn:petras:analytics:local_mechanism:37fcf987e6cd"
+        ],
+        [
+          "2026-08-24T15:44:02.588765+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "urn:petras:analytics:local_mechanism:7a54e87f9537"
+        ],
+        [
+          "2026-08-24T15:44:43.895009+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T15:44:43.898465+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T15:44:43.900686+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:3dd78e0afc80"
+        ],
+        [
+          "2026-08-24T19:25:24.859089+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "urn:petras:analytics:local_mechanism:f5fade8bf4f8"
+        ],
+        [
+          "2026-08-24T19:26:11.727150+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:26:11.729190+00:00",
+          "kinematics.motion",
+          "kinematics",
+          "urn:petras:datastore:kinematic_motion:f3066570c690"
+        ],
+        [
+          "2026-08-24T19:26:11.731138+00:00",
+          "kinematics.disconnect",
+          "kinematics",
+          "urn:petras:cf820781e312"
+        ],
+        [
+          "2026-08-24T19:26:11.732957+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:26:11.735086+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:bde2410127c5"
+        ],
+        [
+          "2026-08-24T19:55:19.702114+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T19:55:19.704647+00:00",
+          "kinematics.motion",
+          "kinematics",
+          "urn:petras:datastore:kinematic_motion:063324e08d43"
+        ],
+        [
+          "2026-08-24T19:55:19.706851+00:00",
+          "kinematics.disconnect",
+          "kinematics",
+          "urn:petras:c4369b1863bd"
+        ],
+        [
+          "2026-08-24T19:55:19.708992+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T19:55:19.711385+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:8dda8d29ccea"
+        ],
+        [
+          "2026-08-24T21:48:03.433722+00:00",
+          "cloud2fem.duplicate",
+          "cloud2fem",
+          "urn:petras:f59877a97cc8"
+        ],
+        [
+          "2026-08-24T22:26:05.408341+00:00",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "urn:petras:60d5a721578c"
+        ],
+        [
+          "2026-08-24T22:33:44.804092+00:00",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "urn:petras:1b9bcfdba2c3"
+        ],
+        [
+          "2026-08-24T22:40:26.317534+00:00",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "urn:petras:d2281c7df258"
+        ],
+        [
+          "2026-08-24T22:41:35.663230+00:00",
+          "finetools_engine.model",
+          "finetools_engine",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:42:14.506606+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:42:41.831481+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T22:43:10.733884+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "urn:petras:femmodel:1b1562964636"
+        ],
+        [
+          "2026-08-24T23:43:27.222836+00:00",
+          "finetools_engine.solve",
+          "finetools_engine",
+          "urn:petras:femresult:a0ccf3c2347c"
+        ],
+        [
+          "2026-08-24T23:43:27.227353+00:00",
+          "finetools_engine.job",
+          "finetools_engine",
+          "urn:petras:analytics:finetools_job:4e6500dd9756"
+        ],
+        [
+          "2026-08-25T08:45:53.310970+00:00",
+          "masonry_checks.biaxial",
+          "masonry_checks",
+          "urn:petras:analytics:masonry_check:aa569206f170"
+        ],
+        [
+          "2026-08-25T08:45:53.313203+00:00",
+          "masonry_checks.orientation_context",
+          "masonry_checks",
+          "urn:petras:analytics:masonry_check:aa569206f170"
+        ],
+        [
+          "2026-08-25T08:46:30.746030+00:00",
+          "masonry_checks.biaxial",
+          "masonry_checks",
+          "urn:petras:analytics:masonry_check:40ba82137ad7"
+        ],
+        [
+          "2026-08-25T08:46:30.747981+00:00",
+          "masonry_checks.orientation_context",
+          "masonry_checks",
+          "urn:petras:analytics:masonry_check:40ba82137ad7"
+        ],
+        [
+          "2026-08-25T16:49:03.414180+00:00",
+          "cloud2fem.duplicate",
+          "cloud2fem",
+          "urn:petras:6718c0b185d8"
+        ],
+        [
+          "2026-08-25T22:44:47.913599+00:00",
+          "cloud2fem_mesh",
+          "cloud2fem",
+          "urn:petras:aca528c25f65"
+        ],
+        [
+          "2026-08-25T22:50:35.923510+00:00",
+          "finetools_engine.model",
+          "finetools_engine",
+          "urn:petras:femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T22:51:25.570795+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "urn:petras:femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T22:52:13.537752+00:00",
+          "finetools_engine.material",
+          "finetools_engine",
+          "urn:petras:femmodel:8d47f6d417ef"
+        ],
+        [
+          "2026-08-25T23:06:33.280968+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "urn:petras:analytics:local_mechanism:88830c55e6f6"
+        ],
+        [
+          "2026-08-25T23:07:24.756743+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-25T23:07:24.758964+00:00",
+          "kinematics.motion",
+          "kinematics",
+          "urn:petras:datastore:kinematic_motion:7d6f2799eeb7"
+        ],
+        [
+          "2026-08-25T23:07:24.761168+00:00",
+          "kinematics.disconnect",
+          "kinematics",
+          "urn:petras:268b382cf975"
+        ],
+        [
+          "2026-08-25T23:07:24.763323+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-25T23:07:24.765617+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:4906c937a10e"
+        ],
+        [
+          "2026-08-26T00:13:11.051094+00:00",
+          "finetools_engine.solve",
+          "finetools_engine",
+          "urn:petras:femresult:0221837209b5"
+        ],
+        [
+          "2026-08-26T00:13:11.058345+00:00",
+          "finetools_engine.job",
+          "finetools_engine",
+          "urn:petras:analytics:finetools_job:f3067174a72d"
+        ],
+        [
+          "2026-08-26T07:40:22.521207+00:00",
+          "kinematics.macroelement",
+          "kinematics",
+          "urn:petras:analytics:local_mechanism:bcd1d8187120"
+        ],
+        [
+          "2026-08-26T07:42:33.012099+00:00",
+          "kinematics.solve",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T07:42:33.014056+00:00",
+          "kinematics.motion",
+          "kinematics",
+          "urn:petras:datastore:kinematic_motion:0387dfff5206"
+        ],
+        [
+          "2026-08-26T07:42:33.017133+00:00",
+          "kinematics.disconnect",
+          "kinematics",
+          "urn:petras:f26134a31493"
+        ],
+        [
+          "2026-08-26T07:42:33.019851+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T07:42:33.031772+00:00",
+          "kinematics.mass_context",
+          "kinematics",
+          "urn:petras:analytics:kinematic_check:662f36c73ccc"
+        ],
+        [
+          "2026-08-26T15:08:38.301518+00:00",
+          "event_tracker.attach_material",
+          "event_tracker",
+          "urn:petras:datasources:mat_20ab42e6dd47"
+        ],
+        [
+          "2026-08-26T16:15:17.697943+00:00",
+          "event_tracker.attach_signal",
+          "event_tracker",
+          "urn:petras:ae09195acee9"
         ]
       ],
-      "rowCount": 103,
+      "rowCount": 128,
       "answered": true
     }
   ],
-  "unanswered": [
-    "CQ8"
-  ],
-  "allAnswered": false
+  "unanswered": [],
+  "allAnswered": true
 }

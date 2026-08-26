@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:a0106eaef654",
+  "@type": "DataLink",
+  "createdAt": "2026-08-26T16:15:17.697943+00:00",
+  "mapsFrom": "urn:petras:670162f0273b",
+  "mapsTo": "urn:petras:ae09195acee9",
+  "operator": "event_tracker.attach_signal",
+  "parameters": {
+    "relationshipType": "event_waveform",
+    "signalKind": "ground_motion"
+  },
+  "plugin": "event_tracker"
+}

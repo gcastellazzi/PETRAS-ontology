@@ -1,0 +1,194 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:analytics:masonry_check:40ba82137ad7",
+  "@type": "MasonryCheckResult",
+  "schemaVersion": "1.0",
+  "createdAt": "2026-08-25T08:46:30.743507+00:00",
+  "artifactType": "structural_verification",
+  "method": "capurso_sacchi_biaxial",
+  "sourceResultId": "urn:petras:femresult:a0ccf3c2347c",
+  "sourceModelId": "urn:petras:femmodel:1b1562964636",
+  "sourceMeshDatasetId": "urn:petras:d2281c7df258",
+  "cellGroup": "ALL",
+  "cellGroups": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 1,
+    "sample": [
+      "ALL"
+    ]
+  },
+  "groups": [
+    {
+      "name": "ALL",
+      "nCells": 126542,
+      "materialRef": null,
+      "materialName": null,
+      "strengthsPa": {
+        "c1": 5000000.0,
+        "c2": 8000000.0,
+        "t1": 300000.0,
+        "t2": 150000.0
+      },
+      "strengthSources": {
+        "c1": "explicit_override",
+        "c2": "explicit_override",
+        "t1": "explicit_override",
+        "t2": "explicit_override"
+      },
+      "orientation": {
+        "x1": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "x2": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "source": "explicit",
+        "updatedAt": "2026-08-25T08:46:14.495126+00:00",
+        "nCells": 126542
+      }
+    }
+  ],
+  "materials": [
+    {
+      "materialRef": null,
+      "materialName": null,
+      "strengthsPa": {
+        "c1": 5000000.0,
+        "c2": 8000000.0,
+        "t1": 300000.0,
+        "t2": 150000.0
+      },
+      "groups": [
+        "ALL"
+      ]
+    }
+  ],
+  "strengthPolicy": "lower",
+  "strengthsPa": {
+    "c1": 5000000.0,
+    "c2": 8000000.0,
+    "t1": 300000.0,
+    "t2": 150000.0
+  },
+  "strengthsByGroup": {
+    "ALL": {
+      "c1": 5000000.0,
+      "c2": 8000000.0,
+      "t1": 300000.0,
+      "t2": 150000.0
+    }
+  },
+  "orientation": {
+    "x1": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "x2": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "source": "explicit",
+    "updatedAt": "2026-08-25T08:46:14.495126+00:00",
+    "nCells": 126542
+  },
+  "orientations": {
+    "ALL": {
+      "x1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x2": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "source": "explicit",
+      "updatedAt": "2026-08-25T08:46:14.495126+00:00",
+      "nCells": 126542
+    }
+  },
+  "planeStressTolerance": 0.05,
+  "planeStressMaxRatio": 0.9999999982856025,
+  "planeStressRatioDefinition": "norm([s33,s13,s23])/norm([s11,s22,s33,s12,s13,s23])",
+  "stressSource": "stresses_nodal",
+  "stressReduction": "max_element_node",
+  "stressAssociation": "gauss_or_node_reduced_to_cell",
+  "stressVoigtOrder": [
+    "xx",
+    "yy",
+    "zz",
+    "xy",
+    "yz",
+    "xz"
+  ],
+  "selectedStepIndex": 0,
+  "meshSignature": "f7499a8b6ab719064aa2e094ec17dab9092edd900435f400af1d2221737267df",
+  "meshGeometryType": "mesh3d",
+  "nCells": 126542,
+  "nCheckedCells": 126542,
+  "outputs": {
+    "dataFile": "masonry_check.npz",
+    "scalarKey": "masonry_utilization",
+    "statusKey": "masonry_status",
+    "association": "cell",
+    "maxUtilization": 0.684130064347544,
+    "nFailedCells": 0,
+    "nNotApplicableCells": 120923,
+    "passed": false,
+    "complete": false,
+    "statusCatalog": {
+      "-1": "unchecked",
+      "0": "pass",
+      "1": "fail",
+      "2": "not_applicable_plane_stress"
+    },
+    "governingModeCatalog": {
+      "-2": "not_applicable_plane_stress",
+      "-1": "unchecked",
+      "0": "tension",
+      "1": "compression",
+      "2": "zero_stress"
+    },
+    "sidecarFields": {
+      "principal_stresses_cell": "[sigma_max, sigma_min] in the local masonry plane",
+      "governing_direction_cell": "unit governing generalized-eigenvector in global XYZ",
+      "governing_direction_material_cell": "same direction in local x1/x2 components"
+    }
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-25T08:46:30.743602+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-25T08:46:30.743602+00:00"
+}

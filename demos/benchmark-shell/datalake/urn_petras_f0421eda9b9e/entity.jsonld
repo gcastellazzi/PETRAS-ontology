@@ -3,7 +3,7 @@
   "@id": "urn:petras:f0421eda9b9e",
   "@type": "TemporalEvent",
   "createdAt": "2026-07-30T09:12:24.381915+00:00",
-  "updatedAt": "2026-07-30T09:12:24.381915+00:00",
+  "updatedAt": "2026-08-23T06:48:03.267164+00:00",
   "label": "M4.4 — 1 km WNW of Mirandola, Italy",
   "startDate": "2012-05-29T09:30:21+00:00",
   "endDate": "2012-05-29T09:30:21+00:00",
@@ -29,8 +29,8 @@
     "usgs"
   ],
   "visibility": "public",
-  "deleted": false,
-  "deletedAt": "",
+  "deleted": true,
+  "deletedAt": "2026-08-23T06:48:03.267164+00:00",
   "geolocation": {
     "latitude": 44.838925,
     "longitude": 11.141214,
@@ -65,5 +65,6 @@
     },
     "cacheKey": "7d5e21c52d61f6937764980c",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000jm2w"
-  }
+  },
+  "deletedBy": "dataset.optimize"
 }

@@ -1,0 +1,38 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:c4369b1863bd",
+  "@type": "DataSet",
+  "createdAt": "2026-08-24T19:55:19.534005+00:00",
+  "geometryURI": null,
+  "geometryType": "mesh3d",
+  "materials": {},
+  "boundaryConditions": {},
+  "discretization": {},
+  "version": 1,
+  "parentID": null,
+  "sourceDatalakeIDs": [],
+  "geometryObjects": {
+    "mesh3d": "urn:petras:geom:6910f1066b9b"
+  },
+  "sourceDatasetIDs": [],
+  "name": "Mechanism block MACRO_3",
+  "sourceMeshDatasetId": "urn:petras:506d55dfe0d3",
+  "sourceMechanismId": "urn:petras:analytics:local_mechanism:f5fade8bf4f8",
+  "kinematicRole": "disconnected_block_mesh",
+  "cellGroup": "MACRO_3",
+  "nSeamNodesDuplicated": 1499,
+  "note": "nodes shared between the block and the rest are duplicated so the two can move independently; no element was removed",
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-24T19:55:19.553420+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-24T19:55:19.553420+00:00"
+}

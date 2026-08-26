@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:5dd98efe3751",
+  "@type": "DataLink",
+  "createdAt": "2026-08-25T23:07:24.756743+00:00",
+  "mapsFrom": "urn:petras:analytics:local_mechanism:88830c55e6f6",
+  "mapsTo": "urn:petras:analytics:kinematic_check:4906c937a10e",
+  "operator": "kinematics.solve",
+  "parameters": {
+    "alpha0": 0.27008721311348055,
+    "method": "ntc_c8.7.1_linear_kinematic"
+  },
+  "plugin": "kinematics"
+}

@@ -1,0 +1,43 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@type": "OptimizerRun",
+  "plannerVersion": "v1",
+  "planHash": "526773cd29b75e5530876ac8130108689b5d117da81814bd452f9d0eaa94584c",
+  "scope": "all",
+  "tsStart": "2026-08-23T06:48:03.171650+00:00",
+  "tsEnd": "2026-08-23T06:48:03.274695+00:00",
+  "nActions": 54,
+  "actionCounts": {
+    "soft_delete_unlinked": 54
+  },
+  "freedBytes": 0,
+  "aliasesPruned": {
+    "aliases": [],
+    "dl_aliases": [],
+    "labels": []
+  },
+  "stepResults": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 54,
+    "sample": [
+      {
+        "kind": "soft_delete_unlinked",
+        "target": "urn:petras:08914a98d69c",
+        "layer": "datasources",
+        "detail": "DataSources stands alone",
+        "reversible": true,
+        "outcome": "soft-deleted"
+      },
+      {
+        "kind": "soft_delete_unlinked",
+        "target": "urn:petras:0db097589889",
+        "layer": "analytics",
+        "detail": "ProjectIndex stands alone (history record: never linked)",
+        "reversible": true,
+        "outcome": "soft-deleted"
+      }
+    ]
+  },
+  "@id": "urn:petras:analytics:optrun_b7f1b3d9cb82"
+}

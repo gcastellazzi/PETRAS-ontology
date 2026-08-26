@@ -133,3 +133,33 @@ petras:ReportingShape a sh:NodeShape ;
         sh:nodeKind sh:IRI ;
         sh:message "Cited entities must be IRI references." ;
     ] .
+
+#################################################################
+# An event nobody linked to anything
+#
+# A DataEvent that no DataLink reaches or leaves is invisible to a
+# cross-layer query: it can be listed but nothing can be said to be
+# affected by it. This is a documentation defect rather than a
+# structural one, so it warns; it exists because a whole seismic
+# sequence sat unlinked in the benchmark and CQ8 silently returned
+# no rows.
+#################################################################
+
+petras:OrphanEventShape a sh:NodeShape ;
+    # Targets the class the data actually carries; petras:TemporalEvent is
+    # declared a subclass of petras:DataEvent in petras.ttl.
+    sh:targetClass petras:TemporalEvent ;
+    # Severity belongs to the shape: inside the sh:sparql node it is ignored
+    # and the report comes back as a violation, which would wrongly make a
+    # project with unlinked events non-conformant.
+    sh:severity sh:Warning ;
+    sh:sparql [
+        sh:message "DataEvent is not connected by any DataLink; nothing can be reached from it." ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS { ?out <https://w3id.org/petras/ontology#mapsFrom> $this }
+                FILTER NOT EXISTS { ?in  <https://w3id.org/petras/ontology#mapsTo>   $this }
+            }
+        """ ;
+    ] .

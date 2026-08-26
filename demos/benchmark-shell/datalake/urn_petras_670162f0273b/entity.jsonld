@@ -3,7 +3,7 @@
   "@id": "urn:petras:670162f0273b",
   "@type": "TemporalEvent",
   "createdAt": "2026-07-30T09:12:24.368565+00:00",
-  "updatedAt": "2026-07-30T09:12:24.368565+00:00",
+  "updatedAt": "2026-08-26T16:15:17.700815+00:00",
   "label": "M5.8 — 1 km ENE of Medolla, Italy",
   "startDate": "2012-05-29T07:00:03+00:00",
   "endDate": "2012-05-29T07:00:03+00:00",
@@ -65,5 +65,8 @@
     },
     "cacheKey": "7d5e21c52d61f6937764980c",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000jm2n"
-  }
+  },
+  "relatedSignals": [
+    "urn:petras:ae09195acee9"
+  ]
 }

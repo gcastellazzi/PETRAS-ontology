@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:af0cafe2e57b",
+  "@type": "DataLink",
+  "createdAt": "2026-08-24T19:55:19.708992+00:00",
+  "mapsFrom": "urn:petras:datasources:mat_abc79313bde6",
+  "mapsTo": "urn:petras:analytics:kinematic_check:8dda8d29ccea",
+  "operator": "kinematics.mass_context",
+  "parameters": {
+    "rhoKgM3": 1800.0,
+    "densityPolicy": "nominal"
+  },
+  "plugin": "kinematics"
+}

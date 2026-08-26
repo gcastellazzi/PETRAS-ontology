@@ -1,0 +1,58 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:analytics:local_mechanism:88830c55e6f6",
+  "@type": "LocalMechanism",
+  "schemaVersion": "1.0",
+  "createdAt": "2026-08-25T23:06:33.278194+00:00",
+  "name": "MECH_4",
+  "mechanismFamily": "monolithic_overturning",
+  "sourceModelId": "urn:petras:femmodel:b9450d4907ae",
+  "sourceMeshDatasetId": "urn:petras:506d55dfe0d3",
+  "meshSignature": "5833ac5aca10057b0568a37550d19071a22d38ea17e2c2107546b03ca563cfda",
+  "nCells": 122851,
+  "cellGroup": "MACRO_4",
+  "nBlockCells": 21430,
+  "hinge": {
+    "point": [
+      50.331,
+      97.0266,
+      41.3135
+    ],
+    "direction": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "senseMode": "auto"
+  },
+  "seismicDirection": [
+    -1.0,
+    0.0,
+    0.0
+  ],
+  "verticalDirection": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "gravity": 9.80665,
+  "confidenceFactor": 1.0,
+  "confidenceFactorSource": "explicit",
+  "densityPolicy": "nominal",
+  "densityOverrideKgM3": null,
+  "massNorm": "horizontal",
+  "actions": [],
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-25T23:06:33.278283+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-25T23:06:33.278283+00:00"
+}

@@ -1,0 +1,52 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:datastore:kinematic_motion:0387dfff5206",
+  "@type": "KinematicResultSet",
+  "schemaVersion": "1.0",
+  "createdAt": "2026-08-26T07:42:33.007610+00:00",
+  "method": "ntc_c8.7.1_linear_kinematic",
+  "sourceMechanismId": "urn:petras:analytics:local_mechanism:bcd1d8187120",
+  "sourceMeshDatasetId": "urn:petras:f26134a31493",
+  "originMeshDatasetId": "urn:petras:aca528c25f65",
+  "cellGroup": "MACRO_5",
+  "nNodes": 170509,
+  "nMovingNodes": 37848,
+  "hinge": {
+    "point": [
+      50.331,
+      98.2266,
+      41.3489
+    ],
+    "direction": [
+      -0.0,
+      -1.0,
+      -0.0
+    ]
+  },
+  "outputs": {
+    "dataFile": "kinematic_motion.npz",
+    "vectorKey": "mechanism_displacement",
+    "scalarKeys": {
+      "mechanism_displacement_norm": "share of the motion, 1 where it is largest",
+      "mechanism_displacement_seismic": "component along the shaking, signed",
+      "mechanism_displacement_vertical": "component along the vertical, signed",
+      "mechanism_block_node": "1 on the block, 0 on what stays still"
+    },
+    "association": "point",
+    "amplitude": "per unit rotation, in radians",
+    "suggestedDeformScale": 0.09509424900438748
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-26T07:42:33.007656+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-26T07:42:33.007656+00:00"
+}

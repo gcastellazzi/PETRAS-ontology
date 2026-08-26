@@ -12,5 +12,9 @@
   "commandCount": 100,
   "timeRangeStart": "2026-08-21T14:15:31.013128+00:00",
   "timeRangeEnd": "2026-08-21T16:44:25.244639+00:00",
-  "sourceLogPath": "logs/2026-08-21_7636db00.jsonl"
+  "sourceLogPath": "logs/2026-08-21_7636db00.jsonl",
+  "deleted": true,
+  "deletedAt": "2026-08-23T06:48:03.228064+00:00",
+  "updatedAt": "2026-08-23T06:48:03.228064+00:00",
+  "deletedBy": "dataset.optimize"
 }

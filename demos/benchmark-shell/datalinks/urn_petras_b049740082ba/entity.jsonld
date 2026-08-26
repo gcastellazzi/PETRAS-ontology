@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:b049740082ba",
+  "@type": "DataLink",
+  "createdAt": "2026-08-25T23:07:24.758964+00:00",
+  "mapsFrom": "urn:petras:analytics:local_mechanism:88830c55e6f6",
+  "mapsTo": "urn:petras:datastore:kinematic_motion:7d6f2799eeb7",
+  "operator": "kinematics.motion",
+  "parameters": {
+    "blockMeshDatasetId": "urn:petras:268b382cf975"
+  },
+  "plugin": "kinematics"
+}

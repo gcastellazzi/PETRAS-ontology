@@ -1,0 +1,45 @@
+{
+  "commands": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 100,
+    "sample": [
+      {
+        "v": 2,
+        "ts_start": "2026-08-25T22:17:20.779664+00:00",
+        "ts_end": "2026-08-25T22:17:20.836421+00:00",
+        "duration_ms": 73,
+        "queued_ms": 0,
+        "mem_peak_mb": 2668.64,
+        "mem_delta_mb": 0.0,
+        "session_id": "5d92c049-c221-49ae-99e7-b91f768030da",
+        "project": "Project_0",
+        "project_path": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+        "seq": 1,
+        "cmd": "slice2d.material_assign_bulk",
+        "cli": "slice2d.material_assign_bulk dl:29 mat:brick_restoration scope=unassigned",
+        "success": true,
+        "output_snippet": "Assigned 19 region(s) to urn:petras:datasources:mat_20ab42e6dd47.\n  Scope    : unassigned  over 53 slice(s)\n  Assigned : 258 -> 277 of 277 region(s)\n  Without  : 19 -> 0\n",
+        "error": null
+      },
+      {
+        "v": 2,
+        "ts_start": "2026-08-25T22:17:44.460824+00:00",
+        "ts_end": "2026-08-25T22:17:44.499631+00:00",
+        "duration_ms": 38,
+        "queued_ms": 0,
+        "mem_peak_mb": 2941.84,
+        "mem_delta_mb": 0.0,
+        "session_id": "5d92c049-c221-49ae-99e7-b91f768030da",
+        "project": "Project_0",
+        "project_path": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+        "seq": 2,
+        "cmd": "slice2d.material_assign",
+        "cli": "slice2d.material_assign dl:29 46 mr_s46_r01 mat:brick_restoration",
+        "success": true,
+        "output_snippet": "Material region mr_s46_r01 assigned to urn:petras:datasources:mat_20ab42e6dd47.\n",
+        "error": null
+      }
+    ]
+  }
+}

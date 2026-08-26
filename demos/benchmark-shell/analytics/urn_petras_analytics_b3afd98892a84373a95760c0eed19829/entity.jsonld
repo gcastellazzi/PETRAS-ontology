@@ -4,12 +4,11 @@
   "method": "inspect_cloud.compare_fem",
   "plugin": "inspect_cloud",
   "sourceDatasetId": "urn:petras:4deaa0b067cc",
-  "targetDatasetId": "urn:petras:a0482625de9e",
+  "targetDatasetId": null,
   "distanceTargetDatasetId": "urn:petras:4deaa0b067cc",
-  "distanceReferenceDatasetId": "urn:petras:a0482625de9e",
+  "distanceReferenceDatasetId": null,
   "inputs": [
-    "urn:petras:4deaa0b067cc",
-    "urn:petras:a0482625de9e"
+    "urn:petras:4deaa0b067cc"
   ],
   "outputs": {
     "performance_score_pct": 51.60255403449915,
@@ -49,8 +48,8 @@
   },
   "parameters": {
     "cloudDatasetId": "urn:petras:4deaa0b067cc",
-    "femDatasetId": "urn:petras:a0482625de9e",
-    "meshDatasetId": "urn:petras:a0482625de9e",
+    "femDatasetId": null,
+    "meshDatasetId": null,
     "direction": "cloud_to_fem",
     "clusters": 64,
     "gap_target": 0.06051690345668351,
@@ -62,7 +61,7 @@
     "surface_geometry": "mesh2d",
     "surface_persistent": false,
     "distanceTargetDatasetId": "urn:petras:4deaa0b067cc",
-    "distanceReferenceDatasetId": "urn:petras:a0482625de9e"
+    "distanceReferenceDatasetId": null
   },
   "@context": "https://w3id.org/petras/context.jsonld",
   "@type": "DataAnalytics",

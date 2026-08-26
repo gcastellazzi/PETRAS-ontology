@@ -1,0 +1,20 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:66015faf8842",
+  "@type": "DataLink",
+  "createdAt": "2026-08-25T08:46:30.747981+00:00",
+  "mapsFrom": "urn:petras:femmodel:1b1562964636",
+  "mapsTo": "urn:petras:analytics:masonry_check:40ba82137ad7",
+  "operator": "masonry_checks.orientation_context",
+  "parameters": {
+    "cellGroups": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 1,
+      "sample": [
+        "ALL"
+      ]
+    }
+  },
+  "plugin": "masonry_checks"
+}

@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "nextSeq": 33,
+  "steps": [
+    {
+      "seq": 13,
+      "op": "edit",
+      "at": "2026-08-24T21:54:39.081416+00:00",
+      "payloadFile": "undo/000013.json",
+      "bytes": 2330,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 14,
+      "op": "edit",
+      "at": "2026-08-24T21:55:06.472742+00:00",
+      "payloadFile": "undo/000014.json",
+      "bytes": 1746,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 15,
+      "op": "edit",
+      "at": "2026-08-24T21:55:33.062267+00:00",
+      "payloadFile": "undo/000015.json",
+      "bytes": 2047,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 16,
+      "op": "edit",
+      "at": "2026-08-24T21:55:56.681832+00:00",
+      "payloadFile": "undo/000016.json",
+      "bytes": 1864,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 17,
+      "op": "edit",
+      "at": "2026-08-24T21:56:25.938262+00:00",
+      "payloadFile": "undo/000017.json",
+      "bytes": 1850,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 18,
+      "op": "edit",
+      "at": "2026-08-24T21:56:49.868265+00:00",
+      "payloadFile": "undo/000018.json",
+      "bytes": 2509,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 19,
+      "op": "edit",
+      "at": "2026-08-24T21:57:14.986546+00:00",
+      "payloadFile": "undo/000019.json",
+      "bytes": 3442,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 20,
+      "op": "edit",
+      "at": "2026-08-24T21:57:30.536373+00:00",
+      "payloadFile": "undo/000020.json",
+      "bytes": 1993,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 21,
+      "op": "edit",
+      "at": "2026-08-24T21:57:48.093626+00:00",
+      "payloadFile": "undo/000021.json",
+      "bytes": 1842,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 22,
+      "op": "edit",
+      "at": "2026-08-24T21:58:07.189770+00:00",
+      "payloadFile": "undo/000022.json",
+      "bytes": 1220,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 23,
+      "op": "edit",
+      "at": "2026-08-24T21:58:29.063059+00:00",
+      "payloadFile": "undo/000023.json",
+      "bytes": 1705,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 24,
+      "op": "edit",
+      "at": "2026-08-24T21:58:48.860622+00:00",
+      "payloadFile": "undo/000024.json",
+      "bytes": 2007,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 25,
+      "op": "edit",
+      "at": "2026-08-24T21:59:06.445302+00:00",
+      "payloadFile": "undo/000025.json",
+      "bytes": 1966,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 26,
+      "op": "edit",
+      "at": "2026-08-24T21:59:19.802981+00:00",
+      "payloadFile": "undo/000026.json",
+      "bytes": 1351,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 27,
+      "op": "edit",
+      "at": "2026-08-24T21:59:42.191646+00:00",
+      "payloadFile": "undo/000027.json",
+      "bytes": 1786,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 28,
+      "op": "edit",
+      "at": "2026-08-24T21:59:59.777809+00:00",
+      "payloadFile": "undo/000028.json",
+      "bytes": 1995,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 29,
+      "op": "edit",
+      "at": "2026-08-24T22:00:20.107678+00:00",
+      "payloadFile": "undo/000029.json",
+      "bytes": 2945,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 30,
+      "op": "edit",
+      "at": "2026-08-24T22:00:38.005302+00:00",
+      "payloadFile": "undo/000030.json",
+      "bytes": 2138,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 31,
+      "op": "edit",
+      "at": "2026-08-24T22:00:57.896631+00:00",
+      "payloadFile": "undo/000031.json",
+      "bytes": 1784,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    },
+    {
+      "seq": 32,
+      "op": "edit",
+      "at": "2026-08-24T22:01:12.325859+00:00",
+      "payloadFile": "undo/000032.json",
+      "bytes": 1399,
+      "full": false,
+      "nSlicesBefore": 46,
+      "nSlicesAfter": 46,
+      "nChanged": 1
+    }
+  ]
+}

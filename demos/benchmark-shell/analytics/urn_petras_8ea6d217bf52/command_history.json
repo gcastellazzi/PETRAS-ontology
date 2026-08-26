@@ -1,0 +1,45 @@
+{
+  "commands": {
+    "_stripped": true,
+    "kind": "list",
+    "count": 100,
+    "sample": [
+      {
+        "v": 2,
+        "ts_start": "2026-08-25T16:49:03.386284+00:00",
+        "ts_end": "2026-08-25T16:49:03.418097+00:00",
+        "duration_ms": 73,
+        "queued_ms": 0,
+        "mem_peak_mb": 1458.39,
+        "mem_delta_mb": 0.0,
+        "session_id": "1a40648a-9f1f-40ba-809d-8e76ce818a0f",
+        "project": "Project_0",
+        "project_path": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+        "seq": 1,
+        "cmd": "cloud2fem.duplicate",
+        "cli": "cloud2fem.duplicate dl:28",
+        "success": true,
+        "output_snippet": "SliceSet duplicated.\n  Source    : urn:petras:f59877a97cc8\n  Copy      : urn:petras:6718c0b185d8\n  New alias : dl:29\n  Copied    : 14 sidecar file(s)\n\n  The copy is independent: edit it and generate the mesh from it,\n  while the original stays as the traced reference.\n  slice2d.list dl:29",
+        "error": null
+      },
+      {
+        "v": 2,
+        "ts_start": "2026-08-25T16:52:22.923245+00:00",
+        "ts_end": "2026-08-25T16:52:23.059526+00:00",
+        "duration_ms": 136,
+        "queued_ms": 0,
+        "mem_peak_mb": 2592.28,
+        "mem_delta_mb": 0.0,
+        "session_id": "1a40648a-9f1f-40ba-809d-8e76ce818a0f",
+        "project": "Project_0",
+        "project_path": "/Users/gcastellazzi/Dropbox/PETRAS_exchange/Project_PETRAS_Benchmark",
+        "seq": 2,
+        "cmd": "slice2d.copy_slice",
+        "cli": "slice2d.copy_slice dl:29 45 54",
+        "success": true,
+        "output_snippet": "Copied slice[45] -> slice[46] at z=54  (polylines=3, centroids=0, total slices=47)\n",
+        "error": null
+      }
+    ]
+  }
+}

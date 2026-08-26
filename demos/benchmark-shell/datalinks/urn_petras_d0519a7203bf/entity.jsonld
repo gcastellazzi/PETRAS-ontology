@@ -1,0 +1,22 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:d0519a7203bf",
+  "@type": "DataLink",
+  "createdAt": "2026-08-25T08:45:53.310970+00:00",
+  "mapsFrom": "urn:petras:femresult:b08dce20fec4",
+  "mapsTo": "urn:petras:analytics:masonry_check:aa569206f170",
+  "operator": "masonry_checks.biaxial",
+  "parameters": {
+    "cellGroups": {
+      "_stripped": true,
+      "kind": "list",
+      "count": 1,
+      "sample": [
+        "ALL"
+      ]
+    },
+    "strengthPolicy": "lower",
+    "planeStressTolerance": 0.05
+  },
+  "plugin": "masonry_checks"
+}

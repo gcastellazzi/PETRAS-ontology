@@ -1,0 +1,46 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:datastore:kinematic_motion:f3066570c690",
+  "@type": "KinematicResultSet",
+  "schemaVersion": "1.0",
+  "createdAt": "2026-08-24T19:26:11.718656+00:00",
+  "method": "ntc_c8.7.1_linear_kinematic",
+  "sourceMechanismId": "urn:petras:analytics:local_mechanism:f5fade8bf4f8",
+  "sourceMeshDatasetId": "urn:petras:cf820781e312",
+  "originMeshDatasetId": "urn:petras:506d55dfe0d3",
+  "cellGroup": "MACRO_3",
+  "nNodes": 158504,
+  "nMovingNodes": 32331,
+  "hinge": {
+    "point": [
+      50.331,
+      97.6266,
+      41.3135
+    ],
+    "direction": [
+      -0.0,
+      -1.0,
+      -0.0
+    ]
+  },
+  "outputs": {
+    "dataFile": "kinematic_motion.npz",
+    "vectorKey": "mechanism_displacement",
+    "association": "point",
+    "amplitude": "per unit rotation, in radians",
+    "suggestedDeformScale": 0.11122295603987498
+  },
+  "geolocation": {
+    "latitude": 44.838925,
+    "longitude": 11.141214,
+    "tz": "UTC",
+    "north_deg": 0.0,
+    "source": "project",
+    "updatedAt": "2026-08-24T19:26:11.718698+00:00"
+  },
+  "geo_lat": 44.838925,
+  "geo_lon": 11.141214,
+  "geo_tz": "UTC",
+  "geo_north_deg": 0.0,
+  "geolocatedAt": "2026-08-24T19:26:11.718698+00:00"
+}

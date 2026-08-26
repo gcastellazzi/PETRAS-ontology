@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/petras/context.jsonld",
+  "@id": "urn:petras:6ea6c42a0aca",
+  "@type": "DataLink",
+  "createdAt": "2026-08-24T22:41:35.663230+00:00",
+  "mapsFrom": "urn:petras:d2281c7df258",
+  "mapsTo": "urn:petras:femmodel:1b1562964636",
+  "operator": "finetools_engine.model",
+  "parameters": {
+    "nodes": 160739,
+    "elements": 126542
+  },
+  "plugin": "finetools_engine"
+}
