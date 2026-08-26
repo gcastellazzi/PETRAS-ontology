@@ -49,7 +49,7 @@ type DemoInfo = {
 const DEMOS: DemoInfo[] = [
   {
     id: "cathedral-shell",
-    label: "Cathedral Shell",
+    label: "Demo example",
     description: "Synthetic empty-shell demo (all 7 layers, small)",
     url: "./demos/cathedral-shell/graph.json",
     cqUrl: "./demos/cathedral-shell/cq-answers.json",
@@ -231,7 +231,7 @@ export default function App() {
     setAutoHeld(false);
     setAutoSwitched(false);
 
-    fetch(activeDemo.url)
+    fetch(activeDemo.url, { cache: "no-cache" })
       .then((r) => {
         if (!r.ok) throw new Error(`Failed to load ${activeDemo.url}`);
         return r.json();
@@ -263,7 +263,7 @@ export default function App() {
     setCqSelectedId(null);
     setCqFocusIds(null);
 
-    fetch(activeDemo.cqUrl)
+    fetch(activeDemo.cqUrl, { cache: "no-cache" })
       .then((r) => {
         if (!r.ok) throw new Error(`Failed to load ${activeDemo.cqUrl}`);
         return r.json();
