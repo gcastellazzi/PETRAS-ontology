@@ -145,7 +145,11 @@ def _iter_inferred_edges(data: dict[str, Any], target_id: str) -> list[tuple[str
 
 def _iter_inferred_out_edges(data: dict[str, Any], source_id: str) -> list[tuple[str, str]]:
     out: list[tuple[str, str]] = []
-    for key, relation in (("linkedEntities", "documents"),):
+    # A report records what it cites in referencedEntities, and nothing was
+    # turning that into edges: the DataReporting layer came out with every
+    # entity isolated, so the default "hide unconnected" filter emptied it and
+    # the map showed no reports at all.
+    for key, relation in (("linkedEntities", "documents"), ("referencedEntities", "cites")):
         for dst in _split_entity_refs(data.get(key)):
             if dst and dst != source_id:
                 out.append((dst, relation))

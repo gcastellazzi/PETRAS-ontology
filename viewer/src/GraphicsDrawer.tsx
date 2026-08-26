@@ -39,6 +39,8 @@ type Props = {
   onHideIsolated: (v: boolean) => void;
   hideUnknown: boolean;
   onHideUnknown: (v: boolean) => void;
+  hideCitations: boolean;
+  onHideCitations: (v: boolean) => void;
   backgroundColor: string;
   onBackgroundColor: (v: string) => void;
   showLegend: boolean;
@@ -212,6 +214,19 @@ export function GraphicsDrawer(p: Props) {
             <input type="checkbox" checked={p.hideUnknown} onChange={(e) => p.onHideUnknown(e.target.checked)} />
             Hide unknown objects
           </label>
+          <label className="check">
+            <input
+              type="checkbox"
+              checked={p.hideCitations}
+              onChange={(e) => p.onHideCitations(e.target.checked)}
+            />
+            Hide report citations
+          </label>
+          <p className="drawer-note">
+            A report cites every entity it summarises, so its citations outnumber the DataLinks
+            several times over. Hiding them leaves the transformation chain on its own, which is what
+            an exported figure usually wants.
+          </p>
         </section>
 
         <section className="drawer-section">

@@ -20,11 +20,13 @@ export function forDisplay(
     hideMissing?: boolean;
     hideIsolated?: boolean;
     hideUnknown?: boolean;
+    hideCitations?: boolean;
   } = {},
 ): GraphPayload {
   const hideMissing = !!opts.hideMissing;
   const hideIsolated = !!opts.hideIsolated;
   const hideUnknown = !!opts.hideUnknown;
+  const hideCitations = !!opts.hideCitations;
 
   let nodes = graph.nodes.filter(
     (n) =>
@@ -33,7 +35,15 @@ export function forDisplay(
       (!hideUnknown || !isUnknownNode(n)),
   );
   let ids = new Set(nodes.map((n) => n.id));
-  let edges = graph.edges.filter((e) => ids.has(e.source) && ids.has(e.target));
+  // A report cites hundreds of entities, so citation edges outnumber the
+  // DataLinks several times over and turn the map into a hairball. They are
+  // real and stay in the data; this only decides whether they are drawn.
+  let edges = graph.edges.filter(
+    (e) =>
+      ids.has(e.source) &&
+      ids.has(e.target) &&
+      (!hideCitations || e.operator !== "cites"),
+  );
 
   if (hideIsolated) {
     const linked = new Set<string>();

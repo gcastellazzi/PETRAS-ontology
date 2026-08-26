@@ -8,15 +8,26 @@
   "nEntities": 158,
   "nCommands": 100,
   "successRate": 100.0,
-  "referencedEntities": {
-    "_stripped": true,
-    "kind": "list",
-    "count": 18,
-    "sample": [
-      "urn:petras:0273e9655a35",
-      "urn:petras:32f7202be022"
-    ]
-  },
+  "referencedEntities": [
+    "urn:petras:0273e9655a35",
+    "urn:petras:32f7202be022",
+    "urn:petras:4deaa0b067cc",
+    "urn:petras:5da5159f4127",
+    "urn:petras:5e92e3bf86d1",
+    "urn:petras:ae09195acee9",
+    "urn:petras:analytics:711eb6a2f325410185fd5558efb538a3",
+    "urn:petras:analytics:d797c65ac07f4f86851a8c04d490e481",
+    "urn:petras:analytics:finetools_job:13e3806c878d",
+    "urn:petras:analytics:finetools_job:493faaef9c42",
+    "urn:petras:analytics:finetools_job:631b8e2661cc",
+    "urn:petras:analytics:finetools_job:9d728e1901d0",
+    "urn:petras:datasources:mat_abc79313bde6",
+    "urn:petras:femmodel:08ee90084402",
+    "urn:petras:femresult:7f44d2faae38",
+    "urn:petras:femresult:b10145b068c5",
+    "urn:petras:femresult:bfa83c512bab",
+    "urn:petras:femresult:d2585ab00e02"
+  ],
   "referencedEntityCount": 18,
   "geolocation": {
     "latitude": 44.838925,

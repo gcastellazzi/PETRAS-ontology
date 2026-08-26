@@ -127,6 +127,23 @@ BULK_KEYS = frozenset(
     }
 )
 
+#: Lists of entity identifiers are structure, not payload: they are what the
+#: connectivity graph is drawn from. Stripping them to a two-element sample
+#: emptied the DataReporting layer of the published shell, because a report
+#: records what it cites in ``referencedEntities`` and nothing else links it.
+#: These keys are kept whole however long they are — a few hundred URNs cost
+#: tens of kilobytes against a shell measured in megabytes.
+REFERENCE_KEYS = frozenset(
+    {
+        "referencedEntities",
+        "linkedEntities",
+        "sourceDatalakeIDs",
+        "source_datalake_ids",
+        "sourceDatasetIDs",
+        "source_dataset_ids",
+    }
+)
+
 DEFAULT_MAX_LIST = 24
 DEFAULT_MAX_DICT = 48
 DEFAULT_MAX_STRING = 4000
@@ -182,6 +199,17 @@ def strip_payload(
         return value
 
     if isinstance(value, list):
+        if key in REFERENCE_KEYS:
+            return [
+                strip_payload(
+                    item,
+                    max_list=max_list,
+                    max_dict=max_dict,
+                    max_string=max_string,
+                    depth=depth + 1,
+                )
+                for item in value
+            ]
         if key in BULK_KEYS or len(value) > max_list:
             sample = []
             for item in value[:2]:

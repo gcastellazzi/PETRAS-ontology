@@ -12,9 +12,6 @@
 source .venv/bin/activate
 petras extract-structure /path/to/Project_PETRAS_Benchmark demos/benchmark-shell --clean
 
-# Keep legacy c2f4dt identifiers instead of translating to PETRAS:
-petras extract-structure /path/to/project /tmp/shell --keep-legacy
-
 # Also write empty placeholders for skipped binaries:
 petras extract-structure /path/to/project /tmp/shell --placeholders
 ```

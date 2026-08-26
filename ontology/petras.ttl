@@ -433,12 +433,6 @@ petras:TemporalEvent a owl:Class ;
     rdfs:label "Temporal Event"@en ;
     rdfs:comment "Name under which the reference implementation writes a DataEvent. Declared so that the class the data uses and the class the specification names are the same thing."@en .
 
-petras:eventType a owl:DatatypeProperty ;
-    rdfs:label "event type"@en ;
-    rdfs:comment "Kind of computational fact recorded, e.g. a finite element simulation."@en ;
-    rdfs:domain petras:DataStore ;
-    rdfs:range xsd:string .
-
 petras:solver a owl:DatatypeProperty ;
     rdfs:label "solver"@en ;
     rdfs:comment "Solver that produced the stored result."@en ;
@@ -649,24 +643,29 @@ petras:isCoordinateSystemOf a owl:ObjectProperty ;
 petras:effect a owl:DatatypeProperty ;
     rdfs:label "effect"@en ;
     rdfs:comment "What an event did to a material: degradation, improvement, or exposure. Exposure records that the material was subjected to the event without asserting a consequence, which is what an archive can state when no post-event survey exists."@en ;
-    rdfs:domain petras:DataLink .
+    rdfs:domain petras:DataLink ;
+    rdfs:range xsd:string .
 
 petras:affectedProperties a owl:DatatypeProperty ;
     rdfs:label "affected properties"@en ;
     rdfs:comment "Material properties or masonry-quality parameters the event is recorded as acting upon."@en ;
-    rdfs:domain petras:DataLink .
+    rdfs:domain petras:DataLink ;
+    rdfs:range xsd:string .
 
 petras:relationshipType a owl:DatatypeProperty ;
     rdfs:label "relationship type"@en ;
     rdfs:comment "Kind of association a DataLink carries when it does not describe a computational transformation."@en ;
-    rdfs:domain petras:DataLink .
+    rdfs:domain petras:DataLink ;
+    rdfs:range xsd:string .
 
 petras:eventType a owl:DatatypeProperty ;
     rdfs:label "event type"@en ;
     rdfs:comment "Kind of occurrence a DataEvent records, such as seismic_activity, flood or roof_loss."@en ;
-    rdfs:domain petras:DataEvent .
+    rdfs:domain petras:DataEvent ;
+    rdfs:range xsd:string .
 
 petras:severity a owl:DatatypeProperty ;
     rdfs:label "severity"@en ;
     rdfs:comment "Severity attributed to a DataEvent."@en ;
-    rdfs:domain petras:DataEvent .
+    rdfs:domain petras:DataEvent ;
+    rdfs:range xsd:string .

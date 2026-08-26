@@ -126,6 +126,7 @@ export default function App() {
   const [hideMissing, setHideMissing] = useState(true);
   const [hideIsolated, setHideIsolated] = useState(true);
   const [hideUnknown, setHideUnknown] = useState(true);
+  const [hideCitations, setHideCitations] = useState(false);
   const [layoutMode, setLayoutMode] = useState<LayoutMode>("flow");
   const [dimMode, setDimMode] = useState<DimMode>("2d");
   const [sphereScale, setSphereScale] = useState(1);
@@ -288,8 +289,8 @@ export default function App() {
 
   const filtered = useMemo(() => {
     if (!graph) return null;
-    return forDisplay(graph, { hideMissing, hideIsolated, hideUnknown });
-  }, [graph, hideMissing, hideIsolated, hideUnknown]);
+    return forDisplay(graph, { hideMissing, hideIsolated, hideUnknown, hideCitations });
+  }, [graph, hideMissing, hideIsolated, hideUnknown, hideCitations]);
 
   useEffect(() => {
     if (!selectedId || !filtered) return;
@@ -877,6 +878,8 @@ export default function App() {
         onHideIsolated={setHideIsolated}
         hideUnknown={hideUnknown}
         onHideUnknown={setHideUnknown}
+        hideCitations={hideCitations}
+        onHideCitations={setHideCitations}
         backgroundColor={backgroundColor}
         onBackgroundColor={setBackgroundColor}
         showLegend={showLegend}

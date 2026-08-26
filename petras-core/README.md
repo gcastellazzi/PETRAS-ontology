@@ -1,7 +1,6 @@
 # petras-core
 
 Standalone Python library for PETRAS project I/O and connectivity graphs.
-Zero dependency on the C2F4DTc desktop application.
 
 ```bash
 pip install -e ".[dev]"

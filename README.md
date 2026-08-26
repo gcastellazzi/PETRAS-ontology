@@ -3,7 +3,7 @@
 Standalone web tooling for the **PETRAS** ontology
 (*Provenance-Enabled digital Twin ontology for Restoration and Structural Analysis*).
 
-This repository is **independent of the C2F4DTc desktop application**. It implements
+This repository is **independent of the PETRAS desktop application** (under development). It implements
 the PETRAS project file format and visualises **connectivity / provenance graphs**
 with the same seven-layer colour semantics used in the reference desktop maps.
 
@@ -21,7 +21,6 @@ a real benchmark project with its payloads removed.
 - Empty-shell demo project covering all **7 layers** (core + service)
 - `petras extract-structure` — copy a project tree without binaries or bulk arrays
 - SHACL shapes and the ten competency-question queries, executable (`validate`, `ask`)
-- Optional read-only import of legacy C2F4DT projects (`--legacy`)
 
 ## What the viewer does
 
@@ -89,7 +88,7 @@ bash scripts/build_demo_graphs.sh
 
 ```
 ontology/          # petras.ttl + context.jsonld (w3id.org/petras)
-petras-core/       # Python I/O + graph + layout (no C2F4DT dependency)
+petras-core/       # Python I/O + graph + layout (no PETRAS software dependency)
 viewer/            # React + Vite graph viewer
 demos/             # demo-project (cathedral-shell/) + benchmark-shell
 docs/              # project format + layer guide
@@ -97,10 +96,6 @@ queries/           # cq01..cq10.rq — the competency questions as SPARQL
 scripts/           # demo generation, structure extract, guided walkthrough
 ```
 
-## Naming rule
-
-Every identifier that historically used `c2f4dt` / `c2f:` is written as `petras`
-in this repository. See [docs/project-format.md](docs/project-format.md).
 
 ## License
 
