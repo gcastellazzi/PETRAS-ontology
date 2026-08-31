@@ -15,6 +15,12 @@ The viewer is a static page: no account, no server, nothing to install. It ships
 two demo projects — a synthetic shell covering all seven layers, and the structure of
 a real benchmark project with its payloads removed.
 
+![The PETRAS viewer: the seven layers stacked in depth, with one entity selected and its descriptor read straight from the archive.](docs/viewer_demo.png)
+
+Above: the layered 3D view with one entity selected. Colour is the ontology layer,
+size is the entity's degree in the provenance graph, and the panel on the right shows
+the descriptor as it is stored — no geometry payload, only the connectivity map.
+
 ## What the tooling does
 
 - Canonical PETRAS project layout (`petras.json`, `urn:petras:…`, `entity.jsonld`)

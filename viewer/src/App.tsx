@@ -56,7 +56,7 @@ const DEMOS: DemoInfo[] = [
   },
   {
     id: "benchmark-shell",
-    label: "Benchmark Shell",
+    label: "Rocca Estense Benchmark",
     description: "Structure from Project_PETRAS_Benchmark (no binaries)",
     url: "./demos/benchmark-shell/graph.json",
     cqUrl: "./demos/benchmark-shell/cq-answers.json",
@@ -129,11 +129,11 @@ export default function App() {
   const [hideCitations, setHideCitations] = useState(false);
   const [layoutMode, setLayoutMode] = useState<LayoutMode>("flow");
   const [dimMode, setDimMode] = useState<DimMode>("2d");
-  const [sphereScale, setSphereScale] = useState(1);
-  const [fontScale, setFontScale] = useState(1);
+  const [sphereScale, setSphereScale] = useState(1.3);
+  const [fontScale, setFontScale] = useState(1.3);
   const [avoidOverlap, setAvoidOverlap] = useState(true);
-  const [layerOpacity, setLayerOpacity] = useState(0.045);
-  const [layerLabelSide, setLayerLabelSide] = useState<LayerLabelSide>("back");
+  const [layerOpacity, setLayerOpacity] = useState(0.12);
+  const [layerLabelSide, setLayerLabelSide] = useState<LayerLabelSide>("front");
   const [layerLabelOffset, setLayerLabelOffset] = useState<LayerLabelOffset>(
     LAYER_LABEL_DEFAULTS.back,
   );

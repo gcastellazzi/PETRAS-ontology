@@ -88,7 +88,7 @@ export type LayerLabelOffset = { x: number; y: number; z: number };
  */
 export const LAYER_LABEL_DEFAULTS: Record<LayerLabelSide, LayerLabelOffset> = {
   back: { x: 0.35, y: 0.45, z: 0.35 },
-  front: { x: 4.2, y: 1.6, z: 0.35 },
+  front: { x: 0, y: 0, z: 0.35 },
 };
 
 type Props = {
